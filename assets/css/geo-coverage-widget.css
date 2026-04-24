@@ -1,0 +1,123 @@
+.eb-geo-widget {
+    background: var(--eb-blue);
+    padding: 96px 52px;
+    /* font-family: 'DM Sans', sans-serif; */
+    color: var(--eb-white);
+}
+
+.eb-geo-header {
+    margin-bottom: 48px;
+}
+
+.eb-geo-widget .eb-section-tag {
+    color: var(--eb-gold-lt);
+}
+
+.eb-geo-widget .eb-section-tag::before {
+    background: var(--eb-gold);
+}
+
+.eb-geo-title {
+    /* font-family: 'Playfair Display', serif; */
+    font-size: clamp(24px, 2.4vw, 38px);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -.01em;
+    margin-bottom: 14px;
+    color: var(--eb-white);
+}
+
+.eb-geo-title em {
+    font-style: normal;
+    color: var(--eb-gold-lt);
+}
+
+.eb-geo-intro {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.8;
+    max-width: 620px;
+    font-weight: 400;
+}
+
+.eb-geo-primary {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    padding: 28px 30px;
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.eb-geo-primary-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--eb-gold-lt);
+    margin-bottom: 6px;
+}
+
+.eb-geo-primary-title {
+    /* font-family: 'Playfair Display', serif; */
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--eb-white);
+}
+
+.eb-geo-primary-desc {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.55);
+    line-height: 1.7;
+    margin-top: 6px;
+    font-weight: 400;
+}
+
+.eb-geo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.eb-geo-state {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    padding: 18px 16px;
+    transition: background .25s;
+}
+
+.eb-geo-state:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.eb-geo-state-name {
+    /* font-family: 'Playfair Display', serif; */
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--eb-white);
+    margin-bottom: 6px;
+}
+
+.eb-geo-cities a {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.45);
+    line-height: 1.65;
+}
+
+@media (max-width: 1100px) {
+    .eb-geo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .eb-geo-widget {
+        padding: 64px 20px;
+    }
+    .eb-geo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

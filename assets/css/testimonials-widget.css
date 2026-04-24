@@ -1,0 +1,127 @@
+.eb-testimonials-widget {
+    background: var(--eb-white);
+    padding: 96px 52px;
+    /* font-family: 'DM Sans', sans-serif; */
+}
+
+.eb-testi-header {
+    margin-bottom: 52px;
+}
+
+.eb-section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--eb-gold-dk);
+    margin-bottom: 14px;
+}
+
+.eb-section-tag::before {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--eb-gold);
+    border-radius: 2px;
+}
+
+.eb-testi-title {
+    /* font-family: 'Playfair Display', serif; */
+    font-size: clamp(24px, 2.4vw, 38px);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -.01em;
+    margin-bottom: 14px;
+    color: var(--eb-txt);
+}
+
+.eb-sec-desc {
+    color: var(--eb-txt-mid);
+    font-size: 16px;
+    line-height: 1.78;
+    max-width: 560px;
+    font-weight: 300;
+}
+
+.eb-testi-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 52px;
+}
+
+.eb-testi-card {
+    background: var(--eb-off);
+    border: 1px solid var(--eb-bdr);
+    border-radius: 6px;
+    padding: 32px 28px;
+    position: relative;
+    transition: box-shadow .25s;
+}
+
+.eb-testi-card:hover {
+    box-shadow: 0 8px 40px rgba(104, 125, 156, .14);
+}
+
+.eb-testi-card::before {
+    content: '\201C';
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    /* font-family: 'Playfair Display', serif; */
+    font-size: 64px;
+    color: var(--eb-gold);
+    opacity: .25;
+    line-height: 1;
+}
+
+.eb-testi-quote {
+    /* font-family: 'Playfair Display', serif; */
+    font-size: 15px;
+    font-style: normal;
+    color: var(--eb-txt-mid);
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-weight: 400;
+    position: relative;
+    z-index: 1;
+}
+
+.eb-testi-divider {
+    width: 32px;
+    height: 2px;
+    background: var(--eb-gold);
+    margin-bottom: 16px;
+    border-radius: 2px;
+}
+
+.eb-testi-name {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--eb-txt);
+    margin-bottom: 3px;
+}
+
+.eb-testi-role {
+    font-size: 12px;
+    color: var(--eb-txt-muted);
+}
+
+@media (max-width: 1100px) {
+    .eb-testi-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .eb-testimonials-widget {
+        padding: 64px 20px;
+    }
+    .eb-testi-grid {
+        grid-template-columns: 1fr;
+    }
+}

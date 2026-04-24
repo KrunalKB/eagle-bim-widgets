@@ -1,0 +1,130 @@
+.eb-why-us-widget {
+    background: var(--eb-blue);
+    position: relative;
+    overflow: hidden;
+    padding: 96px 52px;
+    /* font-family: 'DM Sans', sans-serif; */
+}
+
+.eb-why-us-widget::before {
+    content: '';
+    position: absolute;
+    top: -150px;
+    right: -150px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(222, 170, 87, 0.15) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.eb-why-header {
+    position: relative;
+    z-index: 2;
+    max-width: 680px;
+    margin-bottom: 8px;
+}
+
+.eb-why-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--eb-gold-lt);
+    margin-bottom: 14px;
+}
+
+.eb-why-tag::before {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--eb-gold);
+    border-radius: 2px;
+}
+
+.eb-why-title {
+    /* font-family: 'Playfair Display', serif; */
+    font-size: clamp(24px, 2.4vw, 38px);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -.01em;
+    margin-bottom: 14px;
+    color: var(--eb-white);
+}
+
+.eb-why-title em {
+    font-style: normal;
+    color: var(--eb-gold-lt);
+}
+
+.eb-why-cols {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-top: 52px;
+}
+
+.eb-why-col {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    padding: 36px 30px;
+    transition: background .3s;
+}
+
+.eb-why-col:hover {
+    background: rgba(255, 255, 255, 0.11);
+}
+
+.eb-why-col-icon {
+    width: 46px;
+    height: 46px;
+    background: rgba(222, 170, 87, 0.15);
+    border: 1px solid rgba(222, 170, 87, 0.3);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.eb-why-col-icon svg {
+    width: 22px;
+    height: 22px;
+    stroke: var(--eb-gold-lt);
+    fill: none;
+    stroke-width: 1.5;
+}
+
+.eb-why-col-title {
+    /* font-family: 'Playfair Display', serif; */
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--eb-white);
+    margin-bottom: 14px;
+    line-height: 1.2;
+}
+
+.eb-why-col-text {
+    font-size: 14px;
+    color: var(--eb-white);
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+@media (max-width: 1100px) {
+    .eb-why-cols {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .eb-why-us-widget {
+        padding: 64px 20px;
+    }
+}

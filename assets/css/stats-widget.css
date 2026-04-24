@@ -1,0 +1,81 @@
+.eb-stats-widget {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--eb-bdr);
+    border-top: 1px solid var(--eb-bdr);
+    border-bottom: 1px solid var(--eb-bdr);
+    /* font-family: 'DM Sans', sans-serif; */
+}
+
+.eb-stat-item {
+    background: var(--eb-white);
+    padding: 36px 40px;
+    text-align: center;
+    transition: background .3s;
+    cursor: default;
+}
+
+.eb-stat-item:hover {
+    background: var(--eb-blue-pale);
+}
+
+.eb-stat-num {
+    /* font-family: 'Playfair Display', serif; */
+    font-size: 46px;
+    font-weight: 600;
+    color: var(--eb-blue);
+    line-height: 1;
+    display: block;
+}
+
+.eb-stat-sfx {
+    font-size: 26px;
+    font-weight: 400;
+    color: var(--eb-gold);
+}
+
+.eb-stat-lbl {
+    font-size: 16px;
+    color: var(--eb-txt-muted);
+    letter-spacing: .1em;
+    /* text-transform: uppercase; */
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+.eb-stats-anchor {
+    text-align: center;
+    padding: 18px;
+    background: var(--eb-off);
+    border-bottom: 1px solid var(--eb-bdr);
+    cursor: pointer;
+}
+
+.eb-stats-anchor a {
+    font-size: 16px;
+    color: var(--eb-blue);
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: .04em;
+    transition: color .2s;
+}
+
+.eb-stats-anchor a:hover {
+    color: var(--eb-gold-dk);
+}
+
+@media (max-width: 1100px) {
+    .eb-stats-widget {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .eb-stats-widget {
+        grid-template-columns: 1fr;
+    }
+    .eb-stat-item {
+        padding: 24px 20px;
+    }
+}

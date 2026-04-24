@@ -1,0 +1,177 @@
+.eb-services-widget {
+    background: var(--eb-off);
+    padding: 96px 52px;
+    /* font-family: 'DM Sans', sans-serif; */
+}
+
+.eb-svc-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 52px;
+}
+
+.eb-section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--eb-gold-dk);
+    margin-bottom: 14px;
+}
+
+.eb-section-tag::before {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--eb-gold);
+    border-radius: 2px;
+}
+
+.eb-svc-title {
+    /* font-family: 'Playfair Display', serif; */
+    font-size: clamp(24px, 2.4vw, 38px);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -.01em;
+    margin-bottom: 14px;
+    color: var(--eb-txt);
+}
+
+.eb-svc-title em {
+    font-style: normal;
+    color: var(--eb-blue);
+}
+
+.eb-sec-desc {
+    color: var(--eb-txt-mid);
+    font-size: 16px;
+    line-height: 1.78;
+    max-width: 560px;
+    font-weight: 300;
+}
+
+.eb-services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--eb-bdr);
+    border: 1px solid var(--eb-bdr);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.eb-svc-card {
+    background: var(--eb-white);
+    padding: 30px 26px;
+    position: relative;
+    overflow: hidden;
+    transition: background .25s;
+    text-decoration: none;
+    display: block;
+}
+
+.eb-svc-card-span-2 {
+    grid-column: span 2;
+}
+
+@media (max-width: 1100px) {
+    .eb-svc-card-span-2 {
+        grid-column: span 1;
+    }
+}
+
+.eb-svc-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--eb-gold);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .3s;
+}
+
+.eb-svc-card:hover::after {
+    transform: scaleX(1);
+}
+
+.eb-svc-card:hover {
+    background: var(--eb-gold-pale);
+}
+
+.eb-svc-card:hover .eb-svc-arr {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.eb-svc-icon {
+    width: 44px;
+    height: 44px;
+    border: 1.5px solid var(--eb-bdr-gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    background: var(--eb-gold-pale);
+    border-radius: 3px;
+}
+
+.eb-svc-icon svg {
+    width: 20px;
+    height: 20px;
+    stroke: var(--eb-gold-dk);
+    fill: none;
+    stroke-width: 1.5;
+}
+
+.eb-svc-name {
+    /* font-family: 'Playfair Display', serif; */
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--eb-txt);
+    margin-bottom: 7px;
+}
+
+.eb-svc-desc {
+    font-size: 14px;
+    color: var(--eb-txt-muted);
+    line-height: 1.65;
+}
+
+.eb-svc-arr {
+    margin-top: 16px;
+    color: var(--eb-gold-dk);
+    font-size: 17px;
+    opacity: 0;
+    transform: translateX(-8px);
+    transition: opacity .3s, transform .3s;
+    display: block;
+    font-weight: 700;
+}
+
+@media (max-width: 1100px) {
+    .eb-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .eb-services-widget {
+        padding: 64px 20px;
+    }
+    .eb-svc-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    .eb-services-grid {
+        grid-template-columns: 1fr;
+    }
+}

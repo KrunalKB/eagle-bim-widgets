@@ -1,0 +1,127 @@
+.eb-industries-widget {
+    background: var(--eb-cream);
+    border-top: 1px solid var(--eb-bdr);
+    border-bottom: 1px solid var(--eb-bdr);
+    padding: 80px 52px;
+    /* font-family: 'DM Sans', sans-serif; */
+}
+
+.eb-ind-header {
+    margin-bottom: 48px;
+}
+
+.eb-section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--eb-gold-dk);
+    margin-bottom: 14px;
+}
+
+.eb-section-tag::before {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--eb-gold);
+    border-radius: 2px;
+}
+
+.eb-ind-title {
+    /* font-family: 'Playfair Display', serif; */
+    font-size: clamp(24px, 2.4vw, 38px);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -.01em;
+    margin-bottom: 14px;
+    color: var(--eb-txt);
+}
+
+.eb-ind-title em {
+    font-style: normal;
+    color: var(--eb-blue);
+}
+
+.eb-sec-desc {
+    color: var(--eb-txt-mid);
+    font-size: 16px;
+    line-height: 1.78;
+    max-width: 560px;
+    font-weight: 300;
+}
+
+.eb-ind-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 48px;
+}
+
+.eb-ind-card {
+    background: var(--eb-white);
+    border: 1px solid var(--eb-bdr);
+    border-radius: 6px;
+    padding: 24px 20px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    transition: border-color .25s, box-shadow .25s;
+}
+
+.eb-ind-card:hover {
+    border-color: var(--eb-blue-lt);
+    box-shadow: 0 2px 20px rgba(104, 125, 156, .09);
+}
+
+.eb-ind-icon {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    background: var(--eb-blue-pale);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eb-ind-icon svg {
+    stroke: var(--eb-blue);
+    fill: none;
+    stroke-width: 1.5;
+}
+
+.eb-ind-name {
+    /* font-family: 'Playfair Display', serif; */
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--eb-txt);
+    margin-bottom: 5px;
+}
+
+.eb-ind-desc {
+    font-size: 14px;
+    color: var(--eb-txt-muted);
+    line-height: 1.6;
+}
+
+@media (max-width: 1100px) {
+    .eb-ind-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .eb-industries-widget {
+        padding: 64px 20px;
+    }
+    .eb-ind-grid {
+        grid-template-columns: 1fr;
+    }
+    .eb-ind-card {
+        padding: 20px;
+    }
+}

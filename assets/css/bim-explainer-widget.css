@@ -1,0 +1,122 @@
+.eb-bim-explainer-widget {
+    background: var(--eb-white);
+    padding: 96px 52px;
+    /* font-family: 'DM Sans', sans-serif; */
+}
+
+.eb-bim-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.eb-section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--eb-gold-dk);
+    margin-bottom: 14px;
+}
+
+.eb-section-tag::before {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--eb-gold);
+    border-radius: 2px;
+}
+
+.eb-bim-title {
+    /* font-family: 'Playfair Display', serif; */
+    font-size: clamp(24px, 2.4vw, 38px);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -.01em;
+    margin-bottom: 14px;
+    color: var(--eb-txt);
+}
+
+.eb-bim-title em {
+    font-style: normal;
+    color: var(--eb-blue);
+}
+
+.eb-bim-prose {
+    margin-top: 24px;
+}
+
+.eb-bim-prose p {
+    font-size: 16px;
+    color: var(--eb-txt-mid);
+    line-height: 1.85;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.eb-bim-prose p:last-child {
+    margin-bottom: 0;
+}
+
+.eb-bim-prose strong {
+    color: var(--eb-txt);
+    font-weight: 600;
+}
+
+.eb-bim-visual-box {
+    background: var(--eb-blue-xpale);
+    border: 1px solid var(--eb-bdr);
+    border-radius: 6px;
+    padding: 40px 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.eb-bim-point {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.eb-bim-dot {
+    width: 8px;
+    height: 8px;
+    min-width: 8px;
+    background: var(--eb-gold);
+    border-radius: 50%;
+    margin-top: 7px;
+}
+
+.eb-bim-pt-title {
+    /* font-family: 'Playfair Display', serif; */
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--eb-txt);
+    margin-bottom: 4px;
+}
+
+.eb-bim-pt-text {
+    font-size: 14px;
+    color: var(--eb-txt-muted);
+    line-height: 1.65;
+    font-weight: 400;
+}
+
+@media (max-width: 1100px) {
+    .eb-bim-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .eb-bim-explainer-widget {
+        padding: 64px 20px;
+    }
+}
