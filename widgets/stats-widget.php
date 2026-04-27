@@ -58,10 +58,26 @@ class Eagle_BIM_Stats_Widget extends \Elementor\Widget_Base {
 					],
 				],
 				'default' => [
-					[ 'stat_num' => '450', 'stat_sfx' => '+', 'stat_lbl' => 'Projects Coordinated' ],
-					[ 'stat_num' => '80', 'stat_sfx' => '%', 'stat_lbl' => 'Reduction in Site RFIs' ],
-					[ 'stat_num' => '11', 'stat_sfx' => '+', 'stat_lbl' => 'Service Lines' ],
-					[ 'stat_num' => '100', 'stat_sfx' => '%', 'stat_lbl' => 'Files in Client Formats' ],
+					[
+						'stat_num' => '450',
+						'stat_sfx' => '+',
+						'stat_lbl' => 'Projects Coordinated',
+					],
+					[
+						'stat_num' => '80',
+						'stat_sfx' => '%',
+						'stat_lbl' => 'Reduction in Site RFIs',
+					],
+					[
+						'stat_num' => '11',
+						'stat_sfx' => '+',
+						'stat_lbl' => 'Service Lines',
+					],
+					[
+						'stat_num' => '100',
+						'stat_sfx' => '%',
+						'stat_lbl' => 'Files in Client Formats',
+					],
 				],
 			]
 		);
@@ -92,7 +108,7 @@ class Eagle_BIM_Stats_Widget extends \Elementor\Widget_Base {
 				'label'       => __( 'Link URL', 'eagle-bim-widgets' ),
 				'type'        => \Elementor\Controls_Manager::URL,
 				'placeholder' => __( '#process', 'eagle-bim-widgets' ),
-				'default' => [
+				'default'     => [
 					'url' => '#process',
 				],
 			]
@@ -117,11 +133,13 @@ class Eagle_BIM_Stats_Widget extends \Elementor\Widget_Base {
 				<?php endforeach; ?>
 			<?php endif; ?>
 		</div>
-		<div class="eb-stats-anchor">
-			<a href="<?php echo esc_url( $settings['anchor_link']['url'] ); ?>">
-				<?php echo esc_html( $settings['anchor_text'] ); ?>
-			</a>
-		</div>
+		<?php if ( ! empty( $settings['anchor_link']['url'] ) ) : ?>
+			<div class="eb-stats-anchor">
+				<a href="<?php echo esc_url( $settings['anchor_link']['url'] ); ?>">
+					<?php echo esc_html( $settings['anchor_text'] ); ?>
+				</a>
+			</div>
+		<?php endif; ?>
 		<?php
 	}
 }

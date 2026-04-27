@@ -172,6 +172,8 @@ class Eagle_BIM_Hero_Widget extends \Elementor\Widget_Base {
 		?>
 		<div class="eb-hero-widget">
 			<div class="eb-hero-content">
+				<?php echo do_shortcode('[eb_breadcrumb]'); ?>
+
 				<?php if ( ! empty( $settings['hero_tag'] ) ) : ?>
 					<div class="eb-hero-tag"><?php echo esc_html( $settings['hero_tag'] ); ?></div>
 				<?php endif; ?>

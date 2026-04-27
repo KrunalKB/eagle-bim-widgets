@@ -1,0 +1,31 @@
+:root {
+    --eb-blue: #687d9c;
+    --eb-blue-dk: #4a6080;
+    --eb-blue-lt: #8a9db8;
+    --eb-blue-pale: #e8edf4;
+    --eb-blue-xpale: #f3f6fa;
+    --eb-gold: #deaa57;
+    --eb-gold-dk: #c8943d;
+    --eb-gold-lt: #ecc278;
+    --eb-gold-pale: #fdf6e8;
+    --eb-white: #ffffff;
+    --eb-off: #f8f7f5;
+    --eb-cream: #f3f1ec;
+    --eb-txt: #1a2233;
+    --eb-txt-mid: #4a5568;
+    --eb-txt-muted: #8a94a6;
+    --eb-bdr: #e2e6ed;
+    --eb-bdr-gold: rgba(222, 170, 87, .28);
+    --eb-sh: 0 2px 20px rgba(104, 125, 156, .09);
+    --eb-sh-md: 0 8px 40px rgba(104, 125, 156, .14);
+}
+
+.bim-container {
+    padding-left: clamp(20px, 5vw, 80px) !important;
+    padding-right: clamp(20px, 5vw, 80px) !important;
+}
+
+h1 em, h2 em {
+    font-style: normal;
+    color: var(--eb-blue);
+}
