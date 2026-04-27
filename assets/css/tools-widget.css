@@ -1,6 +1,6 @@
 .eb-tools-widget {
     background: var(--eb-white);
-    padding: 80px 52px 96px;
+    /* padding: 96px 52px; */
     /* font-family: 'DM Sans', sans-serif; */
 }
 
@@ -65,7 +65,7 @@
     gap: 8px;
     flex-wrap: wrap;
     justify-content: flex-end;
-    max-width: 460px;
+    max-width: 600px;
 }
 
 .eb-cert-badge {
@@ -78,6 +78,7 @@
     background: var(--eb-gold-pale);
     border-radius: 3px;
     font-weight: 700;
+    white-space: nowrap;
 }
 
 .eb-tools-grid {
@@ -141,7 +142,7 @@
 
 @media (max-width: 768px) {
     .eb-tools-widget {
-        padding: 64px 20px;
+        /* padding: 64px 20px; */
     }
     .eb-tools-grid {
         grid-template-columns: repeat(2, 1fr);

@@ -2,11 +2,11 @@
     background: var(--eb-blue);
     position: relative;
     overflow: hidden;
-    padding: 96px 52px;
+    /* padding: 96px 52px; */
     /* font-family: 'DM Sans', sans-serif; */
 }
 
-.eb-why-us-widget::before {
+/* .eb-why-us-widget::before {
     content: '';
     position: absolute;
     top: -150px;
@@ -15,7 +15,7 @@
     height: 500px;
     background: radial-gradient(circle, rgba(222, 170, 87, 0.15) 0%, transparent 70%);
     pointer-events: none;
-}
+} */
 
 .eb-why-header {
     position: relative;
@@ -125,6 +125,6 @@
 
 @media (max-width: 768px) {
     .eb-why-us-widget {
-        padding: 64px 20px;
+        /* padding: 64px 20px; */
     }
 }

@@ -1,6 +1,6 @@
 .eb-deliverables-widget {
     background: var(--eb-cream);
-    padding: 96px 52px 60px;
+    /* padding: 96px 52px; */
     /* font-family: 'DM Sans', sans-serif; */
 }
 
@@ -70,10 +70,6 @@
     transition: border-color .25s;
 }
 
-.eb-del-highlight {
-    border-left: 3px solid var(--eb-gold);
-}
-
 .eb-del-title {
     /* font-family: 'Playfair Display', serif; */
     font-size: 17px;
@@ -138,7 +134,7 @@
 
 @media (max-width: 768px) {
     .eb-deliverables-widget {
-        padding: 64px 20px;
+        /* padding: 64px 20px; */
     }
     .eb-del-grid {
         grid-template-columns: 1fr;

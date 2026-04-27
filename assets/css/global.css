@@ -23,9 +23,16 @@
 .bim-container {
     padding-left: clamp(20px, 5vw, 80px) !important;
     padding-right: clamp(20px, 5vw, 80px) !important;
+    padding-top: clamp(60px, 8vw, 100px) !important;
+    padding-bottom: clamp(60px, 8vw, 100px) !important;
 }
 
-h1 em, h2 em {
+.bim-container-full{
+    padding: 0 !important;
+}
+
+h1 em,
+h2 em {
     font-style: normal;
     color: var(--eb-blue);
 }

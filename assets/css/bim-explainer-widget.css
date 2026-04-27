@@ -1,6 +1,6 @@
 .eb-bim-explainer-widget {
     background: var(--eb-white);
-    padding: 96px 52px;
+    /* padding: 96px 52px; */
     /* font-family: 'DM Sans', sans-serif; */
 }
 
@@ -117,6 +117,6 @@
 
 @media (max-width: 768px) {
     .eb-bim-explainer-widget {
-        padding: 64px 20px;
+        /* padding: 64px 20px; */
     }
 }

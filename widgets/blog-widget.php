@@ -143,7 +143,7 @@ class Eagle_BIM_Blog_Widget extends \Elementor\Widget_Base {
 						<a href="<?php echo esc_url( $permalink ); ?>" class="blog-card">
 							<div class="blog-img">
 								<?php if ( $image_url ) : ?>
-									<img src="<?php echo esc_url( $image_url ); ?>" alt="<?php echo esc_attr( get_the_title( $post_id ) ); ?>" style="width:100%; height:140px; object-fit:cover;">
+									<img src="<?php echo esc_url( $image_url ); ?>" alt="<?php echo esc_attr( get_the_title( $post_id ) ); ?>">
 								<?php else : ?>
 									<div class="blog-img-placeholder">
 										<div class="blog-img-inner">

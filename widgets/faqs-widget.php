@@ -54,7 +54,7 @@ class Eagle_BIM_FAQs_Widget extends \Elementor\Widget_Base {
 			'section_desc',
 			[
 				'label'   => __( 'Section Description', 'eagle-bim-widgets' ),
-				'type'    => \Elementor\Controls_Manager::TEXTAREA,
+											'type'    => \Elementor\Controls_Manager::WYSIWYG,
 				'default' => __( 'Everything you need to know before getting started with Eagle BIM.', 'eagle-bim-widgets' ),
 			]
 		);
@@ -105,7 +105,7 @@ class Eagle_BIM_FAQs_Widget extends \Elementor\Widget_Base {
 					[
 						'name'    => 'faq_answer',
 						'label'   => __( 'Answer', 'eagle-bim-widgets' ),
-						'type'    => \Elementor\Controls_Manager::TEXTAREA,
+													'type'    => \Elementor\Controls_Manager::WYSIWYG,
 						'default' => __( 'BIM services refer to the full range of Building Information Modeling support provided to AEC firms — including 3D Revit modeling, MEP coordination, clash detection, construction documentation, BIM consulting, and Scan to BIM.', 'eagle-bim-widgets' ),
 					],
 				],
@@ -150,7 +150,7 @@ class Eagle_BIM_FAQs_Widget extends \Elementor\Widget_Base {
 				<div class="eb-faq-intro">
 					<div class="eb-section-tag"><?php echo esc_html( $settings['section_tag'] ); ?></div>
 					<h2 class="eb-faq-title"><?php echo $section_title; ?></h2>
-					<p class="eb-sec-desc"><?php echo esc_html( $settings['section_desc'] ); ?></p>
+					<p class="eb-sec-desc"><?php echo wp_kses_post( $settings['section_desc'] ); ?></p>
 					<div class="eb-faq-cta">
 						<a href="<?php echo esc_url( $settings['cta_link']['url'] ); ?>" class="eb-btn-gold">
 							<?php echo esc_html( $settings['cta_text'] ); ?>
@@ -162,12 +162,12 @@ class Eagle_BIM_FAQs_Widget extends \Elementor\Widget_Base {
 					<?php if ( ! empty( $settings['faqs'] ) ) : ?>
 						<?php foreach ( $settings['faqs'] as $index => $faq ) : ?>
 							<div class="eb-faq-item <?php echo $index === 0 ? 'open' : ''; ?>">
-								<div class="eb-faq-q" onclick="this.parentElement.classList.toggle('open')">
+								<div class="eb-faq-q">
 									<?php echo esc_html( $faq['faq_question'] ); ?>
 									<div class="eb-faq-icon">+</div>
 								</div>
 								<div class="eb-faq-a">
-									<?php echo esc_html( $faq['faq_answer'] ); ?>
+									<?php echo wp_kses_post( $faq['faq_answer'] ); ?>
 								</div>
 							</div>
 						<?php endforeach; ?>

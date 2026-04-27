@@ -88,36 +88,23 @@ class Eagle_BIM_Deliverables_Widget extends \Elementor\Widget_Base {
 						'type'    => \Elementor\Controls_Manager::TEXTAREA,
 						'default' => __( 'Revit models, federated NWC/NWD, IFC files for interoperability and consultant exchange', 'eagle-bim-widgets' ),
 					],
-					[
-						'name'         => 'is_highlighted',
-						'label'        => __( 'Highlight Item', 'eagle-bim-widgets' ),
-						'type'         => \Elementor\Controls_Manager::SWITCHER,
-						'label_on'     => __( 'Yes', 'eagle-bim-widgets' ),
-						'label_off'    => __( 'No', 'eagle-bim-widgets' ),
-						'return_value' => 'yes',
-						'default'      => 'no',
-					],
 				],
 				'default' => [
 					[
-						'del_title'      => 'Models',
-						'del_desc'       => 'Revit models, federated NWC/NWD, IFC files for interoperability and consultant exchange',
-						'is_highlighted' => 'no',
+						'del_title' => 'Models',
+						'del_desc'  => 'Revit models, federated NWC/NWD, IFC files for interoperability and consultant exchange',
 					],
 					[
-						'del_title'      => 'Drawings',
-						'del_desc'       => 'Plans, elevations, sections, wall sections, details, schedules, and room finish sheets',
-						'is_highlighted' => 'yes',
+						'del_title' => 'Drawings',
+						'del_desc'  => 'Plans, elevations, sections, wall sections, details, schedules, and room finish sheets',
 					],
 					[
-						'del_title'      => 'Reports',
-						'del_desc'       => 'Clash logs, issue trackers, coordination transmittals, and full revision histories',
-						'is_highlighted' => 'no',
+						'del_title' => 'Reports',
+						'del_desc'  => 'Clash logs, issue trackers, coordination transmittals, and full revision histories',
 					],
 					[
-						'del_title'      => 'Extras',
-						'del_desc'       => 'Type catalogs, custom Revit families, Excel summaries, and BEP documentation',
-						'is_highlighted' => 'no',
+						'del_title' => 'Extras',
+						'del_desc'  => 'Type catalogs, custom Revit families, Excel summaries, and BEP documentation',
 					],
 				],
 			],
@@ -193,7 +180,7 @@ class Eagle_BIM_Deliverables_Widget extends \Elementor\Widget_Base {
 			<div class="eb-del-grid">
 				<?php if ( ! empty( $settings['deliverables'] ) ) : ?>
 					<?php foreach ( $settings['deliverables'] as $del ) : ?>
-						<div class="eb-del-item <?php echo $del['is_highlighted'] === 'yes' ? 'eb-del-highlight' : ''; ?>">
+						<div class="eb-del-item">
 							<div class="eb-del-title"><?php echo esc_html( $del['del_title'] ); ?></div>
 							<div class="eb-del-desc"><?php echo esc_html( $del['del_desc'] ); ?></div>
 						</div>

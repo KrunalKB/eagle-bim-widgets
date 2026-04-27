@@ -1,6 +1,6 @@
 .eb-faq-widget {
     background: var(--eb-cream);
-    padding: 96px 52px;
+    /* padding: 96px 52px; */
     /* font-family: 'DM Sans', sans-serif; */
 }
 
@@ -141,6 +141,12 @@
     font-weight: 300;
 }
 
+.eb-faq-a a {
+    color: var(--eb-blue-dk);
+    font-weight: 400;
+    text-decoration: underline !important;
+}
+
 .eb-faq-item.open .eb-faq-a {
     max-height: 400px;
     padding-bottom: 20px;
@@ -155,6 +161,6 @@
 
 @media (max-width: 768px) {
     .eb-faq-widget {
-        padding: 64px 20px;
+        /* padding: 64px 20px; */
     }
 }

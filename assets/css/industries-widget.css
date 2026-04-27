@@ -1,8 +1,8 @@
 .eb-industries-widget {
     background: var(--eb-cream);
-    border-top: 1px solid var(--eb-bdr);
-    border-bottom: 1px solid var(--eb-bdr);
-    padding: 80px 52px;
+    /* border-top: 1px solid var(--eb-bdr);
+    border-bottom: 1px solid var(--eb-bdr); */
+    /* padding: 96px 52px; */
     /* font-family: 'DM Sans', sans-serif; */
 }
 
@@ -116,7 +116,7 @@
 
 @media (max-width: 768px) {
     .eb-industries-widget {
-        padding: 64px 20px;
+        /* padding: 64px 20px; */
     }
     .eb-ind-grid {
         grid-template-columns: 1fr;

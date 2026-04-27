@@ -1,6 +1,6 @@
 .eb-services-widget {
     background: var(--eb-off);
-    padding: 96px 52px;
+    /* padding: 96px 52px; */
     /* font-family: 'DM Sans', sans-serif; */
 }
 
@@ -164,7 +164,7 @@
 
 @media (max-width: 768px) {
     .eb-services-widget {
-        padding: 64px 20px;
+        /* padding: 64px 20px; */
     }
     .eb-svc-header {
         flex-direction: column;
