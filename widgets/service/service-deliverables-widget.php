@@ -249,16 +249,20 @@ class Service_Deliverables_Widget extends \Elementor\Widget_Base {
 						<a href="<?php echo esc_url( $settings['cta_ghost_url']['url'] ); ?>" class="eb-del-cta-ghost" target="<?php echo esc_attr( $settings['cta_ghost_url']['is_external'] ? '_blank' : '_self' ); ?>">
 							<?php echo esc_html( $settings['cta_ghost_text'] ); ?>
 						</a>
-						<div class="eb-del-trust">
-							<?php foreach ( $settings['trust_items'] as $item ) : ?>
-								<div class="eb-del-trust-item">
-									<div class="eb-del-trust-check">
-										<svg viewBox="0 0 9 9"><polyline points="1.5,4.5 3.5,7 7.5,2"/></svg>
-									</div>
-									<div><?php echo esc_html( $item['item_text'] ); ?></div>
-								</div>
-							<?php endforeach; ?>
-						</div>
+						<?php if ( count( $settings['trust_items'] ) > 2 ) : ?>
+							<div class="eb-del-trust">
+								<?php foreach ( $settings['trust_items'] as $item ) : ?>
+									<?php if ( ! empty( $item['item_text'] ) ) : ?>
+										<div class="eb-del-trust-item">
+											<div class="eb-del-trust-check">
+												<svg viewBox="0 0 9 9"><polyline points="1.5,4.5 3.5,7 7.5,2"/></svg>
+											</div>
+											<div><?php echo esc_html( $item['item_text'] ); ?></div>
+										</div>
+									<?php endif; ?>
+								<?php endforeach; ?>
+							</div>
+						<?php endif; ?>
 					</div>
 				</div>
 			</div>

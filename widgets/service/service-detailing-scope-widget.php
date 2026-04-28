@@ -94,7 +94,7 @@ class Service_Detailing_Scope_Widget extends \Elementor\Widget_Base {
 		<section class="eb-detail-section">
 			<div class="eb-detail-layout">
 				<div class="eb-detail-left reveal">
-					<div class="section-tag"><?php echo esc_html( $settings['section_tag'] ); ?></div>
+					<div class="service-section-tag"><?php echo esc_html( $settings['section_tag'] ); ?></div>
 					<h2 class="eb-detail-heading"><?php echo wp_kses_post( $settings['heading'] ); ?></h2>
 					<div class="eb-detail-sec-desc"><?php echo wp_kses_post( $settings['description'] ); ?></div>
 				</div>
