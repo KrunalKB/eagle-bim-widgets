@@ -1,0 +1,166 @@
+/*
+ * Service Design Phases Widget Styles
+ * Prefix: .service-design-phases
+ */
+
+.service-design-phases {
+    /* padding: 88px 52px; */
+    background: var(--eb-white);
+}
+
+.service-design-phases .service-phases-header {
+    margin-bottom: 52px;
+}
+
+.service-design-phases .service-section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--eb-gold-dk);
+    margin-bottom: 14px;
+}
+
+.service-design-phases .service-section-tag::before {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--eb-gold);
+    border-radius: 2px;
+}
+
+.service-design-phases .service-phases-title {
+    /* font-family: 'Playfair Display', serif; */
+    font-size: clamp(24px, 2.4vw, 38px);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -.01em;
+    margin-bottom: 14px;
+    color: var(--eb-txt);
+}
+
+.service-design-phases .service-phases-desc {
+    color: var(--eb-txt-mid);
+    font-size: 16px;
+    line-height: 1.78;
+    max-width: 580px;
+    font-weight: 300;
+}
+
+.service-design-phases .service-phases-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 52px;
+}
+
+.service-design-phases .service-ph-card {
+    border: 1px solid var(--eb-bdr);
+    border-radius: 6px;
+    padding: 32px 28px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color .25s, box-shadow .25s;
+}
+
+.service-design-phases .service-ph-card:hover {
+    border-color: var(--eb-blue-lt);
+    box-shadow: var(--eb-sh-md);
+}
+
+.service-design-phases .service-ph-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--eb-gold);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .3s;
+}
+
+.service-design-phases .service-ph-card:hover::before {
+    transform: scaleX(1);
+}
+
+.service-design-phases .service-ph-num {
+    /* font-family: 'Playfair Display', serif; */
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--eb-blue-pale);
+    line-height: 1;
+    margin-bottom: 12px;
+}
+
+.service-design-phases .service-ph-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--eb-gold-dk);
+    margin-bottom: 8px;
+}
+
+.service-design-phases .service-ph-title {
+    /* font-family: 'Playfair Display', serif; */
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--eb-txt);
+    margin-bottom: 12px;
+}
+
+.service-design-phases .service-ph-text {
+    font-size: 16px;
+    color: var(--eb-txt-mid);
+    line-height: 1.75;
+    font-weight: 300;
+}
+
+.service-design-phases .service-ph-items {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 14px;
+}
+
+.service-design-phases .service-ph-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 16px;
+    color: var(--eb-txt-mid);
+}
+
+.service-design-phases .service-ph-dot {
+    width: 5px;
+    height: 5px;
+    min-width: 5px;
+    background: var(--eb-gold);
+    border-radius: 50%;
+    margin-top: 7px;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+    .service-design-phases {
+        /* padding: 88px 32px; */
+    }
+    .service-design-phases .service-phases-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-design-phases {
+        /* padding: 64px 20px; */
+    }
+    .service-design-phases .service-phases-grid {
+        grid-template-columns: 1fr;
+    }
+}
