@@ -1,0 +1,126 @@
+.eb-consult-process-section {
+    background-color: var(--eb-blue);
+    position: relative;
+    overflow: hidden;
+    /* padding: 88px 52px; */
+}
+
+.eb-consult-process-header {
+    text-align: left;
+    max-width: 580px;
+    /* margin: 0 auto 56px; */
+}
+
+.eb-consult-process-section .section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--eb-gold-lt);
+    margin-bottom: 14px;
+}
+
+.eb-consult-process-section .section-tag::before {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--eb-gold);
+    border-radius: 2px;
+}
+
+.eb-consult-process-section h2 {
+    color: var(--eb-white);
+}
+
+.eb-consult-process-heading em {
+    color: var(--eb-gold-lt);
+    font-style: normal;
+}
+
+.eb-consult-process-desc {
+    color: rgba(255, 255, 255, .62);
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 300;
+    margin-top: 8px
+}
+
+.eb-consult-process-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1px;
+    background: rgba(255, 255, 255, .1);
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 44px;
+}
+
+.eb-consult-process-step {
+    background: rgba(255, 255, 255, .05);
+    padding: 30px 22px;
+    text-align: center;
+    transition: background .25s;
+}
+
+.eb-consult-process-step:hover {
+    background: rgba(255, 255, 255, .1);
+}
+
+.eb-consult-process-step.highlight {
+    background: rgba(255, 255, 255, .08);
+    border-top: 2px solid var(--eb-gold);
+}
+
+.eb-consult-process-step.highlight:hover {
+    background: rgba(255, 255, 255, .13);
+}
+
+.eb-consult-process-num {
+    /* font-family: 'Playfair Display', serif; */
+    font-size: 34px;
+    font-weight: 800;
+    color: var(--eb-gold);
+    line-height: 1;
+    margin-bottom: 14px;
+    display: block;
+}
+
+.eb-consult-process-title {
+    /* font-family: 'Playfair Display', serif; */
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--eb-white);
+    margin-bottom: 10px;
+}
+
+.eb-consult-process-text {
+    font-size: 16px;
+    color: rgba(255, 255, 255, .52);
+    line-height: 1.65;
+}
+
+.eb-consult-process-cta-wrapper {
+    text-align: center;
+    margin-top: 44px;
+}
+
+@media (max-width: 1100px) {
+    .eb-consult-process-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .eb-consult-process-section {
+        /* padding: 64px 20px; */
+    }
+
+    .eb-consult-process-grid {
+        grid-template-columns: 1fr;
+    }
+}
