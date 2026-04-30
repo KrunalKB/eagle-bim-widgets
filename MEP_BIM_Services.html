@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MEP BIM Services USA | MEP BIM Modeling & Revit MEP | Eagle BIM</title>
+<meta name="description" content="Eagle BIM delivers expert MEP BIM services across the USA. MEP BIM modeling, Revit MEP modeling, mechanical, electrical, and plumbing BIM for AEC firms. Coordination-ready output, fast turnaround.">
+<meta name="keywords" content="MEP BIM Services, MEP BIM Modeling, MEP Modeling Services, Revit MEP Modeling, MEP BIM Outsourcing, Mechanical Electrical Plumbing BIM, MEP Coordination BIM">
+<link rel="canonical" href="https://www.eaglebim.com/mep-bim-services/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blue:#687d9c;--blue-dk:#4a6080;--blue-lt:#8a9db8;
+    --blue-pale:#e8edf4;--blue-xpale:#f3f6fa;
+    --gold:#deaa57;--gold-dk:#c8943d;--gold-lt:#ecc278;--gold-pale:#fdf6e8;
+    --white:#ffffff;--off:#f8f7f5;--cream:#f3f1ec;
+    --txt:#1a2233;--txt-mid:#4a5568;--txt-muted:#8a94a6;
+    --bdr:#e2e6ed;--bdr-gold:rgba(222,170,87,.28);
+    --sh:0 2px 20px rgba(104,125,156,.09);
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--white);color:var(--txt);font-family:'DM Sans',sans-serif;font-size:16px;line-height:1.6;overflow-x:hidden}
+  nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 52px;height:72px;background:rgba(255,255,255,.97);backdrop-filter:blur(14px);border-bottom:1px solid var(--bdr);transition:box-shadow .3s}
+  .nav-logo svg{height:44px;width:auto;display:block}
+  .nav-links{display:flex;align-items:center;gap:2px;list-style:none;position:absolute;left:50%;transform:translateX(-50%)}
+  .nav-links a{text-decoration:none;color:var(--txt-mid);font-size:13px;font-weight:500;letter-spacing:.03em;padding:6px 13px;border-radius:4px;transition:color .2s,background .2s;white-space:nowrap}
+  .nav-links a:hover{color:var(--blue);background:var(--blue-pale)}
+  .nav-links a.active{color:var(--gold-dk);font-weight:600}
+  .nav-links .drop>a::after{content:' ↓';font-size:9px;opacity:.55}
+  .nav-cta{display:inline-flex;align-items:center;padding:11px 22px;background:var(--gold);color:#fff!important;font-weight:700!important;font-size:12px!important;letter-spacing:.1em!important;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:background .2s,transform .15s;flex-shrink:0}
+  .nav-cta:hover{background:var(--gold-dk)!important;transform:translateY(-1px)}
+  .hero{min-height:100vh;display:grid;grid-template-columns:55fr 45fr;align-items:center;padding:120px 52px 80px;position:relative;overflow:hidden;gap:40px;background:var(--white)}
+  .hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(104,125,156,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(104,125,156,.05) 1px,transparent 1px);background-size:52px 52px;pointer-events:none}
+  .hero-content{position:relative;z-index:2}
+  .breadcrumb{display:flex;align-items:center;gap:8px;margin-bottom:20px;font-size:12px;color:var(--txt-muted)}
+  .breadcrumb a{color:var(--blue);text-decoration:none;font-weight:500}
+  .breadcrumb span{opacity:.5}
+  .hero-tag{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border:1px solid var(--bdr-gold);border-radius:100px;font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-dk);margin-bottom:22px;background:var(--gold-pale);animation:fadeUp .7s ease both}
+  .hero-tag::before{content:'';width:6px;height:6px;background:var(--gold);border-radius:50%;animation:pulse 2s ease infinite}
+  @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
+  h1{font-family:'Playfair Display',serif;font-size:clamp(30px,3.2vw,50px);font-weight:800;line-height:1.1;letter-spacing:-.01em;margin-bottom:22px;color:var(--txt);animation:fadeUp .7s .1s ease both}
+  h1 em{font-style:normal;color:var(--blue)}
+  .hero-sub{font-size:17px;color:var(--txt-mid);line-height:1.78;max-width:490px;margin-bottom:36px;font-weight:300;animation:fadeUp .7s .2s ease both}
+  .hero-actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap;animation:fadeUp .7s .3s ease both}
+  .hero-badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:36px;animation:fadeUp .7s .4s ease both}
+  .badge{padding:5px 12px;border:1px solid var(--bdr);border-radius:100px;font-size:11px;font-weight:500;letter-spacing:.05em;color:var(--blue);background:var(--blue-pale)}
+  .hero-visual{position:relative;z-index:2;display:flex;align-items:center;justify-content:center;animation:fadeUp .7s .2s ease both}
+  .btn-gold{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;background:var(--gold);color:#fff;font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:background .2s,transform .15s,box-shadow .2s}
+  .btn-gold:hover{background:var(--gold-dk);transform:translateY(-2px);box-shadow:0 8px 26px rgba(222,170,87,.35)}
+  .btn-blue{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border:1.5px solid var(--blue);color:var(--blue);font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:background .2s,color .2s,transform .15s}
+  .btn-blue:hover{background:var(--blue);color:#fff;transform:translateY(-2px)}
+  .btn-arrow{transition:transform .2s}
+  .btn-gold:hover .btn-arrow,.btn-blue:hover .btn-arrow{transform:translateX(4px)}
+  .stats-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--bdr);border-top:1px solid var(--bdr);border-bottom:1px solid var(--bdr)}
+  .stat-item{background:var(--white);padding:32px 36px;text-align:center;transition:background .3s}
+  .stat-item:hover{background:var(--blue-pale)}
+  .stat-num{font-family:'Playfair Display',serif;font-size:42px;font-weight:800;color:var(--blue);line-height:1;display:block}
+  .stat-sfx{font-size:22px;font-weight:400;color:var(--gold)}
+  .stat-lbl{font-size:11px;color:var(--txt-muted);letter-spacing:.1em;text-transform:uppercase;margin-top:8px;font-weight:600}
+  section{padding:88px 52px}
+  .section-tag{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-dk);margin-bottom:14px}
+  .section-tag::before{content:'';display:block;width:22px;height:2px;background:var(--gold);border-radius:2px}
+  h2{font-family:'Playfair Display',serif;font-size:clamp(24px,2.4vw,38px);font-weight:800;line-height:1.12;letter-spacing:-.01em;margin-bottom:14px;color:var(--txt)}
+  h2 em{font-style:normal;color:var(--blue)}
+  .sec-desc{color:var(--txt-mid);font-size:16px;line-height:1.78;max-width:580px;font-weight:300}
+  .body-text{font-size:15.5px;color:var(--txt-mid);line-height:1.85;font-weight:300;margin-bottom:18px}
+  .body-text:last-child{margin-bottom:0}
+  .body-text strong{color:var(--txt);font-weight:600}
+
+  /* INTRO */
+  .intro-layout{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+  .disc-stack{display:flex;flex-direction:column;gap:10px}
+  .disc-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  /* MEP intro redesign */
+  .mep-intro-layout{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+  .mep-disc-label{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-dk);margin-bottom:14px;display:flex;align-items:center;gap:8px}
+  .mep-disc-label::before{content:'';display:block;width:20px;height:2px;background:var(--gold);border-radius:2px}
+  .mep-disc-stack{display:flex;flex-direction:column;gap:0;border:1px solid var(--bdr);border-radius:8px;overflow:hidden}
+  .mep-disc-card{padding:18px 20px;border-bottom:1px solid var(--bdr);transition:background .2s}
+  .mep-disc-card:last-child{border-bottom:none}
+  .mep-disc-card:hover{background:var(--off)}
+  .mep-disc-head{display:flex;align-items:center;gap:10px;margin-bottom:7px}
+  .mep-disc-dot{width:8px;height:8px;min-width:8px;border-radius:50%}
+  .mep-disc-name{font-size:13.5px;font-weight:700;color:var(--txt);flex:1;line-height:1.2}
+  .mep-disc-tag{font-size:10px;font-weight:700;letter-spacing:.1em;padding:2px 8px;border-radius:100px;border:1.5px solid var(--bdr-gold);color:var(--gold-dk);background:var(--gold-pale)}
+  .mep-tag-gold{color:var(--gold-dk);border-color:rgba(222,170,87,.35);background:rgba(222,170,87,.1)}
+  .mep-tag-blue{color:var(--blue);border-color:rgba(104,125,156,.3);background:rgba(104,125,156,.08)}
+  .mep-tag-teal{color:rgba(40,140,120,1);border-color:rgba(60,160,140,.3);background:rgba(60,160,140,.08)}
+  .mep-tag-red{color:rgba(190,50,50,1);border-color:rgba(210,70,70,.3);background:rgba(210,70,70,.07)}
+  .mep-disc-text{font-size:12.5px;color:var(--txt-muted);line-height:1.65;padding-left:18px}
+  .disc-card{background:var(--off);border:1px solid var(--bdr);border-left:4px solid var(--blue-lt);border-radius:6px;padding:16px 18px;transition:border-left-color .2s,background .2s}
+  .disc-card:hover{border-left-color:var(--gold);background:var(--gold-pale)}
+  .disc-card-inner{display:grid;grid-template-columns:32px 1fr;gap:10px;align-items:start}
+  .disc-icon{width:32px;height:32px;min-width:32px;border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+  .disc-icon svg{width:15px;height:15px;fill:none;stroke-width:1.5}
+  .disc-title{font-size:13.5px;font-weight:700;color:var(--txt);line-height:1.2;margin-bottom:5px}
+  .disc-text{font-size:12px;color:var(--txt-muted);line-height:1.65}
+
+  /* SERVICES */
+  .svc-bg{background:var(--off)}
+  .svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--bdr);border:1px solid var(--bdr);border-radius:6px;overflow:hidden;margin-top:52px}
+  .svc-card{background:var(--white);padding:36px 32px;transition:background .25s}
+  .svc-card:hover{background:var(--blue-xpale)}
+  .svc-icon{width:48px;height:48px;background:var(--gold-pale);border:1.5px solid var(--bdr-gold);border-radius:4px;display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+  .svc-icon svg{width:22px;height:22px;stroke:var(--gold-dk);fill:none;stroke-width:1.5}
+  .svc-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--txt);margin-bottom:12px}
+  .svc-text{font-size:14px;color:var(--txt-mid);line-height:1.78;font-weight:300}
+
+  /* DISCIPLINE DETAIL — BLUE */
+  .disc-bg{background:var(--blue);padding:88px 52px;position:relative;overflow:hidden}
+  .disc-bg::before{content:'';position:absolute;top:-200px;right:-200px;width:600px;height:600px;background:radial-gradient(circle,rgba(222,170,87,.1) 0%,transparent 65%);pointer-events:none}
+  .disc-cols{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.1);border-radius:6px;overflow:hidden;margin-top:44px}
+  .disc-col{background:rgba(255,255,255,.05);padding:32px 26px;transition:background .25s}
+  .disc-col:hover{background:rgba(255,255,255,.1)}
+  .disc-col-label{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+  .disc-col-title{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:white;margin-bottom:14px}
+  .disc-col-list{list-style:none;display:flex;flex-direction:column;gap:7px}
+  .disc-col-list li{font-size:12.5px;color:rgba(255,255,255,.58);line-height:1.5;padding-left:14px;position:relative}
+  .disc-col-list li::before{content:'→';position:absolute;left:0;color:var(--gold);font-size:10px}
+
+  /* WHAT WE MODEL */
+  .model-bg{background:var(--white)}
+  .model-layout{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+  .model-list{display:flex;flex-direction:column;gap:10px}
+  .model-row{display:flex;align-items:flex-start;gap:14px;padding:16px 18px;border:1px solid var(--bdr);border-radius:5px;background:var(--off);transition:border-color .2s,background .2s}
+  .model-row:hover{border-color:var(--blue-lt);background:var(--blue-pale)}
+  .model-num{font-family:'Playfair Display',serif;font-size:20px;font-weight:800;color:var(--blue);min-width:36px;line-height:1;padding-top:2px}
+  .model-title{font-size:13.5px;font-weight:600;color:var(--txt);margin-bottom:3px}
+  .model-text{font-size:12.5px;color:var(--txt-muted);line-height:1.6}
+
+  /* DELIVERABLES */
+  .del-bg{background:var(--cream)}
+  .del-layout{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:stretch;margin-top:52px}
+  .del-list{display:flex;flex-direction:column;gap:10px}
+  .del-row{display:flex;align-items:flex-start;gap:14px;padding:16px 18px;border:1px solid var(--bdr);border-radius:4px;background:var(--white);transition:border-color .2s}
+  .del-row:hover{border-color:var(--gold)}
+  .del-icon{width:36px;height:36px;min-width:36px;background:var(--blue-pale);border-radius:4px;display:flex;align-items:center;justify-content:center}
+  .del-icon svg{width:16px;height:16px;stroke:var(--blue);fill:none;stroke-width:1.5}
+  .del-title{font-size:14px;font-weight:600;color:var(--txt);margin-bottom:3px}
+  .del-text{font-size:12.5px;color:var(--txt-muted);line-height:1.6}
+  .fmt-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+  .fmt-chip{padding:7px 14px;border:1.5px solid var(--bdr-gold);font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--gold-dk);background:var(--gold-pale);border-radius:3px}
+  .del-cta-box{background:var(--blue);border-radius:8px;padding:36px 32px;display:flex;flex-direction:column}
+  .del-cta-box h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:white;margin-bottom:12px;line-height:1.3}
+  .del-cta-box>p{font-size:14px;color:rgba(255,255,255,.62);line-height:1.8;font-weight:300;margin-bottom:22px}
+  .del-cta-gold{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;background:var(--gold);color:#fff;font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border-radius:3px;width:100%;justify-content:center;margin-bottom:10px;transition:background .2s,transform .15s}
+  .del-cta-gold:hover{background:var(--gold-dk);transform:translateY(-2px)}
+  .del-cta-ghost{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border:1.5px solid rgba(255,255,255,.3);color:rgba(255,255,255,.75);font-weight:600;font-size:12px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border-radius:3px;width:100%;justify-content:center;margin-bottom:24px;transition:border-color .2s,background .2s}
+  .del-cta-ghost:hover{border-color:rgba(255,255,255,.7);background:rgba(255,255,255,.07)}
+  .del-trust{display:flex;flex-direction:column;gap:10px;border-top:1px solid rgba(255,255,255,.12);padding-top:22px;margin-top:auto}
+  .del-trust-item{display:flex;align-items:center;gap:10px;font-size:13px;color:rgba(255,255,255,.58)}
+  .del-trust-check{width:18px;height:18px;min-width:18px;background:rgba(222,170,87,.15);border:1px solid rgba(222,170,87,.3);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .del-trust-check svg{width:9px;height:9px;stroke:var(--gold);fill:none;stroke-width:2.5}
+
+  /* BENEFITS */
+  .ben-bg{background:var(--off)}
+  .ben-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--bdr);border:1px solid var(--bdr);border-radius:6px;overflow:hidden;margin-top:52px}
+  .ben-card{background:var(--white);padding:32px 26px;transition:background .25s}
+  .ben-card:hover{background:var(--gold-pale)}
+  .ben-num{font-family:'Playfair Display',serif;font-size:36px;font-weight:800;color:var(--gold);line-height:1;margin-bottom:10px}
+  .ben-title{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--txt);margin-bottom:8px}
+  .ben-text{font-size:13px;color:var(--txt-muted);line-height:1.65}
+
+  /* TOOLS */
+  .tools-bg{background:var(--white)}
+  .tools-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--bdr);border:1px solid var(--bdr);border-radius:6px;overflow:hidden;margin-top:44px}
+  .tool-card{background:var(--white);padding:24px 20px;text-align:center;transition:background .25s}
+  .tool-card:hover{background:var(--blue-pale)}
+  .tool-icon{width:40px;height:40px;background:var(--blue-pale);border-radius:6px;display:flex;align-items:center;justify-content:center;margin:0 auto 10px}
+  .tool-icon svg{width:18px;height:18px;stroke:var(--blue);fill:none;stroke-width:1.5}
+  .tool-name{font-size:13px;font-weight:600;color:var(--txt);margin-bottom:3px}
+  .tool-role{font-size:11px;color:var(--txt-muted);line-height:1.5}
+
+  /* INDUSTRIES */
+  .ind-bg{background:var(--cream);padding:80px 52px}
+  .ind-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px}
+  .ind-card{background:var(--white);border:1px solid var(--bdr);border-radius:6px;padding:22px 18px;transition:border-color .25s,box-shadow .25s}
+  .ind-card:hover{border-color:var(--blue-lt);box-shadow:var(--sh)}
+  .ind-name{font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--txt);margin-bottom:6px}
+  .ind-desc{font-size:12.5px;color:var(--txt-muted);line-height:1.65}
+
+  /* GEO */
+  .geo-bg{background:var(--blue);padding:88px 52px}
+  .geo-intro{font-size:16px;color:rgba(255,255,255,.65);line-height:1.8;max-width:620px;font-weight:300;margin-bottom:44px;margin-top:8px}
+  .geo-primary{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);border-radius:6px;padding:26px 28px;margin-bottom:24px}
+  .geo-primary-lbl{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+  .geo-primary-title{font-family:'Playfair Display',serif;font-size:19px;font-weight:700;color:var(--white);margin-bottom:8px}
+  .geo-primary-desc{font-size:13.5px;color:rgba(255,255,255,.55);line-height:1.7;font-weight:300}
+  .geo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+  .geo-state{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:16px 14px;transition:background .25s}
+  .geo-state:hover{background:rgba(255,255,255,.12)}
+  .geo-state-name{font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);margin-bottom:5px}
+  .geo-cities{font-size:11.5px;color:rgba(255,255,255,.45);line-height:1.6}
+
+  /* RELATED */
+  .related-bg{background:var(--cream)}
+  .related-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px}
+  .rel-card{background:var(--white);border:1px solid var(--bdr);border-radius:6px;padding:22px 18px;text-decoration:none;transition:border-color .25s,box-shadow .25s;display:block}
+  .rel-card:hover{border-color:var(--blue-lt);box-shadow:var(--sh)}
+  .rel-icon{width:38px;height:38px;background:var(--blue-pale);border-radius:4px;display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+  .rel-icon svg{width:17px;height:17px;stroke:var(--blue);fill:none;stroke-width:1.5}
+  .rel-title{font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--txt);margin-bottom:5px}
+  .rel-desc{font-size:12.5px;color:var(--txt-muted);line-height:1.6}
+
+  /* FINAL CTA */
+  .cta-final{background:var(--blue);padding:100px 52px;text-align:center;position:relative;overflow:hidden}
+  .cta-final::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:48px 48px}
+  .cta-inner{position:relative;z-index:2;max-width:620px;margin:0 auto}
+  .cta-inner h2{color:var(--white);margin-bottom:16px}
+  .cta-inner p{color:rgba(255,255,255,.62);font-size:16px;margin-bottom:36px;font-weight:300;line-height:1.8}
+  .cta-acts{display:flex;flex-direction:column;align-items:center;gap:14px}
+  .cta-btn-primary{display:inline-flex;align-items:center;gap:10px;padding:16px 44px;background:var(--gold);color:#fff;font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:background .2s,transform .15s}
+  .cta-btn-primary:hover{background:var(--gold-dk);transform:translateY(-2px)}
+  .cta-secondary-row{display:flex;gap:12px}
+  .cta-btn-ghost{display:inline-flex;align-items:center;gap:8px;padding:11px 26px;border:1.5px solid rgba(255,255,255,.25);color:rgba(255,255,255,.7);font-weight:500;font-size:13px;text-decoration:none;border-radius:3px;transition:border-color .2s,color .2s,background .2s}
+  .cta-btn-ghost:hover{border-color:rgba(255,255,255,.6);color:#fff;background:rgba(255,255,255,.06)}
+  footer{background:var(--txt);border-top:3px solid var(--gold);padding:64px 52px 36px}
+  .foot-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:52px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:28px}
+  .foot-brand p{font-size:13px;color:rgba(255,255,255,.42);line-height:1.78;margin-top:14px;font-weight:300;max-width:260px}
+  .foot-col h4{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+  .foot-col ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+  .foot-col a{text-decoration:none;font-size:13px;color:rgba(255,255,255,.42);transition:color .2s}
+  .foot-col a:hover{color:var(--gold-lt)}
+  .foot-ci{display:flex;align-items:flex-start;gap:9px;font-size:13px;color:rgba(255,255,255,.45);margin-bottom:11px;font-weight:300}
+  .foot-ci svg{flex-shrink:0;stroke:var(--gold);margin-top:2px}
+  .foot-btm{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,.3)}
+  .soc-links{display:flex;gap:10px}
+  .soc-link{width:30px;height:30px;border:1px solid rgba(222,170,87,.22);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.38);text-decoration:none;font-size:12px;font-weight:700;transition:border-color .2s,color .2s,background .2s;border-radius:3px}
+  .soc-link:hover{border-color:var(--gold);color:var(--gold);background:rgba(222,170,87,.1)}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .65s ease,transform .65s ease}
+  .reveal.visible{opacity:1;transform:translateY(0)}
+  @media(max-width:1100px){
+    .hero{grid-template-columns:1fr;padding:100px 32px 60px}.hero-visual{display:none}
+    .intro-layout,.model-layout,.del-layout{grid-template-columns:1fr;gap:48px}
+    .svc-grid,.ben-grid,.related-grid{grid-template-columns:1fr 1fr}
+    .disc-cols{grid-template-columns:1fr}
+    .ind-grid,.geo-grid{grid-template-columns:1fr 1fr}
+    .tools-grid{grid-template-columns:repeat(3,1fr)}
+    .foot-top{grid-template-columns:1fr 1fr}
+    nav{padding:0 24px}.nav-links{display:none}
+  }
+  @media(max-width:768px){
+    section,.ind-bg,.geo-bg{padding:64px 20px}
+    .hero{padding:88px 20px 60px}
+    .stats-strip{grid-template-columns:1fr 1fr}
+    .svc-grid,.ben-grid,.related-grid,.ind-grid,.geo-grid,.tools-grid{grid-template-columns:1fr}
+    .foot-top{grid-template-columns:1fr;gap:36px}
+    .cta-secondary-row{flex-direction:column}
+  }
+  ::-webkit-scrollbar{width:5px}
+  ::-webkit-scrollbar-track{background:var(--off)}
+  ::-webkit-scrollbar-thumb{background:var(--blue-lt);border-radius:3px}
+  ::-webkit-scrollbar-thumb:hover{background:var(--blue)}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="main-nav">
+  <a href="index.html" style="text-decoration:none;display:flex;align-items:center">
+    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 8500 8000" style="height:44px;width:auto;display:block">
+      <defs><style>.nl0{fill:#687D9C}.nl1{fill:#687D9C;fill-rule:nonzero}.nl2{fill:#DEAA57;fill-rule:nonzero}</style></defs>
+      <g>
+        <path class="nl0" d="M1812.4 4727.09c409.83,9.8 887.26,173.39 1195.7,439.26 28.72,24.76 44.02,30.15 58.55,57.24 -52.14,-14.57 -171.2,-85.78 -230.79,-112.6 -573.62,-258.2 -1233.3,-349.38 -1831.71,-106.15 -40.93,16.63 -87.49,44.55 -124.91,55.7 20.68,-59.06 109.44,-127.92 160.93,-158.02 80.06,-46.81 141.34,-58.65 228.48,-90.06 -274.29,-14.17 -541.87,141.17 -633.11,424.54l-23.67 -31.72c-53.08,-122.61 -57.66,-196.85 -65.87,-329.88l-13.99 32.3c-3.39,12 -4.68,20.78 -6.59,35.01 -11.91,88.58 -15.08,172.5 5.98,256.07 21.54,85.47 78.14,202.53 145.85,231.4 50.02,-49.84 120.88,-289.19 534.4,-286.16 514.62,3.76 936.61,447.07 1147.02,891.67 48.99,103.51 78.24,193.2 116.58,292.69 204.29,1.91 365.65,-22.11 551.58,-61.3 -4.56,-73.17 -96.36,-288.22 -127.03,-355.35 -102.95,-225.38 -241.3,-405.89 -399.13,-574.71 -60.2,-64.39 -184.4,-177.9 -254.16,-231.52 88.93,6.2 297.3,104.48 378.5,150.87 220.07,125.7 420.56,298.33 567.63,501.22 58.21,80.31 158.45,237.07 191,342.72 62.81,-15.08 171.35,-153.6 213.87,-236.18 55.17,-107.14 79.26,-236.42 72.54,-380.41 -46.7,-1000.4 -1793.1,-818.22 -1857.66,-756.62z"/>
+        <path class="nl0" d="M908.33 5330.28l-1.41 999.35 1449.64 0.28c-2,-76.96 -166.68,-386.07 -201.72,-441.69 -91.01,-144.46 -187.49,-261 -295.82,-356.08 -109.45,-96.06 -252.17,-188.71 -413.11,-240.03 -174.03,-55.49 -400.81,-61.85 -537.57,38.17z"/>
+        <path class="nl0" d="M908.65 3424.73l-2.99 908.85c20.1,-3.89 21.74,-11.21 40.59,-30 89.89,-89.6 210.33,-177.93 315.83,-240.48 274.56,-162.77 638.43,-274.24 960.06,-309.57 166.8,-18.33 422.8,-54.2 590.23,-38.31 -24.89,13.29 -111.58,28.2 -152.81,40.07 -48.39,13.94 -105.58,33.65 -152.35,52.08 -72.65,28.64 -226.01,98.68 -263.84,140.95l282.22 -56.28c100.35,-17.6 195,-28.31 296.59,-38.74 148.31,-15.24 329.26,-9.66 481.55,6.76 47.54,5.13 105.39,18.24 154.19,20.06 -16.76,-73.51 -132.1,-181.83 -167.19,-211.69 -76.12,-64.77 -146.3,-100.57 -245.26,-134.7 -468.76,-161.6 -1251.39,-126.41 -1767.93,-118.66 -111.8,1.68 -260.91,-1.35 -368.89,9.66z"/>
+        <path class="nl0" d="M2103.02 4423.22c104.56,1.75 233.32,-18.11 345.8,-21.11 253.78,-6.76 601.91,10.18 846.47,75.82 41.2,11.06 108.16,35.39 149.12,41.7 50.39,-58.35 99.35,-237.52 80.56,-322.74 -349.11,-20.6 -764.31,38.62 -1103.59,124.24 -55.44,13.99 -109.4,28.7 -160.46,43.9 -40.44,12.04 -129.33,33.19 -157.89,58.2z"/>
+        <path class="nl0" d="M998.36 4717.1c128.1,59.57 343.38,32.49 435.46,-153.69 120.03,-242.71 179.03,-215.94 348.65,-242.96 29.17,-4.65 25.79,-8.44 31.52,-15.04 -269.51,-102.19 -476.91,163.85 -619.63,290.24 -130.76,115.81 -163.14,96.48 -196,121.45z"/>
+        <polygon class="nl1" points="4816.05,6282.34 4011.23,6282.34 4011.23,3410.51 4816.05,3410.51"/>
+        <polygon class="nl1" points="5156.12,6282.34 5156.12,3410.51 5908.89,3410.51 6554.65,4959.31 7196.74,3410.51 7983.97,3410.51 7983.97,6282.34 7183.55,6282.34 7183.55,4394.18 6408.79,6282.34 6331.83,6282.34 5573.92,4477.74 5573.92,6282.34"/>
+        <path class="nl2" d="M908.18 6642.7l534.93 0 0 123.23 -380.89 0 0 267.47 298.28 0 0 124.63 -298.28 0 0 292.67 386.5 0 0 126.03 -540.54 0 0 -934.04zm1041.97 0l175.51 0 249.26 934.04 -156.37 0 -58.58 -233.86 -273.07 0 -57.88 233.86 -147.27 0 268.4 -934.04zm179.48 578.35l-106.89 -427.81 -105.73 427.81 212.62 0zm864.82 -123.23l312.28 0 0 485.92 -82.85 0 -20.77 -119.03c-47.38,85.89 -122.3,128.83 -224.76,128.83 -104.09,0 -185.78,-42.24 -244.36,-126.96 -58.81,-84.49 -88.22,-199.31 -88.22,-344.25 0,-152.64 29.17,-273.54 87.29,-362.69 58.35,-89.15 147.5,-133.73 268.17,-133.73 168.04,0 268.4,94.76 301.31,284.5l-140.04 34.78c-16.57,-80.98 -38.74,-133.5 -66.52,-157.3 -28.01,-24.04 -60.92,-35.94 -98.96,-35.94 -125.8,0 -188.81,119.03 -188.81,356.86 0,239.22 64.18,358.72 192.78,358.72 106.66,0 160.11,-82.15 160.11,-246.46l-166.64 0 0 -123.23zm694.45 -455.11l154.04 0 0 803.8 330.48 0 0 130.23 -484.52 0 0 -934.04zm796.91 0l534.93 0 0 123.23 -380.89 0 0 267.47 298.28 0 0 124.63 -298.28 0 0 292.67 386.5 0 0 126.03 -540.54 0 0 -934.04zm1129.96 0l282.64 0c71.19,0 125.33,5.6 162.21,17.04 36.87,11.44 68.15,36.87 93.82,76.32 25.44,39.68 38.28,87.52 38.28,144.24 0,103.63 -46.21,171.78 -138.87,204.69 111.33,35.24 166.88,113.43 166.88,234.56 0,68.85 -21.94,129.06 -66.05,180.18 -43.88,51.35 -128.13,77.02 -252.53,77.02l-286.37 0 0 -934.04zm151.24 387.9l98.02 0c69.08,0 114.59,-12.83 136.53,-38.28 21.94,-25.44 32.91,-58.11 32.91,-98.49 0,-47.38 -12.6,-80.98 -37.81,-101.52 -24.98,-20.31 -63.95,-30.57 -116.46,-30.57l-113.19 0 0 268.87zm0 422.91l124.4 0c114.13,0 171.07,-50.65 171.07,-151.7 0,-39.21 -12.14,-74.45 -36.18,-105.49 -24.27,-31.04 -73.52,-46.68 -147.74,-46.68l-111.56 0 0 303.87zm836.58 -810.8l154.04 0 0 934.04 -154.04 0 0 -934.04zm555.58 0l228.49 0 185.78 673.34 190.45 -673.34 220.09 0 0 934.04 -145.64 0 0 -797.27 -221.26 797.27 -112.03 0 -217.06 -797.96 0 797.96 -128.83 0 0 -934.04z"/>
+      </g>
+    </svg>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li class="drop"><a href="#" class="active">Services</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Our Projects</a></li>
+    <li><a href="#">Resources</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+  <a href="mailto:info@eaglebim.com" class="nav-cta">Share Your Scope</a>
+</nav>
+
+
+<!-- ══ HERO — Unique: Animated MEP system isometric — 3 discipline layers building up ══ -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a><span>/</span>
+      <a href="#">Services</a><span>/</span>
+      <span style="color:var(--txt)">MEP BIM Services</span>
+    </div>
+    <div class="hero-tag">MEP BIM Services · USA</div>
+    <h1>Expert <em>MEP BIM Services</em> for Coordination-Ready Models</h1>
+    <p class="hero-sub">Eagle BIM delivers MEP BIM services covering mechanical, electrical, plumbing, and fire protection systems across the USA. Our MEP BIM modeling produces coordination-ready Revit models built to LOD requirements, project BEP standards, and fabrication tolerances — ready for clash detection from day one.</p>
+    <div class="hero-actions">
+      <a href="mailto:info@eaglebim.com" class="btn-gold">Share Your MEP Scope <span class="btn-arrow">→</span></a>
+      <a href="#services" class="btn-blue">Explore MEP BIM Services <span class="btn-arrow">↓</span></a>
+    </div>
+    <div class="hero-badges">
+      <span class="badge">Mechanical BIM</span>
+      <span class="badge">Electrical BIM</span>
+      <span class="badge">Plumbing BIM</span>
+      <span class="badge">Fire Protection BIM</span>
+      <span class="badge">Revit MEP</span>
+      <span class="badge">LOD 300–400</span>
+    </div>
+  </div>
+
+  <!-- HERO VISUAL: Animated MEP system isometric — 3 colour-coded discipline layers building up -->
+  <div class="hero-visual">
+    <svg width="440" height="480" viewBox="0 0 440 480" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="gw2"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <style>
+        @keyframes buildIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+        @keyframes drawLine{from{stroke-dashoffset:400}to{stroke-dashoffset:0}}
+        @keyframes flowDash{to{stroke-dashoffset:-20}}
+        @keyframes labelPop{from{opacity:0;transform:scale(.85)}to{opacity:1;transform:scale(1)}}
+        @keyframes scanMEP{0%{transform:translateY(0);opacity:0}5%{opacity:.3}93%{opacity:.15}100%{transform:translateY(400px);opacity:0}}
+
+        .struct{animation:buildIn .5s .1s ease both;opacity:0}
+        .mech{animation:buildIn .5s .6s ease both;opacity:0}
+        .elec{animation:buildIn .5s 1.1s ease both;opacity:0}
+        .plumb{animation:buildIn .5s 1.6s ease both;opacity:0}
+        .fp{animation:buildIn .5s 2.1s ease both;opacity:0}
+        .coord-badge{animation:labelPop .5s 2.7s ease both;opacity:0}
+        .flow{stroke-dasharray:8 5;animation:flowDash .9s linear infinite}
+        .scan2{animation:scanMEP 5s 1s linear infinite}
+      </style>
+      <defs><pattern id="pg3" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0L0 0 0 20" fill="none" stroke="rgba(104,125,156,.06)" stroke-width=".5"/></pattern></defs>
+      <rect width="440" height="480" fill="url(#pg3)"/>
+
+      <!-- Title -->
+      <g class="struct">
+        <text x="220" y="44" fill="rgba(138,148,166,.55)" font-family="monospace" font-size="8" text-anchor="middle" font-weight="bold" letter-spacing=".1em">MEP BIM SERVICES — REVIT MODEL</text>
+        <rect x="152" y="52" width="136" height="14" rx="3" fill="rgba(222,170,87,.12)" stroke="rgba(222,170,87,.3)" stroke-width=".8"/>
+        <text x="220" y="62" fill="rgba(222,170,87,.85)" font-family="monospace" font-size="7" text-anchor="middle" font-weight="bold">LOD 300 · REVIT MEP · COORDINATION-READY</text>
+      </g>
+
+      <!-- ROW 1: MECHANICAL / HVAC (gold) -->
+      <g class="mech">
+        <rect x="30" y="80" width="380" height="72" rx="4" fill="rgba(222,170,87,.06)" stroke="rgba(222,170,87,.25)" stroke-width="1"/>
+        <rect x="30" y="80" width="90" height="72" fill="rgba(222,170,87,.12)" rx="4"/>
+        <text x="75" y="111" fill="rgba(222,170,87,.9)" font-family="monospace" font-size="8" text-anchor="middle" font-weight="bold">MECHANICAL</text>
+        <text x="75" y="123" fill="rgba(222,170,87,.6)" font-family="monospace" font-size="7" text-anchor="middle">HVAC</text>
+        <rect x="136" y="103" width="240" height="16" fill="rgba(222,170,87,.18)" stroke="rgba(222,170,87,.8)" stroke-width="1.2" rx="1"/>
+        <rect x="168" y="88" width="14" height="30" fill="rgba(222,170,87,.12)" stroke="rgba(222,170,87,.6)" stroke-width="1" rx="1"/>
+        <rect x="240" y="86" width="14" height="32" fill="rgba(222,170,87,.12)" stroke="rgba(222,170,87,.6)" stroke-width="1" rx="1"/>
+        <rect x="312" y="88" width="14" height="30" fill="rgba(222,170,87,.12)" stroke="rgba(222,170,87,.6)" stroke-width="1" rx="1"/>
+        <line x1="148" y1="111" x2="166" y2="111" stroke="rgba(222,170,87,.5)" stroke-width=".8" class="flow"/>
+        <line x1="185" y1="111" x2="238" y2="111" stroke="rgba(222,170,87,.5)" stroke-width=".8" class="flow"/>
+        <line x1="257" y1="111" x2="310" y2="111" stroke="rgba(222,170,87,.5)" stroke-width=".8" class="flow"/>
+        <rect x="120" y="97" width="18" height="28" rx="2" fill="rgba(222,170,87,.2)" stroke="rgba(222,170,87,.7)" stroke-width="1"/>
+        <text x="129" y="114" fill="rgba(222,170,87,.9)" font-family="monospace" font-size="5.5" text-anchor="middle" font-weight="bold">AHU</text>
+        <circle cx="175" cy="89" r="4" fill="none" stroke="rgba(222,170,87,.5)" stroke-width=".8"/>
+        <circle cx="247" cy="87" r="4" fill="none" stroke="rgba(222,170,87,.5)" stroke-width=".8"/>
+        <circle cx="319" cy="89" r="4" fill="none" stroke="rgba(222,170,87,.5)" stroke-width=".8"/>
+      </g>
+
+      <!-- ROW 2: ELECTRICAL (blue) -->
+      <g class="elec">
+        <rect x="30" y="162" width="380" height="72" rx="4" fill="rgba(104,125,156,.06)" stroke="rgba(104,125,156,.25)" stroke-width="1"/>
+        <rect x="30" y="162" width="90" height="72" fill="rgba(104,125,156,.1)" rx="4"/>
+        <text x="75" y="193" fill="rgba(150,180,220,.9)" font-family="monospace" font-size="8" text-anchor="middle" font-weight="bold">ELECTRICAL</text>
+        <text x="75" y="205" fill="rgba(104,125,156,.6)" font-family="monospace" font-size="7" text-anchor="middle">CONDUIT</text>
+        <rect x="136" y="181" width="240" height="10" fill="rgba(104,125,156,.12)" stroke="rgba(104,125,156,.65)" stroke-width="1" rx="1"/>
+        <line x1="175" y1="181" x2="175" y2="191" stroke="rgba(104,125,156,.5)" stroke-width="1"/>
+        <line x1="230" y1="181" x2="230" y2="191" stroke="rgba(104,125,156,.5)" stroke-width="1"/>
+        <line x1="285" y1="181" x2="285" y2="191" stroke="rgba(104,125,156,.5)" stroke-width="1"/>
+        <line x1="340" y1="181" x2="340" y2="191" stroke="rgba(104,125,156,.5)" stroke-width="1"/>
+        <line x1="136" y1="200" x2="376" y2="200" stroke="rgba(104,125,156,.9)" stroke-width="3" stroke-linecap="round"/>
+        <line x1="190" y1="200" x2="190" y2="218" stroke="rgba(104,125,156,.6)" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="310" y1="200" x2="310" y2="218" stroke="rgba(104,125,156,.6)" stroke-width="1.5" stroke-linecap="round"/>
+        <rect x="360" y="177" width="18" height="22" rx="2" fill="rgba(104,125,156,.15)" stroke="rgba(104,125,156,.7)" stroke-width="1"/>
+        <text x="369" y="191" fill="rgba(104,125,156,.9)" font-family="monospace" font-size="5" text-anchor="middle" font-weight="bold">DBT</text>
+      </g>
+
+      <!-- ROW 3: PLUMBING (teal) -->
+      <g class="plumb">
+        <rect x="30" y="244" width="380" height="72" rx="4" fill="rgba(80,180,160,.05)" stroke="rgba(80,180,160,.22)" stroke-width="1"/>
+        <rect x="30" y="244" width="90" height="72" fill="rgba(80,180,160,.08)" rx="4"/>
+        <text x="75" y="275" fill="rgba(80,200,180,.9)" font-family="monospace" font-size="8" text-anchor="middle" font-weight="bold">PLUMBING</text>
+        <text x="75" y="287" fill="rgba(80,180,160,.55)" font-family="monospace" font-size="7" text-anchor="middle">HW / CW</text>
+        <line x1="136" y1="268" x2="376" y2="268" stroke="rgba(80,180,160,.9)" stroke-width="3.5" stroke-linecap="round"/>
+        <line x1="136" y1="268" x2="376" y2="268" stroke="rgba(80,180,160,.2)" stroke-width="8"/>
+        <line x1="136" y1="280" x2="376" y2="280" stroke="rgba(80,140,200,.8)" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="190" cy="268" r="5" fill="none" stroke="rgba(80,180,160,.8)" stroke-width="1.2"/>
+        <circle cx="310" cy="280" r="5" fill="none" stroke="rgba(80,140,200,.7)" stroke-width="1.2"/>
+        <line x1="230" y1="268" x2="230" y2="296" stroke="rgba(80,180,160,.5)" stroke-width="1.5"/>
+        <line x1="280" y1="280" x2="280" y2="299" stroke="rgba(80,140,200,.5)" stroke-width="1.5"/>
+        <rect x="138" y="258" width="20" height="9" rx="1" fill="rgba(80,180,160,.2)"/>
+        <text x="148" y="265" fill="rgba(80,200,180,.8)" font-family="monospace" font-size="6" text-anchor="middle">HW</text>
+        <rect x="138" y="274" width="20" height="9" rx="1" fill="rgba(80,140,200,.2)"/>
+        <text x="148" y="281" fill="rgba(100,160,220,.8)" font-family="monospace" font-size="6" text-anchor="middle">CW</text>
+      </g>
+
+      <!-- ROW 4: FIRE PROTECTION (red) -->
+      <g class="fp">
+        <rect x="30" y="326" width="380" height="72" rx="4" fill="rgba(220,80,80,.04)" stroke="rgba(220,80,80,.2)" stroke-width="1"/>
+        <rect x="30" y="326" width="90" height="72" fill="rgba(220,80,80,.07)" rx="4"/>
+        <text x="75" y="357" fill="rgba(240,120,120,.9)" font-family="monospace" font-size="8" text-anchor="middle" font-weight="bold">FIRE</text>
+        <text x="75" y="369" fill="rgba(220,80,80,.55)" font-family="monospace" font-size="7" text-anchor="middle">PROTECTION</text>
+        <line x1="136" y1="355" x2="376" y2="355" stroke="rgba(220,80,80,.75)" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="170" y1="355" x2="170" y2="371" stroke="rgba(220,80,80,.6)" stroke-width="1.5"/>
+        <circle cx="170" cy="375" r="5" fill="rgba(220,80,80,.6)" stroke="rgba(220,80,80,.3)" stroke-width=".8"/>
+        <line x1="220" y1="355" x2="220" y2="373" stroke="rgba(220,80,80,.6)" stroke-width="1.5"/>
+        <circle cx="220" cy="377" r="5" fill="rgba(220,80,80,.6)" stroke="rgba(220,80,80,.3)" stroke-width=".8"/>
+        <line x1="280" y1="355" x2="280" y2="371" stroke="rgba(220,80,80,.6)" stroke-width="1.5"/>
+        <circle cx="280" cy="375" r="5" fill="rgba(220,80,80,.6)" stroke="rgba(220,80,80,.3)" stroke-width=".8"/>
+        <line x1="340" y1="355" x2="340" y2="373" stroke="rgba(220,80,80,.6)" stroke-width="1.5"/>
+        <circle cx="340" cy="377" r="5" fill="rgba(220,80,80,.6)" stroke="rgba(220,80,80,.3)" stroke-width=".8"/>
+        <rect x="358" y="340" width="18" height="30" rx="2" fill="rgba(220,80,80,.1)" stroke="rgba(220,80,80,.6)" stroke-width="1"/>
+        <text x="367" y="358" fill="rgba(240,120,120,.8)" font-family="monospace" font-size="5" text-anchor="middle" font-weight="bold">FPS</text>
+      </g>
+
+      <!-- FILE FORMAT BADGES -->
+      <g class="coord-badge">
+        <rect x="136" y="415" width="36" height="14" rx="2" fill="rgba(104,125,156,.15)" stroke="rgba(104,125,156,.3)" stroke-width=".8"/>
+        <text x="154" y="425" fill="rgba(150,180,220,.8)" font-family="monospace" font-size="7" text-anchor="middle" font-weight="bold">.RVT</text>
+        <rect x="178" y="415" width="36" height="14" rx="2" fill="rgba(104,125,156,.15)" stroke="rgba(104,125,156,.3)" stroke-width=".8"/>
+        <text x="196" y="425" fill="rgba(150,180,220,.8)" font-family="monospace" font-size="7" text-anchor="middle" font-weight="bold">.IFC</text>
+        <rect x="220" y="415" width="36" height="14" rx="2" fill="rgba(104,125,156,.15)" stroke="rgba(104,125,156,.3)" stroke-width=".8"/>
+        <text x="238" y="425" fill="rgba(150,180,220,.8)" font-family="monospace" font-size="7" text-anchor="middle" font-weight="bold">NWC</text>
+        <rect x="262" y="415" width="44" height="14" rx="2" fill="rgba(222,170,87,.12)" stroke="rgba(222,170,87,.3)" stroke-width=".8"/>
+        <text x="284" y="425" fill="rgba(222,170,87,.8)" font-family="monospace" font-size="7" text-anchor="middle" font-weight="bold">LOD300</text>
+        <text x="220" y="450" fill="rgba(138,148,166,.35)" font-family="monospace" font-size="7" text-anchor="middle" letter-spacing=".06em">EAGLE BIM · MEP BIM SERVICES · USA</text>
+      </g>
+
+      <rect x="0" y="50" width="440" height="1.5" fill="rgba(104,125,156,.15)" class="scan2"/>
+    </svg>
+  </div>
+</section>
+
+
+<!-- ══ STATS ══ -->
+<div class="stats-strip">
+  <div class="stat-item reveal">
+    <span class="stat-num">400<span class="stat-sfx">+</span></span>
+    <div class="stat-lbl">MEP BIM Outsourcing Projects</div>
+  </div>
+  <div class="stat-item reveal">
+    <span class="stat-num">4</span>
+    <div class="stat-lbl">MEP Disciplines Covered</div>
+  </div>
+  <div class="stat-item reveal">
+    <span class="stat-num">LOD<span class="stat-sfx"></span></span>
+    <div class="stat-lbl">200 to 400 Output</div>
+  </div>
+  <div class="stat-item reveal">
+    <span class="stat-num">100<span class="stat-sfx">%</span></span>
+    <div class="stat-lbl">Coordination-Ready Models</div>
+  </div>
+</div>
+
+
+<!-- ══ INTRO ══ -->
+<section style="background:var(--white)" id="services">
+  <div class="mep-intro-layout">
+
+    <div class="reveal">
+      <div class="section-tag">MEP BIM Services</div>
+      <h2>Expert <em>MEP BIM Services</em> for Every Discipline and Every Project Stage</h2>
+      <div style="margin-top:20px">
+        <p class="body-text">Eagle BIM delivers <strong>MEP BIM services</strong> that cover the full mechanical, electrical, plumbing, and fire protection scope — modeled in Revit MEP to your LOD requirements, project BEP standards, and fabrication tolerances. Our <strong>MEP BIM modeling</strong> produces discipline models that are clean, coordinated, and clash-ready from the moment they are delivered to your project team.</p>
+        <p class="body-text">Our <strong>MEP modeling services</strong> are used by MEP engineering firms that need production modeling support, general contractors who receive 2D MEP drawings and need coordinated 3D models, and design-build teams requiring fully developed <strong>mechanical electrical plumbing BIM</strong> models for fabrication and installation.</p>
+        <p class="body-text">We work as a true <strong>MEP BIM outsourcing</strong> partner — not just a modeling service. Naming conventions, system parameters, view templates, and sheet standards are all applied to your specifications before delivery. No cleanup required on arrival.</p>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <div class="mep-disc-label">MEP disciplines we model</div>
+      <div class="mep-disc-stack">
+
+        <div class="mep-disc-card">
+          <div class="mep-disc-head">
+            <div class="mep-disc-dot" style="background:var(--gold)"></div>
+            <span class="mep-disc-name">Mechanical BIM — HVAC</span>
+            <span class="mep-disc-tag mep-tag-gold">M</span>
+          </div>
+          <div class="mep-disc-text">Supply, return, and exhaust ductwork, AHU connections, VAV boxes, diffuser layouts, and mechanical equipment — modeled for coordination and fabrication at LOD 300–400.</div>
+        </div>
+
+        <div class="mep-disc-card">
+          <div class="mep-disc-head">
+            <div class="mep-disc-dot" style="background:var(--blue)"></div>
+            <span class="mep-disc-name">Electrical BIM</span>
+            <span class="mep-disc-tag mep-tag-blue">E</span>
+          </div>
+          <div class="mep-disc-text">Conduit routing, cable trays, panel layouts, switchgear clearances, and lighting — modeled in Revit MEP with circuit data and load schedules extracted directly from the model.</div>
+        </div>
+
+        <div class="mep-disc-card">
+          <div class="mep-disc-head">
+            <div class="mep-disc-dot" style="background:rgba(60,160,140,1)"></div>
+            <span class="mep-disc-name">Plumbing BIM</span>
+            <span class="mep-disc-tag mep-tag-teal">P</span>
+          </div>
+          <div class="mep-disc-text">Domestic hot and cold water, waste, vent, drainage, and sanitary systems — slope-compliant pipe routing with fixture connections, valve schedules, and penetration details.</div>
+        </div>
+
+        <div class="mep-disc-card">
+          <div class="mep-disc-head">
+            <div class="mep-disc-dot" style="background:rgba(210,70,70,1)"></div>
+            <span class="mep-disc-name">Fire Protection BIM</span>
+            <span class="mep-disc-tag mep-tag-red">FP</span>
+          </div>
+          <div class="mep-disc-text">Sprinkler layouts, main and branch pipe runs, coverage zone verification, and suppression equipment — modeled to NFPA standards and coordinated with all ceiling elements.</div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══ CORE SERVICES ══ -->
+<section class="svc-bg">
+  <div class="reveal">
+    <div class="section-tag">What We Deliver</div>
+    <h2>Core <em>MEP BIM Modeling</em> Service Areas</h2>
+    <p class="sec-desc">Every MEP BIM services engagement covers the full scope — from discipline model creation through coordination-ready delivery. Here is what is included.</p>
+  </div>
+  <div class="svc-grid reveal">
+
+    <div class="svc-card">
+      <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+      <div class="svc-title">Mechanical BIM Services — HVAC</div>
+      <p class="svc-text">Full Revit MEP mechanical models covering supply, return, and exhaust ductwork systems, AHU and FCU connections, VAV boxes, smoke control, and mechanical equipment rooms. Every duct is sized, routed, and clearance-verified — ready for clash detection and fabrication drawing extraction at LOD 300 or LOD 400.</p>
+    </div>
+
+    <div class="svc-card">
+      <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+      <div class="svc-title">Electrical BIM Services</div>
+      <p class="svc-text">Revit MEP electrical models covering low-voltage and high-voltage conduit routing, cable tray systems, distribution boards, switchgear, UPS, and lighting layouts. Circuit data, panel schedules, and load calculations derived directly from the model — all to your project standards and NEC compliance requirements.</p>
+    </div>
+
+    <div class="svc-card">
+      <div class="svc-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83"/></svg></div>
+      <div class="svc-title">Plumbing BIM Services</div>
+      <p class="svc-text">Domestic cold water, hot water, waste, vent, drainage, and sanitary systems modeled in Revit with correct slope parameters, valve placements, fixture connections, and penetration details. Pipe schedules and fixture counts extracted directly from the model for project documentation.</p>
+    </div>
+
+    <div class="svc-card">
+      <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+      <div class="svc-title">Fire Protection BIM Services</div>
+      <p class="svc-text">Complete sprinkler system MEP BIM modeling — wet and dry pipe systems, deluge, and pre-action systems. Sprinkler head layouts, main and branch pipe runs, coverage zone verification, and riser connection details — modeled to NFPA 13 requirements and coordinated with all architectural ceiling elements.</p>
+    </div>
+
+    <div class="svc-card">
+      <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+      <div class="svc-title">MEP Coordination BIM</div>
+      <p class="svc-text">Our <strong>MEP coordination BIM</strong> service takes individual discipline models and produces a fully coordinated, clash-tested MEP package. MEP coordination BIM is built into every engagement — duct, pipe, conduit, and sprinkler all routed to fit within the architectural ceiling zone and clear of structural elements. Coordination drawings and penetration schedules included.</p>
+    </div>
+
+    <div class="svc-card">
+      <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/></svg></div>
+      <div class="svc-title">MEP BIM Outsourcing</div>
+      <p class="svc-text">Eagle BIM operates as a dedicated <strong>MEP BIM outsourcing</strong> partner for engineering firms, contractors, and design-build teams managing high project volumes or specialist discipline gaps. Our <strong>MEP modeling services</strong> are delivered to your templates, your standards, and your deadlines — fully embedded in your coordination workflow as a trusted extension of your team.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══ DISCIPLINE DETAIL — BLUE ══ -->
+<section class="disc-bg">
+  <div class="reveal" style="max-width:700px">
+    <div class="section-tag" style="color:var(--gold-lt)"><span style="display:inline-block;width:22px;height:2px;background:var(--gold);border-radius:2px;margin-right:8px;vertical-align:middle"></span>Mechanical Electrical Plumbing BIM</div>
+    <h2 style="color:white">What Our <em style="color:var(--gold-lt)">MEP BIM Modeling</em> Covers in Each Discipline</h2>
+    <p style="color:rgba(255,255,255,.62);font-size:16px;line-height:1.8;font-weight:300;margin-top:8px">Our Revit MEP modeling team covers every system in every discipline — modeled to LOD, parametric schedules included, and ready for clash detection on delivery.</p>
+  </div>
+  <div class="disc-cols reveal">
+    <div class="disc-col">
+      <div class="disc-col-label">Mechanical</div>
+      <div class="disc-col-title">HVAC Systems</div>
+      <ul class="disc-col-list">
+        <li>Supply and return ductwork systems</li>
+        <li>Exhaust and fresh air risers</li>
+        <li>Air handling units and FCUs</li>
+        <li>VAV boxes and terminal units</li>
+        <li>Diffusers and grilles</li>
+        <li>Smoke control and pressurisation</li>
+        <li>Mechanical equipment rooms</li>
+        <li>Chiller and boiler plant piping</li>
+        <li>Hydronic heating and cooling</li>
+        <li>Refrigerant pipework</li>
+      </ul>
+    </div>
+    <div class="disc-col">
+      <div class="disc-col-label">Electrical &amp; Plumbing</div>
+      <div class="disc-col-title">Power, Lighting and Water</div>
+      <ul class="disc-col-list">
+        <li>HV and LV conduit routing</li>
+        <li>Cable trays and busbar trunking</li>
+        <li>Distribution boards and switchgear</li>
+        <li>Emergency and exit lighting</li>
+        <li>UPS and standby systems</li>
+        <li>Domestic hot and cold water</li>
+        <li>Waste, vent, and drainage</li>
+        <li>Rainwater and grey water</li>
+        <li>Gas pipework and meters</li>
+        <li>Valve schedules and fixture counts</li>
+      </ul>
+    </div>
+    <div class="disc-col">
+      <div class="disc-col-label">Fire Protection</div>
+      <div class="disc-col-title">Suppression and Life Safety</div>
+      <ul class="disc-col-list">
+        <li>Wet and dry sprinkler systems</li>
+        <li>Deluge and pre-action systems</li>
+        <li>Sprinkler head placement and coverage</li>
+        <li>Main and branch pipe runs</li>
+        <li>Fire main and hydrant connections</li>
+        <li>Alarm valve stations</li>
+        <li>Clean agent suppression</li>
+        <li>Fire pump rooms and risers</li>
+        <li>NFPA 13 compliance verification</li>
+        <li>RCP coordination and clearances</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ WHAT WE MODEL ══ -->
+<section class="model-bg">
+  <div class="model-layout">
+    <div class="reveal">
+      <div class="section-tag">Revit MEP Modeling</div>
+      <h2>How We Build Your <em>MEP BIM Models</em></h2>
+      <p class="body-text" style="margin-top:16px">Every Eagle BIM <strong>MEP BIM modeling</strong> engagement starts with a thorough review of your project information — drawings, specifications, BEP requirements, and coordination schedule. Our <strong>MEP modeling services</strong> process does not start until we understand exactly what the model needs to do and how it will be used in coordination.</p>
+      <p class="body-text">Our <strong>Revit MEP modeling</strong> team works from your templates and your families wherever possible — importing your title blocks, applying your view templates, and following your naming conventions exactly. Where templates are not available, we build them to your standards before <strong>Revit MEP modeling</strong> begins.</p>
+      <p class="body-text">Every MEP BIM model we produce is delivered as a complete <strong>mechanical electrical plumbing BIM</strong> package — not just individual files. That means coordinated system parameters, linked model references, clash-tested routing, and parametric schedules all included. As a <strong>mechanical electrical plumbing BIM</strong> specialist, Eagle BIM ensures every discipline model connects and performs as a unified system from day one.</p>
+      <div style="margin-top:28px">
+        <a href="mailto:info@eaglebim.com" class="btn-blue">Discuss Your MEP Project <span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="model-list">
+        <div class="model-row">
+          <div class="model-num">01</div>
+          <div><div class="model-title">Project Setup and Template Review</div><div class="model-text">BEP, drawing review, template import, naming conventions confirmed, and LOD requirements agreed before modeling begins.</div></div>
+        </div>
+        <div class="model-row">
+          <div class="model-num">02</div>
+          <div><div class="model-title">System Routing and Sizing</div><div class="model-text">All MEP systems routed in 3D from engineering drawings — duct sizing, pipe slopes, conduit spacing, and clearance zones applied throughout.</div></div>
+        </div>
+        <div class="model-row">
+          <div class="model-num">03</div>
+          <div><div class="model-title">Equipment and Family Placement</div><div class="model-text">Mechanical, electrical, and plumbing equipment placed from manufacturer families or project-specific Revit families built to your specifications.</div></div>
+        </div>
+        <div class="model-row">
+          <div class="model-num">04</div>
+          <div><div class="model-title">Schedule and Tag Extraction</div><div class="model-text">Equipment schedules, pipe schedules, panel schedules, and fixture counts extracted directly from the model and formatted to your project documentation standards.</div></div>
+        </div>
+        <div class="model-row">
+          <div class="model-num">05</div>
+          <div><div class="model-title">Coordination-Ready Delivery</div><div class="model-text">RVT, IFC, NWC, and DWG delivered with linked model references intact — ready to federate for clash detection without any additional model preparation.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ DELIVERABLES ══ -->
+<section class="del-bg">
+  <div class="reveal">
+    <div class="section-tag">Deliverables</div>
+    <h2>What You Receive from Our <em>MEP BIM Services</em></h2>
+  </div>
+  <div class="del-layout">
+    <div>
+      <div class="del-list reveal">
+        <div class="del-row">
+          <div class="del-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+          <div><div class="del-title">Revit MEP Models</div><div class="del-text">Fully parametric RVT files per discipline — mechanical, electrical, plumbing, and fire protection — built to your templates, naming conventions, and agreed LOD</div></div>
+        </div>
+        <div class="del-row">
+          <div class="del-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 3v18"/></svg></div>
+          <div><div class="del-title">MEP Coordination Drawings</div><div class="del-text">Plan views, sections, and ceiling zone cuts showing all MEP systems coordinated — extracted directly from the Revit MEP model in PDF and DWG</div></div>
+        </div>
+        <div class="del-row">
+          <div class="del-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/></svg></div>
+          <div><div class="del-title">Equipment and Pipe Schedules</div><div class="del-text">Mechanical equipment schedules, pipe schedules, panel schedules, fixture counts, and valve lists extracted from the model and formatted to your standards</div></div>
+        </div>
+        <div class="del-row">
+          <div class="del-icon"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></div>
+          <div><div class="del-title">IFC and Exchange Files</div><div class="del-text">IFC, NWC, and DWG exports for consultant coordination, BIM 360 upload, and clash detection — all with linked model references intact for immediate federation</div></div>
+        </div>
+      </div>
+      <div class="fmt-row reveal">
+        <span class="fmt-chip">RVT</span><span class="fmt-chip">IFC</span><span class="fmt-chip">NWC</span>
+        <span class="fmt-chip">DWG</span><span class="fmt-chip">PDF</span><span class="fmt-chip">XLSX</span>
+      </div>
+    </div>
+    <div class="del-cta-box reveal">
+      <h3>Ready to Start Your MEP BIM Modeling Project?</h3>
+      <p>Share your MEP drawings, specifications, and BEP requirements. We will review your scope and return a clear delivery plan and quote within 24 to 48 hours.</p>
+      <a href="mailto:info@eaglebim.com" class="del-cta-gold">Share Your MEP Scope →</a>
+      <a href="mailto:info@eaglebim.com" class="del-cta-ghost">Discuss MEP BIM Outsourcing</a>
+      <div class="del-trust">
+        <div class="del-trust-item"><div class="del-trust-check"><svg viewBox="0 0 9 9"><polyline points="1.5,4.5 3.5,7 7.5,2"/></svg></div>All 4 MEP disciplines — full MEP coordination BIM included</div>
+        <div class="del-trust-item"><div class="del-trust-check"><svg viewBox="0 0 9 9"><polyline points="1.5,4.5 3.5,7 7.5,2"/></svg></div>Built to your templates and naming standards</div>
+        <div class="del-trust-item"><div class="del-trust-check"><svg viewBox="0 0 9 9"><polyline points="1.5,4.5 3.5,7 7.5,2"/></svg></div>Coordination-ready — no additional cleanup</div>
+        <div class="del-trust-item"><div class="del-trust-check"><svg viewBox="0 0 9 9"><polyline points="1.5,4.5 3.5,7 7.5,2"/></svg></div>LOD agreed in writing before work begins</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ BENEFITS ══ -->
+<section class="ben-bg">
+  <div class="reveal">
+    <div class="section-tag">Why Eagle BIM</div>
+    <h2>What Sets Our <em>MEP BIM Services</em> Apart</h2>
+    <p class="sec-desc">MEP BIM modeling done right means more than accurate geometry. It means models that perform in coordination and documentation from day one.</p>
+  </div>
+  <div class="ben-grid">
+    <div class="ben-card reveal">
+      <div class="ben-num">4</div>
+      <div class="ben-title">Disciplines, One Team</div>
+      <div class="ben-text">Mechanical, electrical, plumbing, and fire protection all modeled under one MEP BIM services engagement — coordinated between disciplines before delivery, not after. One point of contact, one delivery schedule, one federated model.</div>
+    </div>
+    <div class="ben-card reveal">
+      <div class="ben-num">LOD</div>
+      <div class="ben-title">Always to Spec</div>
+      <div class="ben-text">Every MEP BIM modeling engagement is delivered at the LOD agreed in your BEP. LOD 200 through LOD 400 — duct sizing, pipe slopes, equipment clearances, and parametric data all included at the level your project requires.</div>
+    </div>
+    <div class="ben-card reveal">
+      <div class="ben-num">0hr</div>
+      <div class="ben-title">Cleanup on Delivery</div>
+      <div class="ben-text">Models delivered to your templates, your families, and your naming conventions mean your team opens the file and works — not spends the first two days reformatting, renaming, and restructuring someone else's Revit MEP model.</div>
+    </div>
+    <div class="ben-card reveal">
+      <div class="ben-num">100%</div>
+      <div class="ben-title">Coordination Ready</div>
+      <div class="ben-text">Every MEP BIM model we deliver is ready to federate for clash detection immediately. Shared coordinates, correct model structure, and NWC export files included — your coordination team can run the first clash report the same day the model arrives.</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ TOOLS ══ -->
+<section class="tools-bg">
+  <div class="reveal">
+    <div class="section-tag">Tools and Software</div>
+    <h2>The <em>Revit MEP Modeling</em> Platform and Tools We Use</h2>
+    <p class="sec-desc">We work in the platforms your project already uses — no format conversion delays, no compatibility issues.</p>
+  </div>
+  <div class="tools-grid reveal">
+    <div class="tool-card">
+      <div class="tool-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 3v18"/></svg></div>
+      <div class="tool-name">Autodesk Revit MEP</div>
+      <div class="tool-role">Primary Revit MEP modeling platform for all MEP discipline models and system families</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="9" r="5"/><circle cx="15" cy="15" r="5"/></svg></div>
+      <div class="tool-name">Autodesk Navisworks</div>
+      <div class="tool-role">MEP coordination BIM — federated model clash detection before delivery</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+      <div class="tool-name">BIM 360 / ACC</div>
+      <div class="tool-role">Cloud model management, MEP model review, and issue tracking</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3v9l5 3"/></svg></div>
+      <div class="tool-name">Revizto</div>
+      <div class="tool-role">Live MEP coordination review and issue management with stakeholders</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+      <div class="tool-name">Bluebeam</div>
+      <div class="tool-role">MEP drawing markup, review, and transmittal management</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ INDUSTRIES ══ -->
+<section class="ind-bg">
+  <div class="reveal">
+    <div class="section-tag">Industries We Serve</div>
+    <h2><em>MEP BIM Services</em> Across Every Building Type</h2>
+    <p class="sec-desc">Our MEP BIM modeling team delivers mechanical electrical plumbing BIM across all building sectors — adapting to the system complexity, LOD requirements, and coordination intensity each project type demands.</p>
+  </div>
+  <div class="ind-grid reveal">
+    <div class="ind-card">
+      <div class="ind-name">Commercial Office</div>
+      <div class="ind-desc">High MEP density office and mixed-use tower modeling — open-plan ceiling zones, exposed service coordination, and complex riser management across multi-storey commercial developments.</div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-name">Healthcare Facilities</div>
+      <div class="ind-desc">Mission-critical MEP BIM modeling and MEP modeling services for hospitals and medical facilities — infection control zoning, pressurisation systems, medical gas pipework, and stringent compliance requirements modeled with precision.</div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-name">Data Centers</div>
+      <div class="ind-desc">High-density mechanical electrical plumbing BIM and MEP modeling services for data centers — precision cooling, redundant power distribution, structured cabling, and suppression systems all modeled and coordinated for mission-critical accuracy.</div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-name">Industrial and Manufacturing</div>
+      <div class="ind-desc">Process MEP BIM modeling and specialist MEP modeling services for manufacturing plants and industrial facilities — complex process piping, heavy electrical, HVAC for controlled environments, and fire suppression for high-risk areas.</div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-name">Multi-Family Residential</div>
+      <div class="ind-desc">Efficient <strong>MEP BIM outsourcing</strong> for apartment and condominium developments — repetitive floor plate modeling that maximizes coordination value across high-rise residential towers with tight programme schedules. Our MEP modeling services handle the repetition so your team focuses on design.</div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-name">Education and Institutional</div>
+      <div class="ind-desc">MEP BIM services for schools, universities, and civic buildings — mechanical, electrical, and plumbing systems modeled to sustainability targets and tight academic construction schedules.</div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-name">Hospitality</div>
+      <div class="ind-desc">Hotel and resort MEP BIM modeling — guest room repetition, complex back-of-house mechanical systems, kitchen and laundry services, and facade integration with interior MEP distribution.</div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-name">Retail and Mixed-Use</div>
+      <div class="ind-desc">Fast-track mechanical electrical plumbing BIM and MEP modeling services for retail fit-outs and mixed-use developments — landlord MEP systems, tenant MEP interfaces, and multi-tenancy coordination delivered on tight programme schedules.</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ GEO ══ -->
+<section class="geo-bg">
+  <div class="reveal">
+    <div class="section-tag" style="color:var(--gold-lt)"><span style="display:inline-block;width:22px;height:2px;background:var(--gold);border-radius:2px;margin-right:8px;vertical-align:middle"></span>Service Area</div>
+    <h2 style="color:white"><em style="color:var(--gold-lt)">MEP BIM Services</em> Across the United States</h2>
+    <p class="geo-intro">Eagle BIM delivers MEP BIM services and MEP BIM modeling to engineering firms, contractors, and design-build teams nationwide. All Revit MEP modeling and MEP modeling services work is performed remotely — send us your project documents and we will deliver coordination-ready models, wherever your project is based.</p>
+  </div>
+  <div class="geo-primary reveal">
+    <div class="geo-primary-lbl">Primary Region · Featured Service Area</div>
+    <div class="geo-primary-title">MEP BIM Services in Texas</div>
+    <div class="geo-primary-desc">Based in Pflugerville, TX, Eagle BIM provides MEP BIM services and Revit MEP modeling to MEP engineering firms, delivering Revit MEP modeling, general contractors, and design-build teams across Houston, Dallas, Austin, San Antonio, Fort Worth, and statewide. We understand Texas building codes, mechanical and electrical specifications, and the fast-paced commercial and industrial construction environment that defines the state's AEC market.</div>
+  </div>
+  <div class="geo-grid reveal">
+    <div class="geo-state"><div class="geo-state-name">California</div><div class="geo-cities">Los Angeles · San Francisco · San Diego · Sacramento</div></div>
+    <div class="geo-state"><div class="geo-state-name">New York</div><div class="geo-cities">New York City · Buffalo · Albany · Rochester</div></div>
+    <div class="geo-state"><div class="geo-state-name">Florida</div><div class="geo-cities">Miami · Orlando · Tampa · Jacksonville</div></div>
+    <div class="geo-state"><div class="geo-state-name">Illinois</div><div class="geo-cities">Chicago · Springfield · Aurora · Naperville</div></div>
+    <div class="geo-state"><div class="geo-state-name">Washington</div><div class="geo-cities">Seattle · Tacoma · Bellevue · Spokane</div></div>
+    <div class="geo-state"><div class="geo-state-name">Massachusetts</div><div class="geo-cities">Boston · Cambridge · Worcester</div></div>
+    <div class="geo-state"><div class="geo-state-name">Colorado</div><div class="geo-cities">Denver · Colorado Springs · Boulder</div></div>
+    <div class="geo-state"><div class="geo-state-name">Georgia &amp; More</div><div class="geo-cities">Atlanta · Charlotte · Nashville · Phoenix</div></div>
+  </div>
+</section>
+
+
+<!-- ══ RELATED SERVICES ══ -->
+<section class="related-bg">
+  <div class="reveal">
+    <div class="section-tag">Related Services</div>
+    <h2>BIM Services That Work Alongside <em>MEP BIM Modeling</em></h2>
+  </div>
+  <div class="related-grid">
+    <a href="bim-coordination-services.html" class="rel-card reveal">
+      <div class="rel-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+      <div class="rel-title">BIM Coordination Services</div>
+      <div class="rel-desc">Federated model coordination and clash detection — taking the MEP BIM models we build and delivering full MEP coordination BIM against architectural and structural for a clash-free package.</div>
+    </a>
+    <a href="clash-detection-services.html" class="rel-card reveal">
+      <div class="rel-icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="9" r="5"/><circle cx="15" cy="15" r="5"/></svg></div>
+      <div class="rel-title">Clash Detection Services</div>
+      <div class="rel-desc">Standalone clash detection in Navisworks — running hard and soft clash tests on your MEP BIM models against all disciplines with full reports and resolution tracking.</div>
+    </a>
+    <a href="architectural-bim-services.html" class="rel-card reveal">
+      <div class="rel-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 3v18"/></svg></div>
+      <div class="rel-title">Architectural BIM Services</div>
+      <div class="rel-desc">Revit architectural modeling and construction documentation — the base model against which all MEP BIM modeling is coordinated and clash-tested.</div>
+    </a>
+    <a href="bim-consulting-services.html" class="rel-card reveal">
+      <div class="rel-icon"><svg viewBox="0 0 24 24"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg></div>
+      <div class="rel-title">BIM Consulting Services</div>
+      <div class="rel-desc">BEP development, MEP modeling standards, and Revit template creation — the framework that ensures your MEP BIM services engagement delivers consistent results across every project.</div>
+    </a>
+  </div>
+</section>
+
+
+<!-- ══ FINAL CTA ══ -->
+<section class="cta-final">
+  <div class="cta-inner reveal">
+    <div class="section-tag" style="justify-content:center;margin-bottom:20px;color:var(--gold-lt)"><span style="display:inline-block;width:22px;height:2px;background:var(--gold);border-radius:2px;margin-right:8px;vertical-align:middle"></span>Get Started</div>
+    <h2>Share Your MEP Scope. Get a Delivery Plan in 48 Hours.</h2>
+    <p>Send us your MEP drawings, specifications, and BEP requirements. We will review your scope and return a clear MEP BIM modeling plan and firm quote — typically within 24 to 48 hours.</p>
+    <div class="cta-acts">
+      <a href="mailto:info@eaglebim.com" class="cta-btn-primary">Share Your MEP Scope →</a>
+      <div class="cta-secondary-row">
+        <a href="tel:+13465882960" class="cta-btn-ghost">📞 Call Us</a>
+        <a href="mailto:info@bim-services.us" class="cta-btn-ghost">✉️ Email Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="foot-top">
+    <div class="foot-brand">
+      <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 8500 8000" style="height:52px;width:auto;display:block">
+        <defs><style>.ffl0{fill:#687D9C}.ffl1{fill:#687D9C;fill-rule:nonzero}.ffl2{fill:#DEAA57;fill-rule:nonzero}</style></defs>
+        <g>
+          <path class="ffl0" d="M1812.4 4727.09c409.83,9.8 887.26,173.39 1195.7,439.26 28.72,24.76 44.02,30.15 58.55,57.24 -52.14,-14.57 -171.2,-85.78 -230.79,-112.6 -573.62,-258.2 -1233.3,-349.38 -1831.71,-106.15 -40.93,16.63 -87.49,44.55 -124.91,55.7 20.68,-59.06 109.44,-127.92 160.93,-158.02 80.06,-46.81 141.34,-58.65 228.48,-90.06 -274.29,-14.17 -541.87,141.17 -633.11,424.54l-23.67 -31.72c-53.08,-122.61 -57.66,-196.85 -65.87,-329.88l-13.99 32.3c-3.39,12 -4.68,20.78 -6.59,35.01 -11.91,88.58 -15.08,172.5 5.98,256.07 21.54,85.47 78.14,202.53 145.85,231.4 50.02,-49.84 120.88,-289.19 534.4,-286.16 514.62,3.76 936.61,447.07 1147.02,891.67 48.99,103.51 78.24,193.2 116.58,292.69 204.29,1.91 365.65,-22.11 551.58,-61.3 -4.56,-73.17 -96.36,-288.22 -127.03,-355.35 -102.95,-225.38 -241.3,-405.89 -399.13,-574.71 -60.2,-64.39 -184.4,-177.9 -254.16,-231.52 88.93,6.2 297.3,104.48 378.5,150.87 220.07,125.7 420.56,298.33 567.63,501.22 58.21,80.31 158.45,237.07 191,342.72 62.81,-15.08 171.35,-153.6 213.87,-236.18 55.17,-107.14 79.26,-236.42 72.54,-380.41 -46.7,-1000.4 -1793.1,-818.22 -1857.66,-756.62z"/>
+          <path class="ffl0" d="M908.33 5330.28l-1.41 999.35 1449.64 0.28c-2,-76.96 -166.68,-386.07 -201.72,-441.69 -91.01,-144.46 -187.49,-261 -295.82,-356.08 -109.45,-96.06 -252.17,-188.71 -413.11,-240.03 -174.03,-55.49 -400.81,-61.85 -537.57,38.17z"/>
+          <path class="ffl0" d="M908.65 3424.73l-2.99 908.85c20.1,-3.89 21.74,-11.21 40.59,-30 89.89,-89.6 210.33,-177.93 315.83,-240.48 274.56,-162.77 638.43,-274.24 960.06,-309.57 166.8,-18.33 422.8,-54.2 590.23,-38.31 -24.89,13.29 -111.58,28.2 -152.81,40.07 -48.39,13.94 -105.58,33.65 -152.35,52.08 -72.65,28.64 -226.01,98.68 -263.84,140.95l282.22 -56.28c100.35,-17.6 195,-28.31 296.59,-38.74 148.31,-15.24 329.26,-9.66 481.55,6.76 47.54,5.13 105.39,18.24 154.19,20.06 -16.76,-73.51 -132.1,-181.83 -167.19,-211.69 -76.12,-64.77 -146.3,-100.57 -245.26,-134.7 -468.76,-161.6 -1251.39,-126.41 -1767.93,-118.66 -111.8,1.68 -260.91,-1.35 -368.89,9.66z"/>
+          <path class="ffl0" d="M2103.02 4423.22c104.56,1.75 233.32,-18.11 345.8,-21.11 253.78,-6.76 601.91,10.18 846.47,75.82 41.2,11.06 108.16,35.39 149.12,41.7 50.39,-58.35 99.35,-237.52 80.56,-322.74 -349.11,-20.6 -764.31,38.62 -1103.59,124.24 -55.44,13.99 -109.4,28.7 -160.46,43.9 -40.44,12.04 -129.33,33.19 -157.89,58.2z"/>
+          <path class="ffl0" d="M998.36 4717.1c128.1,59.57 343.38,32.49 435.46,-153.69 120.03,-242.71 179.03,-215.94 348.65,-242.96 29.17,-4.65 25.79,-8.44 31.52,-15.04 -269.51,-102.19 -476.91,163.85 -619.63,290.24 -130.76,115.81 -163.14,96.48 -196,121.45z"/>
+          <polygon class="ffl1" points="4816.05,6282.34 4011.23,6282.34 4011.23,3410.51 4816.05,3410.51"/>
+          <polygon class="ffl1" points="5156.12,6282.34 5156.12,3410.51 5908.89,3410.51 6554.65,4959.31 7196.74,3410.51 7983.97,3410.51 7983.97,6282.34 7183.55,6282.34 7183.55,4394.18 6408.79,6282.34 6331.83,6282.34 5573.92,4477.74 5573.92,6282.34"/>
+          <path class="ffl2" d="M908.18 6642.7l534.93 0 0 123.23 -380.89 0 0 267.47 298.28 0 0 124.63 -298.28 0 0 292.67 386.5 0 0 126.03 -540.54 0 0 -934.04zm1041.97 0l175.51 0 249.26 934.04 -156.37 0 -58.58 -233.86 -273.07 0 -57.88 233.86 -147.27 0 268.4 -934.04zm179.48 578.35l-106.89 -427.81 -105.73 427.81 212.62 0zm864.82 -123.23l312.28 0 0 485.92 -82.85 0 -20.77 -119.03c-47.38,85.89 -122.3,128.83 -224.76,128.83 -104.09,0 -185.78,-42.24 -244.36,-126.96 -58.81,-84.49 -88.22,-199.31 -88.22,-344.25 0,-152.64 29.17,-273.54 87.29,-362.69 58.35,-89.15 147.5,-133.73 268.17,-133.73 168.04,0 268.4,94.76 301.31,284.5l-140.04 34.78c-16.57,-80.98 -38.74,-133.5 -66.52,-157.3 -28.01,-24.04 -60.92,-35.94 -98.96,-35.94 -125.8,0 -188.81,119.03 -188.81,356.86 0,239.22 64.18,358.72 192.78,358.72 106.66,0 160.11,-82.15 160.11,-246.46l-166.64 0 0 -123.23zm694.45 -455.11l154.04 0 0 803.8 330.48 0 0 130.23 -484.52 0 0 -934.04zm796.91 0l534.93 0 0 123.23 -380.89 0 0 267.47 298.28 0 0 124.63 -298.28 0 0 292.67 386.5 0 0 126.03 -540.54 0 0 -934.04zm1129.96 0l282.64 0c71.19,0 125.33,5.6 162.21,17.04 36.87,11.44 68.15,36.87 93.82,76.32 25.44,39.68 38.28,87.52 38.28,144.24 0,103.63 -46.21,171.78 -138.87,204.69 111.33,35.24 166.88,113.43 166.88,234.56 0,68.85 -21.94,129.06 -66.05,180.18 -43.88,51.35 -128.13,77.02 -252.53,77.02l-286.37 0 0 -934.04zm151.24 387.9l98.02 0c69.08,0 114.59,-12.83 136.53,-38.28 21.94,-25.44 32.91,-58.11 32.91,-98.49 0,-47.38 -12.6,-80.98 -37.81,-101.52 -24.98,-20.31 -63.95,-30.57 -116.46,-30.57l-113.19 0 0 268.87zm0 422.91l124.4 0c114.13,0 171.07,-50.65 171.07,-151.7 0,-39.21 -12.14,-74.45 -36.18,-105.49 -24.27,-31.04 -73.52,-46.68 -147.74,-46.68l-111.56 0 0 303.87zm836.58 -810.8l154.04 0 0 934.04 -154.04 0 0 -934.04zm555.58 0l228.49 0 185.78 673.34 190.45 -673.34 220.09 0 0 934.04 -145.64 0 0 -797.27 -221.26 797.27 -112.03 0 -217.06 -797.96 0 797.96 -128.83 0 0 -934.04z"/>
+        </g>
+      </svg>
+      <p>Eagle BIM, in association with BIMPRO LLC, provides expert BIM modeling, coordination, and consulting services to AEC firms across Texas and the USA.</p>
+    </div>
+    <div class="foot-col">
+      <h4>BIM Services</h4>
+      <ul>
+        <li><a href="architectural-bim-services.html">Architectural BIM Services</a></li>
+        <li><a href="#">MEP BIM Services</a></li>
+        <li><a href="#">Structural BIM Services</a></li>
+        <li><a href="bim-coordination-services.html">BIM Coordination Services</a></li>
+        <li><a href="clash-detection-services.html">Clash Detection Services</a></li>
+        <li><a href="cad-to-bim-services.html">CAD to BIM Services</a></li>
+        <li><a href="#">Scan to BIM Services</a></li>
+        <li><a href="bim-consulting-services.html">BIM Consulting Services</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Our BIM Projects</a></li>
+        <li><a href="#">BIM Resources / Blog</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>Contact</h4>
+      <div class="foot-ci">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.72 11.5 19.79 19.79 0 011.65 2.82 2 2 0 013.62 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 8.6a16 16 0 006.29 6.29l.96-.96a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+        +1 (346) 588-2960
+      </div>
+      <div class="foot-ci">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        info@bim-services.us
+      </div>
+      <div class="foot-ci">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        16805 Guido Cv, Pflugerville, TX 78660
+      </div>
+      <div style="margin-top:18px">
+        <div style="font-size:11px;color:rgba(255,255,255,.28);letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px">Serving USA Cities</div>
+        <div style="font-size:12px;color:rgba(255,255,255,.38);line-height:1.85">Houston · Dallas · Austin · NYC<br>Los Angeles · Chicago · Miami<br>Seattle · Denver · Boston</div>
+      </div>
+    </div>
+  </div>
+  <div class="foot-btm">
+    <span>© 2026 Eagle BIM · BIMPRO LLC · BIM Services USA · BIM Company in Texas · All rights reserved.</span>
+    <div class="soc-links">
+      <a href="https://www.facebook.com/EagleBIMservices/" class="soc-link" target="_blank">f</a>
+      <a href="https://www.linkedin.com/company/eagle-bim-services/" class="soc-link" target="_blank">in</a>
+      <a href="https://x.com/eaglebim" class="soc-link" target="_blank">𝕏</a>
+      <a href="https://www.instagram.com/eaglebim/" class="soc-link" target="_blank">ig</a>
+      <a href="https://www.youtube.com/@EagleBIM-USA" class="soc-link" target="_blank">▶</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach((e,i) => {
+      if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),i*70);obs.unobserve(e.target);}
+    });
+  },{threshold:0.07});
+  reveals.forEach(el=>obs.observe(el));
+  window.addEventListener('scroll',()=>{
+    document.getElementById('main-nav').style.boxShadow=window.scrollY>40?'0 4px 24px rgba(104,125,156,.14)':'none';
+  });
+</script>
+</body>
+</html>

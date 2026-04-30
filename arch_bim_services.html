@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Architectural BIM Services USA | 3D Modeling &amp; Construction Docs | Eagle BIM</title>
+<meta name="description" content="Expert architectural BIM services from SD to CD. 3D architectural modeling, construction documents, coordination, and detailing for architects and design firms across the USA.">
+<meta name="keywords" content="Architectural BIM Services, Architectural BIM Modeling, Revit Architectural Services, BIM for Architects, Architectural BIM Drafting, 3D Architectural Modeling, Construction Documentation Services">
+<link rel="canonical" href="https://www.eaglebim.com/architectural-bim-services/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --blue:#687d9c; --blue-dk:#4a6080; --blue-lt:#8a9db8;
+    --blue-pale:#e8edf4; --blue-xpale:#f3f6fa;
+    --gold:#deaa57; --gold-dk:#c8943d; --gold-lt:#ecc278;
+    --gold-pale:#fdf6e8;
+    --white:#ffffff; --off:#f8f7f5; --cream:#f3f1ec;
+    --txt:#1a2233; --txt-mid:#4a5568; --txt-muted:#8a94a6;
+    --bdr:#e2e6ed; --bdr-gold:rgba(222,170,87,.28);
+    --sh:0 2px 20px rgba(104,125,156,.09);
+    --sh-md:0 8px 40px rgba(104,125,156,.14);
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--white);color:var(--txt);font-family:'DM Sans',sans-serif;font-size:16px;line-height:1.6;overflow-x:hidden}
+
+  /* ── NAV ── */
+  nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 52px;height:72px;background:rgba(255,255,255,.97);backdrop-filter:blur(14px);border-bottom:1px solid var(--bdr);transition:box-shadow .3s}
+  .nav-logo{display:flex;align-items:center;text-decoration:none;flex-shrink:0}
+  .nav-logo svg{height:44px;width:auto;display:block}
+  .nav-links{display:flex;align-items:center;gap:2px;list-style:none;position:absolute;left:50%;transform:translateX(-50%)}
+  .nav-links a{text-decoration:none;color:var(--txt-mid);font-size:13px;font-weight:500;letter-spacing:.03em;padding:6px 13px;border-radius:4px;transition:color .2s,background .2s;white-space:nowrap}
+  .nav-links a:hover{color:var(--blue);background:var(--blue-pale)}
+  .nav-links a.active{color:var(--gold-dk);font-weight:600}
+  .nav-links .drop>a::after{content:' ↓';font-size:9px;opacity:.55}
+  .nav-cta{display:inline-flex;align-items:center;padding:11px 22px;background:var(--gold);color:#fff!important;font-weight:700!important;font-size:12px!important;letter-spacing:.1em!important;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:background .2s,transform .15s,box-shadow .2s;flex-shrink:0}
+  .nav-cta:hover{background:var(--gold-dk)!important;transform:translateY(-1px);box-shadow:0 4px 18px rgba(222,170,87,.35)}
+
+  /* ── HERO ── */
+  .hero{min-height:100vh;display:grid;grid-template-columns:55fr 45fr;align-items:center;padding:120px 52px 80px;position:relative;overflow:hidden;gap:40px;background:var(--white)}
+  .hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(104,125,156,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(104,125,156,.05) 1px,transparent 1px);background-size:52px 52px;pointer-events:none}
+  .hero-content{position:relative;z-index:2}
+  .breadcrumb{display:flex;align-items:center;gap:8px;margin-bottom:20px;font-size:12px;color:var(--txt-muted)}
+  .breadcrumb a{color:var(--blue);text-decoration:none;font-weight:500}
+  .breadcrumb a:hover{color:var(--gold-dk)}
+  .breadcrumb span{opacity:.5}
+  .hero-tag{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border:1px solid var(--bdr-gold);border-radius:100px;font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-dk);margin-bottom:22px;background:var(--gold-pale);animation:fadeUp .7s ease both}
+  .hero-tag::before{content:'';width:6px;height:6px;background:var(--gold);border-radius:50%;animation:pulse 2s ease infinite}
+  @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
+  h1{font-family:'Playfair Display',serif;font-size:clamp(32px,3.4vw,52px);font-weight:800;line-height:1.1;letter-spacing:-.01em;margin-bottom:22px;color:var(--txt);animation:fadeUp .7s .1s ease both}
+  h1 em{font-style:normal;color:var(--blue)}
+  .hero-sub{font-size:17px;color:var(--txt-mid);line-height:1.78;max-width:490px;margin-bottom:36px;font-weight:300;animation:fadeUp .7s .2s ease both}
+  .hero-actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap;animation:fadeUp .7s .3s ease both}
+  .hero-badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:36px;animation:fadeUp .7s .4s ease both}
+  .badge{padding:5px 12px;border:1px solid var(--bdr);border-radius:100px;font-size:11px;font-weight:500;letter-spacing:.05em;color:var(--blue);background:var(--blue-pale)}
+  .hero-visual{position:relative;z-index:2;display:flex;align-items:center;justify-content:center;animation:fadeUp .7s .2s ease both}
+
+  /* ── FLOOR PLAN SVG ── */
+  .fp-svg{width:440px;height:500px}
+
+  /* ── BUTTONS ── */
+  .btn-gold{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;background:var(--gold);color:#fff;font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:background .2s,transform .15s,box-shadow .2s}
+  .btn-gold:hover{background:var(--gold-dk);transform:translateY(-2px);box-shadow:0 8px 26px rgba(222,170,87,.35)}
+  .btn-blue{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border:1.5px solid var(--blue);color:var(--blue);font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:background .2s,color .2s,transform .15s}
+  .btn-blue:hover{background:var(--blue);color:#fff;transform:translateY(-2px)}
+  .btn-arrow{transition:transform .2s}
+  .btn-gold:hover .btn-arrow,.btn-blue:hover .btn-arrow{transform:translateX(4px)}
+
+  /* ── STATS ── */
+  .stats-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--bdr);border-top:1px solid var(--bdr);border-bottom:1px solid var(--bdr)}
+  .stat-item{background:var(--white);padding:32px 36px;text-align:center;transition:background .3s;cursor:default}
+  .stat-item:hover{background:var(--blue-pale)}
+  .stat-num{font-family:'Playfair Display',serif;font-size:42px;font-weight:800;color:var(--blue);line-height:1;display:block}
+  .stat-sfx{font-size:22px;font-weight:400;color:var(--gold)}
+  .stat-lbl{font-size:11px;color:var(--txt-muted);letter-spacing:.1em;text-transform:uppercase;margin-top:8px;font-weight:600}
+
+  /* ── SECTION COMMONS ── */
+  section{padding:88px 52px}
+  .section-tag{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-dk);margin-bottom:14px}
+  .section-tag::before{content:'';display:block;width:22px;height:2px;background:var(--gold);border-radius:2px}
+  h2{font-family:'Playfair Display',serif;font-size:clamp(24px,2.4vw,38px);font-weight:800;line-height:1.12;letter-spacing:-.01em;margin-bottom:14px;color:var(--txt)}
+  h2 em{font-style:normal;color:var(--blue)}
+  .sec-desc{color:var(--txt-mid);font-size:16px;line-height:1.78;max-width:580px;font-weight:300}
+  .body-text{font-size:15.5px;color:var(--txt-mid);line-height:1.85;font-weight:300;margin-bottom:18px}
+  .body-text:last-child{margin-bottom:0}
+  .body-text strong{color:var(--txt);font-weight:600}
+
+  /* ── INTRO SECTION ── */
+  .intro-layout{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+  .intro-right{display:flex;flex-direction:column;gap:20px}
+  .phase-card{background:var(--white);border:1px solid var(--bdr);border-radius:6px;padding:24px 22px;border-left:3px solid var(--gold)}
+  .phase-label{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-dk);margin-bottom:6px}
+  .phase-title{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--txt);margin-bottom:6px}
+  .phase-desc{font-size:13px;color:var(--txt-muted);line-height:1.65}
+
+  /* ── SERVICES DETAIL ── */
+  .services-detail-bg{background:var(--off)}
+  .services-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--bdr);border:1px solid var(--bdr);border-radius:6px;overflow:hidden;margin-top:52px}
+  .sd-card{background:var(--white);padding:36px 32px;transition:background .25s}
+  .sd-card:hover{background:var(--blue-xpale)}
+  .sd-icon{width:48px;height:48px;background:var(--gold-pale);border:1.5px solid var(--bdr-gold);border-radius:4px;display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+  .sd-icon svg{width:22px;height:22px;stroke:var(--gold-dk);fill:none;stroke-width:1.5}
+  .sd-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--txt);margin-bottom:12px}
+  .sd-text{font-size:14px;color:var(--txt-mid);line-height:1.78;font-weight:300}
+
+  /* ── PHASE SECTION ── */
+  .phases-bg{background:var(--white)}
+  .phases-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:52px}
+  .ph-card{border:1px solid var(--bdr);border-radius:6px;padding:32px 28px;position:relative;overflow:hidden;transition:border-color .25s,box-shadow .25s}
+  .ph-card:hover{border-color:var(--blue-lt);box-shadow:var(--sh-md)}
+  .ph-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+  .ph-card:hover::before{transform:scaleX(1)}
+  .ph-num{font-family:'Playfair Display',serif;font-size:40px;font-weight:800;color:var(--blue-pale);line-height:1;margin-bottom:12px}
+  .ph-label{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-dk);margin-bottom:8px}
+  .ph-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--txt);margin-bottom:12px}
+  .ph-text{font-size:14px;color:var(--txt-mid);line-height:1.75;font-weight:300}
+  .ph-items{display:flex;flex-direction:column;gap:6px;margin-top:14px}
+  .ph-item{display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--txt-mid)}
+  .ph-dot{width:5px;height:5px;min-width:5px;background:var(--gold);border-radius:50%;margin-top:7px}
+
+  /* ── COORDINATION SECTION ── */
+  .coord-bg{background:var(--blue)}
+  .coord-bg .section-tag{color:var(--gold-lt)}
+  .coord-bg .section-tag::before{background:var(--gold)}
+  .coord-bg h2{color:var(--white)}
+  .coord-layout{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+  .coord-text .body-text{color:rgba(255,255,255,.65)}
+  .coord-text .body-text strong{color:var(--white)}
+  .coord-points{display:flex;flex-direction:column;gap:0}
+  .coord-point{display:flex;gap:20px;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.1);transition:padding-left .3s}
+  .coord-point:first-child{border-top:1px solid rgba(255,255,255,.1)}
+  .coord-point:hover{padding-left:8px}
+  .coord-icon{width:40px;height:40px;min-width:40px;background:rgba(222,170,87,.15);border:1px solid rgba(222,170,87,.25);border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .coord-icon svg{width:18px;height:18px;stroke:var(--gold);fill:none;stroke-width:1.5}
+  .coord-pt-title{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--white);margin-bottom:5px}
+  .coord-pt-text{font-size:13.5px;color:rgba(255,255,255,.55);line-height:1.7;font-weight:300}
+
+  /* ── DETAILING SECTION ── */
+  .detail-bg{background:var(--cream)}
+  .detail-layout{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+  .detail-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:28px}
+  .detail-item{background:var(--white);border:1px solid var(--bdr);border-radius:4px;padding:18px 16px;display:flex;gap:12px;align-items:flex-start;transition:border-color .2s}
+  .detail-item:hover{border-color:var(--gold)}
+  .detail-dot{width:6px;height:6px;min-width:6px;background:var(--gold);border-radius:50%;margin-top:7px}
+  .detail-item-txt{font-size:13px;color:var(--txt-mid);font-weight:500;line-height:1.5}
+
+  /* ── AS-BUILT SECTION ── */
+  .asbuilt-bg{background:var(--white)}
+  .asbuilt-layout{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+  .asbuilt-visual{background:var(--off);border:1px solid var(--bdr);border-radius:8px;padding:40px;display:flex;flex-direction:column;gap:16px}
+  .ab-row{display:flex;align-items:center;gap:14px;padding:14px 16px;background:var(--white);border:1px solid var(--bdr);border-radius:4px;transition:border-color .2s}
+  .ab-row:hover{border-color:var(--blue-lt)}
+  .ab-icon{width:36px;height:36px;min-width:36px;background:var(--blue-pale);border-radius:4px;display:flex;align-items:center;justify-content:center}
+  .ab-icon svg{width:16px;height:16px;stroke:var(--blue);fill:none;stroke-width:1.5}
+  .ab-label{font-size:13px;font-weight:600;color:var(--txt)}
+  .ab-sub{font-size:11.5px;color:var(--txt-muted)}
+
+  /* ── BENEFITS SECTION ── */
+  .benefits-bg{background:var(--off)}
+  .benefits-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--bdr);border:1px solid var(--bdr);border-radius:6px;overflow:hidden;margin-top:52px}
+  .ben-card{background:var(--white);padding:32px 26px;transition:background .25s}
+  .ben-card:hover{background:var(--gold-pale)}
+  .ben-num{font-family:'Playfair Display',serif;font-size:36px;font-weight:800;color:var(--gold);line-height:1;margin-bottom:10px}
+  .ben-title{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--txt);margin-bottom:8px}
+  .ben-text{font-size:13px;color:var(--txt-muted);line-height:1.65}
+
+  /* ── DELIVERABLES SECTION ── */
+  .del-bg{background:var(--white)}
+  .del-cols{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start;margin-top:52px}
+  .del-list{display:flex;flex-direction:column;gap:12px}
+  .del-row{display:flex;align-items:flex-start;gap:14px;padding:16px 18px;border:1px solid var(--bdr);border-radius:4px;background:var(--off);transition:border-color .2s}
+  .del-row:hover{border-color:var(--gold)}
+  .del-row-icon{width:36px;height:36px;min-width:36px;background:var(--blue-pale);border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .del-row-title{font-size:14px;font-weight:600;color:var(--txt);margin-bottom:3px}
+  .del-row-text{font-size:12.5px;color:var(--txt-muted);line-height:1.6}
+  .fmt-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+  .fmt-chip{padding:7px 14px;border:1.5px solid var(--bdr-gold);font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--gold-dk);background:var(--gold-pale);border-radius:3px}
+  .del-right-box{background:var(--blue);border-radius:8px;padding:40px 36px}
+  .del-right-box h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--white);margin-bottom:16px;line-height:1.3}
+  .del-right-box p{font-size:14px;color:rgba(255,255,255,.6);line-height:1.8;font-weight:300;margin-bottom:24px}
+  .del-cta-gold{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;background:var(--gold);color:#fff;font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:background .2s,transform .15s}
+  .del-cta-gold:hover{background:var(--gold-dk);transform:translateY(-2px)}
+  .del-cta-ghost{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border:1.5px solid rgba(255,255,255,.3);color:rgba(255,255,255,.8);font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:border-color .2s,background .2s;margin-top:10px}
+  .del-cta-ghost:hover{border-color:rgba(255,255,255,.7);background:rgba(255,255,255,.07)}
+
+  /* ── RELATED SERVICES ── */
+  .related-bg{background:var(--cream)}
+  .related-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px}
+  .rel-card{background:var(--white);border:1px solid var(--bdr);border-radius:6px;padding:24px 20px;text-decoration:none;transition:border-color .25s,box-shadow .25s;display:block}
+  .rel-card:hover{border-color:var(--blue-lt);box-shadow:var(--sh)}
+  .rel-icon{width:40px;height:40px;background:var(--blue-pale);border-radius:4px;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+  .rel-icon svg{width:18px;height:18px;stroke:var(--blue);fill:none;stroke-width:1.5}
+  .rel-title{font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--txt);margin-bottom:6px}
+  .rel-desc{font-size:12.5px;color:var(--txt-muted);line-height:1.6}
+
+  /* ── FINAL CTA ── */
+  .cta-final{background:var(--blue);padding:100px 52px;text-align:center;position:relative;overflow:hidden}
+  .cta-final::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:48px 48px}
+  .cta-inner{position:relative;z-index:2;max-width:620px;margin:0 auto}
+  .cta-inner .section-tag{justify-content:center;color:var(--gold-lt)}
+  .cta-inner .section-tag::before{background:var(--gold)}
+  .cta-inner h2{color:var(--white);margin-bottom:16px}
+  .cta-inner p{color:rgba(255,255,255,.62);font-size:16px;margin-bottom:36px;font-weight:300;line-height:1.8}
+  .cta-acts{display:flex;flex-direction:column;align-items:center;gap:14px}
+  .cta-btn-primary{display:inline-flex;align-items:center;gap:10px;padding:16px 44px;background:var(--gold);color:#fff;font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:background .2s,transform .15s,box-shadow .2s}
+  .cta-btn-primary:hover{background:var(--gold-dk);transform:translateY(-2px);box-shadow:0 10px 30px rgba(0,0,0,.2)}
+  .cta-secondary-row{display:flex;gap:12px}
+  .cta-btn-ghost{display:inline-flex;align-items:center;gap:8px;padding:11px 26px;border:1.5px solid rgba(255,255,255,.25);color:rgba(255,255,255,.7);font-weight:500;font-size:13px;text-decoration:none;border-radius:3px;transition:border-color .2s,color .2s,background .2s}
+  .cta-btn-ghost:hover{border-color:rgba(255,255,255,.6);color:#fff;background:rgba(255,255,255,.06)}
+
+  /* ── FOOTER ── */
+  footer{background:var(--txt);border-top:3px solid var(--gold);padding:64px 52px 36px}
+  .foot-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:52px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:28px}
+  .foot-brand p{font-size:13px;color:rgba(255,255,255,.42);line-height:1.78;margin-top:14px;font-weight:300;max-width:260px}
+  .foot-logo{display:flex;align-items:center;gap:10px}
+  .foot-logo-txt .top{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--white)}
+  .foot-logo-txt .sub{font-size:9px;letter-spacing:.18em;color:var(--gold);font-weight:600;text-transform:uppercase}
+  .foot-col h4{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+  .foot-col ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+  .foot-col a{text-decoration:none;font-size:13px;color:rgba(255,255,255,.42);transition:color .2s}
+  .foot-col a:hover{color:var(--gold-lt)}
+  .foot-ci{display:flex;align-items:flex-start;gap:9px;font-size:13px;color:rgba(255,255,255,.45);margin-bottom:11px;font-weight:300}
+  .foot-ci svg{flex-shrink:0;stroke:var(--gold);margin-top:2px}
+  .foot-btm{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,.3)}
+  .soc-links{display:flex;gap:10px}
+  .soc-link{width:30px;height:30px;border:1px solid rgba(222,170,87,.22);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.38);text-decoration:none;font-size:12px;font-weight:700;transition:border-color .2s,color .2s,background .2s;border-radius:3px}
+  .soc-link:hover{border-color:var(--gold);color:var(--gold);background:rgba(222,170,87,.1)}
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .65s ease,transform .65s ease}
+  .reveal.visible{opacity:1;transform:translateY(0)}
+
+  /* ── RESPONSIVE ── */
+  @media(max-width:1100px){
+    .hero{grid-template-columns:1fr;padding:100px 32px 60px}
+    .hero-visual{display:none}
+    .intro-layout,.detail-layout,.asbuilt-layout,.coord-layout,.del-cols{grid-template-columns:1fr;gap:48px}
+    .phases-grid{grid-template-columns:1fr 1fr}
+    .benefits-grid{grid-template-columns:1fr 1fr}
+    .related-grid{grid-template-columns:1fr 1fr}
+    .foot-top{grid-template-columns:1fr 1fr}
+    nav{padding:0 24px}.nav-links{display:none}
+  }
+  @media(max-width:768px){
+    section{padding:64px 20px}
+    .hero{padding:88px 20px 60px}
+    .stats-strip{grid-template-columns:1fr 1fr}
+    .services-detail-grid,.phases-grid,.benefits-grid,.related-grid{grid-template-columns:1fr}
+    .foot-top{grid-template-columns:1fr;gap:36px}
+    .cta-secondary-row{flex-direction:column}
+    .detail-list{grid-template-columns:1fr}
+  }
+  ::-webkit-scrollbar{width:5px}
+  ::-webkit-scrollbar-track{background:var(--off)}
+  ::-webkit-scrollbar-thumb{background:var(--blue-lt);border-radius:3px}
+  ::-webkit-scrollbar-thumb:hover{background:var(--blue)}
+</style>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav id="main-nav">
+  <a href="index.html" class="nav-logo" aria-label="Eagle BIM Home">
+    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 8500 8000" style="height:44px;width:auto;display:block">
+      <defs><style>.nl0{fill:#687D9C}.nl1{fill:#687D9C;fill-rule:nonzero}.nl2{fill:#DEAA57;fill-rule:nonzero}</style></defs>
+      <g>
+        <path class="nl0" d="M1812.4 4727.09c409.83,9.8 887.26,173.39 1195.7,439.26 28.72,24.76 44.02,30.15 58.55,57.24 -52.14,-14.57 -171.2,-85.78 -230.79,-112.6 -573.62,-258.2 -1233.3,-349.38 -1831.71,-106.15 -40.93,16.63 -87.49,44.55 -124.91,55.7 20.68,-59.06 109.44,-127.92 160.93,-158.02 80.06,-46.81 141.34,-58.65 228.48,-90.06 -274.29,-14.17 -541.87,141.17 -633.11,424.54l-23.67 -31.72c-53.08,-122.61 -57.66,-196.85 -65.87,-329.88l-13.99 32.3c-3.39,12 -4.68,20.78 -6.59,35.01 -11.91,88.58 -15.08,172.5 5.98,256.07 21.54,85.47 78.14,202.53 145.85,231.4 50.02,-49.84 120.88,-289.19 534.4,-286.16 514.62,3.76 936.61,447.07 1147.02,891.67 48.99,103.51 78.24,193.2 116.58,292.69 204.29,1.91 365.65,-22.11 551.58,-61.3 -4.56,-73.17 -96.36,-288.22 -127.03,-355.35 -102.95,-225.38 -241.3,-405.89 -399.13,-574.71 -60.2,-64.39 -184.4,-177.9 -254.16,-231.52 88.93,6.2 297.3,104.48 378.5,150.87 220.07,125.7 420.56,298.33 567.63,501.22 58.21,80.31 158.45,237.07 191,342.72 62.81,-15.08 171.35,-153.6 213.87,-236.18 55.17,-107.14 79.26,-236.42 72.54,-380.41 -46.7,-1000.4 -1793.1,-818.22 -1857.66,-756.62z"/>
+        <path class="nl0" d="M908.33 5330.28l-1.41 999.35 1449.64 0.28c-2,-76.96 -166.68,-386.07 -201.72,-441.69 -91.01,-144.46 -187.49,-261 -295.82,-356.08 -109.45,-96.06 -252.17,-188.71 -413.11,-240.03 -174.03,-55.49 -400.81,-61.85 -537.57,38.17z"/>
+        <path class="nl0" d="M908.65 3424.73l-2.99 908.85c20.1,-3.89 21.74,-11.21 40.59,-30 89.89,-89.6 210.33,-177.93 315.83,-240.48 274.56,-162.77 638.43,-274.24 960.06,-309.57 166.8,-18.33 422.8,-54.2 590.23,-38.31 -24.89,13.29 -111.58,28.2 -152.81,40.07 -48.39,13.94 -105.58,33.65 -152.35,52.08 -72.65,28.64 -226.01,98.68 -263.84,140.95l282.22 -56.28c100.35,-17.6 195,-28.31 296.59,-38.74 148.31,-15.24 329.26,-9.66 481.55,6.76 47.54,5.13 105.39,18.24 154.19,20.06 -16.76,-73.51 -132.1,-181.83 -167.19,-211.69 -76.12,-64.77 -146.3,-100.57 -245.26,-134.7 -468.76,-161.6 -1251.39,-126.41 -1767.93,-118.66 -111.8,1.68 -260.91,-1.35 -368.89,9.66z"/>
+        <path class="nl0" d="M2103.02 4423.22c104.56,1.75 233.32,-18.11 345.8,-21.11 253.78,-6.76 601.91,10.18 846.47,75.82 41.2,11.06 108.16,35.39 149.12,41.7 50.39,-58.35 99.35,-237.52 80.56,-322.74 -349.11,-20.6 -764.31,38.62 -1103.59,124.24 -55.44,13.99 -109.4,28.7 -160.46,43.9 -40.44,12.04 -129.33,33.19 -157.89,58.2z"/>
+        <path class="nl0" d="M998.36 4717.1c128.1,59.57 343.38,32.49 435.46,-153.69 120.03,-242.71 179.03,-215.94 348.65,-242.96 29.17,-4.65 25.79,-8.44 31.52,-15.04 -269.51,-102.19 -476.91,163.85 -619.63,290.24 -130.76,115.81 -163.14,96.48 -196,121.45z"/>
+        <polygon class="nl1" points="4816.05,6282.34 4011.23,6282.34 4011.23,3410.51 4816.05,3410.51"/>
+        <polygon class="nl1" points="5156.12,6282.34 5156.12,3410.51 5908.89,3410.51 6554.65,4959.31 7196.74,3410.51 7983.97,3410.51 7983.97,6282.34 7183.55,6282.34 7183.55,4394.18 6408.79,6282.34 6331.83,6282.34 5573.92,4477.74 5573.92,6282.34"/>
+        <path class="nl2" d="M908.18 6642.7l534.93 0 0 123.23 -380.89 0 0 267.47 298.28 0 0 124.63 -298.28 0 0 292.67 386.5 0 0 126.03 -540.54 0 0 -934.04zm1041.97 0l175.51 0 249.26 934.04 -156.37 0 -58.58 -233.86 -273.07 0 -57.88 233.86 -147.27 0 268.4 -934.04zm179.48 578.35l-106.89 -427.81 -105.73 427.81 212.62 0zm864.82 -123.23l312.28 0 0 485.92 -82.85 0 -20.77 -119.03c-47.38,85.89 -122.3,128.83 -224.76,128.83 -104.09,0 -185.78,-42.24 -244.36,-126.96 -58.81,-84.49 -88.22,-199.31 -88.22,-344.25 0,-152.64 29.17,-273.54 87.29,-362.69 58.35,-89.15 147.5,-133.73 268.17,-133.73 168.04,0 268.4,94.76 301.31,284.5l-140.04 34.78c-16.57,-80.98 -38.74,-133.5 -66.52,-157.3 -28.01,-24.04 -60.92,-35.94 -98.96,-35.94 -125.8,0 -188.81,119.03 -188.81,356.86 0,239.22 64.18,358.72 192.78,358.72 106.66,0 160.11,-82.15 160.11,-246.46l-166.64 0 0 -123.23zm694.45 -455.11l154.04 0 0 803.8 330.48 0 0 130.23 -484.52 0 0 -934.04zm796.91 0l534.93 0 0 123.23 -380.89 0 0 267.47 298.28 0 0 124.63 -298.28 0 0 292.67 386.5 0 0 126.03 -540.54 0 0 -934.04zm1129.96 0l282.64 0c71.19,0 125.33,5.6 162.21,17.04 36.87,11.44 68.15,36.87 93.82,76.32 25.44,39.68 38.28,87.52 38.28,144.24 0,103.63 -46.21,171.78 -138.87,204.69 111.33,35.24 166.88,113.43 166.88,234.56 0,68.85 -21.94,129.06 -66.05,180.18 -43.88,51.35 -128.13,77.02 -252.53,77.02l-286.37 0 0 -934.04zm151.24 387.9l98.02 0c69.08,0 114.59,-12.83 136.53,-38.28 21.94,-25.44 32.91,-58.11 32.91,-98.49 0,-47.38 -12.6,-80.98 -37.81,-101.52 -24.98,-20.31 -63.95,-30.57 -116.46,-30.57l-113.19 0 0 268.87zm0 422.91l124.4 0c114.13,0 171.07,-50.65 171.07,-151.7 0,-39.21 -12.14,-74.45 -36.18,-105.49 -24.27,-31.04 -73.52,-46.68 -147.74,-46.68l-111.56 0 0 303.87zm836.58 -810.8l154.04 0 0 934.04 -154.04 0 0 -934.04zm555.58 0l228.49 0 185.78 673.34 190.45 -673.34 220.09 0 0 934.04 -145.64 0 0 -797.27 -221.26 797.27 -112.03 0 -217.06 -797.96 0 797.96 -128.83 0 0 -934.04z"/>
+      </g>
+    </svg>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li class="drop"><a href="#" class="active">Services</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Our Projects</a></li>
+    <li><a href="#">Resources</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+  <a href="mailto:info@eaglebim.com" class="nav-cta">Share Your Scope</a>
+</nav>
+
+
+<!-- ══════════════════════════════════════════════════
+  HERO — Animated floor plan / drafting diagram
+  Completely different from homepage building wireframe
+══════════════════════════════════════════════════ -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <a href="#">Services</a>
+      <span>/</span>
+      <span style="color:var(--txt)">Architectural BIM Services</span>
+    </div>
+    <div class="hero-tag">Architectural BIM Services · USA</div>
+    <h1>Professional <em>Architectural BIM Services</em> for Design Excellence</h1>
+    <p class="hero-sub">Eagle BIM delivers comprehensive architectural BIM services for architects, engineers, and design firms across the USA. From schematic design through construction documents, our architectural BIM services produce coordinated, build-ready Revit models and complete drawing packages that slot into your workflow on day one — no revision loops, no relearning your standards.</p>
+    <div class="hero-actions">
+      <a href="mailto:info@eaglebim.com" class="btn-gold">Send Sample Drawings for Quote <span class="btn-arrow">→</span></a>
+      <a href="#services" class="btn-blue">Discuss Your Project <span class="btn-arrow">↓</span></a>
+    </div>
+    <div class="hero-badges">
+      <span class="badge">Architectural BIM Modeling</span>
+      <span class="badge">SD · DD · CD</span>
+      <span class="badge">AIA Phases</span>
+      <span class="badge">3D Architectural Modeling</span>
+      <span class="badge">Construction Documentation</span>
+    </div>
+  </div>
+
+  <!-- HERO VISUAL: Animated floor plan / construction document diagram -->
+  <div class="hero-visual">
+    <svg class="fp-svg" viewBox="0 0 440 500" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="fp-glow">
+          <feGaussianBlur stdDeviation="2" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <filter id="fp-glow-sm">
+          <feGaussianBlur stdDeviation="1" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+      <style>
+        /* Floor plan uses blue strokes on white */
+        .fp-wall{stroke:#687d9c;stroke-width:6;fill:none;stroke-linecap:square}
+        .fp-wall-thin{stroke:#687d9c;stroke-width:3;fill:none;stroke-linecap:square}
+        .fp-dim{stroke:#8a9db8;stroke-width:.8;fill:none;stroke-dasharray:3 2}
+        .fp-dim-solid{stroke:#8a9db8;stroke-width:.8;fill:none}
+        .fp-lbl{fill:#8a94a6;font-size:8px;font-family:monospace;letter-spacing:.05em}
+        .fp-room{fill:rgba(104,125,156,.05)}
+        .fp-room-label{fill:#4a5568;font-size:9px;font-family:monospace;font-weight:bold;letter-spacing:.06em}
+        .fp-gold{stroke:#deaa57;stroke-width:1.2;fill:none;filter:url(#fp-glow-sm)}
+        .fp-dot{fill:#deaa57;filter:url(#fp-glow)}
+        .fp-dot-blue{fill:#687d9c}
+        .fp-hatch{stroke:#8a9db8;stroke-width:.5;opacity:.3}
+
+        /* Draw-on animation */
+        @keyframes drawWall{from{stroke-dashoffset:1000}to{stroke-dashoffset:0}}
+        @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+        @keyframes dimAppear{from{opacity:0;transform:translateY(-4px)}to{opacity:.7;transform:translateY(0)}}
+        @keyframes dotPop{0%{transform:scale(0);opacity:0}60%{transform:scale(1.3)}100%{transform:scale(1);opacity:1}}
+        @keyframes labelIn{from{opacity:0}to{opacity:1}}
+        @keyframes pulse2{0%,100%{opacity:.8}50%{opacity:.3}}
+        @keyframes scanH{0%{transform:translateX(-20px);opacity:0}10%{opacity:.6}90%{opacity:.3}100%{transform:translateX(380px);opacity:0}}
+
+        .w1{stroke-dasharray:1000;animation:drawWall 1.2s .1s ease forwards}
+        .w2{stroke-dasharray:1000;animation:drawWall 1.2s .3s ease forwards;stroke-dashoffset:1000}
+        .w3{stroke-dasharray:1000;animation:drawWall 1.2s .5s ease forwards;stroke-dashoffset:1000}
+        .w4{stroke-dasharray:1000;animation:drawWall 1.2s .7s ease forwards;stroke-dashoffset:1000}
+        .w5{stroke-dasharray:1000;animation:drawWall 1.0s .9s ease forwards;stroke-dashoffset:1000}
+        .w6{stroke-dasharray:1000;animation:drawWall 1.0s 1.1s ease forwards;stroke-dashoffset:1000}
+        .w7{stroke-dasharray:1000;animation:drawWall .8s 1.3s ease forwards;stroke-dashoffset:1000}
+        .w8{stroke-dasharray:1000;animation:drawWall .8s 1.5s ease forwards;stroke-dashoffset:1000}
+        .dim-g{opacity:0;animation:dimAppear .5s 1.8s ease forwards}
+        .lbl-g{opacity:0;animation:labelIn .4s 2.0s ease forwards}
+        .dot-g{transform:scale(0);opacity:0;animation:dotPop .4s 2.1s ease forwards;transform-origin:center}
+        .scan-line{animation:scanH 4s 2.5s ease-in-out infinite}
+        .gold-caret{animation:pulse2 2s 2.2s ease-in-out infinite}
+      </style>
+
+      <!-- Background grid -->
+      <defs>
+        <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+          <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(104,125,156,.07)" stroke-width=".5"/>
+        </pattern>
+      </defs>
+      <rect width="440" height="500" fill="url(#grid)"/>
+
+      <!-- ── FLOOR PLAN ROOMS ── -->
+      <!-- Room fills -->
+      <rect class="fp-room" x="60" y="60" width="160" height="120"/>
+      <rect class="fp-room" x="60" y="200" width="160" height="100"/>
+      <rect class="fp-room" x="60" y="320" width="100" height="80"/>
+      <rect class="fp-room" x="240" y="60" width="140" height="180"/>
+      <rect class="fp-room" x="240" y="260" width="140" height="140"/>
+      <rect style="fill:rgba(222,170,87,.06)" x="180" y="200" width="60" height="100"/>
+
+      <!-- ── WALLS — outer perimeter ── -->
+      <polyline class="fp-wall w1" points="60,60 380,60"/>
+      <polyline class="fp-wall w1" points="380,60 380,420"/>
+      <polyline class="fp-wall w2" points="380,420 60,420"/>
+      <polyline class="fp-wall w2" points="60,420 60,60"/>
+
+      <!-- Internal walls -->
+      <line class="fp-wall-thin w3" x1="220" y1="60" x2="220" y2="420"/>
+      <line class="fp-wall-thin w3" x1="60" y1="200" x2="220" y2="200"/>
+      <line class="fp-wall-thin w4" x1="60" y1="320" x2="220" y2="320"/>
+      <line class="fp-wall-thin w5" x1="240" y1="260" x2="380" y2="260"/>
+      <line class="fp-wall-thin w6" x1="160" y1="320" x2="160" y2="420"/>
+
+      <!-- Wall hatch fills for thickness -->
+      <rect style="fill:rgba(104,125,156,.12)" x="57" y="57" width="6" height="366"/>
+      <rect style="fill:rgba(104,125,156,.12)" x="57" y="57" width="323" height="6"/>
+      <rect style="fill:rgba(104,125,156,.12)" x="374" y="57" width="6" height="366"/>
+      <rect style="fill:rgba(104,125,156,.12)" x="57" y="417" width="323" height="6"/>
+
+      <!-- Door openings (arcs) -->
+      <g class="w7">
+        <!-- Door 1: Living Room -->
+        <line x1="120" y1="200" x2="150" y2="200" stroke="#687d9c" stroke-width="3" fill="none"/>
+        <path d="M120,200 Q135,185 150,200" stroke="#687d9c" stroke-width=".8" fill="rgba(104,125,156,.08)" stroke-dasharray="none"/>
+        <!-- Door 2: Right room -->
+        <line x1="290" y1="260" x2="320" y2="260" stroke="#687d9c" stroke-width="3" fill="none"/>
+        <path d="M290,260 Q305,245 320,260" stroke="#687d9c" stroke-width=".8" fill="rgba(104,125,156,.08)"/>
+        <!-- Door 3: Bottom left -->
+        <line x1="60" y1="370" x2="60" y2="340" stroke="#687d9c" stroke-width="3" fill="none"/>
+        <path d="M60,370 Q75,355 60,340" stroke="#687d9c" stroke-width=".8" fill="rgba(104,125,156,.08)"/>
+      </g>
+
+      <!-- Windows (thin double lines) -->
+      <g class="w8">
+        <line x1="160" y1="60" x2="200" y2="60" stroke="white" stroke-width="4"/>
+        <line x1="162" y1="60" x2="198" y2="60" stroke="#687d9c" stroke-width=".8"/>
+        <line x1="162" y1="63" x2="198" y2="63" stroke="#687d9c" stroke-width=".8"/>
+
+        <line x1="290" y1="60" x2="350" y2="60" stroke="white" stroke-width="4"/>
+        <line x1="292" y1="60" x2="348" y2="60" stroke="#687d9c" stroke-width=".8"/>
+        <line x1="292" y1="63" x2="348" y2="63" stroke="#687d9c" stroke-width=".8"/>
+
+        <line x1="380" y1="100" x2="380" y2="160" stroke="white" stroke-width="4"/>
+        <line x1="380" y1="102" x2="380" y2="158" stroke="#687d9c" stroke-width=".8"/>
+        <line x1="377" y1="102" x2="377" y2="158" stroke="#687d9c" stroke-width=".8"/>
+
+        <line x1="380" y1="300" x2="380" y2="360" stroke="white" stroke-width="4"/>
+        <line x1="380" y1="302" x2="380" y2="358" stroke="#687d9c" stroke-width=".8"/>
+        <line x1="377" y1="302" x2="377" y2="358" stroke="#687d9c" stroke-width=".8"/>
+      </g>
+
+      <!-- ── DIMENSION LINES ── -->
+      <g class="dim-g">
+        <!-- Horizontal top dimension -->
+        <line class="fp-dim-solid" x1="60" y1="38" x2="380" y2="38"/>
+        <line class="fp-dim-solid" x1="60" y1="33" x2="60" y2="43"/>
+        <line class="fp-dim-solid" x1="380" y1="33" x2="380" y2="43"/>
+        <text class="fp-lbl" x="210" y="35" text-anchor="middle">16,200</text>
+
+        <!-- Vertical left dimension -->
+        <line class="fp-dim-solid" x1="38" y1="60" x2="38" y2="420"/>
+        <line class="fp-dim-solid" x1="33" y1="60" x2="43" y2="60"/>
+        <line class="fp-dim-solid" x1="33" y1="420" x2="43" y2="420"/>
+        <text class="fp-lbl" x="28" y="245" text-anchor="middle" transform="rotate(-90,28,245)">18,000</text>
+
+        <!-- Internal dimensions -->
+        <line class="fp-dim" x1="60" y1="55" x2="220" y2="55"/>
+        <line class="fp-dim" x1="220" y1="55" x2="380" y2="55"/>
+        <text class="fp-lbl" x="140" y="53" text-anchor="middle">8,600</text>
+        <text class="fp-lbl" x="300" y="53" text-anchor="middle">7,600</text>
+
+        <!-- Sub dims left -->
+        <line class="fp-dim" x1="35" y1="60" x2="35" y2="200"/>
+        <line class="fp-dim" x1="35" y1="200" x2="35" y2="320"/>
+        <line class="fp-dim" x1="35" y1="320" x2="35" y2="420"/>
+        <text class="fp-lbl" x="25" y="136" text-anchor="middle" transform="rotate(-90,25,136)">6,000</text>
+        <text class="fp-lbl" x="25" y="266" text-anchor="middle" transform="rotate(-90,25,266)">5,000</text>
+        <text class="fp-lbl" x="25" y="376" text-anchor="middle" transform="rotate(-90,25,376)">5,000</text>
+      </g>
+
+      <!-- ── ROOM LABELS ── -->
+      <g class="lbl-g">
+        <text class="fp-room-label" x="140" y="118" text-anchor="middle">LIVING ROOM</text>
+        <text class="fp-lbl" x="140" y="130" text-anchor="middle">38.4 m²</text>
+
+        <text class="fp-room-label" x="120" y="253" text-anchor="middle">BEDROOM 1</text>
+        <text class="fp-lbl" x="120" y="265" text-anchor="middle">22.0 m²</text>
+
+        <text class="fp-room-label" x="105" y="365" text-anchor="middle">BATH</text>
+        <text class="fp-lbl" x="105" y="377" text-anchor="middle">8.2 m²</text>
+
+        <text class="fp-room-label" x="310" y="155" text-anchor="middle">MASTER BED</text>
+        <text class="fp-lbl" x="310" y="167" text-anchor="middle">32.8 m²</text>
+
+        <text class="fp-room-label" x="310" y="335" text-anchor="middle">KITCHEN</text>
+        <text class="fp-lbl" x="310" y="347" text-anchor="middle">26.6 m²</text>
+
+        <text class="fp-room-label" x="210" y="253" text-anchor="middle" style="font-size:7px">HALL</text>
+      </g>
+
+      <!-- ── GOLD ANNOTATION LAYER ── -->
+      <g class="dim-g">
+        <!-- North arrow -->
+        <circle cx="406" cy="80" r="18" fill="none" stroke="rgba(104,125,156,.2)" stroke-width="1"/>
+        <path d="M406,64 L410,84 L406,80 L402,84 Z" fill="#deaa57" opacity=".8"/>
+        <text x="406" y="105" fill="rgba(104,125,156,.6)" font-size="8" text-anchor="middle" font-family="monospace" font-weight="bold">N</text>
+
+        <!-- Scale bar -->
+        <line x1="60" y1="448" x2="160" y2="448" stroke="#8a9db8" stroke-width="1.2"/>
+        <line x1="60" y1="444" x2="60" y2="452" stroke="#8a9db8" stroke-width="1.2"/>
+        <line x1="110" y1="444" x2="110" y2="452" stroke="#8a9db8" stroke-width="1.2"/>
+        <line x1="160" y1="444" x2="160" y2="452" stroke="#8a9db8" stroke-width="1.2"/>
+        <text x="85" y="462" fill="#8a94a6" font-size="7.5" text-anchor="middle" font-family="monospace">0    5m</text>
+        <text x="147" y="462" fill="#8a94a6" font-size="7.5" text-anchor="middle" font-family="monospace">10m</text>
+
+        <!-- Drawing title block strip -->
+        <rect x="220" y="436" width="200" height="48" fill="rgba(104,125,156,.05)" stroke="rgba(104,125,156,.15)" stroke-width=".8"/>
+        <line x1="220" y1="452" x2="420" y2="452" stroke="rgba(104,125,156,.15)" stroke-width=".6"/>
+        <text x="230" y="447" fill="#687d9c" font-size="7.5" font-family="monospace" font-weight="bold" letter-spacing=".05em">EAGLE BIM · ARCHITECTURAL BIM</text>
+        <text x="230" y="461" fill="#8a94a6" font-size="7" font-family="monospace">FLOOR PLAN · LEVEL 01 · SD PHASE</text>
+        <text x="230" y="475" fill="#8a94a6" font-size="7" font-family="monospace">SHEET A-100 · SCALE 1:100</text>
+        <text x="400" y="475" fill="#deaa57" font-size="7.5" font-family="monospace" font-weight="bold" text-anchor="end">REV.02</text>
+      </g>
+
+      <!-- Gold callout dots at key intersections -->
+      <g class="dot-g">
+        <circle class="fp-dot" cx="60" cy="60" r="3.5"/>
+        <circle class="fp-dot" cx="380" cy="60" r="3.5"/>
+        <circle class="fp-dot" cx="380" cy="420" r="3.5"/>
+        <circle class="fp-dot" cx="60" cy="420" r="3.5"/>
+        <circle class="fp-dot" cx="220" cy="60" r="3"/>
+        <circle class="fp-dot" cx="220" cy="420" r="3"/>
+        <circle class="fp-dot" cx="60" cy="200" r="2.5"/>
+        <circle class="fp-dot" cx="220" cy="200" r="2.5"/>
+        <circle class="fp-dot" cx="60" cy="320" r="2.5"/>
+        <circle class="fp-dot" cx="220" cy="320" r="2.5"/>
+        <circle class="fp-dot" cx="240" cy="260" r="2.5"/>
+        <circle class="fp-dot" cx="380" cy="260" r="2.5"/>
+      </g>
+
+      <!-- Active cursor / drafting caret -->
+      <g class="gold-caret">
+        <line x1="220" y1="316" x2="220" y2="324" stroke="#deaa57" stroke-width="1.5"/>
+        <line x1="216" y1="320" x2="224" y2="320" stroke="#deaa57" stroke-width="1.5"/>
+        <circle cx="220" cy="320" r="4" fill="none" stroke="#deaa57" stroke-width="1"/>
+      </g>
+
+      <!-- Horizontal scan line -->
+      <rect x="0" y="0" width="440" height="1.2" fill="rgba(104,125,156,.2)" class="scan-line"/>
+
+      <!-- Revision cloud on living room -->
+      <g class="dim-g" style="animation-delay:2.3s">
+        <path d="M75,70 Q80,65 90,68 Q95,63 105,66 Q110,61 120,64 Q125,59 135,62 Q138,56 148,60 Q150,55 160,59 Q163,53 170,57 Q172,52 180,56 Q183,50 190,54 Q192,49 200,53 Q205,48 210,52 Q212,57 216,60 Q218,65 215,72 Q218,78 214,84 Q218,90 213,96 Q215,102 210,106 Q208,112 202,114 Q204,120 198,123 Q195,128 188,127 Q183,133 176,131 Q170,136 163,133 Q156,138 149,135 Q142,139 136,136 Q130,140 124,137 Q119,141 113,138 Q108,143 102,140 Q98,144 93,141 Q89,145 85,142 Q82,147 78,144 Q76,149 73,146 Q70,150 68,146 Q66,150 64,147 Q63,151 61,148 Q60,152 58,149 Q57,153 55,150 Q55,145 57,140 Q56,135 58,130 Q57,125 59,120 Q58,115 60,110 Q59,105 61,100 Q60,95 62,90 Q61,85 63,80 Q62,75 65,71 Q68,66 72,68Z" fill="rgba(222,170,87,.05)" stroke="#deaa57" stroke-width=".8" stroke-dasharray="4 2"/>
+        <text x="138" y="100" fill="#deaa57" font-size="7" font-family="monospace" text-anchor="middle" opacity=".8">REVISION ZONE</text>
+      </g>
+    </svg>
+  </div>
+</section>
+
+
+<!-- ── STATS ── -->
+<div class="stats-strip">
+  <div class="stat-item reveal">
+    <span class="stat-num">500<span class="stat-sfx">+</span></span>
+    <div class="stat-lbl">Architectural Projects</div>
+  </div>
+  <div class="stat-item reveal">
+    <span class="stat-num">100<span class="stat-sfx">%</span></span>
+    <div class="stat-lbl">First-Pass Approvals</div>
+  </div>
+  <div class="stat-item reveal">
+    <span class="stat-num">5<span class="stat-sfx">+</span></span>
+    <div class="stat-lbl">AIA Design Phases</div>
+  </div>
+  <div class="stat-item reveal">
+    <span class="stat-num">48<span class="stat-sfx">hr</span></span>
+    <div class="stat-lbl">Quote Turnaround</div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════
+  INTRO — H1 content block + phase cards
+══════════════════════════════════════════════════ -->
+<section style="background:var(--white)" id="services">
+  <div class="intro-layout">
+    <div class="reveal">
+      <div class="section-tag">Architectural BIM Services</div>
+      <h2>Architectural BIM Services Built Around <em>Your Standards</em></h2>
+      <div style="margin-top:20px">
+        <p class="body-text">Architectural BIM services are only as valuable as the documentation they produce. Eagle BIM delivers floor plans, elevations, sections, details, schedules, and fully coordinated construction documents — all formatted precisely to your title block, layer standards, and BIM Execution Plan. Our documentation services include floor plans, elevations, sections, details, schedules, and construction documents formatted precisely to your title block and BIM standards.</p>
+        <p class="body-text">We align with your workflow from the first handoff. Our architectural modelers understand design intent, code compliance, constructability, and documentation standards in equal measure, which is why our architectural BIM services consistently require minimal revision. Every model is organized to your naming conventions, view templates, and sheet standards before it leaves our team.</p>
+        <p class="body-text">We coordinate directly with structural and MEP disciplines to ensure openings, penetrations, ceiling zones, and clearances are resolved in the model — not on the site. Every package produced through our architectural BIM services is ready for design reviews, permitting, consultant coordination, and contractor bidding.</p>
+      </div>
+    </div>
+    <div class="intro-right reveal">
+      <div class="phase-card">
+        <div class="phase-label">Phase 01</div>
+        <div class="phase-title">Schematic Design (SD)</div>
+        <div class="phase-desc">Massing studies, concept floor plan layouts, and preliminary plans that establish the design direction and project footprint.</div>
+      </div>
+      <div class="phase-card" style="border-left-color:var(--blue)">
+        <div class="phase-label">Phase 02</div>
+        <div class="phase-title">Design Development (DD)</div>
+        <div class="phase-desc">Refined dimensions, material selections, wall sections, and preliminary details that develop the design to a coordinated level.</div>
+      </div>
+      <div class="phase-card">
+        <div class="phase-label">Phase 03</div>
+        <div class="phase-title">Construction Documents (CD)</div>
+        <div class="phase-desc">Complete annotation, specifications, schedules, and coordination-ready documentation for permitting and contractor bidding.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════
+  SERVICES DETAIL — 4 core service areas
+══════════════════════════════════════════════════ -->
+<section class="services-detail-bg">
+  <div class="reveal">
+    <div class="section-tag">What We Deliver</div>
+    <h2>Core <em>Architectural BIM</em> Service Areas</h2>
+    <p class="sec-desc">Every architectural BIM service we deliver is handled by experienced modelers who have worked across commercial, residential, healthcare, hospitality, and institutional project types. They know your documentation standards, your review cycles, and what it takes to get a package submission-ready.</p>
+  </div>
+  <div class="services-detail-grid">
+    <div class="sd-card reveal">
+      <div class="sd-icon">
+        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 3v18"/></svg>
+      </div>
+      <div class="sd-title">Architectural BIM Modeling and 3D Documentation</div>
+      <p class="sd-text">We transform sketches, PDFs, and CAD files into accurate, coordinated 3D architectural BIM models. Walls, floors, roofs, ceilings, stairs, doors, windows, and custom components are built to your naming conventions and sheet standards. Models are structured to support design iterations, quantity take-offs, and full construction documentation without rework.</p>
+    </div>
+    <div class="sd-card reveal">
+      <div class="sd-icon">
+        <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="12" y2="17"/><line x1="8" y1="9" x2="10" y2="9"/></svg>
+      </div>
+      <div class="sd-title">Construction Documentation and CD Phase Support</div>
+      <p class="sd-text">Our CD services produce fully annotated plans, elevations, sections, wall sections, details, and schedules formatted to your title block standards. We incorporate consultant markups, maintain complete revision tracking, and coordinate updates across all linked disciplines. Every deliverable is submission-ready for permitting and contractor bidding.</p>
+    </div>
+    <div class="sd-card reveal">
+      <div class="sd-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      </div>
+      <div class="sd-title">Interdisciplinary Coordination with MEP and Structural</div>
+      <p class="sd-text">We manage architectural coordination with structural and MEP models to resolve clashes before they reach the field. Services cover structural openings, MEP penetrations, ceiling service zones, and equipment clearances — tracked from first identification through final resolution. This proactive approach consistently cuts RFI volume and eliminates costly rework.</p>
+    </div>
+    <div class="sd-card reveal">
+      <div class="sd-icon">
+        <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="1"/><path d="M6 8h.01M6 12h.01M6 16h.01"/><line x1="9" y1="8" x2="18" y2="8"/><line x1="9" y1="12" x2="18" y2="12"/><line x1="9" y1="16" x2="14" y2="16"/></svg>
+      </div>
+      <div class="sd-title">Architectural Detailing and Specialty Components</div>
+      <p class="sd-text">Our detailing services cover facade systems, curtain walls, partition assemblies, ceiling systems, millwork, casework, and custom fixtures. We prepare large-scale details showing material assemblies, connections, waterproofing, and installation sequences that are ready for submittal package preparation and fabricator coordination.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════
+  DESIGN PHASES
+══════════════════════════════════════════════════ -->
+<section class="phases-bg">
+  <div class="reveal">
+    <div class="section-tag">Design Phase Support</div>
+    <h2>Supporting Every Phase From <em>SD Through CD</em></h2>
+    <p class="sec-desc">Eagle BIM scales to match your project phase. Whether you need early massing studies or a full construction document set, our architectural BIM services maintain model quality and project momentum at every milestone — so you never have to slow down for documentation.</p>
+  </div>
+  <div class="phases-grid">
+    <div class="ph-card reveal">
+      <div class="ph-num">01</div>
+      <div class="ph-label">SD Phase</div>
+      <div class="ph-title">Schematic Design</div>
+      <p class="ph-text">Massing studies, concept layouts, and preliminary plans that establish project scope and design direction for stakeholder review and early approvals.</p>
+      <div class="ph-items">
+        <div class="ph-item"><div class="ph-dot"></div>Massing and site study models</div>
+        <div class="ph-item"><div class="ph-dot"></div>Concept floor plan layouts</div>
+        <div class="ph-item"><div class="ph-dot"></div>Preliminary elevations and sections</div>
+        <div class="ph-item"><div class="ph-dot"></div>Area calculations and program checks</div>
+      </div>
+    </div>
+    <div class="ph-card reveal">
+      <div class="ph-num">02</div>
+      <div class="ph-label">DD Phase</div>
+      <div class="ph-title">Design Development</div>
+      <p class="ph-text">Refined dimensions, material selections, wall sections, and preliminary details that advance the design toward construction-ready documentation.</p>
+      <div class="ph-items">
+        <div class="ph-item"><div class="ph-dot"></div>Dimensioned floor plans and reflected ceiling plans</div>
+        <div class="ph-item"><div class="ph-dot"></div>Wall sections and building sections</div>
+        <div class="ph-item"><div class="ph-dot"></div>Material selections and finish schedules</div>
+        <div class="ph-item"><div class="ph-dot"></div>Structural and MEP coordination kickoff</div>
+      </div>
+    </div>
+    <div class="ph-card reveal">
+      <div class="ph-num">03</div>
+      <div class="ph-label">CD Phase</div>
+      <div class="ph-title">Construction Documents</div>
+      <p class="ph-text">Complete annotation, specifications, schedules, and discipline coordination to produce submission-ready documentation for permitting and contractor bidding.</p>
+      <div class="ph-items">
+        <div class="ph-item"><div class="ph-dot"></div>Fully annotated plans and elevations</div>
+        <div class="ph-item"><div class="ph-dot"></div>Door, window, and room finish schedules</div>
+        <div class="ph-item"><div class="ph-dot"></div>Large-scale details and wall sections</div>
+        <div class="ph-item"><div class="ph-dot"></div>Coordination with structural and MEP models</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════
+  COORDINATION — Blue section
+══════════════════════════════════════════════════ -->
+<section class="coord-bg">
+  <div class="coord-layout">
+    <div class="reveal">
+      <div class="section-tag">Interdisciplinary Coordination</div>
+      <h2 style="color:white">Architectural Coordination with <em style="color:var(--gold-lt)">MEP and Structural</em> Disciplines</h2>
+      <div style="margin-top:20px">
+        <p class="body-text" style="color:rgba(255,255,255,.65)">Interdisciplinary coordination is where architectural projects are won or lost. Unresolved clashes between architectural, structural, and MEP models do not disappear — they surface as change orders, delays, and cost overruns on site. Eagle BIM manages the coordination process proactively as part of our architectural BIM services, starting at the model stage and not stopping until every issue is cleared.</p>
+        <p class="body-text" style="color:rgba(255,255,255,.65)">We use Navisworks and Revizto for federated model reviews, resolving issues before they leave the model environment. Every coordination cycle produces a clear report with 3D issue snapshots that give all project stakeholders a precise, actionable picture of what needs to be resolved.</p>
+      </div>
+      <div style="margin-top:32px">
+        <a href="mailto:info@eaglebim.com" class="btn-gold">Start a Coordination Project <span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+    <div class="coord-points reveal">
+      <div class="coord-point">
+        <div class="coord-icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="9" r="5"/><circle cx="15" cy="15" r="5"/></svg></div>
+        <div>
+          <div class="coord-pt-title">Clash Detection and Resolution</div>
+          <div class="coord-pt-text">Hard and soft clash testing across all linked models. Every clash is categorized, ownership is assigned, and issues are tracked through to final clearance with full resolution logs maintained throughout.</div>
+        </div>
+      </div>
+      <div class="coord-point">
+        <div class="coord-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 3v18"/></svg></div>
+        <div>
+          <div class="coord-pt-title">Structural Opening and Penetration Management</div>
+          <div class="coord-pt-text">Coordination of structural beam penetrations, slab openings, and MEP sleeves to ensure architectural layouts align with structural framing and MEP routing requirements before documentation is finalized.</div>
+        </div>
+      </div>
+      <div class="coord-point">
+        <div class="coord-icon"><svg viewBox="0 0 24 24"><path d="M3 6h4v4H3zM17 6h4v4h-4zM3 14h4v4H3z"/><path d="M7 8h3a1 1 0 011 1v6a1 1 0 001 1h3"/></svg></div>
+        <div>
+          <div class="coord-pt-title">Ceiling Zone and MEP Clearance Coordination</div>
+          <div class="coord-pt-text">Coordination of reflected ceiling plans with MEP services to confirm that ducts, pipes, and lighting fit within the architectural ceiling zone without conflict — keeping your RCP accurate and buildable.</div>
+        </div>
+      </div>
+      <div class="coord-point">
+        <div class="coord-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+        <div>
+          <div class="coord-pt-title">Coordination Reports and Issue Logs</div>
+          <div class="coord-pt-text">Structured coordination reports with 3D issue snapshots, resolution status, and full revision tracking. Delivered to all project stakeholders at every coordination milestone, so nothing falls through the cracks.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════
+  DETAILING SCOPE
+══════════════════════════════════════════════════ -->
+<section class="detail-bg">
+  <div class="detail-layout">
+    <div class="reveal">
+      <div class="section-tag">Architectural Detailing</div>
+      <h2>Specialty Components and <em>Large-Scale Detailing</em></h2>
+      <p class="sec-desc" style="margin-top:4px">Complex design elements demand precision. Our architectural BIM services include detailing for every component that requires large-scale documentation and submittal-ready preparation — from curtain wall assemblies to custom millwork.</p>
+      <div style="margin-top:28px">
+        <p class="body-text">We prepare details showing material assemblies, connection methods, waterproofing sequences, and installation details accurate enough to go directly to fabricators. Our architectural BIM services include submittal package preparation with specifications and material selections. Custom Revit families support unique design elements with accurate geometry and embedded product data, making fabricator coordination faster and more reliable.</p>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="detail-list">
+        <div class="detail-item"><div class="detail-dot"></div><div class="detail-item-txt">Facade and curtain wall systems</div></div>
+        <div class="detail-item"><div class="detail-dot"></div><div class="detail-item-txt">Storefront and glazing assemblies</div></div>
+        <div class="detail-item"><div class="detail-dot"></div><div class="detail-item-txt">Partition and wall assembly details</div></div>
+        <div class="detail-item"><div class="detail-dot"></div><div class="detail-item-txt">Ceiling assembly systems</div></div>
+        <div class="detail-item"><div class="detail-dot"></div><div class="detail-item-txt">Millwork, casework, and custom fixtures</div></div>
+        <div class="detail-item"><div class="detail-dot"></div><div class="detail-item-txt">Waterproofing and flashing details</div></div>
+        <div class="detail-item"><div class="detail-dot"></div><div class="detail-item-txt">Stair and railing construction details</div></div>
+        <div class="detail-item"><div class="detail-dot"></div><div class="detail-item-txt">Custom Revit family creation</div></div>
+        <div class="detail-item"><div class="detail-dot"></div><div class="detail-item-txt">Submittal package preparation</div></div>
+        <div class="detail-item"><div class="detail-dot"></div><div class="detail-item-txt">Material and product specifications</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════
+  AS-BUILT DOCUMENTATION
+══════════════════════════════════════════════════ -->
+<section class="asbuilt-bg">
+  <div class="asbuilt-layout">
+    <div class="reveal">
+      <div class="section-tag">As-Built Documentation</div>
+      <h2>As-Built and Record <em>BIM Documentation</em></h2>
+      <div style="margin-top:20px">
+        <p class="body-text">An accurate as-built record is the foundation for every renovation, expansion, and facility management decision that follows. Our architectural BIM services include incorporating field changes, redlines, and construction markups into final record models that reflect the building as it was actually constructed — not as it was designed.</p>
+        <p class="body-text">As part of our architectural BIM services, we include site survey integration, point cloud registration, and as-built model verification. Deliverables support operations and maintenance manuals, facility management systems, and future capital projects, available in RVT, DWG, IFC, and PDF formats.</p>
+      </div>
+    </div>
+    <div class="asbuilt-visual reveal">
+      <div class="ab-row">
+        <div class="ab-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div><div class="ab-label">Field Redline Integration</div><div class="ab-sub">Markups incorporated into final record model</div></div>
+      </div>
+      <div class="ab-row">
+        <div class="ab-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="1.5"/><circle cx="6" cy="8" r="1"/><circle cx="18" cy="8" r="1"/><circle cx="6" cy="16" r="1"/><circle cx="18" cy="16" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="20" cy="12" r="1"/></svg></div>
+        <div><div class="ab-label">Point Cloud Registration</div><div class="ab-sub">Laser scan data verified against BIM model</div></div>
+      </div>
+      <div class="ab-row">
+        <div class="ab-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+        <div><div class="ab-label">As-Built Model Verification</div><div class="ab-sub">Final model checked against constructed conditions</div></div>
+      </div>
+      <div class="ab-row">
+        <div class="ab-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/></svg></div>
+        <div><div class="ab-label">O&amp;M Documentation Support</div><div class="ab-sub">Models ready for facility management integration</div></div>
+      </div>
+      <div class="ab-row">
+        <div class="ab-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 3v18"/></svg></div>
+        <div><div class="ab-label">Record Drawing Sets</div><div class="ab-sub">Updated plans, sections, and detail sheets</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════
+  BENEFITS
+══════════════════════════════════════════════════ -->
+<section class="benefits-bg">
+  <div class="reveal">
+    <div class="section-tag">Why It Matters</div>
+    <h2>Benefits of Professional <em>Architectural BIM Services</em></h2>
+    <p class="sec-desc">Eagle BIM architectural BIM services are trusted by architects and design firms across the USA — these are the outcomes our clients report consistently when their documentation is done right the first time.</p>
+  </div>
+  <div class="benefits-grid">
+    <div class="ben-card reveal">
+      <div class="ben-num">80%</div>
+      <div class="ben-title">Fewer Field Conflicts</div>
+      <div class="ben-text">Early clash detection across coordinated architectural, structural, and MEP models eliminates costly conflicts before they reach the construction site.</div>
+    </div>
+    <div class="ben-card reveal">
+      <div class="ben-num">1st</div>
+      <div class="ben-title">Pass Permitting Approvals</div>
+      <div class="ben-text">Coordinated documentation formatted to your title block standards and local code requirements moves through permitting without revision loops.</div>
+    </div>
+    <div class="ben-card reveal">
+      <div class="ben-num">60%</div>
+      <div class="ben-title">Fewer RFIs on Site</div>
+      <div class="ben-text">Precise, fully coordinated construction documents give contractors the information they need before they ask for it. Fewer RFIs. Fewer delays. Fewer change orders.</div>
+    </div>
+    <div class="ben-card reveal">
+      <div class="ben-num">LOD</div>
+      <div class="ben-title">100 to 500 Compliance</div>
+      <div class="ben-text">Every model element meets the LOD requirements agreed in your BIM Execution Plan, with consistent standards maintained across all project phases from SD through CD.</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════
+  DELIVERABLES
+══════════════════════════════════════════════════ -->
+<section class="del-bg">
+  <div class="reveal">
+    <div class="section-tag">Deliverables</div>
+    <h2>What You Receive from Our <em>Architectural BIM Services</em></h2>
+  </div>
+  <div class="del-cols">
+    <div>
+      <div class="del-list reveal">
+        <div class="del-row">
+          <div class="del-row-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#687d9c" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 3v18"/></svg>
+          </div>
+          <div><div class="del-row-title">Architectural BIM Models</div><div class="del-row-text">Clean, well-structured 3D models organized to your naming conventions, view templates, and sheet standards</div></div>
+        </div>
+        <div class="del-row">
+          <div class="del-row-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#687d9c" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="12" y2="17"/><line x1="8" y1="9" x2="10" y2="9"/></svg>
+          </div>
+          <div><div class="del-row-title">Construction Drawing Sets</div><div class="del-row-text">Fully annotated plans, elevations, sections, details, and schedules formatted to your title blocks</div></div>
+        </div>
+        <div class="del-row">
+          <div class="del-row-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#687d9c" stroke-width="1.5"><circle cx="9" cy="9" r="5"/><circle cx="15" cy="15" r="5"/><line x1="13" y1="5" x2="19" y2="5"/></svg>
+          </div>
+          <div><div class="del-row-title">Clash Reports and Coordination Logs</div><div class="del-row-text">Visual clash reports, issue trackers, and coordination transmittals for every discipline review cycle</div></div>
+        </div>
+        <div class="del-row">
+          <div class="del-row-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#687d9c" stroke-width="1.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </div>
+          <div><div class="del-row-title">IFC and Exchange Files</div><div class="del-row-text">IFC, DWG, NWC, and PDF exports formatted for consultant coordination and BIM 360 upload</div></div>
+        </div>
+      </div>
+      <div class="fmt-row reveal" style="margin-top:20px">
+        <span class="fmt-chip">RVT</span><span class="fmt-chip">DWG</span><span class="fmt-chip">IFC</span>
+        <span class="fmt-chip">NWC</span><span class="fmt-chip">PDF</span><span class="fmt-chip">XLSX</span>
+      </div>
+    </div>
+    <div class="del-right-box reveal">
+      <h3>Ready to Start Your Architectural BIM Project?</h3>
+      <p>Send us your sample drawings, PDFs, or a brief scope description. We will review your requirements, outline how our architectural BIM services fit your project, and return a clear delivery plan and a firm quote — typically within 24 to 48 hours.</p>
+      <a href="mailto:info@eaglebim.com" class="del-cta-gold">Send Sample Drawings for Quote →</a><br>
+      <a href="mailto:info@eaglebim.com" class="del-cta-ghost">Discuss Your Architectural Project</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════
+  RELATED SERVICES
+══════════════════════════════════════════════════ -->
+<section class="related-bg">
+  <div class="reveal">
+    <div class="section-tag">Related Services</div>
+    <h2>Other BIM Services That Support <em>Your Projects</em></h2>
+  </div>
+  <div class="related-grid">
+    <a href="#" class="rel-card reveal">
+      <div class="rel-icon"><svg viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/></svg></div>
+      <div class="rel-title">BIM Coordination and Clash Detection</div>
+      <div class="rel-desc">Federated model coordination across all disciplines with Navisworks clash testing and tracked issue resolution.</div>
+    </a>
+    <a href="#" class="rel-card reveal">
+      <div class="rel-icon"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+      <div class="rel-title">MEP BIM Services</div>
+      <div class="rel-desc">Mechanical, electrical, plumbing, and fire protection modeling coordinated with your architectural model.</div>
+    </a>
+    <a href="#" class="rel-card reveal">
+      <div class="rel-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/></svg></div>
+      <div class="rel-title">CAD to BIM Conversion</div>
+      <div class="rel-desc">Legacy 2D DWG and PDF drawings converted into intelligent 3D Revit architectural models.</div>
+    </a>
+    <a href="#" class="rel-card reveal">
+      <div class="rel-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2a7 7 0 017 7c0 2.5-1.3 4.7-3.3 6L15 17H9l-.7-2C6.3 13.7 5 11.5 5 9a7 7 0 017-7z"/></svg></div>
+      <div class="rel-title">BIM Consulting Services</div>
+      <div class="rel-desc">BIM Execution Plans, Revit template development, and workflow strategy tailored to your firm.</div>
+    </a>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════
+  SERVICE AREA — USA Coverage
+══════════════════════════════════════════════════ -->
+<section style="background:var(--blue);padding:88px 52px">
+  <div class="reveal" style="max-width:640px;margin-bottom:48px">
+    <div class="section-tag" style="color:var(--gold-lt)"><span style="background:var(--gold);display:block;width:22px;height:2px;border-radius:2px;margin-right:8px"></span>Service Area</div>
+    <h2 style="color:white">Architectural BIM Services <em style="color:var(--gold-lt)">Across the United States</em></h2>
+    <p style="color:rgba(255,255,255,.62);font-size:16px;line-height:1.8;font-weight:300;margin-top:8px">Eagle BIM delivers architectural BIM services and construction documentation nationwide, with deep project experience across Texas and major metros throughout the USA. Remote collaboration, local code knowledge, and responsiveness in your time zone — wherever you build, we are ready.</p>
+  </div>
+
+  <div class="reveal" style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);border-radius:6px;padding:28px 30px;margin-bottom:28px">
+    <div style="font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:6px">Primary Region · Featured Service Area</div>
+    <div style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:white;margin-bottom:8px">Architectural BIM Services in Texas</div>
+    <p style="font-size:13.5px;color:rgba(255,255,255,.55);line-height:1.7;font-weight:300">Based in Pflugerville, TX, Eagle BIM provides architectural BIM services to architects and design firms across Houston, Dallas, Austin, San Antonio, Fort Worth, and beyond. We understand Texas building codes, permitting workflows, and the fast-paced commercial and residential construction environment that defines the state's AEC market.</p>
+  </div>
+
+  <div class="reveal" style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px">
+    <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:18px 16px;transition:background .25s" onmouseover="this.style.background='rgba(255,255,255,.12)'" onmouseout="this.style.background='rgba(255,255,255,.07)'">
+      <div style="font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:white;margin-bottom:6px">California</div>
+      <div style="font-size:12px;color:rgba(255,255,255,.45);line-height:1.65">Los Angeles · San Francisco · San Diego · Sacramento</div>
+    </div>
+    <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:18px 16px" onmouseover="this.style.background='rgba(255,255,255,.12)'" onmouseout="this.style.background='rgba(255,255,255,.07)'">
+      <div style="font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:white;margin-bottom:6px">New York</div>
+      <div style="font-size:12px;color:rgba(255,255,255,.45);line-height:1.65">New York City · Buffalo · Albany · Rochester</div>
+    </div>
+    <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:18px 16px" onmouseover="this.style.background='rgba(255,255,255,.12)'" onmouseout="this.style.background='rgba(255,255,255,.07)'">
+      <div style="font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:white;margin-bottom:6px">Florida</div>
+      <div style="font-size:12px;color:rgba(255,255,255,.45);line-height:1.65">Miami · Orlando · Tampa · Jacksonville</div>
+    </div>
+    <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:18px 16px" onmouseover="this.style.background='rgba(255,255,255,.12)'" onmouseout="this.style.background='rgba(255,255,255,.07)'">
+      <div style="font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:white;margin-bottom:6px">Illinois</div>
+      <div style="font-size:12px;color:rgba(255,255,255,.45);line-height:1.65">Chicago · Springfield · Aurora · Naperville</div>
+    </div>
+    <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:18px 16px" onmouseover="this.style.background='rgba(255,255,255,.12)'" onmouseout="this.style.background='rgba(255,255,255,.07)'">
+      <div style="font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:white;margin-bottom:6px">Washington</div>
+      <div style="font-size:12px;color:rgba(255,255,255,.45);line-height:1.65">Seattle · Tacoma · Bellevue · Spokane</div>
+    </div>
+    <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:18px 16px" onmouseover="this.style.background='rgba(255,255,255,.12)'" onmouseout="this.style.background='rgba(255,255,255,.07)'">
+      <div style="font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:white;margin-bottom:6px">Massachusetts</div>
+      <div style="font-size:12px;color:rgba(255,255,255,.45);line-height:1.65">Boston · Cambridge · Worcester</div>
+    </div>
+    <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:18px 16px" onmouseover="this.style.background='rgba(255,255,255,.12)'" onmouseout="this.style.background='rgba(255,255,255,.07)'">
+      <div style="font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:white;margin-bottom:6px">Colorado</div>
+      <div style="font-size:12px;color:rgba(255,255,255,.45);line-height:1.65">Denver · Colorado Springs · Boulder</div>
+    </div>
+    <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:18px 16px" onmouseover="this.style.background='rgba(255,255,255,.12)'" onmouseout="this.style.background='rgba(255,255,255,.07)'">
+      <div style="font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:white;margin-bottom:6px">Georgia &amp; More</div>
+      <div style="font-size:12px;color:rgba(255,255,255,.45);line-height:1.65">Atlanta · Charlotte · Nashville · Phoenix</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════
+  FINAL CTA
+══════════════════════════════════════════════════ -->
+<section class="cta-final">
+  <div class="cta-inner reveal">
+    <div class="section-tag" style="justify-content:center;margin-bottom:20px">Get Started</div>
+    <h2>Send Your Drawings. Get a Quote in 48 Hours.</h2>
+    <p>Share your scope, sample drawings, or a brief project description. We will review your requirements, outline how our architectural BIM services fit your project, and return a clear delivery plan and a firm quote — typically within 24 to 48 hours.</p>
+    <div class="cta-acts">
+      <a href="mailto:info@eaglebim.com" class="cta-btn-primary">Send Sample Drawings for Quote →</a>
+      <div class="cta-secondary-row">
+        <a href="tel:+13465882960" class="cta-btn-ghost">📞 Call Us</a>
+        <a href="mailto:info@bim-services.us" class="cta-btn-ghost">✉️ Email Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="foot-top">
+    <div class="foot-brand">
+      <div class="foot-logo">
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 8500 8000" style="height:48px;width:auto;display:block">
+          <defs><style>.ffl0{fill:#687D9C}.ffl1{fill:#687D9C;fill-rule:nonzero}.ffl2{fill:#DEAA57;fill-rule:nonzero}</style></defs>
+          <g>
+            <path class="ffl0" d="M1812.4 4727.09c409.83,9.8 887.26,173.39 1195.7,439.26 28.72,24.76 44.02,30.15 58.55,57.24 -52.14,-14.57 -171.2,-85.78 -230.79,-112.6 -573.62,-258.2 -1233.3,-349.38 -1831.71,-106.15 -40.93,16.63 -87.49,44.55 -124.91,55.7 20.68,-59.06 109.44,-127.92 160.93,-158.02 80.06,-46.81 141.34,-58.65 228.48,-90.06 -274.29,-14.17 -541.87,141.17 -633.11,424.54l-23.67 -31.72c-53.08,-122.61 -57.66,-196.85 -65.87,-329.88l-13.99 32.3c-3.39,12 -4.68,20.78 -6.59,35.01 -11.91,88.58 -15.08,172.5 5.98,256.07 21.54,85.47 78.14,202.53 145.85,231.4 50.02,-49.84 120.88,-289.19 534.4,-286.16 514.62,3.76 936.61,447.07 1147.02,891.67 48.99,103.51 78.24,193.2 116.58,292.69 204.29,1.91 365.65,-22.11 551.58,-61.3 -4.56,-73.17 -96.36,-288.22 -127.03,-355.35 -102.95,-225.38 -241.3,-405.89 -399.13,-574.71 -60.2,-64.39 -184.4,-177.9 -254.16,-231.52 88.93,6.2 297.3,104.48 378.5,150.87 220.07,125.7 420.56,298.33 567.63,501.22 58.21,80.31 158.45,237.07 191,342.72 62.81,-15.08 171.35,-153.6 213.87,-236.18 55.17,-107.14 79.26,-236.42 72.54,-380.41 -46.7,-1000.4 -1793.1,-818.22 -1857.66,-756.62z"/>
+            <path class="ffl0" d="M908.33 5330.28l-1.41 999.35 1449.64 0.28c-2,-76.96 -166.68,-386.07 -201.72,-441.69 -91.01,-144.46 -187.49,-261 -295.82,-356.08 -109.45,-96.06 -252.17,-188.71 -413.11,-240.03 -174.03,-55.49 -400.81,-61.85 -537.57,38.17z"/>
+            <path class="ffl0" d="M908.65 3424.73l-2.99 908.85c20.1,-3.89 21.74,-11.21 40.59,-30 89.89,-89.6 210.33,-177.93 315.83,-240.48 274.56,-162.77 638.43,-274.24 960.06,-309.57 166.8,-18.33 422.8,-54.2 590.23,-38.31 -24.89,13.29 -111.58,28.2 -152.81,40.07 -48.39,13.94 -105.58,33.65 -152.35,52.08 -72.65,28.64 -226.01,98.68 -263.84,140.95l282.22 -56.28c100.35,-17.6 195,-28.31 296.59,-38.74 148.31,-15.24 329.26,-9.66 481.55,6.76 47.54,5.13 105.39,18.24 154.19,20.06 -16.76,-73.51 -132.1,-181.83 -167.19,-211.69 -76.12,-64.77 -146.3,-100.57 -245.26,-134.7 -468.76,-161.6 -1251.39,-126.41 -1767.93,-118.66 -111.8,1.68 -260.91,-1.35 -368.89,9.66z"/>
+            <path class="ffl0" d="M2103.02 4423.22c104.56,1.75 233.32,-18.11 345.8,-21.11 253.78,-6.76 601.91,10.18 846.47,75.82 41.2,11.06 108.16,35.39 149.12,41.7 50.39,-58.35 99.35,-237.52 80.56,-322.74 -349.11,-20.6 -764.31,38.62 -1103.59,124.24 -55.44,13.99 -109.4,28.7 -160.46,43.9 -40.44,12.04 -129.33,33.19 -157.89,58.2z"/>
+            <path class="ffl0" d="M998.36 4717.1c128.1,59.57 343.38,32.49 435.46,-153.69 120.03,-242.71 179.03,-215.94 348.65,-242.96 29.17,-4.65 25.79,-8.44 31.52,-15.04 -269.51,-102.19 -476.91,163.85 -619.63,290.24 -130.76,115.81 -163.14,96.48 -196,121.45z"/>
+            <polygon class="ffl1" points="4816.05,6282.34 4011.23,6282.34 4011.23,3410.51 4816.05,3410.51"/>
+            <polygon class="ffl1" points="5156.12,6282.34 5156.12,3410.51 5908.89,3410.51 6554.65,4959.31 7196.74,3410.51 7983.97,3410.51 7983.97,6282.34 7183.55,6282.34 7183.55,4394.18 6408.79,6282.34 6331.83,6282.34 5573.92,4477.74 5573.92,6282.34"/>
+            <path class="ffl2" d="M908.18 6642.7l534.93 0 0 123.23 -380.89 0 0 267.47 298.28 0 0 124.63 -298.28 0 0 292.67 386.5 0 0 126.03 -540.54 0 0 -934.04zm1041.97 0l175.51 0 249.26 934.04 -156.37 0 -58.58 -233.86 -273.07 0 -57.88 233.86 -147.27 0 268.4 -934.04zm179.48 578.35l-106.89 -427.81 -105.73 427.81 212.62 0zm864.82 -123.23l312.28 0 0 485.92 -82.85 0 -20.77 -119.03c-47.38,85.89 -122.3,128.83 -224.76,128.83 -104.09,0 -185.78,-42.24 -244.36,-126.96 -58.81,-84.49 -88.22,-199.31 -88.22,-344.25 0,-152.64 29.17,-273.54 87.29,-362.69 58.35,-89.15 147.5,-133.73 268.17,-133.73 168.04,0 268.4,94.76 301.31,284.5l-140.04 34.78c-16.57,-80.98 -38.74,-133.5 -66.52,-157.3 -28.01,-24.04 -60.92,-35.94 -98.96,-35.94 -125.8,0 -188.81,119.03 -188.81,356.86 0,239.22 64.18,358.72 192.78,358.72 106.66,0 160.11,-82.15 160.11,-246.46l-166.64 0 0 -123.23zm694.45 -455.11l154.04 0 0 803.8 330.48 0 0 130.23 -484.52 0 0 -934.04zm796.91 0l534.93 0 0 123.23 -380.89 0 0 267.47 298.28 0 0 124.63 -298.28 0 0 292.67 386.5 0 0 126.03 -540.54 0 0 -934.04zm1129.96 0l282.64 0c71.19,0 125.33,5.6 162.21,17.04 36.87,11.44 68.15,36.87 93.82,76.32 25.44,39.68 38.28,87.52 38.28,144.24 0,103.63 -46.21,171.78 -138.87,204.69 111.33,35.24 166.88,113.43 166.88,234.56 0,68.85 -21.94,129.06 -66.05,180.18 -43.88,51.35 -128.13,77.02 -252.53,77.02l-286.37 0 0 -934.04zm151.24 387.9l98.02 0c69.08,0 114.59,-12.83 136.53,-38.28 21.94,-25.44 32.91,-58.11 32.91,-98.49 0,-47.38 -12.6,-80.98 -37.81,-101.52 -24.98,-20.31 -63.95,-30.57 -116.46,-30.57l-113.19 0 0 268.87zm0 422.91l124.4 0c114.13,0 171.07,-50.65 171.07,-151.7 0,-39.21 -12.14,-74.45 -36.18,-105.49 -24.27,-31.04 -73.52,-46.68 -147.74,-46.68l-111.56 0 0 303.87zm836.58 -810.8l154.04 0 0 934.04 -154.04 0 0 -934.04zm555.58 0l228.49 0 185.78 673.34 190.45 -673.34 220.09 0 0 934.04 -145.64 0 0 -797.27 -221.26 797.27 -112.03 0 -217.06 -797.96 0 797.96 -128.83 0 0 -934.04z"/>
+          </g>
+        </svg>
+      </div>
+      <p>Eagle BIM provides expert architectural BIM services, MEP coordination, and BIM consulting to AEC firms across Texas and the USA.</p>
+    </div>
+    <div class="foot-col">
+      <h4>Arch BIM Services</h4>
+      <ul>
+        <li><a href="#">Revit Architectural Modeling</a></li>
+        <li><a href="#">Construction Documentation</a></li>
+        <li><a href="#">CD Phase Support</a></li>
+        <li><a href="#">Architectural Coordination</a></li>
+        <li><a href="#">Architectural Detailing</a></li>
+        <li><a href="#">As-Built Documentation</a></li>
+        <li><a href="#">Revit Family Creation</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>All BIM Services</h4>
+      <ul>
+        <li><a href="index.html">BIM Services Home</a></li>
+        <li><a href="#">MEP BIM Services</a></li>
+        <li><a href="#">Structural BIM Services</a></li>
+        <li><a href="#">BIM Coordination</a></li>
+        <li><a href="#">CAD to BIM Conversion</a></li>
+        <li><a href="#">Scan to BIM Services</a></li>
+        <li><a href="#">BIM Consulting Services</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>Contact</h4>
+      <div class="foot-ci">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.72 11.5 19.79 19.79 0 011.65 2.82 2 2 0 013.62 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 8.6a16 16 0 006.29 6.29l.96-.96a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+        +1 (346) 588-2960
+      </div>
+      <div class="foot-ci">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        info@bim-services.us
+      </div>
+      <div class="foot-ci">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Pflugerville, TX 78660
+      </div>
+    </div>
+  </div>
+  <div class="foot-btm">
+    <span>© 2026 Eagle BIM · BIMPRO LLC · Architectural BIM Services USA · All rights reserved.</span>
+    <div class="soc-links">
+      <a href="https://www.facebook.com/EagleBIMservices/" class="soc-link" target="_blank">f</a>
+      <a href="https://www.linkedin.com/company/eagle-bim-services/" class="soc-link" target="_blank">in</a>
+      <a href="https://x.com/eaglebim" class="soc-link" target="_blank">𝕏</a>
+      <a href="https://www.instagram.com/eaglebim/" class="soc-link" target="_blank">ig</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach((e,i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 70);
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.07 });
+  reveals.forEach(el => obs.observe(el));
+
+  window.addEventListener('scroll', () => {
+    document.getElementById('main-nav').style.boxShadow =
+      window.scrollY > 40 ? '0 4px 24px rgba(104,125,156,.14)' : 'none';
+  });
+</script>
+</body>
+</html>

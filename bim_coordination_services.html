@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BIM Coordination Services USA | MEP Coordination & Clash Detection | Eagle BIM</title>
+<meta name="description" content="Eagle BIM delivers expert BIM coordination services across the USA. MEP coordination services, clash detection, federated model management, and multi-discipline coordination for AEC firms. Based in Texas.">
+<meta name="keywords" content="BIM Coordination Services, MEP Coordination Services, MEP BIM Coordination Service, BIM Clash Detection, Federated Model Coordination, Multi-Discipline BIM Coordination, Navisworks Coordination">
+<link rel="canonical" href="https://www.eaglebim.com/bim-coordination-services/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blue:#687d9c;--blue-dk:#4a6080;--blue-lt:#8a9db8;
+    --blue-pale:#e8edf4;--blue-xpale:#f3f6fa;
+    --gold:#deaa57;--gold-dk:#c8943d;--gold-lt:#ecc278;--gold-pale:#fdf6e8;
+    --white:#ffffff;--off:#f8f7f5;--cream:#f3f1ec;
+    --txt:#1a2233;--txt-mid:#4a5568;--txt-muted:#8a94a6;
+    --bdr:#e2e6ed;--bdr-gold:rgba(222,170,87,.28);
+    --sh:0 2px 20px rgba(104,125,156,.09);--sh-md:0 8px 40px rgba(104,125,156,.14);
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--white);color:var(--txt);font-family:'DM Sans',sans-serif;font-size:16px;line-height:1.6;overflow-x:hidden}
+
+  /* NAV */
+  nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 52px;height:72px;background:rgba(255,255,255,.97);backdrop-filter:blur(14px);border-bottom:1px solid var(--bdr);transition:box-shadow .3s}
+  .nav-logo{display:flex;align-items:center;text-decoration:none;flex-shrink:0}
+  .nav-logo svg{height:44px;width:auto;display:block}
+  .nav-links{display:flex;align-items:center;gap:2px;list-style:none;position:absolute;left:50%;transform:translateX(-50%)}
+  .nav-links a{text-decoration:none;color:var(--txt-mid);font-size:13px;font-weight:500;letter-spacing:.03em;padding:6px 13px;border-radius:4px;transition:color .2s,background .2s;white-space:nowrap}
+  .nav-links a:hover{color:var(--blue);background:var(--blue-pale)}
+  .nav-links a.active{color:var(--gold-dk);font-weight:600}
+  .nav-links .drop>a::after{content:' ↓';font-size:9px;opacity:.55}
+  .nav-cta{display:inline-flex;align-items:center;padding:11px 22px;background:var(--gold);color:#fff!important;font-weight:700!important;font-size:12px!important;letter-spacing:.1em!important;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:background .2s,transform .15s,box-shadow .2s;flex-shrink:0}
+  .nav-cta:hover{background:var(--gold-dk)!important;transform:translateY(-1px);box-shadow:0 4px 18px rgba(222,170,87,.35)}
+
+  /* HERO */
+  .hero{min-height:100vh;display:grid;grid-template-columns:55fr 45fr;align-items:center;padding:120px 52px 80px;position:relative;overflow:hidden;gap:40px;background:var(--white)}
+  .hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(104,125,156,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(104,125,156,.05) 1px,transparent 1px);background-size:52px 52px;pointer-events:none}
+  .hero-content{position:relative;z-index:2}
+  .breadcrumb{display:flex;align-items:center;gap:8px;margin-bottom:20px;font-size:12px;color:var(--txt-muted)}
+  .breadcrumb a{color:var(--blue);text-decoration:none;font-weight:500}
+  .breadcrumb a:hover{color:var(--gold-dk)}
+  .breadcrumb span{opacity:.5}
+  .hero-tag{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border:1px solid var(--bdr-gold);border-radius:100px;font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-dk);margin-bottom:22px;background:var(--gold-pale);animation:fadeUp .7s ease both}
+  .hero-tag::before{content:'';width:6px;height:6px;background:var(--gold);border-radius:50%;animation:pulse 2s ease infinite}
+  @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
+  h1{font-family:'Playfair Display',serif;font-size:clamp(30px,3.2vw,50px);font-weight:800;line-height:1.1;letter-spacing:-.01em;margin-bottom:22px;color:var(--txt);animation:fadeUp .7s .1s ease both}
+  h1 em{font-style:normal;color:var(--blue)}
+  .hero-sub{font-size:17px;color:var(--txt-mid);line-height:1.78;max-width:490px;margin-bottom:36px;font-weight:300;animation:fadeUp .7s .2s ease both}
+  .hero-actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap;animation:fadeUp .7s .3s ease both}
+  .hero-badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:36px;animation:fadeUp .7s .4s ease both}
+  .badge{padding:5px 12px;border:1px solid var(--bdr);border-radius:100px;font-size:11px;font-weight:500;letter-spacing:.05em;color:var(--blue);background:var(--blue-pale)}
+  .hero-visual{position:relative;z-index:2;display:flex;align-items:center;justify-content:center;animation:fadeUp .7s .2s ease both}
+
+  /* BUTTONS */
+  .btn-gold{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;background:var(--gold);color:#fff;font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:background .2s,transform .15s,box-shadow .2s}
+  .btn-gold:hover{background:var(--gold-dk);transform:translateY(-2px);box-shadow:0 8px 26px rgba(222,170,87,.35)}
+  .btn-blue{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border:1.5px solid var(--blue);color:var(--blue);font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:background .2s,color .2s,transform .15s}
+  .btn-blue:hover{background:var(--blue);color:#fff;transform:translateY(-2px)}
+  .btn-arrow{transition:transform .2s}
+  .btn-gold:hover .btn-arrow,.btn-blue:hover .btn-arrow{transform:translateX(4px)}
+
+  /* STATS */
+  .stats-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--bdr);border-top:1px solid var(--bdr);border-bottom:1px solid var(--bdr)}
+  .stat-item{background:var(--white);padding:32px 36px;text-align:center;transition:background .3s;cursor:default}
+  .stat-item:hover{background:var(--blue-pale)}
+  .stat-num{font-family:'Playfair Display',serif;font-size:42px;font-weight:800;color:var(--blue);line-height:1;display:block}
+  .stat-sfx{font-size:22px;font-weight:400;color:var(--gold)}
+  .stat-lbl{font-size:11px;color:var(--txt-muted);letter-spacing:.1em;text-transform:uppercase;margin-top:8px;font-weight:600}
+
+  /* SECTIONS */
+  section{padding:88px 52px}
+  .section-tag{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-dk);margin-bottom:14px}
+  .section-tag::before{content:'';display:block;width:22px;height:2px;background:var(--gold);border-radius:2px}
+  h2{font-family:'Playfair Display',serif;font-size:clamp(24px,2.4vw,38px);font-weight:800;line-height:1.12;letter-spacing:-.01em;margin-bottom:14px;color:var(--txt)}
+  h2 em{font-style:normal;color:var(--blue)}
+  .sec-desc{color:var(--txt-mid);font-size:16px;line-height:1.78;max-width:580px;font-weight:300}
+  .body-text{font-size:15.5px;color:var(--txt-mid);line-height:1.85;font-weight:300;margin-bottom:18px}
+  .body-text:last-child{margin-bottom:0}
+  .body-text strong{color:var(--txt);font-weight:600}
+
+  /* INTRO */
+  .intro-layout{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+  .discipline-cards{display:flex;flex-direction:column;gap:12px}
+  .disc-card{background:var(--white);border:1px solid var(--bdr);border-radius:6px;padding:20px 20px;display:flex;gap:14px;align-items:flex-start;transition:border-color .2s,box-shadow .2s}
+  .disc-card:hover{border-color:var(--gold);box-shadow:var(--sh)}
+  .disc-dot{width:8px;height:8px;min-width:8px;background:var(--gold);border-radius:50%;margin-top:6px}
+  .disc-title{font-size:14px;font-weight:600;color:var(--txt);margin-bottom:3px}
+  .disc-text{font-size:13px;color:var(--txt-muted);line-height:1.6}
+
+  /* SERVICES GRID */
+  .svc-bg{background:var(--off)}
+  .svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--bdr);border:1px solid var(--bdr);border-radius:6px;overflow:hidden;margin-top:52px}
+  .svc-card{background:var(--white);padding:36px 32px;transition:background .25s}
+  .svc-card:hover{background:var(--blue-xpale)}
+  .svc-icon{width:48px;height:48px;background:var(--gold-pale);border:1.5px solid var(--bdr-gold);border-radius:4px;display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+  .svc-icon svg{width:22px;height:22px;stroke:var(--gold-dk);fill:none;stroke-width:1.5}
+  .svc-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--txt);margin-bottom:12px}
+  .svc-text{font-size:14px;color:var(--txt-mid);line-height:1.78;font-weight:300}
+
+  /* CLASH PROCESS — BLUE */
+  .process-bg{background:var(--blue);padding:88px 52px;position:relative;overflow:hidden}
+  .process-bg::before{content:'';position:absolute;top:-200px;right:-200px;width:600px;height:600px;background:radial-gradient(circle,rgba(222,170,87,.1) 0%,transparent 65%);pointer-events:none}
+  .process-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;margin-top:52px}
+  .clash-stages{display:flex;flex-direction:column;gap:0}
+  .clash-stage{display:flex;gap:20px;padding:24px 0;border-bottom:1px solid rgba(255,255,255,.1);align-items:flex-start;transition:padding-left .3s}
+  .clash-stage:first-child{border-top:1px solid rgba(255,255,255,.1)}
+  .clash-stage:hover{padding-left:8px}
+  .stage-num{font-family:'Playfair Display',serif;font-size:26px;font-weight:800;color:var(--gold);min-width:40px;line-height:1;padding-top:3px}
+  .stage-title{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:5px}
+  .stage-text{font-size:13.5px;color:rgba(255,255,255,.55);line-height:1.72;font-weight:300}
+  .clash-types{display:flex;flex-direction:column;gap:14px}
+  .clash-type{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:22px 20px;transition:background .25s}
+  .clash-type:hover{background:rgba(255,255,255,.12)}
+  .clash-type-label{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+  .clash-type-title{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--white);margin-bottom:6px}
+  .clash-type-text{font-size:13px;color:rgba(255,255,255,.52);line-height:1.68;font-weight:300}
+
+  /* MEP SECTION */
+  .mep-layout{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+  .mep-visual{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .mep-card{background:var(--off);border:1px solid var(--bdr);border-radius:6px;padding:22px 18px;transition:border-color .2s,background .2s}
+  .mep-card:hover{border-color:var(--gold);background:var(--gold-pale)}
+  .mep-icon{width:38px;height:38px;background:var(--blue-pale);border-radius:4px;display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+  .mep-icon svg{width:17px;height:17px;stroke:var(--blue);fill:none;stroke-width:1.5}
+  .mep-name{font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--txt);margin-bottom:4px}
+  .mep-desc{font-size:12px;color:var(--txt-muted);line-height:1.58}
+
+  /* DELIVERABLES */
+  .del-bg{background:var(--cream)}
+  .del-layout{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:stretch;margin-top:52px}
+  .del-list{display:flex;flex-direction:column;gap:10px}
+  .del-row{display:flex;align-items:flex-start;gap:14px;padding:16px 18px;border:1px solid var(--bdr);border-radius:4px;background:var(--white);transition:border-color .2s}
+  .del-row:hover{border-color:var(--gold)}
+  .del-icon{width:36px;height:36px;min-width:36px;background:var(--blue-pale);border-radius:4px;display:flex;align-items:center;justify-content:center}
+  .del-icon svg{width:16px;height:16px;stroke:var(--blue);fill:none;stroke-width:1.5}
+  .del-title{font-size:14px;font-weight:600;color:var(--txt);margin-bottom:3px}
+  .del-text{font-size:12.5px;color:var(--txt-muted);line-height:1.6}
+  .fmt-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+  .fmt-chip{padding:7px 14px;border:1.5px solid var(--bdr-gold);font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--gold-dk);background:var(--gold-pale);border-radius:3px}
+  .del-cta-box{background:var(--blue);border-radius:8px;padding:36px 32px;display:flex;flex-direction:column}
+  .del-cta-box h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:white;margin-bottom:12px;line-height:1.3}
+  .del-cta-box>p{font-size:14px;color:rgba(255,255,255,.62);line-height:1.8;font-weight:300;margin-bottom:22px}
+  .del-cta-gold{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;background:var(--gold);color:#fff;font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:background .2s,transform .15s;width:100%;justify-content:center;margin-bottom:10px}
+  .del-cta-gold:hover{background:var(--gold-dk);transform:translateY(-2px)}
+  .del-cta-ghost{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border:1.5px solid rgba(255,255,255,.3);color:rgba(255,255,255,.75);font-weight:600;font-size:12px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:border-color .2s,background .2s;width:100%;justify-content:center;margin-bottom:24px}
+  .del-cta-ghost:hover{border-color:rgba(255,255,255,.7);background:rgba(255,255,255,.07)}
+  .del-trust{display:flex;flex-direction:column;gap:10px;border-top:1px solid rgba(255,255,255,.12);padding-top:22px;margin-top:auto}
+  .del-trust-item{display:flex;align-items:center;gap:10px;font-size:13px;color:rgba(255,255,255,.58)}
+  .del-trust-check{width:18px;height:18px;min-width:18px;background:rgba(222,170,87,.15);border:1px solid rgba(222,170,87,.3);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .del-trust-check svg{width:9px;height:9px;stroke:var(--gold);fill:none;stroke-width:2.5}
+
+  /* BENEFITS */
+  .ben-bg{background:var(--off)}
+  .ben-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--bdr);border:1px solid var(--bdr);border-radius:6px;overflow:hidden;margin-top:52px}
+  .ben-card{background:var(--white);padding:32px 26px;transition:background .25s}
+  .ben-card:hover{background:var(--gold-pale)}
+  .ben-num{font-family:'Playfair Display',serif;font-size:36px;font-weight:800;color:var(--gold);line-height:1;margin-bottom:10px}
+  .ben-title{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--txt);margin-bottom:8px}
+  .ben-text{font-size:13px;color:var(--txt-muted);line-height:1.65}
+
+  /* TOOLS */
+  .tools-bg{background:var(--white)}
+  .tools-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--bdr);border:1px solid var(--bdr);border-radius:6px;overflow:hidden;margin-top:44px}
+  .tool-card{background:var(--white);padding:24px 20px;text-align:center;transition:background .25s}
+  .tool-card:hover{background:var(--blue-pale)}
+  .tool-name{font-size:13px;font-weight:600;color:var(--txt);margin-top:10px}
+  .tool-role{font-size:11px;color:var(--txt-muted);margin-top:3px}
+  .tool-icon{width:40px;height:40px;background:var(--blue-pale);border-radius:6px;display:flex;align-items:center;justify-content:center;margin:0 auto}
+  .tool-icon svg{width:18px;height:18px;stroke:var(--blue);fill:none;stroke-width:1.5}
+
+  /* INDUSTRIES */
+  .ind-bg{background:var(--cream);padding:80px 52px}
+  .ind-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px}
+  .ind-card{background:var(--white);border:1px solid var(--bdr);border-radius:6px;padding:22px 18px;transition:border-color .25s,box-shadow .25s}
+  .ind-card:hover{border-color:var(--blue-lt);box-shadow:var(--sh)}
+  .ind-name{font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--txt);margin-bottom:6px}
+  .ind-desc{font-size:12.5px;color:var(--txt-muted);line-height:1.65}
+
+  /* GEO */
+  .geo-bg{background:var(--blue);padding:88px 52px}
+  .geo-intro{font-size:16px;color:rgba(255,255,255,.65);line-height:1.8;max-width:620px;font-weight:300;margin-bottom:44px;margin-top:8px}
+  .geo-primary{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);border-radius:6px;padding:26px 28px;margin-bottom:24px}
+  .geo-primary-lbl{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+  .geo-primary-title{font-family:'Playfair Display',serif;font-size:19px;font-weight:700;color:var(--white);margin-bottom:8px}
+  .geo-primary-desc{font-size:13.5px;color:rgba(255,255,255,.55);line-height:1.7;font-weight:300}
+  .geo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+  .geo-state{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:16px 14px;transition:background .25s}
+  .geo-state:hover{background:rgba(255,255,255,.12)}
+  .geo-state-name{font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);margin-bottom:5px}
+  .geo-cities{font-size:11.5px;color:rgba(255,255,255,.45);line-height:1.6}
+
+  /* RELATED */
+  .related-bg{background:var(--cream)}
+  .related-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px}
+  .rel-card{background:var(--white);border:1px solid var(--bdr);border-radius:6px;padding:22px 18px;text-decoration:none;transition:border-color .25s,box-shadow .25s;display:block}
+  .rel-card:hover{border-color:var(--blue-lt);box-shadow:var(--sh)}
+  .rel-icon{width:38px;height:38px;background:var(--blue-pale);border-radius:4px;display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+  .rel-icon svg{width:17px;height:17px;stroke:var(--blue);fill:none;stroke-width:1.5}
+  .rel-title{font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--txt);margin-bottom:5px}
+  .rel-desc{font-size:12.5px;color:var(--txt-muted);line-height:1.6}
+
+  /* FINAL CTA */
+  .cta-final{background:var(--blue);padding:100px 52px;text-align:center;position:relative;overflow:hidden}
+  .cta-final::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:48px 48px}
+  .cta-inner{position:relative;z-index:2;max-width:620px;margin:0 auto}
+  .cta-inner h2{color:var(--white);margin-bottom:16px}
+  .cta-inner p{color:rgba(255,255,255,.62);font-size:16px;margin-bottom:36px;font-weight:300;line-height:1.8}
+  .cta-acts{display:flex;flex-direction:column;align-items:center;gap:14px}
+  .cta-btn-primary{display:inline-flex;align-items:center;gap:10px;padding:16px 44px;background:var(--gold);color:#fff;font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:background .2s,transform .15s}
+  .cta-btn-primary:hover{background:var(--gold-dk);transform:translateY(-2px)}
+  .cta-secondary-row{display:flex;gap:12px}
+  .cta-btn-ghost{display:inline-flex;align-items:center;gap:8px;padding:11px 26px;border:1.5px solid rgba(255,255,255,.25);color:rgba(255,255,255,.7);font-weight:500;font-size:13px;text-decoration:none;border-radius:3px;transition:border-color .2s,color .2s,background .2s}
+  .cta-btn-ghost:hover{border-color:rgba(255,255,255,.6);color:#fff;background:rgba(255,255,255,.06)}
+
+  /* FOOTER */
+  footer{background:var(--txt);border-top:3px solid var(--gold);padding:64px 52px 36px}
+  .foot-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:52px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:28px}
+  .foot-brand p{font-size:13px;color:rgba(255,255,255,.42);line-height:1.78;margin-top:14px;font-weight:300;max-width:260px}
+  .foot-col h4{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+  .foot-col ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+  .foot-col a{text-decoration:none;font-size:13px;color:rgba(255,255,255,.42);transition:color .2s}
+  .foot-col a:hover{color:var(--gold-lt)}
+  .foot-ci{display:flex;align-items:flex-start;gap:9px;font-size:13px;color:rgba(255,255,255,.45);margin-bottom:11px;font-weight:300}
+  .foot-ci svg{flex-shrink:0;stroke:var(--gold);margin-top:2px}
+  .foot-btm{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,.3)}
+  .soc-links{display:flex;gap:10px}
+  .soc-link{width:30px;height:30px;border:1px solid rgba(222,170,87,.22);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.38);text-decoration:none;font-size:12px;font-weight:700;transition:border-color .2s,color .2s,background .2s;border-radius:3px}
+  .soc-link:hover{border-color:var(--gold);color:var(--gold);background:rgba(222,170,87,.1)}
+
+  /* ANIMATIONS */
+  @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .65s ease,transform .65s ease}
+  .reveal.visible{opacity:1;transform:translateY(0)}
+
+  /* RESPONSIVE */
+  @media(max-width:1100px){
+    .hero{grid-template-columns:1fr;padding:100px 32px 60px}.hero-visual{display:none}
+    .intro-layout,.mep-layout,.del-layout{grid-template-columns:1fr;gap:48px}
+    .process-grid{grid-template-columns:1fr;gap:48px}
+    .svc-grid,.ben-grid,.related-grid{grid-template-columns:1fr 1fr}
+    .ind-grid,.geo-grid{grid-template-columns:1fr 1fr}
+    .tools-grid{grid-template-columns:repeat(3,1fr)}
+    .foot-top{grid-template-columns:1fr 1fr}
+    nav{padding:0 24px}.nav-links{display:none}
+  }
+  @media(max-width:768px){
+    section,.ind-bg,.geo-bg{padding:64px 20px}
+    .hero{padding:88px 20px 60px}
+    .stats-strip{grid-template-columns:1fr 1fr}
+    .svc-grid,.ben-grid,.related-grid,.ind-grid,.geo-grid,.mep-visual,.tools-grid{grid-template-columns:1fr}
+    .foot-top{grid-template-columns:1fr;gap:36px}
+    .cta-secondary-row{flex-direction:column}
+  }
+  ::-webkit-scrollbar{width:5px}
+  ::-webkit-scrollbar-track{background:var(--off)}
+  ::-webkit-scrollbar-thumb{background:var(--blue-lt);border-radius:3px}
+  ::-webkit-scrollbar-thumb:hover{background:var(--blue)}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="main-nav">
+  <a href="index.html" class="nav-logo" aria-label="Eagle BIM Home">
+    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 8500 8000" style="height:44px;width:auto;display:block">
+      <defs><style>.nl0{fill:#687D9C}.nl1{fill:#687D9C;fill-rule:nonzero}.nl2{fill:#DEAA57;fill-rule:nonzero}</style></defs>
+      <g>
+        <path class="nl0" d="M1812.4 4727.09c409.83,9.8 887.26,173.39 1195.7,439.26 28.72,24.76 44.02,30.15 58.55,57.24 -52.14,-14.57 -171.2,-85.78 -230.79,-112.6 -573.62,-258.2 -1233.3,-349.38 -1831.71,-106.15 -40.93,16.63 -87.49,44.55 -124.91,55.7 20.68,-59.06 109.44,-127.92 160.93,-158.02 80.06,-46.81 141.34,-58.65 228.48,-90.06 -274.29,-14.17 -541.87,141.17 -633.11,424.54l-23.67 -31.72c-53.08,-122.61 -57.66,-196.85 -65.87,-329.88l-13.99 32.3c-3.39,12 -4.68,20.78 -6.59,35.01 -11.91,88.58 -15.08,172.5 5.98,256.07 21.54,85.47 78.14,202.53 145.85,231.4 50.02,-49.84 120.88,-289.19 534.4,-286.16 514.62,3.76 936.61,447.07 1147.02,891.67 48.99,103.51 78.24,193.2 116.58,292.69 204.29,1.91 365.65,-22.11 551.58,-61.3 -4.56,-73.17 -96.36,-288.22 -127.03,-355.35 -102.95,-225.38 -241.3,-405.89 -399.13,-574.71 -60.2,-64.39 -184.4,-177.9 -254.16,-231.52 88.93,6.2 297.3,104.48 378.5,150.87 220.07,125.7 420.56,298.33 567.63,501.22 58.21,80.31 158.45,237.07 191,342.72 62.81,-15.08 171.35,-153.6 213.87,-236.18 55.17,-107.14 79.26,-236.42 72.54,-380.41 -46.7,-1000.4 -1793.1,-818.22 -1857.66,-756.62z"/>
+        <path class="nl0" d="M908.33 5330.28l-1.41 999.35 1449.64 0.28c-2,-76.96 -166.68,-386.07 -201.72,-441.69 -91.01,-144.46 -187.49,-261 -295.82,-356.08 -109.45,-96.06 -252.17,-188.71 -413.11,-240.03 -174.03,-55.49 -400.81,-61.85 -537.57,38.17z"/>
+        <path class="nl0" d="M908.65 3424.73l-2.99 908.85c20.1,-3.89 21.74,-11.21 40.59,-30 89.89,-89.6 210.33,-177.93 315.83,-240.48 274.56,-162.77 638.43,-274.24 960.06,-309.57 166.8,-18.33 422.8,-54.2 590.23,-38.31 -24.89,13.29 -111.58,28.2 -152.81,40.07 -48.39,13.94 -105.58,33.65 -152.35,52.08 -72.65,28.64 -226.01,98.68 -263.84,140.95l282.22 -56.28c100.35,-17.6 195,-28.31 296.59,-38.74 148.31,-15.24 329.26,-9.66 481.55,6.76 47.54,5.13 105.39,18.24 154.19,20.06 -16.76,-73.51 -132.1,-181.83 -167.19,-211.69 -76.12,-64.77 -146.3,-100.57 -245.26,-134.7 -468.76,-161.6 -1251.39,-126.41 -1767.93,-118.66 -111.8,1.68 -260.91,-1.35 -368.89,9.66z"/>
+        <path class="nl0" d="M2103.02 4423.22c104.56,1.75 233.32,-18.11 345.8,-21.11 253.78,-6.76 601.91,10.18 846.47,75.82 41.2,11.06 108.16,35.39 149.12,41.7 50.39,-58.35 99.35,-237.52 80.56,-322.74 -349.11,-20.6 -764.31,38.62 -1103.59,124.24 -55.44,13.99 -109.4,28.7 -160.46,43.9 -40.44,12.04 -129.33,33.19 -157.89,58.2z"/>
+        <path class="nl0" d="M998.36 4717.1c128.1,59.57 343.38,32.49 435.46,-153.69 120.03,-242.71 179.03,-215.94 348.65,-242.96 29.17,-4.65 25.79,-8.44 31.52,-15.04 -269.51,-102.19 -476.91,163.85 -619.63,290.24 -130.76,115.81 -163.14,96.48 -196,121.45z"/>
+        <polygon class="nl1" points="4816.05,6282.34 4011.23,6282.34 4011.23,3410.51 4816.05,3410.51"/>
+        <polygon class="nl1" points="5156.12,6282.34 5156.12,3410.51 5908.89,3410.51 6554.65,4959.31 7196.74,3410.51 7983.97,3410.51 7983.97,6282.34 7183.55,6282.34 7183.55,4394.18 6408.79,6282.34 6331.83,6282.34 5573.92,4477.74 5573.92,6282.34"/>
+        <path class="nl2" d="M908.18 6642.7l534.93 0 0 123.23 -380.89 0 0 267.47 298.28 0 0 124.63 -298.28 0 0 292.67 386.5 0 0 126.03 -540.54 0 0 -934.04zm1041.97 0l175.51 0 249.26 934.04 -156.37 0 -58.58 -233.86 -273.07 0 -57.88 233.86 -147.27 0 268.4 -934.04zm179.48 578.35l-106.89 -427.81 -105.73 427.81 212.62 0zm864.82 -123.23l312.28 0 0 485.92 -82.85 0 -20.77 -119.03c-47.38,85.89 -122.3,128.83 -224.76,128.83 -104.09,0 -185.78,-42.24 -244.36,-126.96 -58.81,-84.49 -88.22,-199.31 -88.22,-344.25 0,-152.64 29.17,-273.54 87.29,-362.69 58.35,-89.15 147.5,-133.73 268.17,-133.73 168.04,0 268.4,94.76 301.31,284.5l-140.04 34.78c-16.57,-80.98 -38.74,-133.5 -66.52,-157.3 -28.01,-24.04 -60.92,-35.94 -98.96,-35.94 -125.8,0 -188.81,119.03 -188.81,356.86 0,239.22 64.18,358.72 192.78,358.72 106.66,0 160.11,-82.15 160.11,-246.46l-166.64 0 0 -123.23zm694.45 -455.11l154.04 0 0 803.8 330.48 0 0 130.23 -484.52 0 0 -934.04zm796.91 0l534.93 0 0 123.23 -380.89 0 0 267.47 298.28 0 0 124.63 -298.28 0 0 292.67 386.5 0 0 126.03 -540.54 0 0 -934.04zm1129.96 0l282.64 0c71.19,0 125.33,5.6 162.21,17.04 36.87,11.44 68.15,36.87 93.82,76.32 25.44,39.68 38.28,87.52 38.28,144.24 0,103.63 -46.21,171.78 -138.87,204.69 111.33,35.24 166.88,113.43 166.88,234.56 0,68.85 -21.94,129.06 -66.05,180.18 -43.88,51.35 -128.13,77.02 -252.53,77.02l-286.37 0 0 -934.04zm151.24 387.9l98.02 0c69.08,0 114.59,-12.83 136.53,-38.28 21.94,-25.44 32.91,-58.11 32.91,-98.49 0,-47.38 -12.6,-80.98 -37.81,-101.52 -24.98,-20.31 -63.95,-30.57 -116.46,-30.57l-113.19 0 0 268.87zm0 422.91l124.4 0c114.13,0 171.07,-50.65 171.07,-151.7 0,-39.21 -12.14,-74.45 -36.18,-105.49 -24.27,-31.04 -73.52,-46.68 -147.74,-46.68l-111.56 0 0 303.87zm836.58 -810.8l154.04 0 0 934.04 -154.04 0 0 -934.04zm555.58 0l228.49 0 185.78 673.34 190.45 -673.34 220.09 0 0 934.04 -145.64 0 0 -797.27 -221.26 797.27 -112.03 0 -217.06 -797.96 0 797.96 -128.83 0 0 -934.04z"/>
+      </g>
+    </svg>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li class="drop"><a href="#" class="active">Services</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Our Projects</a></li>
+    <li><a href="#">Resources</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+  <a href="mailto:info@eaglebim.com" class="nav-cta">Share Your Scope</a>
+</nav>
+
+
+<!-- ══ HERO — Unique: Animated federated model collision/clash diagram ══ -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a><span>/</span>
+      <a href="#">Services</a><span>/</span>
+      <span style="color:var(--txt)">BIM Coordination Services</span>
+    </div>
+    <div class="hero-tag">BIM Coordination Services · USA</div>
+    <h1><em>BIM Coordination Services</em> That Eliminate Site Conflicts</h1>
+    <p class="hero-sub">Eagle BIM delivers expert BIM coordination services for AEC firms across the USA. We federate your architectural, structural, and MEP models, run systematic clash detection, and resolve every conflict before it reaches the field — protecting your schedule, your budget, and your site.</p>
+    <div class="hero-actions">
+      <a href="mailto:info@eaglebim.com" class="btn-gold">Share Your Project Scope <span class="btn-arrow">→</span></a>
+      <a href="#services" class="btn-blue">Explore Coordination Services <span class="btn-arrow">↓</span></a>
+    </div>
+    <div class="hero-badges">
+      <span class="badge">Clash Detection</span>
+      <span class="badge">MEP Coordination</span>
+      <span class="badge">Navisworks</span>
+      <span class="badge">Federated Models</span>
+      <span class="badge">RFI Reduction</span>
+      <span class="badge">LOD 300–400</span>
+    </div>
+  </div>
+
+  <!-- HERO VISUAL: Animated federated model clash diagram — 3 discipline layers converging -->
+  <div class="hero-visual">
+    <svg width="420" height="480" viewBox="0 0 420 480" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="glow"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        <filter id="glow-sm"><feGaussianBlur stdDeviation="1.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <style>
+        /* 3 discipline layers — architectural blue, structural grey, MEP gold */
+        @keyframes slideInLeft{from{opacity:0;transform:translateX(-30px)}to{opacity:1;transform:translateX(0)}}
+        @keyframes slideInRight{from{opacity:0;transform:translateX(30px)}to{opacity:1;transform:translateX(0)}}
+        @keyframes slideInTop{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
+        @keyframes clashPulse{0%,100%{opacity:.9;r:5}50%{opacity:.3;r:8}}
+        @keyframes clashPulse2{0%,100%{opacity:.8;r:4}50%{opacity:.2;r:7}}
+        @keyframes resolvedFade{0%{opacity:0;transform:scale(0)}70%{transform:scale(1.2)}100%{opacity:1;transform:scale(1)}}
+        @keyframes dashFlow{to{stroke-dashoffset:-24}}
+        @keyframes labelAppear{from{opacity:0}to{opacity:1}}
+        @keyframes reportSlide{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+
+        .arch-layer{animation:slideInLeft .9s .2s ease both}
+        .str-layer{animation:slideInRight .9s .4s ease both}
+        .mep-layer{animation:slideInTop .9s .6s ease both}
+        .clash-dot{animation:clashPulse 1.8s 1.4s ease-in-out infinite}
+        .clash-dot2{animation:clashPulse2 1.8s 1.7s ease-in-out infinite}
+        .clash-dot3{animation:clashPulse 1.8s 2.0s ease-in-out infinite}
+        .resolved{animation:resolvedFade .5s 2.2s ease both;opacity:0}
+        .flow-dash{stroke-dasharray:6 4;animation:dashFlow .8s linear infinite}
+        .lbl{animation:labelAppear .4s 1.5s ease both;opacity:0}
+        .report-row{animation:reportSlide .4s ease both;opacity:0}
+        .r1{animation-delay:1.8s}
+        .r2{animation-delay:2.0s}
+        .r3{animation-delay:2.2s}
+        .r4{animation-delay:2.4s}
+      </style>
+
+      <!-- bg grid -->
+      <defs><pattern id="g2" width="22" height="22" patternUnits="userSpaceOnUse"><path d="M22 0L0 0 0 22" fill="none" stroke="rgba(104,125,156,.07)" stroke-width=".5"/></pattern></defs>
+      <rect width="420" height="480" fill="url(#g2)"/>
+
+      <!-- ── ARCHITECTURAL LAYER (blue) ── -->
+      <g class="arch-layer">
+        <!-- Floor plan outline -->
+        <rect x="58" y="120" width="140" height="100" fill="rgba(104,125,156,.06)" stroke="#687d9c" stroke-width="1.5" rx="1"/>
+        <line x1="58" y1="170" x2="198" y2="170" stroke="#687d9c" stroke-width=".8" stroke-dasharray="3 2"/>
+        <line x1="128" y1="120" x2="128" y2="220" stroke="#687d9c" stroke-width=".8" stroke-dasharray="3 2"/>
+        <!-- walls thick -->
+        <rect x="58" y="120" width="140" height="6" fill="rgba(104,125,156,.25)"/>
+        <rect x="58" y="214" width="140" height="6" fill="rgba(104,125,156,.25)"/>
+        <rect x="58" y="120" width="5" height="100" fill="rgba(104,125,156,.25)"/>
+        <rect x="193" y="120" width="5" height="100" fill="rgba(104,125,156,.25)"/>
+        <!-- Label -->
+        <text x="128" y="108" fill="#687d9c" font-family="monospace" font-size="8" font-weight="bold" text-anchor="middle" letter-spacing=".08em" class="lbl">ARCHITECTURAL</text>
+        <circle cx="128" cy="170" r="3" fill="rgba(104,125,156,.3)"/>
+      </g>
+
+      <!-- ── STRUCTURAL LAYER (dark blue, offset) ── -->
+      <g class="str-layer">
+        <!-- Beams -->
+        <rect x="75" y="148" width="160" height="8" fill="rgba(74,96,128,.15)" stroke="#4a6080" stroke-width="1.2"/>
+        <rect x="75" y="195" width="160" height="8" fill="rgba(74,96,128,.15)" stroke="#4a6080" stroke-width="1.2"/>
+        <!-- Columns -->
+        <rect x="75" y="128" width="12" height="90" fill="rgba(74,96,128,.12)" stroke="#4a6080" stroke-width="1"/>
+        <rect x="222" y="128" width="12" height="90" fill="rgba(74,96,128,.12)" stroke="#4a6080" stroke-width="1"/>
+        <!-- Label -->
+        <text x="156" y="238" fill="#4a6080" font-family="monospace" font-size="8" font-weight="bold" text-anchor="middle" letter-spacing=".08em" class="lbl">STRUCTURAL</text>
+      </g>
+
+      <!-- ── MEP LAYER (gold) ── -->
+      <g class="mep-layer">
+        <!-- Duct runs -->
+        <rect x="62" y="155" width="185" height="14" fill="rgba(222,170,87,.12)" stroke="#deaa57" stroke-width="1.3" rx="1"/>
+        <!-- Pipe -->
+        <line x1="62" y1="185" x2="247" y2="185" stroke="#deaa57" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+        <line x1="62" y1="185" x2="247" y2="185" stroke="rgba(222,170,87,.2)" stroke-width="7"/>
+        <!-- Flow arrows in duct -->
+        <line x1="90" y1="162" x2="100" y2="162" stroke="rgba(222,170,87,.6)" stroke-width=".8" class="flow-dash"/>
+        <line x1="140" y1="162" x2="150" y2="162" stroke="rgba(222,170,87,.6)" stroke-width=".8" class="flow-dash"/>
+        <line x1="190" y1="162" x2="200" y2="162" stroke="rgba(222,170,87,.6)" stroke-width=".8" class="flow-dash"/>
+        <!-- Label -->
+        <text x="155" y="86" fill="#c8943d" font-family="monospace" font-size="8" font-weight="bold" text-anchor="middle" letter-spacing=".08em" class="lbl">MEP / HVAC</text>
+      </g>
+
+      <!-- ── CLASH DETECTION ZONE ── -->
+      <!-- Hard clash markers — duct vs beam -->
+      <circle class="clash-dot" cx="87" cy="156" r="5" fill="rgba(220,50,50,.8)" filter="url(#glow)" stroke="white" stroke-width=".8"/>
+      <circle class="clash-dot2" cx="128" cy="156" r="4" fill="rgba(220,80,50,.7)" filter="url(#glow-sm)" stroke="white" stroke-width=".8"/>
+      <circle class="clash-dot3" cx="196" cy="156" r="5" fill="rgba(220,50,50,.8)" filter="url(#glow)" stroke="white" stroke-width=".8"/>
+
+      <!-- Clash labels -->
+      <g class="lbl">
+        <rect x="62" y="264" width="60" height="16" rx="2" fill="rgba(220,50,50,.12)" stroke="rgba(220,50,50,.4)" stroke-width=".8"/>
+        <text x="92" y="275" fill="rgba(220,50,50,.8)" font-family="monospace" font-size="7.5" font-weight="bold" text-anchor="middle">HARD CLASH</text>
+        <rect x="130" y="264" width="68" height="16" rx="2" fill="rgba(222,170,87,.12)" stroke="rgba(222,170,87,.4)" stroke-width=".8"/>
+        <text x="164" y="275" fill="#c8943d" font-family="monospace" font-size="7.5" font-weight="bold" text-anchor="middle">SOFT CLASH</text>
+      </g>
+
+      <!-- ── COORDINATION REPORT PANEL ── -->
+      <rect x="44" y="296" width="200" height="118" rx="4" fill="var(--white)" stroke="#e2e6ed" stroke-width="1" class="lbl"/>
+      <!-- Report header -->
+      <rect x="44" y="296" width="200" height="22" rx="4" fill="#687d9c"/>
+      <rect x="44" y="308" width="200" height="10" fill="#687d9c"/>
+      <text x="56" y="311" fill="white" font-family="monospace" font-size="8" font-weight="bold" letter-spacing=".06em">CLASH REPORT — COORDINATION LOG</text>
+
+      <!-- Report rows -->
+      <g class="report-row r1">
+        <rect x="52" y="324" width="6" height="6" rx="1" fill="rgba(220,50,50,.7)"/>
+        <text x="62" y="331" fill="#4a5568" font-family="monospace" font-size="7.5">HARD  Duct vs Beam @ Grid A3</text>
+        <text x="214" y="331" fill="#c8943d" font-family="monospace" font-size="7" text-anchor="end">OPEN</text>
+      </g>
+      <g class="report-row r2">
+        <rect x="52" y="337" width="6" height="6" rx="1" fill="rgba(220,50,50,.7)"/>
+        <text x="62" y="344" fill="#4a5568" font-family="monospace" font-size="7.5">HARD  Pipe vs Column @ L2</text>
+        <text x="214" y="344" fill="#687d9c" font-family="monospace" font-size="7" text-anchor="end">RESOLVED</text>
+      </g>
+      <g class="report-row r3">
+        <rect x="52" y="350" width="6" height="6" rx="1" fill="rgba(222,170,87,.7)"/>
+        <text x="62" y="357" fill="#4a5568" font-family="monospace" font-size="7.5">SOFT  MEP clearance RCP Zone 2</text>
+        <text x="214" y="357" fill="#c8943d" font-family="monospace" font-size="7" text-anchor="end">IN REVIEW</text>
+      </g>
+      <g class="report-row r4">
+        <rect x="52" y="363" width="6" height="6" rx="1" fill="rgba(104,125,156,.5)"/>
+        <text x="62" y="370" fill="#4a5568" font-family="monospace" font-size="7.5">SOFT  Access route clearance B2</text>
+        <text x="214" y="370" fill="#687d9c" font-family="monospace" font-size="7" text-anchor="end">RESOLVED</text>
+      </g>
+
+      <!-- Divider -->
+      <line x1="52" y1="379" x2="236" y2="379" stroke="#e2e6ed" stroke-width=".8" class="lbl"/>
+      <g class="lbl">
+        <text x="56" y="392" fill="#8a94a6" font-family="monospace" font-size="7">Total: 47 clashes  |  Resolved: 44  |  Open: 3</text>
+        <text x="56" y="403" fill="#8a94a6" font-family="monospace" font-size="7">Navisworks NWD · Revizto · PDF Report</text>
+      </g>
+
+      <!-- Resolved checkmark badge -->
+      <g class="resolved">
+        <circle cx="310" cy="170" r="28" fill="rgba(104,125,156,.1)" stroke="#687d9c" stroke-width="1.2"/>
+        <circle cx="310" cy="170" r="22" fill="rgba(104,125,156,.12)" stroke="#687d9c" stroke-width="1"/>
+        <polyline points="298,170 307,179 323,160" fill="none" stroke="#687d9c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="310" y="212" fill="#687d9c" font-family="monospace" font-size="8" font-weight="bold" text-anchor="middle" letter-spacing=".06em">CLASH-FREE</text>
+      </g>
+
+      <!-- Scan line -->
+      <rect x="0" y="0" width="420" height="1.5" fill="rgba(104,125,156,.15)">
+        <animateTransform attributeName="transform" type="translate" from="0,80" to="0,440" dur="5s" repeatCount="indefinite"/>
+      </rect>
+    </svg>
+  </div>
+</section>
+
+
+<!-- ══ STATS ══ -->
+<div class="stats-strip">
+  <div class="stat-item reveal">
+    <span class="stat-num">80<span class="stat-sfx">%</span></span>
+    <div class="stat-lbl">Fewer Site RFIs</div>
+  </div>
+  <div class="stat-item reveal">
+    <span class="stat-num">300<span class="stat-sfx">+</span></span>
+    <div class="stat-lbl">Projects Coordinated</div>
+  </div>
+  <div class="stat-item reveal">
+    <span class="stat-num">48<span class="stat-sfx">hr</span></span>
+    <div class="stat-lbl">First Clash Report</div>
+  </div>
+  <div class="stat-item reveal">
+    <span class="stat-num">100<span class="stat-sfx">%</span></span>
+    <div class="stat-lbl">Clash-Cleared Before Site</div>
+  </div>
+</div>
+
+
+<!-- ══ INTRO ══ -->
+<section style="background:var(--white)" id="services">
+  <div class="intro-layout">
+    <div class="reveal">
+      <div class="section-tag">BIM Coordination Services</div>
+      <h2><em>BIM Coordination Services</em> That Resolve Conflicts Before They Cost You</h2>
+      <div style="margin-top:20px">
+        <p class="body-text">Eagle BIM delivers <strong>BIM coordination services</strong> that bring architectural, structural, MEP, and civil models into a single federated environment — and systematically eliminate every conflict before construction begins. Clashes that reach the site become change orders, delays, and budget overruns. Our BIM coordination services exist to make sure that never happens on your project.</p>
+        <p class="body-text">Our coordination team uses Navisworks and Revizto to run hard and soft clash detection across all linked models. Every clash is categorized, ownership is assigned, resolution is tracked, and nothing is closed without verification. The result is a coordination record your entire project team can trust — from design review through final site handover.</p>
+        <p class="body-text">Our <strong>MEP coordination services</strong> cover mechanical, electrical, plumbing, fire protection, and HVAC systems in full — routing, clearances, ceiling zone conflicts, equipment access, and slab penetrations. Whether you are a general contractor managing multi-trade coordination or an MEP firm handling your own BIM, Eagle BIM provides the coordination process that keeps your project clean.</p>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="discipline-cards" style="margin-top:8px">
+        <div class="disc-card">
+          <div class="disc-dot"></div>
+          <div>
+            <div class="disc-title">Architectural + Structural Coordination</div>
+            <div class="disc-text">Openings, penetrations, column clearances, and slab coordination between architectural layouts and structural framing — resolved before documentation is finalized.</div>
+          </div>
+        </div>
+        <div class="disc-card">
+          <div class="disc-dot"></div>
+          <div>
+            <div class="disc-title">MEP Coordination Services</div>
+            <div class="disc-text">Full MEP BIM coordination service covering duct routing, pipe runs, electrical conduit, fire suppression, and equipment placement — coordinated against architectural and structural models.</div>
+          </div>
+        </div>
+        <div class="disc-card">
+          <div class="disc-dot"></div>
+          <div>
+            <div class="disc-title">Ceiling Zone and RCP Coordination</div>
+            <div class="disc-text">Reflected ceiling plan coordination with all MEP services — confirming that ductwork, piping, lighting, and sprinklers fit within the architectural ceiling zone without conflict.</div>
+          </div>
+        </div>
+        <div class="disc-card">
+          <div class="disc-dot"></div>
+          <div>
+            <div class="disc-title">Clash Reports and Issue Tracking</div>
+            <div class="disc-text">Structured coordination reports with 3D issue snapshots, resolution status, ownership assignments, and revision tracking — delivered at every coordination milestone.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ CORE SERVICES ══ -->
+<section class="svc-bg">
+  <div class="reveal">
+    <div class="section-tag">What We Deliver</div>
+    <h2>Core <em>BIM Coordination</em> Service Areas</h2>
+    <p class="sec-desc">Every BIM coordination services engagement covers the full scope — from model federation through final clearance. Here is what is included.</p>
+  </div>
+  <div class="svc-grid reveal">
+
+    <div class="svc-card">
+      <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+      <div class="svc-title">Federated Model Management</div>
+      <p class="svc-text">We aggregate architectural, structural, MEP, and civil models into a single federated environment using Navisworks or Revizto. Shared coordinates, agreed naming conventions, and disciplined file management ensure every discipline is working from the same reference — not separate silos.</p>
+    </div>
+
+    <div class="svc-card">
+      <div class="svc-icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="9" r="5"/><circle cx="15" cy="15" r="5"/></svg></div>
+      <div class="svc-title">Clash Detection and Resolution</div>
+      <p class="svc-text">Hard clash, soft clash, and clearance testing across all linked models. Every conflict is categorized by severity and discipline, ownership is assigned, resolution is documented, and the clash is re-tested after correction. Nothing is marked resolved without verification — full logs are maintained throughout the project.</p>
+    </div>
+
+    <div class="svc-card">
+      <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+      <div class="svc-title">MEP BIM Coordination Service</div>
+      <p class="svc-text">Our dedicated <strong>MEP BIM coordination service</strong> covers mechanical, electrical, plumbing, fire protection, and HVAC systems. We coordinate duct routing, pipe runs, conduit, sprinkler layouts, and equipment clearances against all architectural and structural elements — producing clash-free MEP coordination drawings and coordinated models ready for fabrication.</p>
+    </div>
+
+    <div class="svc-card">
+      <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+      <div class="svc-title">Structural Opening and Penetration Coordination</div>
+      <p class="svc-text">Coordination of slab openings, beam penetrations, and MEP sleeves to ensure architectural and structural layouts align with MEP routing requirements. Penetration schedules, slab opening drawings, and sleeve placement plans produced directly from the coordinated model.</p>
+    </div>
+
+    <div class="svc-card">
+      <div class="svc-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M3 15h18M9 3v18"/></svg></div>
+      <div class="svc-title">Coordination Meetings and Issue Management</div>
+      <p class="svc-text">We facilitate and attend virtual coordination meetings with all discipline teams — presenting clash reports, facilitating issue resolution, and capturing decisions. Every meeting produces updated coordination logs, re-test confirmations, and a clear list of outstanding items with owners and due dates.</p>
+    </div>
+
+    <div class="svc-card">
+      <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="12" y2="17"/></svg></div>
+      <div class="svc-title">Coordination Drawings and Reports</div>
+      <p class="svc-text">Fully documented clash reports with 3D snapshots, coordination drawings showing resolved routing, penetration plans, and ceiling zone section cuts. All reports formatted to your project standards and delivered in PDF, XLSX, and NWD formats at every coordination milestone.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══ CLASH PROCESS — BLUE ══ -->
+<section class="process-bg">
+  <div class="reveal" style="max-width:600px;margin-bottom:0">
+    <div class="section-tag" style="color:var(--gold-lt)"><span style="display:inline-block;width:22px;height:2px;background:var(--gold);border-radius:2px;margin-right:8px;vertical-align:middle"></span>Our Process</div>
+    <h2 style="color:white">How Our <em style="color:var(--gold-lt)">BIM Coordination Services</em> Work</h2>
+    <p style="color:rgba(255,255,255,.62);font-size:16px;line-height:1.8;font-weight:300;margin-top:8px">Every BIM coordination services project follows the same structured process — clear stages, clear ownership, no surprises.</p>
+  </div>
+  <div class="process-grid reveal">
+    <div class="clash-stages">
+      <div class="clash-stage">
+        <div class="stage-num">01</div>
+        <div>
+          <div class="stage-title">Model Intake and Standards Setup</div>
+          <div class="stage-text">We receive all discipline models, verify shared coordinates and naming conventions, and establish the coordination environment in Navisworks or Revizto. Clash detection rules, clearance requirements, and reporting formats are agreed before the first test runs.</div>
+        </div>
+      </div>
+      <div class="clash-stage">
+        <div class="stage-num">02</div>
+        <div>
+          <div class="stage-title">Clash Detection and Categorization</div>
+          <div class="stage-text">Hard and soft clash tests are run across all discipline pairs. Results are filtered, de-duplicated, and categorized by severity, discipline, and location. Duplicate and minor clashes are removed so the report your team receives contains only actionable issues.</div>
+        </div>
+      </div>
+      <div class="clash-stage">
+        <div class="stage-num">03</div>
+        <div>
+          <div class="stage-title">Coordination Meeting and Resolution</div>
+          <div class="stage-text">Clash reports are presented to all discipline teams. Issues are reviewed, resolution responsibility is assigned, and deadlines are set. Our coordination team facilitates the discussion and captures every decision in the coordination log.</div>
+        </div>
+      </div>
+      <div class="clash-stage">
+        <div class="stage-num">04</div>
+        <div>
+          <div class="stage-title">Model Update and Re-Testing</div>
+          <div class="stage-text">Disciplines update their models to resolve assigned clashes. We re-run clash detection to verify all resolutions and identify any new conflicts introduced by model changes. The cycle continues until all clashes are cleared.</div>
+        </div>
+      </div>
+      <div class="clash-stage">
+        <div class="stage-num">05</div>
+        <div>
+          <div class="stage-title">Final Coordination Package</div>
+          <div class="stage-text">When all clashes are resolved, we deliver the final coordinated models, clash-free NWD file, coordination drawings, penetration schedules, and full resolution log — everything your construction team needs to build without surprises.</div>
+        </div>
+      </div>
+    </div>
+    <div class="clash-types">
+      <div style="font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:white;margin-bottom:16px">Types of Clashes We Detect</div>
+      <div class="clash-type">
+        <div class="clash-type-label">Type 01</div>
+        <div class="clash-type-title">Hard Clashes</div>
+        <div class="clash-type-text">Two building elements physically occupying the same space — a duct running through a structural beam, a pipe through a wall without a sleeve. These are critical and must be resolved before construction.</div>
+      </div>
+      <div class="clash-type">
+        <div class="clash-type-label">Type 02</div>
+        <div class="clash-type-title">Soft Clashes</div>
+        <div class="clash-type-text">Elements that do not physically intersect but violate required clearance zones — insufficient maintenance access to equipment, MEP services too close to structural elements, or inadequate ceiling zone depth.</div>
+      </div>
+      <div class="clash-type">
+        <div class="clash-type-label">Type 03</div>
+        <div class="clash-type-title">Workflow Clashes</div>
+        <div class="clash-type-text">Sequencing and constructability conflicts — elements that are geometrically clear but cannot be installed in the required construction sequence without removing previously installed components.</div>
+      </div>
+      <div style="margin-top:24px">
+        <a href="mailto:info@eaglebim.com" class="btn-gold">Start a Coordination Project <span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ MEP COORDINATION SERVICES ══ -->
+<section class="tools-bg">
+  <div class="mep-layout">
+    <div class="reveal">
+      <div class="section-tag">MEP Coordination Services</div>
+      <h2><em>MEP Coordination Services</em> Across All Building Systems</h2>
+      <div style="margin-top:20px">
+        <p class="body-text">MEP coordination services are where the majority of site conflicts originate. Mechanical ductwork, electrical conduit, plumbing runs, and fire suppression systems all compete for the same ceiling zone — and when that coordination happens on paper rather than in a federated model, clashes reach the field as expensive surprises.</p>
+        <p class="body-text">Our <strong>MEP BIM coordination service</strong> coordinates all building systems in 3D before a single component is installed. Duct routing is optimized for clearance and constructability, pipe runs are coordinated for slope and access, and every penetration is confirmed against structural framing. The result is a coordinated MEP model your fabricators and installers can trust from day one.</p>
+      </div>
+    </div>
+    <div class="mep-visual reveal">
+      <div class="mep-card">
+        <div class="mep-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg></div>
+        <div class="mep-name">HVAC and Ductwork</div>
+        <div class="mep-desc">Supply, return, exhaust duct routing, AHU connections, and diffuser layouts coordinated for clearance and constructability.</div>
+      </div>
+      <div class="mep-card">
+        <div class="mep-icon"><svg viewBox="0 0 24 24"><path d="M13 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V9z"/></svg></div>
+        <div class="mep-name">Mechanical Piping</div>
+        <div class="mep-desc">Hydronic, chilled water, hot water, refrigerant, and condensate systems — slope, support, and clearance coordinated in 3D.</div>
+      </div>
+      <div class="mep-card">
+        <div class="mep-icon"><svg viewBox="0 0 24 24"><path d="M13 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V9z"/><polyline points="13 2 13 9 20 9"/></svg></div>
+        <div class="mep-name">Plumbing Systems</div>
+        <div class="mep-desc">Domestic water, waste, vent, and drainage coordination with slope requirements and penetration management.</div>
+      </div>
+      <div class="mep-card">
+        <div class="mep-icon"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+        <div class="mep-name">Electrical and Conduit</div>
+        <div class="mep-desc">Electrical conduit, cable tray, panel locations, and switchgear clearances coordinated against all other building systems.</div>
+      </div>
+      <div class="mep-card">
+        <div class="mep-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83"/></svg></div>
+        <div class="mep-name">Fire Protection</div>
+        <div class="mep-desc">Sprinkler head layouts, main and branch pipe runs, and coverage zone verification coordinated with all ceiling elements.</div>
+      </div>
+      <div class="mep-card">
+        <div class="mep-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 3v18"/></svg></div>
+        <div class="mep-name">Ceiling Zone and RCP</div>
+        <div class="mep-desc">All MEP services fitted within the architectural ceiling zone — confirmed against the reflected ceiling plan for every area.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ DELIVERABLES ══ -->
+<section class="del-bg">
+  <div class="reveal">
+    <div class="section-tag">Deliverables</div>
+    <h2>What You Receive from Our <em>BIM Coordination Services</em></h2>
+  </div>
+  <div class="del-layout">
+    <div>
+      <div class="del-list reveal">
+        <div class="del-row">
+          <div class="del-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+          <div><div class="del-title">Coordinated Federated Model</div><div class="del-text">Clash-free NWD/NWC file with all disciplines merged, shared coordinates confirmed, and coordination status recorded</div></div>
+        </div>
+        <div class="del-row">
+          <div class="del-icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="9" r="5"/><circle cx="15" cy="15" r="5"/></svg></div>
+          <div><div class="del-title">Clash Reports and Resolution Logs</div><div class="del-text">Full clash detection reports with 3D snapshots, severity ratings, ownership assignments, and complete resolution history in PDF and XLSX</div></div>
+        </div>
+        <div class="del-row">
+          <div class="del-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 3v18"/></svg></div>
+          <div><div class="del-title">Coordination Drawings</div><div class="del-text">Coordinated MEP routing drawings, penetration schedules, slab opening plans, and ceiling zone section cuts in DWG and PDF</div></div>
+        </div>
+        <div class="del-row">
+          <div class="del-icon"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></div>
+          <div><div class="del-title">IFC and Exchange Files</div><div class="del-text">IFC, DWG, and PDF exports for consultant coordination, BIM 360 upload, and contractor reference packages</div></div>
+        </div>
+      </div>
+      <div class="fmt-row reveal">
+        <span class="fmt-chip">NWD</span><span class="fmt-chip">NWC</span><span class="fmt-chip">RVT</span>
+        <span class="fmt-chip">DWG</span><span class="fmt-chip">IFC</span><span class="fmt-chip">XLSX</span><span class="fmt-chip">PDF</span>
+      </div>
+    </div>
+    <div class="del-cta-box reveal">
+      <h3>Ready to Get Your Models Clash-Free?</h3>
+      <p>Share your project scope, model formats, and discipline list. We will review your coordination requirements and return a clear plan and firm quote within 24 to 48 hours.</p>
+      <a href="mailto:info@eaglebim.com" class="del-cta-gold">Share Your Project Scope →</a>
+      <a href="mailto:info@eaglebim.com" class="del-cta-ghost">Request a Sample Clash Report</a>
+      <div class="del-trust">
+        <div class="del-trust-item"><div class="del-trust-check"><svg viewBox="0 0 9 9"><polyline points="1.5,4.5 3.5,7 7.5,2"/></svg></div>First clash report delivered within 48 hours</div>
+        <div class="del-trust-item"><div class="del-trust-check"><svg viewBox="0 0 9 9"><polyline points="1.5,4.5 3.5,7 7.5,2"/></svg></div>All discipline pairs tested — nothing missed</div>
+        <div class="del-trust-item"><div class="del-trust-check"><svg viewBox="0 0 9 9"><polyline points="1.5,4.5 3.5,7 7.5,2"/></svg></div>Every clash re-tested after resolution</div>
+        <div class="del-trust-item"><div class="del-trust-check"><svg viewBox="0 0 9 9"><polyline points="1.5,4.5 3.5,7 7.5,2"/></svg></div>Full resolution log delivered with final package</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ BENEFITS ══ -->
+<section class="ben-bg">
+  <div class="reveal">
+    <div class="section-tag">Why It Matters</div>
+    <h2>What Proper <em>BIM Coordination Services</em> Actually Prevent</h2>
+    <p class="sec-desc">Every unresolved clash that reaches the site becomes a change order, a schedule delay, or a dispute. Here is what our BIM coordination services consistently deliver.</p>
+  </div>
+  <div class="ben-grid">
+    <div class="ben-card reveal">
+      <div class="ben-num">80%</div>
+      <div class="ben-title">Fewer Site RFIs</div>
+      <div class="ben-text">Projects with properly executed BIM coordination services consistently report up to 80% fewer field RFIs. Conflicts are resolved in the model — not through emergency calls from the site.</div>
+    </div>
+    <div class="ben-card reveal">
+      <div class="ben-num">Zero</div>
+      <div class="ben-title">Surprise Change Orders</div>
+      <div class="ben-text">Hard and soft clashes detected and resolved before construction eliminate the coordination failures that generate unplanned change orders and blow project contingencies.</div>
+    </div>
+    <div class="ben-card reveal">
+      <div class="ben-num">4x</div>
+      <div class="ben-title">Faster Problem Resolution</div>
+      <div class="ben-text">Issues resolved in a coordinated 3D model environment are resolved in hours — not the days or weeks it takes to work through a field conflict with multiple trades and a GC involved.</div>
+    </div>
+    <div class="ben-card reveal">
+      <div class="ben-num">100%</div>
+      <div class="ben-title">Documented Coordination Record</div>
+      <div class="ben-text">Every clash, every decision, and every resolution is logged. Your project has a complete coordination audit trail from first detection through final clearance — ready for any dispute or claim.</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ TOOLS ══ -->
+<section class="tools-bg">
+  <div class="reveal">
+    <div class="section-tag">Tools and Software</div>
+    <h2>BIM Coordination <em>Software We Use</em></h2>
+    <p class="sec-desc">We work in the platforms your project already uses. No tool lock-in, no migration requirements.</p>
+  </div>
+  <div class="tools-grid reveal">
+    <div class="tool-card">
+      <div class="tool-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+      <div class="tool-name">Autodesk Navisworks</div>
+      <div class="tool-role">Primary clash detection and federated model review</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3v9l5 3"/></svg></div>
+      <div class="tool-name">Revizto</div>
+      <div class="tool-role">Live coordination, issue tracking, and stakeholder review</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 3v18"/></svg></div>
+      <div class="tool-name">Autodesk Revit</div>
+      <div class="tool-role">Discipline BIM modeling and model updates post-coordination</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+      <div class="tool-name">BIM 360 / ACC</div>
+      <div class="tool-role">Cloud model management, issue tracking, and coordination logs</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+      <div class="tool-name">Bluebeam</div>
+      <div class="tool-role">Coordination drawing markup, review, and transmittal management</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ INDUSTRIES ══ -->
+<section class="ind-bg">
+  <div class="reveal">
+    <div class="section-tag">Industries We Serve</div>
+    <h2>BIM Coordination Services Across <em>Every Project Type</em></h2>
+    <p class="sec-desc">Our BIM coordination services are calibrated to the complexity and coordination requirements of each project type — not applied as a one-size solution.</p>
+  </div>
+  <div class="ind-grid reveal">
+    <div class="ind-card">
+      <div class="ind-name">Commercial Office</div>
+      <div class="ind-desc">Multi-discipline coordination for office buildings, mixed-use towers, and high-rise commercial developments where MEP density and ceiling zone coordination are critical.</div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-name">Healthcare Facilities</div>
+      <div class="ind-desc">Highly coordinated MEP coordination services for hospitals and medical facilities — where phasing, infection control, and compliance requirements make coordination accuracy non-negotiable.</div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-name">Data Centers</div>
+      <div class="ind-desc">High-density MEP BIM coordination service for mission-critical facilities where power, cooling, and cable management systems demand precise clash-free modeling before a single component is installed.</div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-name">Industrial and Manufacturing</div>
+      <div class="ind-desc">Complex process MEP and structural coordination for manufacturing plants, warehouses, and industrial facilities with heavy equipment, process piping, and elevated MEP loads.</div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-name">Multi-Family Residential</div>
+      <div class="ind-desc">BIM coordination services for apartment and condominium developments — coordinating repetitive floor plates efficiently to maximize coordination value across every level.</div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-name">Education and Institutional</div>
+      <div class="ind-desc">Multi-building campus coordination and phased construction management — BIM coordination services that align with tight academic calendars and complex phasing requirements.</div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-name">Hospitality</div>
+      <div class="ind-desc">Hotel and resort MEP coordination covering complex guest room repetition, back-of-house mechanical systems, and façade coordination with interior MEP services.</div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-name">Retail and Mixed-Use</div>
+      <div class="ind-desc">Fast-track BIM coordination services for retail fit-outs, shopping centers, and mixed-use developments with multiple tenants, landlord MEP systems, and tight programme schedules.</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ GEO ══ -->
+<section class="geo-bg">
+  <div class="reveal">
+    <div class="section-tag" style="color:var(--gold-lt)"><span style="display:inline-block;width:22px;height:2px;background:var(--gold);border-radius:2px;margin-right:8px;vertical-align:middle"></span>Service Area</div>
+    <h2 style="color:white"><em style="color:var(--gold-lt)">BIM Coordination Services</em> Across the United States</h2>
+    <p class="geo-intro">Eagle BIM delivers BIM coordination services to contractors, engineers, and design firms nationwide. All coordination work is performed remotely — federated models, clash reports, and coordination meetings run in your time zone, on your schedule, wherever your project is located.</p>
+  </div>
+  <div class="geo-primary reveal">
+    <div class="geo-primary-lbl">Primary Region · Featured Service Area</div>
+    <div class="geo-primary-title">BIM Coordination Services in Texas</div>
+    <div class="geo-primary-desc">Based in Pflugerville, TX, Eagle BIM provides BIM coordination services and MEP coordination services to contractors and engineers across Houston, Dallas, Austin, San Antonio, Fort Worth, and statewide. We understand Texas building codes, permitting workflows, and the fast-paced commercial and industrial construction environment that defines the state's AEC market.</div>
+  </div>
+  <div class="geo-grid reveal">
+    <div class="geo-state"><div class="geo-state-name">California</div><div class="geo-cities">Los Angeles · San Francisco · San Diego · Sacramento</div></div>
+    <div class="geo-state"><div class="geo-state-name">New York</div><div class="geo-cities">New York City · Buffalo · Albany · Rochester</div></div>
+    <div class="geo-state"><div class="geo-state-name">Florida</div><div class="geo-cities">Miami · Orlando · Tampa · Jacksonville</div></div>
+    <div class="geo-state"><div class="geo-state-name">Illinois</div><div class="geo-cities">Chicago · Springfield · Aurora · Naperville</div></div>
+    <div class="geo-state"><div class="geo-state-name">Washington</div><div class="geo-cities">Seattle · Tacoma · Bellevue · Spokane</div></div>
+    <div class="geo-state"><div class="geo-state-name">Massachusetts</div><div class="geo-cities">Boston · Cambridge · Worcester</div></div>
+    <div class="geo-state"><div class="geo-state-name">Colorado</div><div class="geo-cities">Denver · Colorado Springs · Boulder</div></div>
+    <div class="geo-state"><div class="geo-state-name">Georgia &amp; More</div><div class="geo-cities">Atlanta · Charlotte · Nashville · Phoenix</div></div>
+  </div>
+</section>
+
+
+<!-- ══ RELATED SERVICES ══ -->
+<section class="related-bg">
+  <div class="reveal">
+    <div class="section-tag">Related Services</div>
+    <h2>BIM Services That Work Alongside <em>Coordination</em></h2>
+  </div>
+  <div class="related-grid">
+    <a href="architectural-bim-services.html" class="rel-card reveal">
+      <div class="rel-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 3v18"/></svg></div>
+      <div class="rel-title">Architectural BIM Services</div>
+      <div class="rel-desc">Revit architectural modeling and construction documentation — the discipline model your coordination process starts from.</div>
+    </a>
+    <a href="#" class="rel-card reveal">
+      <div class="rel-icon"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+      <div class="rel-title">MEP BIM Services</div>
+      <div class="rel-desc">Mechanical, electrical, plumbing, and fire protection modeling — built for fabrication and fully coordinated against architectural and structural models.</div>
+    </a>
+    <a href="#" class="rel-card reveal">
+      <div class="rel-icon"><svg viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/></svg></div>
+      <div class="rel-title">Clash Detection Services</div>
+      <div class="rel-desc">Standalone clash detection in Navisworks — categorized reports, assigned ownership, and full resolution tracking for your existing models.</div>
+    </a>
+    <a href="bim-consulting-services.html" class="rel-card reveal">
+      <div class="rel-icon"><svg viewBox="0 0 24 24"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg></div>
+      <div class="rel-title">BIM Consulting Services</div>
+      <div class="rel-desc">BIM Execution Plans, coordination workflow strategy, and BEP development that sets up your coordination process for success from day one.</div>
+    </a>
+  </div>
+</section>
+
+
+<!-- ══ FINAL CTA ══ -->
+<section class="cta-final">
+  <div class="cta-inner reveal">
+    <div class="section-tag" style="justify-content:center;margin-bottom:20px;color:var(--gold-lt)"><span style="display:inline-block;width:22px;height:2px;background:var(--gold);border-radius:2px;margin-right:8px;vertical-align:middle"></span>Get Started</div>
+    <h2>Send Your Models. Get a Clash Report in 48 Hours.</h2>
+    <p>Share your project scope, model formats, and discipline list. We will return a clear coordination plan and a firm quote — typically within 24 to 48 hours.</p>
+    <div class="cta-acts">
+      <a href="mailto:info@eaglebim.com" class="cta-btn-primary">Share Your Project Scope →</a>
+      <div class="cta-secondary-row">
+        <a href="tel:+13465882960" class="cta-btn-ghost">📞 Call Us</a>
+        <a href="mailto:info@bim-services.us" class="cta-btn-ghost">✉️ Email Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ FOOTER — Same as homepage ══ -->
+<footer>
+  <div class="foot-top">
+    <div class="foot-brand">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 8500 8000" style="height:52px;width:auto;display:block">
+          <defs><style>.ffl0{fill:#687D9C}.ffl1{fill:#687D9C;fill-rule:nonzero}.ffl2{fill:#DEAA57;fill-rule:nonzero}</style></defs>
+          <g>
+            <path class="ffl0" d="M1812.4 4727.09c409.83,9.8 887.26,173.39 1195.7,439.26 28.72,24.76 44.02,30.15 58.55,57.24 -52.14,-14.57 -171.2,-85.78 -230.79,-112.6 -573.62,-258.2 -1233.3,-349.38 -1831.71,-106.15 -40.93,16.63 -87.49,44.55 -124.91,55.7 20.68,-59.06 109.44,-127.92 160.93,-158.02 80.06,-46.81 141.34,-58.65 228.48,-90.06 -274.29,-14.17 -541.87,141.17 -633.11,424.54l-23.67 -31.72c-53.08,-122.61 -57.66,-196.85 -65.87,-329.88l-13.99 32.3c-3.39,12 -4.68,20.78 -6.59,35.01 -11.91,88.58 -15.08,172.5 5.98,256.07 21.54,85.47 78.14,202.53 145.85,231.4 50.02,-49.84 120.88,-289.19 534.4,-286.16 514.62,3.76 936.61,447.07 1147.02,891.67 48.99,103.51 78.24,193.2 116.58,292.69 204.29,1.91 365.65,-22.11 551.58,-61.3 -4.56,-73.17 -96.36,-288.22 -127.03,-355.35 -102.95,-225.38 -241.3,-405.89 -399.13,-574.71 -60.2,-64.39 -184.4,-177.9 -254.16,-231.52 88.93,6.2 297.3,104.48 378.5,150.87 220.07,125.7 420.56,298.33 567.63,501.22 58.21,80.31 158.45,237.07 191,342.72 62.81,-15.08 171.35,-153.6 213.87,-236.18 55.17,-107.14 79.26,-236.42 72.54,-380.41 -46.7,-1000.4 -1793.1,-818.22 -1857.66,-756.62z"/>
+            <path class="ffl0" d="M908.33 5330.28l-1.41 999.35 1449.64 0.28c-2,-76.96 -166.68,-386.07 -201.72,-441.69 -91.01,-144.46 -187.49,-261 -295.82,-356.08 -109.45,-96.06 -252.17,-188.71 -413.11,-240.03 -174.03,-55.49 -400.81,-61.85 -537.57,38.17z"/>
+            <path class="ffl0" d="M908.65 3424.73l-2.99 908.85c20.1,-3.89 21.74,-11.21 40.59,-30 89.89,-89.6 210.33,-177.93 315.83,-240.48 274.56,-162.77 638.43,-274.24 960.06,-309.57 166.8,-18.33 422.8,-54.2 590.23,-38.31 -24.89,13.29 -111.58,28.2 -152.81,40.07 -48.39,13.94 -105.58,33.65 -152.35,52.08 -72.65,28.64 -226.01,98.68 -263.84,140.95l282.22 -56.28c100.35,-17.6 195,-28.31 296.59,-38.74 148.31,-15.24 329.26,-9.66 481.55,6.76 47.54,5.13 105.39,18.24 154.19,20.06 -16.76,-73.51 -132.1,-181.83 -167.19,-211.69 -76.12,-64.77 -146.3,-100.57 -245.26,-134.7 -468.76,-161.6 -1251.39,-126.41 -1767.93,-118.66 -111.8,1.68 -260.91,-1.35 -368.89,9.66z"/>
+            <path class="ffl0" d="M2103.02 4423.22c104.56,1.75 233.32,-18.11 345.8,-21.11 253.78,-6.76 601.91,10.18 846.47,75.82 41.2,11.06 108.16,35.39 149.12,41.7 50.39,-58.35 99.35,-237.52 80.56,-322.74 -349.11,-20.6 -764.31,38.62 -1103.59,124.24 -55.44,13.99 -109.4,28.7 -160.46,43.9 -40.44,12.04 -129.33,33.19 -157.89,58.2z"/>
+            <path class="ffl0" d="M998.36 4717.1c128.1,59.57 343.38,32.49 435.46,-153.69 120.03,-242.71 179.03,-215.94 348.65,-242.96 29.17,-4.65 25.79,-8.44 31.52,-15.04 -269.51,-102.19 -476.91,163.85 -619.63,290.24 -130.76,115.81 -163.14,96.48 -196,121.45z"/>
+            <polygon class="ffl1" points="4816.05,6282.34 4011.23,6282.34 4011.23,3410.51 4816.05,3410.51"/>
+            <polygon class="ffl1" points="5156.12,6282.34 5156.12,3410.51 5908.89,3410.51 6554.65,4959.31 7196.74,3410.51 7983.97,3410.51 7983.97,6282.34 7183.55,6282.34 7183.55,4394.18 6408.79,6282.34 6331.83,6282.34 5573.92,4477.74 5573.92,6282.34"/>
+            <path class="ffl2" d="M908.18 6642.7l534.93 0 0 123.23 -380.89 0 0 267.47 298.28 0 0 124.63 -298.28 0 0 292.67 386.5 0 0 126.03 -540.54 0 0 -934.04zm1041.97 0l175.51 0 249.26 934.04 -156.37 0 -58.58 -233.86 -273.07 0 -57.88 233.86 -147.27 0 268.4 -934.04zm179.48 578.35l-106.89 -427.81 -105.73 427.81 212.62 0zm864.82 -123.23l312.28 0 0 485.92 -82.85 0 -20.77 -119.03c-47.38,85.89 -122.3,128.83 -224.76,128.83 -104.09,0 -185.78,-42.24 -244.36,-126.96 -58.81,-84.49 -88.22,-199.31 -88.22,-344.25 0,-152.64 29.17,-273.54 87.29,-362.69 58.35,-89.15 147.5,-133.73 268.17,-133.73 168.04,0 268.4,94.76 301.31,284.5l-140.04 34.78c-16.57,-80.98 -38.74,-133.5 -66.52,-157.3 -28.01,-24.04 -60.92,-35.94 -98.96,-35.94 -125.8,0 -188.81,119.03 -188.81,356.86 0,239.22 64.18,358.72 192.78,358.72 106.66,0 160.11,-82.15 160.11,-246.46l-166.64 0 0 -123.23zm694.45 -455.11l154.04 0 0 803.8 330.48 0 0 130.23 -484.52 0 0 -934.04zm796.91 0l534.93 0 0 123.23 -380.89 0 0 267.47 298.28 0 0 124.63 -298.28 0 0 292.67 386.5 0 0 126.03 -540.54 0 0 -934.04zm1129.96 0l282.64 0c71.19,0 125.33,5.6 162.21,17.04 36.87,11.44 68.15,36.87 93.82,76.32 25.44,39.68 38.28,87.52 38.28,144.24 0,103.63 -46.21,171.78 -138.87,204.69 111.33,35.24 166.88,113.43 166.88,234.56 0,68.85 -21.94,129.06 -66.05,180.18 -43.88,51.35 -128.13,77.02 -252.53,77.02l-286.37 0 0 -934.04zm151.24 387.9l98.02 0c69.08,0 114.59,-12.83 136.53,-38.28 21.94,-25.44 32.91,-58.11 32.91,-98.49 0,-47.38 -12.6,-80.98 -37.81,-101.52 -24.98,-20.31 -63.95,-30.57 -116.46,-30.57l-113.19 0 0 268.87zm0 422.91l124.4 0c114.13,0 171.07,-50.65 171.07,-151.7 0,-39.21 -12.14,-74.45 -36.18,-105.49 -24.27,-31.04 -73.52,-46.68 -147.74,-46.68l-111.56 0 0 303.87zm836.58 -810.8l154.04 0 0 934.04 -154.04 0 0 -934.04zm555.58 0l228.49 0 185.78 673.34 190.45 -673.34 220.09 0 0 934.04 -145.64 0 0 -797.27 -221.26 797.27 -112.03 0 -217.06 -797.96 0 797.96 -128.83 0 0 -934.04z"/>
+          </g>
+        </svg>
+      </div>
+      <p>Eagle BIM, in association with BIMPRO LLC, provides expert BIM modeling, coordination, and consulting services to AEC firms across Texas and the USA.</p>
+    </div>
+    <div class="foot-col">
+      <h4>BIM Services</h4>
+      <ul>
+        <li><a href="architectural-bim-services.html">Architectural BIM Services</a></li>
+        <li><a href="#">MEP BIM Services</a></li>
+        <li><a href="#">Structural BIM Services</a></li>
+        <li><a href="#">BIM Coordination Services</a></li>
+        <li><a href="#">Clash Detection Services</a></li>
+        <li><a href="#">CAD to BIM Conversion</a></li>
+        <li><a href="#">Scan to BIM Services</a></li>
+        <li><a href="bim-consulting-services.html">BIM Consulting Services</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Our BIM Projects</a></li>
+        <li><a href="#">BIM Resources / Blog</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>Contact</h4>
+      <div class="foot-ci">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.72 11.5 19.79 19.79 0 011.65 2.82 2 2 0 013.62 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 8.6a16 16 0 006.29 6.29l.96-.96a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+        +1 (346) 588-2960
+      </div>
+      <div class="foot-ci">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        info@bim-services.us
+      </div>
+      <div class="foot-ci">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        16805 Guido Cv, Pflugerville, TX 78660
+      </div>
+      <div style="margin-top:18px">
+        <div style="font-size:11px;color:rgba(255,255,255,.28);letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px">Serving USA Cities</div>
+        <div style="font-size:12px;color:rgba(255,255,255,.38);line-height:1.85">Houston · Dallas · Austin · NYC<br>Los Angeles · Chicago · Miami<br>Seattle · Denver · Boston</div>
+      </div>
+    </div>
+  </div>
+  <div class="foot-btm">
+    <span>© 2026 Eagle BIM · BIMPRO LLC · BIM Services USA · BIM Company in Texas · All rights reserved.</span>
+    <div class="soc-links">
+      <a href="https://www.facebook.com/EagleBIMservices/" class="soc-link" target="_blank">f</a>
+      <a href="https://www.linkedin.com/company/eagle-bim-services/" class="soc-link" target="_blank">in</a>
+      <a href="https://x.com/eaglebim" class="soc-link" target="_blank">𝕏</a>
+      <a href="https://www.instagram.com/eaglebim/" class="soc-link" target="_blank">ig</a>
+      <a href="https://www.youtube.com/@EagleBIM-USA" class="soc-link" target="_blank">▶</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach((e,i) => {
+      if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),i*70);obs.unobserve(e.target);}
+    });
+  },{threshold:0.07});
+  reveals.forEach(el=>obs.observe(el));
+  window.addEventListener('scroll',()=>{
+    document.getElementById('main-nav').style.boxShadow=window.scrollY>40?'0 4px 24px rgba(104,125,156,.14)':'none';
+  });
+</script>
+</body>
+</html>

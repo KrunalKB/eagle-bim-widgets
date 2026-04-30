@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Structural BIM Services USA | Structural BIM Modeling & Revit | Eagle BIM</title>
+<meta name="description" content="Eagle BIM delivers expert structural BIM services across the USA. Structural BIM modeling, structural Revit modeling, steel structure BIM, and outsource structural BIM for engineers, architects, and contractors.">
+<meta name="keywords" content="Structural BIM Services, Structural BIM Modeling, Structural Revit Modeling, Revit Structural Modeling, Structural Modeling Services, Steel Structure BIM, Outsource Structural BIM">
+<link rel="canonical" href="https://www.eaglebim.com/structural-bim-services/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blue:#687d9c;--blue-dk:#4a6080;--blue-lt:#8a9db8;
+    --blue-pale:#e8edf4;--blue-xpale:#f3f6fa;
+    --gold:#deaa57;--gold-dk:#c8943d;--gold-lt:#ecc278;--gold-pale:#fdf6e8;
+    --white:#ffffff;--off:#f8f7f5;--cream:#f3f1ec;
+    --txt:#1a2233;--txt-mid:#4a5568;--txt-muted:#8a94a6;
+    --bdr:#e2e6ed;--bdr-gold:rgba(222,170,87,.28);
+    --sh:0 2px 20px rgba(104,125,156,.09);
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--white);color:var(--txt);font-family:'DM Sans',sans-serif;font-size:16px;line-height:1.6;overflow-x:hidden}
+  nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 52px;height:72px;background:rgba(255,255,255,.97);backdrop-filter:blur(14px);border-bottom:1px solid var(--bdr);transition:box-shadow .3s}
+  .nav-links{display:flex;align-items:center;gap:2px;list-style:none;position:absolute;left:50%;transform:translateX(-50%)}
+  .nav-links a{text-decoration:none;color:var(--txt-mid);font-size:13px;font-weight:500;letter-spacing:.03em;padding:6px 13px;border-radius:4px;transition:color .2s,background .2s;white-space:nowrap}
+  .nav-links a:hover{color:var(--blue);background:var(--blue-pale)}
+  .nav-links a.active{color:var(--gold-dk);font-weight:600}
+  .nav-links .drop>a::after{content:' ↓';font-size:9px;opacity:.55}
+  .nav-cta{display:inline-flex;align-items:center;padding:11px 22px;background:var(--gold);color:#fff!important;font-weight:700!important;font-size:12px!important;letter-spacing:.1em!important;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:background .2s,transform .15s;flex-shrink:0}
+  .nav-cta:hover{background:var(--gold-dk)!important;transform:translateY(-1px)}
+  .hero{min-height:100vh;display:grid;grid-template-columns:55fr 45fr;align-items:center;padding:120px 52px 80px;position:relative;overflow:hidden;gap:40px;background:var(--white)}
+  .hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(104,125,156,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(104,125,156,.05) 1px,transparent 1px);background-size:52px 52px;pointer-events:none}
+  .hero-content{position:relative;z-index:2}
+  .breadcrumb{display:flex;align-items:center;gap:8px;margin-bottom:20px;font-size:12px;color:var(--txt-muted)}
+  .breadcrumb a{color:var(--blue);text-decoration:none;font-weight:500}
+  .breadcrumb span{opacity:.5}
+  .hero-tag{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border:1px solid var(--bdr-gold);border-radius:100px;font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-dk);margin-bottom:22px;background:var(--gold-pale);animation:fadeUp .7s ease both}
+  .hero-tag::before{content:'';width:6px;height:6px;background:var(--gold);border-radius:50%;animation:pulse 2s ease infinite}
+  @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
+  h1{font-family:'Playfair Display',serif;font-size:clamp(30px,3.2vw,50px);font-weight:800;line-height:1.1;letter-spacing:-.01em;margin-bottom:22px;color:var(--txt);animation:fadeUp .7s .1s ease both}
+  h1 em{font-style:normal;color:var(--blue)}
+  .hero-sub{font-size:17px;color:var(--txt-mid);line-height:1.78;max-width:490px;margin-bottom:36px;font-weight:300;animation:fadeUp .7s .2s ease both}
+  .hero-actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap;animation:fadeUp .7s .3s ease both}
+  .hero-badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:36px;animation:fadeUp .7s .4s ease both}
+  .badge{padding:5px 12px;border:1px solid var(--bdr);border-radius:100px;font-size:11px;font-weight:500;letter-spacing:.05em;color:var(--blue);background:var(--blue-pale)}
+  .hero-visual{position:relative;z-index:2;display:flex;align-items:center;justify-content:center;animation:fadeUp .7s .2s ease both}
+  .btn-gold{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;background:var(--gold);color:#fff;font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:background .2s,transform .15s,box-shadow .2s}
+  .btn-gold:hover{background:var(--gold-dk);transform:translateY(-2px);box-shadow:0 8px 26px rgba(222,170,87,.35)}
+  .btn-blue{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border:1.5px solid var(--blue);color:var(--blue);font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:background .2s,color .2s,transform .15s}
+  .btn-blue:hover{background:var(--blue);color:#fff;transform:translateY(-2px)}
+  .btn-arrow{transition:transform .2s}
+  .btn-gold:hover .btn-arrow,.btn-blue:hover .btn-arrow{transform:translateX(4px)}
+  .stats-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--bdr);border-top:1px solid var(--bdr);border-bottom:1px solid var(--bdr)}
+  .stat-item{background:var(--white);padding:32px 36px;text-align:center;transition:background .3s}
+  .stat-item:hover{background:var(--blue-pale)}
+  .stat-num{font-family:'Playfair Display',serif;font-size:42px;font-weight:800;color:var(--blue);line-height:1;display:block}
+  .stat-sfx{font-size:22px;font-weight:400;color:var(--gold)}
+  .stat-lbl{font-size:11px;color:var(--txt-muted);letter-spacing:.1em;text-transform:uppercase;margin-top:8px;font-weight:600}
+  section{padding:88px 52px}
+  .section-tag{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-dk);margin-bottom:14px}
+  .section-tag::before{content:'';display:block;width:22px;height:2px;background:var(--gold);border-radius:2px}
+  h2{font-family:'Playfair Display',serif;font-size:clamp(24px,2.4vw,38px);font-weight:800;line-height:1.12;letter-spacing:-.01em;margin-bottom:14px;color:var(--txt)}
+  h2 em{font-style:normal;color:var(--blue)}
+  .sec-desc{color:var(--txt-mid);font-size:16px;line-height:1.78;max-width:580px;font-weight:300}
+  .body-text{font-size:15.5px;color:var(--txt-mid);line-height:1.85;font-weight:300;margin-bottom:18px}
+  .body-text:last-child{margin-bottom:0}
+  .body-text strong{color:var(--txt);font-weight:600}
+  .intro-layout{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+  .discipline-cards{display:flex;flex-direction:column;gap:12px}
+  .disc-card{background:var(--white);border:1px solid var(--bdr);border-radius:6px;padding:20px 20px;display:flex;gap:14px;align-items:flex-start;transition:border-color .2s,box-shadow .2s}
+  .disc-card:hover{border-color:var(--gold);box-shadow:var(--sh)}
+  .disc-dot{width:8px;height:8px;min-width:8px;background:var(--gold);border-radius:50%;margin-top:6px}
+  .disc-title{font-size:14px;font-weight:600;color:var(--txt);margin-bottom:3px}
+  .disc-text{font-size:13px;color:var(--txt-muted);line-height:1.6}
+  .svc-bg{background:var(--off)}
+  .svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--bdr);border:1px solid var(--bdr);border-radius:6px;overflow:hidden;margin-top:52px}
+  .svc-card{background:var(--white);padding:36px 32px;transition:background .25s}
+  .svc-card:hover{background:var(--blue-xpale)}
+  .svc-icon{width:48px;height:48px;background:var(--gold-pale);border:1.5px solid var(--bdr-gold);border-radius:4px;display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+  .svc-icon svg{width:22px;height:22px;stroke:var(--gold-dk);fill:none;stroke-width:1.5}
+  .svc-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--txt);margin-bottom:12px}
+  .svc-text{font-size:14px;color:var(--txt-mid);line-height:1.78;font-weight:300}
+  /* PROCESS — blue horizontal */
+  .proc-bg{background:var(--blue);padding:88px 52px;position:relative;overflow:hidden}
+  .proc-bg::before{content:'';position:absolute;top:-200px;right:-200px;width:600px;height:600px;background:radial-gradient(circle,rgba(222,170,87,.1) 0%,transparent 65%);pointer-events:none}
+  .proc-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.1);border-radius:6px;overflow:hidden}
+  .ps{background:rgba(255,255,255,.05);padding:30px 24px;transition:background .25s}
+  .ps:hover{background:rgba(255,255,255,.1)}
+  .ps-gold{background:rgba(255,255,255,.08)}
+  .ps-num{font-family:'Playfair Display',serif;font-size:38px;font-weight:800;color:var(--gold);line-height:1;margin-bottom:14px}
+  .ps-bar{width:32px;height:2px;background:rgba(255,255,255,.15);border-radius:2px;margin-bottom:14px}
+  .ps-bar-gold{background:var(--gold)}
+  .ps-title{font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:white;margin-bottom:10px;line-height:1.3}
+  .ps-text{font-size:12.5px;color:rgba(255,255,255,.52);line-height:1.65}
+  .del-bg{background:var(--cream)}
+  .del-layout{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:stretch;margin-top:52px}
+  .del-list{display:flex;flex-direction:column;gap:10px}
+  .del-row{display:flex;align-items:flex-start;gap:14px;padding:16px 18px;border:1px solid var(--bdr);border-radius:4px;background:var(--white);transition:border-color .2s}
+  .del-row:hover{border-color:var(--gold)}
+  .del-icon{width:36px;height:36px;min-width:36px;background:var(--blue-pale);border-radius:4px;display:flex;align-items:center;justify-content:center}
+  .del-icon svg{width:16px;height:16px;stroke:var(--blue);fill:none;stroke-width:1.5}
+  .del-title{font-size:14px;font-weight:600;color:var(--txt);margin-bottom:3px}
+  .del-text{font-size:12.5px;color:var(--txt-muted);line-height:1.6}
+  .fmt-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+  .fmt-chip{padding:7px 14px;border:1.5px solid var(--bdr-gold);font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--gold-dk);background:var(--gold-pale);border-radius:3px}
+  .del-cta-box{background:var(--blue);border-radius:8px;padding:36px 32px;display:flex;flex-direction:column}
+  .del-cta-box h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:white;margin-bottom:12px;line-height:1.3}
+  .del-cta-box>p{font-size:14px;color:rgba(255,255,255,.62);line-height:1.8;font-weight:300;margin-bottom:22px}
+  .del-cta-gold{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;background:var(--gold);color:#fff;font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border-radius:3px;width:100%;justify-content:center;margin-bottom:10px;transition:background .2s,transform .15s}
+  .del-cta-gold:hover{background:var(--gold-dk);transform:translateY(-2px)}
+  .del-cta-ghost{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border:1.5px solid rgba(255,255,255,.3);color:rgba(255,255,255,.75);font-weight:600;font-size:12px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border-radius:3px;width:100%;justify-content:center;margin-bottom:24px;transition:border-color .2s,background .2s}
+  .del-cta-ghost:hover{border-color:rgba(255,255,255,.7);background:rgba(255,255,255,.07)}
+  .del-trust{display:flex;flex-direction:column;gap:10px;border-top:1px solid rgba(255,255,255,.12);padding-top:22px;margin-top:auto}
+  .del-trust-item{display:flex;align-items:center;gap:10px;font-size:13px;color:rgba(255,255,255,.58)}
+  .del-trust-check{width:18px;height:18px;min-width:18px;background:rgba(222,170,87,.15);border:1px solid rgba(222,170,87,.3);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .del-trust-check svg{width:9px;height:9px;stroke:var(--gold);fill:none;stroke-width:2.5}
+  /* WHY EAGLE BIM — 2×2 */
+  .ben-bg{background:var(--off)}
+  .ben-2col{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--bdr);border:1px solid var(--bdr);border-radius:6px;overflow:hidden;margin-top:52px}
+  .ben-card{background:var(--white);padding:36px 32px;transition:background .25s}
+  .ben-card:hover{background:var(--gold-pale)}
+  .ben-card-head{display:flex;align-items:center;gap:16px;margin-bottom:16px}
+  .ben-icon{width:52px;height:52px;min-width:52px;border-radius:4px;display:flex;align-items:center;justify-content:center}
+  .ben-icon svg{width:24px;height:24px;fill:none;stroke-width:1.5}
+  .ben-label{font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--txt-muted);letter-spacing:.08em;text-transform:uppercase;margin-bottom:2px}
+  .ben-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:800;color:var(--txt)}
+  .ben-text{font-size:14px;color:var(--txt-mid);line-height:1.8;font-weight:300}
+  .tools-bg{background:var(--white)}
+  .tools-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--bdr);border:1px solid var(--bdr);border-radius:6px;overflow:hidden;margin-top:44px}
+  .tool-card{background:var(--white);padding:24px 20px;text-align:center;transition:background .25s}
+  .tool-card:hover{background:var(--blue-pale)}
+  .tool-icon{width:40px;height:40px;background:var(--blue-pale);border-radius:6px;display:flex;align-items:center;justify-content:center;margin:0 auto 10px}
+  .tool-icon svg{width:18px;height:18px;stroke:var(--blue);fill:none;stroke-width:1.5}
+  .tool-name{font-size:13px;font-weight:600;color:var(--txt);margin-bottom:3px}
+  .tool-role{font-size:11px;color:var(--txt-muted);line-height:1.5}
+  .ind-bg{background:var(--cream);padding:80px 52px}
+  .ind-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px}
+  .ind-card{background:var(--white);border:1px solid var(--bdr);border-radius:6px;padding:22px 18px;transition:border-color .25s,box-shadow .25s}
+  .ind-card:hover{border-color:var(--blue-lt);box-shadow:var(--sh)}
+  .ind-name{font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--txt);margin-bottom:6px}
+  .ind-desc{font-size:12.5px;color:var(--txt-muted);line-height:1.65}
+  .geo-bg{background:var(--blue);padding:88px 52px}
+  .geo-intro{font-size:16px;color:rgba(255,255,255,.65);line-height:1.8;max-width:620px;font-weight:300;margin-bottom:44px;margin-top:8px}
+  .geo-primary{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);border-radius:6px;padding:26px 28px;margin-bottom:24px}
+  .geo-primary-lbl{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+  .geo-primary-title{font-family:'Playfair Display',serif;font-size:19px;font-weight:700;color:var(--white);margin-bottom:8px}
+  .geo-primary-desc{font-size:13.5px;color:rgba(255,255,255,.55);line-height:1.7;font-weight:300}
+  .geo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+  .geo-state{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:16px 14px;transition:background .25s}
+  .geo-state:hover{background:rgba(255,255,255,.12)}
+  .geo-state-name{font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);margin-bottom:5px}
+  .geo-cities{font-size:11.5px;color:rgba(255,255,255,.45);line-height:1.6}
+  .related-bg{background:var(--cream)}
+  .related-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px}
+  .rel-card{background:var(--white);border:1px solid var(--bdr);border-radius:6px;padding:22px 18px;text-decoration:none;transition:border-color .25s,box-shadow .25s;display:block}
+  .rel-card:hover{border-color:var(--blue-lt);box-shadow:var(--sh)}
+  .rel-icon{width:38px;height:38px;background:var(--blue-pale);border-radius:4px;display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+  .rel-icon svg{width:17px;height:17px;stroke:var(--blue);fill:none;stroke-width:1.5}
+  .rel-title{font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--txt);margin-bottom:5px}
+  .rel-desc{font-size:12.5px;color:var(--txt-muted);line-height:1.6}
+  .cta-final{background:var(--blue);padding:100px 52px;text-align:center;position:relative;overflow:hidden}
+  .cta-final::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:48px 48px}
+  .cta-inner{position:relative;z-index:2;max-width:620px;margin:0 auto}
+  .cta-inner h2{color:var(--white);margin-bottom:16px}
+  .cta-inner p{color:rgba(255,255,255,.62);font-size:16px;margin-bottom:36px;font-weight:300;line-height:1.8}
+  .cta-acts{display:flex;flex-direction:column;align-items:center;gap:14px}
+  .cta-btn-primary{display:inline-flex;align-items:center;gap:10px;padding:16px 44px;background:var(--gold);color:#fff;font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:background .2s,transform .15s}
+  .cta-btn-primary:hover{background:var(--gold-dk);transform:translateY(-2px)}
+  .cta-secondary-row{display:flex;gap:12px}
+  .cta-btn-ghost{display:inline-flex;align-items:center;gap:8px;padding:11px 26px;border:1.5px solid rgba(255,255,255,.25);color:rgba(255,255,255,.7);font-weight:500;font-size:13px;text-decoration:none;border-radius:3px;transition:border-color .2s,color .2s,background .2s}
+  .cta-btn-ghost:hover{border-color:rgba(255,255,255,.6);color:#fff;background:rgba(255,255,255,.06)}
+  footer{background:var(--txt);border-top:3px solid var(--gold);padding:64px 52px 36px}
+  .foot-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:52px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:28px}
+  .foot-brand p{font-size:13px;color:rgba(255,255,255,.42);line-height:1.78;margin-top:14px;font-weight:300;max-width:260px}
+  .foot-col h4{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+  .foot-col ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+  .foot-col a{text-decoration:none;font-size:13px;color:rgba(255,255,255,.42);transition:color .2s}
+  .foot-col a:hover{color:var(--gold-lt)}
+  .foot-ci{display:flex;align-items:flex-start;gap:9px;font-size:13px;color:rgba(255,255,255,.45);margin-bottom:11px;font-weight:300}
+  .foot-ci svg{flex-shrink:0;stroke:var(--gold);margin-top:2px}
+  .foot-btm{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,.3)}
+  .soc-links{display:flex;gap:10px}
+  .soc-link{width:30px;height:30px;border:1px solid rgba(222,170,87,.22);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.38);text-decoration:none;font-size:12px;font-weight:700;transition:border-color .2s,color .2s,background .2s;border-radius:3px}
+  .soc-link:hover{border-color:var(--gold);color:var(--gold);background:rgba(222,170,87,.1)}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .65s ease,transform .65s ease}
+  .reveal.visible{opacity:1;transform:translateY(0)}
+  @media(max-width:1100px){
+    .hero{grid-template-columns:1fr;padding:100px 32px 60px}.hero-visual{display:none}
+    .intro-layout,.del-layout{grid-template-columns:1fr;gap:48px}
+    .svc-grid,.ben-2col,.related-grid{grid-template-columns:1fr 1fr}
+    .proc-steps{grid-template-columns:1fr 1fr}
+    .ind-grid,.geo-grid{grid-template-columns:1fr 1fr}
+    .tools-grid{grid-template-columns:repeat(3,1fr)}
+    .foot-top{grid-template-columns:1fr 1fr}
+    nav{padding:0 24px}.nav-links{display:none}
+  }
+  @media(max-width:768px){
+    section,.ind-bg,.geo-bg{padding:64px 20px}
+    .hero{padding:88px 20px 60px}
+    .stats-strip{grid-template-columns:1fr 1fr}
+    .svc-grid,.ben-2col,.related-grid,.ind-grid,.geo-grid,.tools-grid,.proc-steps{grid-template-columns:1fr}
+    .foot-top{grid-template-columns:1fr;gap:36px}
+    .cta-secondary-row{flex-direction:column}
+  }
+  ::-webkit-scrollbar{width:5px}
+  ::-webkit-scrollbar-track{background:var(--off)}
+  ::-webkit-scrollbar-thumb{background:var(--blue-lt);border-radius:3px}
+  ::-webkit-scrollbar-thumb:hover{background:var(--blue)}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="main-nav">
+  <a href="index.html" style="text-decoration:none;display:flex;align-items:center">
+    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 8500 8000" style="height:44px;width:auto;display:block">
+      <defs><style>.nl0{fill:#687D9C}.nl1{fill:#687D9C;fill-rule:nonzero}.nl2{fill:#DEAA57;fill-rule:nonzero}</style></defs>
+      <g>
+        <path class="nl0" d="M1812.4 4727.09c409.83,9.8 887.26,173.39 1195.7,439.26 28.72,24.76 44.02,30.15 58.55,57.24 -52.14,-14.57 -171.2,-85.78 -230.79,-112.6 -573.62,-258.2 -1233.3,-349.38 -1831.71,-106.15 -40.93,16.63 -87.49,44.55 -124.91,55.7 20.68,-59.06 109.44,-127.92 160.93,-158.02 80.06,-46.81 141.34,-58.65 228.48,-90.06 -274.29,-14.17 -541.87,141.17 -633.11,424.54l-23.67 -31.72c-53.08,-122.61 -57.66,-196.85 -65.87,-329.88l-13.99 32.3c-3.39,12 -4.68,20.78 -6.59,35.01 -11.91,88.58 -15.08,172.5 5.98,256.07 21.54,85.47 78.14,202.53 145.85,231.4 50.02,-49.84 120.88,-289.19 534.4,-286.16 514.62,3.76 936.61,447.07 1147.02,891.67 48.99,103.51 78.24,193.2 116.58,292.69 204.29,1.91 365.65,-22.11 551.58,-61.3 -4.56,-73.17 -96.36,-288.22 -127.03,-355.35 -102.95,-225.38 -241.3,-405.89 -399.13,-574.71 -60.2,-64.39 -184.4,-177.9 -254.16,-231.52 88.93,6.2 297.3,104.48 378.5,150.87 220.07,125.7 420.56,298.33 567.63,501.22 58.21,80.31 158.45,237.07 191,342.72 62.81,-15.08 171.35,-153.6 213.87,-236.18 55.17,-107.14 79.26,-236.42 72.54,-380.41 -46.7,-1000.4 -1793.1,-818.22 -1857.66,-756.62z"/>
+        <path class="nl0" d="M908.33 5330.28l-1.41 999.35 1449.64 0.28c-2,-76.96 -166.68,-386.07 -201.72,-441.69 -91.01,-144.46 -187.49,-261 -295.82,-356.08 -109.45,-96.06 -252.17,-188.71 -413.11,-240.03 -174.03,-55.49 -400.81,-61.85 -537.57,38.17z"/>
+        <path class="nl0" d="M908.65 3424.73l-2.99 908.85c20.1,-3.89 21.74,-11.21 40.59,-30 89.89,-89.6 210.33,-177.93 315.83,-240.48 274.56,-162.77 638.43,-274.24 960.06,-309.57 166.8,-18.33 422.8,-54.2 590.23,-38.31 -24.89,13.29 -111.58,28.2 -152.81,40.07 -48.39,13.94 -105.58,33.65 -152.35,52.08 -72.65,28.64 -226.01,98.68 -263.84,140.95l282.22 -56.28c100.35,-17.6 195,-28.31 296.59,-38.74 148.31,-15.24 329.26,-9.66 481.55,6.76 47.54,5.13 105.39,18.24 154.19,20.06 -16.76,-73.51 -132.1,-181.83 -167.19,-211.69 -76.12,-64.77 -146.3,-100.57 -245.26,-134.7 -468.76,-161.6 -1251.39,-126.41 -1767.93,-118.66 -111.8,1.68 -260.91,-1.35 -368.89,9.66z"/>
+        <path class="nl0" d="M2103.02 4423.22c104.56,1.75 233.32,-18.11 345.8,-21.11 253.78,-6.76 601.91,10.18 846.47,75.82 41.2,11.06 108.16,35.39 149.12,41.7 50.39,-58.35 99.35,-237.52 80.56,-322.74 -349.11,-20.6 -764.31,38.62 -1103.59,124.24 -55.44,13.99 -109.4,28.7 -160.46,43.9 -40.44,12.04 -129.33,33.19 -157.89,58.2z"/>
+        <path class="nl0" d="M998.36 4717.1c128.1,59.57 343.38,32.49 435.46,-153.69 120.03,-242.71 179.03,-215.94 348.65,-242.96 29.17,-4.65 25.79,-8.44 31.52,-15.04 -269.51,-102.19 -476.91,163.85 -619.63,290.24 -130.76,115.81 -163.14,96.48 -196,121.45z"/>
+        <polygon class="nl1" points="4816.05,6282.34 4011.23,6282.34 4011.23,3410.51 4816.05,3410.51"/>
+        <polygon class="nl1" points="5156.12,6282.34 5156.12,3410.51 5908.89,3410.51 6554.65,4959.31 7196.74,3410.51 7983.97,3410.51 7983.97,6282.34 7183.55,6282.34 7183.55,4394.18 6408.79,6282.34 6331.83,6282.34 5573.92,4477.74 5573.92,6282.34"/>
+        <path class="nl2" d="M908.18 6642.7l534.93 0 0 123.23 -380.89 0 0 267.47 298.28 0 0 124.63 -298.28 0 0 292.67 386.5 0 0 126.03 -540.54 0 0 -934.04zm1041.97 0l175.51 0 249.26 934.04 -156.37 0 -58.58 -233.86 -273.07 0 -57.88 233.86 -147.27 0 268.4 -934.04zm179.48 578.35l-106.89 -427.81 -105.73 427.81 212.62 0zm864.82 -123.23l312.28 0 0 485.92 -82.85 0 -20.77 -119.03c-47.38,85.89 -122.3,128.83 -224.76,128.83 -104.09,0 -185.78,-42.24 -244.36,-126.96 -58.81,-84.49 -88.22,-199.31 -88.22,-344.25 0,-152.64 29.17,-273.54 87.29,-362.69 58.35,-89.15 147.5,-133.73 268.17,-133.73 168.04,0 268.4,94.76 301.31,284.5l-140.04 34.78c-16.57,-80.98 -38.74,-133.5 -66.52,-157.3 -28.01,-24.04 -60.92,-35.94 -98.96,-35.94 -125.8,0 -188.81,119.03 -188.81,356.86 0,239.22 64.18,358.72 192.78,358.72 106.66,0 160.11,-82.15 160.11,-246.46l-166.64 0 0 -123.23zm694.45 -455.11l154.04 0 0 803.8 330.48 0 0 130.23 -484.52 0 0 -934.04zm796.91 0l534.93 0 0 123.23 -380.89 0 0 267.47 298.28 0 0 124.63 -298.28 0 0 292.67 386.5 0 0 126.03 -540.54 0 0 -934.04zm1129.96 0l282.64 0c71.19,0 125.33,5.6 162.21,17.04 36.87,11.44 68.15,36.87 93.82,76.32 25.44,39.68 38.28,87.52 38.28,144.24 0,103.63 -46.21,171.78 -138.87,204.69 111.33,35.24 166.88,113.43 166.88,234.56 0,68.85 -21.94,129.06 -66.05,180.18 -43.88,51.35 -128.13,77.02 -252.53,77.02l-286.37 0 0 -934.04zm151.24 387.9l98.02 0c69.08,0 114.59,-12.83 136.53,-38.28 21.94,-25.44 32.91,-58.11 32.91,-98.49 0,-47.38 -12.6,-80.98 -37.81,-101.52 -24.98,-20.31 -63.95,-30.57 -116.46,-30.57l-113.19 0 0 268.87zm0 422.91l124.4 0c114.13,0 171.07,-50.65 171.07,-151.7 0,-39.21 -12.14,-74.45 -36.18,-105.49 -24.27,-31.04 -73.52,-46.68 -147.74,-46.68l-111.56 0 0 303.87zm836.58 -810.8l154.04 0 0 934.04 -154.04 0 0 -934.04zm555.58 0l228.49 0 185.78 673.34 190.45 -673.34 220.09 0 0 934.04 -145.64 0 0 -797.27 -221.26 797.27 -112.03 0 -217.06 -797.96 0 797.96 -128.83 0 0 -934.04z"/>
+      </g>
+    </svg>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li class="drop"><a href="#" class="active">Services</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Our Projects</a></li>
+    <li><a href="#">Resources</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+  <a href="mailto:info@eaglebim.com" class="nav-cta">Share Your Scope</a>
+</nav>
+
+
+<!-- ══ HERO — Unique: Structural steel frame assembling itself in isometric view ══ -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a><span>/</span>
+      <a href="#">Services</a><span>/</span>
+      <span style="color:var(--txt)">Structural BIM Services</span>
+    </div>
+    <div class="hero-tag">Structural BIM Services · USA</div>
+    <h1>Expert <em>Structural BIM Services</em> for Engineers and Contractors</h1>
+    <p class="hero-sub">Eagle BIM delivers structural BIM services covering steel, concrete, timber, and hybrid structures — modeled in Revit to your engineer's drawings, coordinated against architectural and MEP models, and delivered to your project LOD requirements. Structural BIM modeling your whole team can work from.</p>
+    <div class="hero-actions">
+      <a href="mailto:info@eaglebim.com" class="btn-gold">Share Your Structural Drawings <span class="btn-arrow">→</span></a>
+      <a href="#services" class="btn-blue">Explore Structural BIM Services <span class="btn-arrow">↓</span></a>
+    </div>
+    <div class="hero-badges">
+      <span class="badge">Steel Structure BIM</span>
+      <span class="badge">Concrete BIM</span>
+      <span class="badge">Revit Structural</span>
+      <span class="badge">LOD 200–400</span>
+      <span class="badge">Coordination Ready</span>
+      <span class="badge">All Structural Systems</span>
+    </div>
+  </div>
+
+  <!-- HERO VISUAL: Structural steel frame assembling itself isometrically -->
+  <div class="hero-visual">
+    <svg width="420" height="420" viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg">
+      <style>
+        @keyframes stA{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+        @keyframes stD{from{stroke-dashoffset:500}to{stroke-dashoffset:0}}
+        @keyframes stF{from{opacity:0}to{opacity:1}}
+        @keyframes stP{from{opacity:0;transform:scale(.85)}to{opacity:1;transform:scale(1)}}
+        @keyframes stSc{0%{transform:translateY(0);opacity:0}4%{opacity:.12}92%{opacity:.06}100%{transform:translateY(400px);opacity:0}}
+
+        /* Ground floor columns */
+        .c1{animation:stA .5s .3s ease both;opacity:0}
+        .c2{animation:stA .5s .5s ease both;opacity:0}
+        .c3{animation:stA .5s .7s ease both;opacity:0}
+        .c4{animation:stA .5s .9s ease both;opacity:0}
+
+        /* Level 1 beams */
+        .b1{stroke-dasharray:500;stroke-dashoffset:500;animation:stD .5s 1.2s ease forwards}
+        .b2{stroke-dasharray:500;stroke-dashoffset:500;animation:stD .5s 1.5s ease forwards}
+        .b3{stroke-dasharray:500;stroke-dashoffset:500;animation:stD .5s 1.8s ease forwards}
+        .b4{stroke-dasharray:500;stroke-dashoffset:500;animation:stD .5s 2.0s ease forwards}
+
+        /* Level 1 slab */
+        .s1{animation:stF .5s 2.2s ease both;opacity:0}
+
+        /* Level 2 columns */
+        .c5{animation:stA .4s 2.5s ease both;opacity:0}
+        .c6{animation:stA .4s 2.7s ease both;opacity:0}
+        .c7{animation:stA .4s 2.9s ease both;opacity:0}
+        .c8{animation:stA .4s 3.1s ease both;opacity:0}
+
+        /* Level 2 beams */
+        .b5{stroke-dasharray:500;stroke-dashoffset:500;animation:stD .4s 3.3s ease forwards}
+        .b6{stroke-dasharray:500;stroke-dashoffset:500;animation:stD .4s 3.5s ease forwards}
+        .b7{stroke-dasharray:500;stroke-dashoffset:500;animation:stD .4s 3.7s ease forwards}
+        .b8{stroke-dasharray:500;stroke-dashoffset:500;animation:stD .4s 3.9s ease forwards}
+
+        /* Level 2 slab */
+        .s2{animation:stF .5s 4.1s ease both;opacity:0}
+
+        /* Labels + badges */
+        .lbl{animation:stF .4s ease both;opacity:0}
+        .lb1{animation-delay:2.3s} .lb2{animation-delay:4.2s} .lb3{animation-delay:4.4s}
+
+        .stScan{animation:stSc 7s 1s linear infinite}
+      </style>
+      <defs>
+        <pattern id="stgrid" width="22" height="22" patternUnits="userSpaceOnUse">
+          <path d="M22 0L0 0 0 22" fill="none" stroke="rgba(104,125,156,.055)" stroke-width=".5"/>
+        </pattern>
+      </defs>
+      <rect width="420" height="420" fill="url(#stgrid)"/>
+
+      <!-- ── ISOMETRIC STRUCTURAL FRAME ──
+           Using isometric projection: right=+x, left=+y, up=-z
+           Iso transform: screen_x = (x-y)*cos30, screen_y = (x+y)*sin30 - z
+           Grid: 3×2 bays, bay width=90px iso
+           Origin at centre-bottom: 210, 360
+
+           Column grid in iso space (4 cols × 3 rows):
+           A(0,0), B(1,0), C(2,0)
+           D(0,1), E(1,1), F(2,1)
+
+           Bay width iso projected = 78px right/left, 45px up/down
+      -->
+
+      <!-- === GROUND FLOOR === -->
+
+      <!-- Ground slab / shadow -->
+      <polygon points="210,340 288,295 210,250 132,295" fill="rgba(104,125,156,.08)" stroke="rgba(74,96,128,.2)" stroke-width=".8"/>
+
+      <!-- Ground floor columns (4 corners) — light blue -->
+      <!-- Col A(0,0): iso x=132,y=295 → up 110px -->
+      <g class="c1">
+        <line x1="132" y1="295" x2="132" y2="185" stroke="rgba(104,125,156,.85)" stroke-width="5" stroke-linecap="round"/>
+        <rect x="125" y="291" width="14" height="8" rx="1" fill="rgba(104,125,156,.6)"/>
+      </g>
+      <!-- Col B(2,0): iso x=288,y=295 → up 110 -->
+      <g class="c2">
+        <line x1="288" y1="295" x2="288" y2="185" stroke="rgba(104,125,156,.85)" stroke-width="5" stroke-linecap="round"/>
+        <rect x="281" y="291" width="14" height="8" rx="1" fill="rgba(104,125,156,.6)"/>
+      </g>
+      <!-- Col C(0,1): iso x=210,y=340 → up 110 -->
+      <g class="c3">
+        <line x1="210" y1="340" x2="210" y2="230" stroke="rgba(104,125,156,.85)" stroke-width="5" stroke-linecap="round"/>
+        <rect x="203" y="336" width="14" height="8" rx="1" fill="rgba(104,125,156,.6)"/>
+      </g>
+      <!-- Col D(2,1): iso x=210,y=250 → up 110 (back centre) — lighter -->
+      <g class="c4">
+        <line x1="210" y1="250" x2="210" y2="140" stroke="rgba(104,125,156,.6)" stroke-width="4" stroke-linecap="round"/>
+        <rect x="203" y="246" width="14" height="8" rx="1" fill="rgba(104,125,156,.45)"/>
+      </g>
+
+      <!-- Ground floor beams -->
+      <!-- Front beam (A-B at ground level top): 132,185 → 288,185 -->
+      <line class="b1" x1="132" y1="185" x2="288" y2="185" stroke="rgba(222,170,87,.9)" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="500"/>
+      <!-- Left beam (A-C): 132,185 → 210,230 -->
+      <line class="b2" x1="132" y1="185" x2="210" y2="230" stroke="rgba(222,170,87,.9)" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="500"/>
+      <!-- Right beam (B-D): 288,185 → 210,230 -- this is wrong, should go to back -->
+      <!-- Right beam: 288,185 → 210,140 -->
+      <line class="b3" x1="288" y1="185" x2="210" y2="140" stroke="rgba(222,170,87,.75)" stroke-width="4" stroke-linecap="round" stroke-dasharray="500"/>
+      <!-- Back beam: 132,185 → 210,140 (left-back) -->
+      <line class="b4" x1="132" y1="185" x2="210" y2="140" stroke="rgba(222,170,87,.65)" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="500"/>
+
+      <!-- Level 1 slab (semi-transparent) -->
+      <polygon class="s1" points="132,185 288,185 210,140 210,230"
+               fill="rgba(104,125,156,.12)" stroke="rgba(74,96,128,.35)" stroke-width=".9"/>
+      <!-- Slab hatch lines -->
+      <g class="s1" opacity=".4">
+        <line x1="158" y1="195" x2="236" y2="150" stroke="rgba(74,96,128,.5)" stroke-width=".6"/>
+        <line x1="184" y1="204" x2="262" y2="159" stroke="rgba(74,96,128,.5)" stroke-width=".6"/>
+        <line x1="210" y1="214" x2="270" y2="178" stroke="rgba(74,96,128,.5)" stroke-width=".6"/>
+      </g>
+
+      <!-- Level 1 label -->
+      <g class="lbl lb1">
+        <rect x="30" y="178" width="68" height="16" rx="2" fill="rgba(104,125,156,.1)" stroke="rgba(104,125,156,.3)" stroke-width=".8"/>
+        <text x="64" y="189" fill="rgba(74,96,128,.72)" font-family="monospace" font-size="7.5" text-anchor="middle" font-weight="bold">LEVEL 01</text>
+        <line x1="98" y1="186" x2="132" y2="186" stroke="rgba(104,125,156,.35)" stroke-width=".7" stroke-dasharray="3 2"/>
+      </g>
+
+      <!-- === LEVEL 2 === -->
+
+      <!-- Level 2 columns (sitting on L1 beams) — shift everything up 90px -->
+      <g class="c5">
+        <line x1="132" y1="185" x2="132" y2="98" stroke="rgba(104,125,156,.8)" stroke-width="5" stroke-linecap="round"/>
+      </g>
+      <g class="c6">
+        <line x1="288" y1="185" x2="288" y2="98" stroke="rgba(104,125,156,.8)" stroke-width="5" stroke-linecap="round"/>
+      </g>
+      <g class="c7">
+        <line x1="210" y1="230" x2="210" y2="143" stroke="rgba(104,125,156,.8)" stroke-width="5" stroke-linecap="round"/>
+      </g>
+      <g class="c8">
+        <line x1="210" y1="140" x2="210" y2="53" stroke="rgba(104,125,156,.55)" stroke-width="4" stroke-linecap="round"/>
+      </g>
+
+      <!-- Level 2 beams -->
+      <line class="b5" x1="132" y1="98" x2="288" y2="98" stroke="rgba(222,170,87,.88)" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="500"/>
+      <line class="b6" x1="132" y1="98" x2="210" y2="143" stroke="rgba(222,170,87,.88)" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="500"/>
+      <line class="b7" x1="288" y1="98" x2="210" y2="53" stroke="rgba(222,170,87,.72)" stroke-width="4" stroke-linecap="round" stroke-dasharray="500"/>
+      <line class="b8" x1="132" y1="98" x2="210" y2="53" stroke="rgba(222,170,87,.62)" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="500"/>
+
+      <!-- Level 2 slab -->
+      <polygon class="s2" points="132,98 288,98 210,53 210,143"
+               fill="rgba(104,125,156,.14)" stroke="rgba(74,96,128,.38)" stroke-width=".9"/>
+      <g class="s2" opacity=".38">
+        <line x1="158" y1="108" x2="236" y2="63" stroke="rgba(74,96,128,.5)" stroke-width=".6"/>
+        <line x1="184" y1="117" x2="262" y2="72" stroke="rgba(74,96,128,.5)" stroke-width=".6"/>
+        <line x1="210" y1="127" x2="270" y2="91" stroke="rgba(74,96,128,.5)" stroke-width=".6"/>
+      </g>
+
+      <!-- Level 2 label -->
+      <g class="lbl lb2">
+        <rect x="30" y="91" width="68" height="16" rx="2" fill="rgba(104,125,156,.1)" stroke="rgba(104,125,156,.3)" stroke-width=".8"/>
+        <text x="64" y="102" fill="rgba(74,96,128,.72)" font-family="monospace" font-size="7.5" text-anchor="middle" font-weight="bold">LEVEL 02</text>
+        <line x1="98" y1="99" x2="132" y2="99" stroke="rgba(104,125,156,.35)" stroke-width=".7" stroke-dasharray="3 2"/>
+      </g>
+
+      <!-- Legend / info badge -->
+      <g class="lbl lb3">
+        <rect x="290" y="310" width="118" height="74" rx="4" fill="rgba(250,249,247,.95)" stroke="rgba(104,125,156,.22)" stroke-width=".8"/>
+        <!-- Steel colour -->
+        <line x1="302" y1="330" x2="322" y2="330" stroke="rgba(104,125,156,.85)" stroke-width="4" stroke-linecap="round"/>
+        <text x="330" y="334" fill="rgba(74,96,128,.7)" font-family="monospace" font-size="7.5" font-weight="bold">Steel Columns</text>
+        <!-- Beam colour -->
+        <line x1="302" y1="348" x2="322" y2="348" stroke="rgba(222,170,87,.9)" stroke-width="4" stroke-linecap="round"/>
+        <text x="330" y="352" fill="rgba(74,96,128,.7)" font-family="monospace" font-size="7.5" font-weight="bold">Steel Beams</text>
+        <!-- Slab colour -->
+        <rect x="302" y="360" width="20" height="10" rx="1" fill="rgba(104,125,156,.18)" stroke="rgba(74,96,128,.3)" stroke-width=".7"/>
+        <text x="330" y="369" fill="rgba(74,96,128,.7)" font-family="monospace" font-size="7.5" font-weight="bold">Concrete Slabs</text>
+        <!-- Eagle BIM -->
+        <text x="349" y="377" fill="rgba(222,170,87,.65)" font-family="monospace" font-size="6.5" text-anchor="middle" font-weight="bold">EAGLE BIM · eaglebim.com</text>
+      </g>
+
+      <!-- Dimension arrow: height -->
+      <g class="lbl lb3" opacity=".6">
+        <line x1="112" y1="295" x2="112" y2="98" stroke="rgba(74,96,128,.45)" stroke-width=".8"/>
+        <line x1="107" y1="295" x2="117" y2="295" stroke="rgba(74,96,128,.45)" stroke-width=".8"/>
+        <line x1="107" y1="98" x2="117" y2="98" stroke="rgba(74,96,128,.45)" stroke-width=".8"/>
+        <rect x="82" y="185" width="30" height="14" rx="1" fill="rgba(250,249,247,.9)" stroke="rgba(74,96,128,.2)" stroke-width=".5"/>
+        <text x="97" y="195" fill="rgba(74,96,128,.8)" font-family="monospace" font-size="7.5" text-anchor="middle" font-weight="bold" transform="rotate(-90,97,195)">8.0m</text>
+      </g>
+
+      <!-- LOD badge -->
+      <g class="lbl lb3">
+        <rect x="310" y="252" width="90" height="44" rx="4" fill="rgba(104,125,156,.08)" stroke="rgba(104,125,156,.22)" stroke-width=".8"/>
+        <text x="355" y="270" fill="rgba(74,96,128,.68)" font-family="monospace" font-size="8" text-anchor="middle" font-weight="bold">REVIT LOD 350</text>
+        <text x="355" y="283" fill="rgba(104,125,156,.48)" font-family="monospace" font-size="7" text-anchor="middle">Structural BIM Model</text>
+        <text x="355" y="292" fill="rgba(104,125,156,.4)" font-family="monospace" font-size="6.5" text-anchor="middle">Ready for Coordination</text>
+      </g>
+
+      <rect x="0" y="0" width="420" height="1.5" fill="rgba(104,125,156,.12)" class="stScan"/>
+    </svg>
+  </div>
+</section>
+
+
+<!-- ══ STATS ══ -->
+<div class="stats-strip">
+  <div class="stat-item reveal">
+    <span class="stat-num">500<span class="stat-sfx">+</span></span>
+    <div class="stat-lbl">Structural Models Delivered</div>
+  </div>
+  <div class="stat-item reveal">
+    <span class="stat-num">All</span>
+    <div class="stat-lbl">Structural Systems Covered</div>
+  </div>
+  <div class="stat-item reveal">
+    <span class="stat-num">LOD</span>
+    <div class="stat-lbl">200 to 400 Output</div>
+  </div>
+  <div class="stat-item reveal">
+    <span class="stat-num">48<span class="stat-sfx">hr</span></span>
+    <div class="stat-lbl">Sample Model Turnaround</div>
+  </div>
+</div>
+
+
+<!-- ══ INTRO ══ -->
+<section style="background:var(--white)" id="services">
+  <div class="intro-layout">
+    <div class="reveal">
+      <div class="section-tag">Structural BIM Services</div>
+      <h2>Expert <em>Structural BIM Services</em> Modeled to Your Engineer's Drawings</h2>
+      <div style="margin-top:20px">
+        <p class="body-text">Eagle BIM delivers <strong>structural BIM services</strong> covering steel, concrete, timber, post-tension, and hybrid structural systems — all modeled in Revit to your engineer's issued drawings and specifications. Our <strong>structural BIM modeling</strong> and <strong>structural Revit modeling</strong> produces accurate, fully parametric Revit structural models ready for BIM coordination, clash detection, shop drawing extraction, and quantity takeoff from the moment of delivery.</p>
+        <p class="body-text">Our <strong>structural Revit modeling</strong> team works from your structural engineer's drawings — whether AutoCAD, PDF, or sketches — and builds a Revit structural model that correctly represents every element with accurate section profiles, material properties, analytical parameters, and connection geometry. Every <strong>Revit structural modeling</strong> engagement is scoped clearly and delivered against a model quality standard your coordination team can rely on.</p>
+        <p class="body-text">Whether you need to <strong>outsource structural BIM</strong> for a single project, want ongoing <strong>structural modeling services</strong> across a project pipeline — our structural modeling services scale with your workload, or need a steel structure BIM model built from fabrication drawings — Eagle BIM delivers structural BIM models that work correctly in federated coordination environments and produce accurate schedules and quantities from day one.</p>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="discipline-cards" style="margin-top:8px">
+        <div class="disc-card">
+          <div class="disc-dot"></div>
+          <div>
+            <div class="disc-title">Steel Structure BIM</div>
+            <div class="disc-text">Structural steel framing modeled in Revit with correct wide-flange profiles, HSS sections, connection geometry, base plates, and splice details — ready for MEP coordination and shop drawing extraction.</div>
+          </div>
+        </div>
+        <div class="disc-card">
+          <div class="disc-dot"></div>
+          <div>
+            <div class="disc-title">Concrete Structure BIM</div>
+            <div class="disc-text">Cast-in-place and precast concrete structures modeled with accurate slab thicknesses, column and shear wall layouts, beam profiles, foundation geometry, and opening schedules for coordination and documentation.</div>
+          </div>
+        </div>
+        <div class="disc-card">
+          <div class="disc-dot"></div>
+          <div>
+            <div class="disc-title">Hybrid and Complex Structures</div>
+            <div class="disc-text">Post-tension systems, composite structures, transfer structures, and hybrid steel-concrete frames — modeled with correct analytical parameters and element properties for multi-discipline BIM coordination.</div>
+          </div>
+        </div>
+        <div class="disc-card">
+          <div class="disc-dot"></div>
+          <div>
+            <div class="disc-title">Structural BIM Coordination</div>
+            <div class="disc-text">Structural BIM models federated with architectural and MEP models for clash detection and coordination — ensuring structural elements are clash-free against all building systems before construction begins.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ CORE SERVICES ══ -->
+<section class="svc-bg">
+  <div class="reveal">
+    <div class="section-tag">What We Deliver</div>
+    <h2>Core <em>Structural BIM Modeling</em> Service Areas</h2>
+    <p class="sec-desc">Every structural BIM services engagement produces a model that is accurate, coordinated, and ready to use across your full project workflow.</p>
+  </div>
+  <div class="svc-grid reveal">
+
+    <div class="svc-card">
+      <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M2 20h20M4 20V10l8-8 8 8v10"/></svg></div>
+      <div class="svc-title">Steel Structure BIM Modeling</div>
+      <p class="svc-text">Complete <strong>steel structure BIM</strong> modeling in Revit — wide-flange columns and beams, HSS tubes, plate girders, braced frames, moment frames, and connection geometry. Every member modeled with correct AISC section profiles and material properties. Our steel structure BIM models are used directly for MEP coordination, clash detection, and structural shop drawing extraction.</p>
+    </div>
+
+    <div class="svc-card">
+      <div class="svc-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 3v18"/></svg></div>
+      <div class="svc-title">Concrete Structure BIM Modeling</div>
+      <p class="svc-text">Cast-in-place concrete <strong>structural BIM modeling</strong> covering slabs, beams, columns, shear walls, cores, transfer structures, and foundations. Correct dimensions, accurate openings, and structural analytical parameters all included. Our concrete <strong>structural Revit modeling</strong> produces models ready for reinforcement coordination, MEP penetration clash checking, and quantity takeoff.</p>
+    </div>
+
+    <div class="svc-card">
+      <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+      <div class="svc-title">Revit Structural Modeling — Full Buildings</div>
+      <p class="svc-text">Full building <strong>Revit structural modeling</strong> from foundation through roof — our Revit structural modeling covers every level and every system — all structural elements modeled across every level with correct relationships, shared coordinates, and a clean Revit structural model organisation. Our structural modeling services cover multi-story commercial, institutional, industrial, and residential structures of all scales.</p>
+    </div>
+
+    <div class="svc-card">
+      <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+      <div class="svc-title">Structural BIM Coordination Support</div>
+      <p class="svc-text">Structural BIM models prepared specifically for multi-discipline coordination — correct shared coordinates, appropriate LOD for the coordination stage, clash-checking geometry on all structural elements, and IFC export for open BIM coordination environments. Our <strong>structural BIM modeling</strong> team prepares coordination-ready models that work first time in Navisworks and Revizto.</p>
+    </div>
+
+    <div class="svc-card">
+      <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+      <div class="svc-title">Structural BIM Documentation</div>
+      <p class="svc-text">Structural drawing production from the Revit structural model — framing plans, foundation plans, sections, and structural details extracted and annotated to your standards. Structural schedules including beam, column, and footing schedules built directly in Revit and formatted for permit and construction issue.</p>
+    </div>
+
+    <div class="svc-card">
+      <div class="svc-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/></svg></div>
+      <div class="svc-title">Outsource Structural BIM — Ongoing</div>
+      <p class="svc-text">Dedicated <strong>structural BIM outsourcing</strong> for structural engineering firms, architects, and contractors with continuous structural modeling requirements — working to your office standards, your family libraries, and your model organisation conventions. Eagle BIM acts as your embedded <strong>structural BIM modeling</strong> team across a full project pipeline.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══ PROCESS ══ -->
+<section class="proc-bg">
+  <div class="reveal" style="max-width:680px;margin-bottom:48px">
+    <div class="section-tag" style="color:var(--gold-lt)"><span style="display:inline-block;width:22px;height:2px;background:var(--gold);border-radius:2px;margin-right:8px;vertical-align:middle"></span>How We Work</div>
+    <h2 style="color:white">Our <em style="color:var(--gold-lt)">Structural BIM Modeling</em> Process</h2>
+    <p style="color:rgba(255,255,255,.62);font-size:16px;line-height:1.8;font-weight:300;margin-top:12px">Every <strong style="color:rgba(255,255,255,.85)">structural BIM services</strong> engagement follows the same structured process — from drawing intake through coordination-ready model delivery. Nothing is delivered without a model quality check against the source drawings.</p>
+  </div>
+  <div class="proc-steps reveal">
+    <div class="ps">
+      <div class="ps-num">01</div>
+      <div class="ps-bar"></div>
+      <div class="ps-title">Drawing Intake and Scope</div>
+      <div class="ps-text">Structural engineer's drawings, specifications, and BIM requirements received. LOD, coordinate system, Revit version, and model organisation agreed before any modeling begins.</div>
+    </div>
+    <div class="ps">
+      <div class="ps-num">02</div>
+      <div class="ps-bar"></div>
+      <div class="ps-title">Model Setup</div>
+      <div class="ps-text">Revit structural template configured, shared coordinates established, grids and levels set from the engineer's drawings, and structural families loaded to match section sizes specified.</div>
+    </div>
+    <div class="ps ps-gold">
+      <div class="ps-num">03</div>
+      <div class="ps-bar ps-bar-gold"></div>
+      <div class="ps-title">Structural Modeling</div>
+      <div class="ps-text">All structural elements modeled — columns, beams, slabs, walls, foundations, openings, and connections — with correct section profiles, material properties, and analytical parameters throughout.</div>
+    </div>
+    <div class="ps">
+      <div class="ps-num">04</div>
+      <div class="ps-bar"></div>
+      <div class="ps-title">Model QA Check</div>
+      <div class="ps-text">Completed model checked against the structural drawings — element dimensions verified, section sizes confirmed, openings checked, levels validated, and coordination geometry reviewed before delivery.</div>
+    </div>
+    <div class="ps">
+      <div class="ps-num">05</div>
+      <div class="ps-bar"></div>
+      <div class="ps-title">Delivery and Handover</div>
+      <div class="ps-text">RVT, IFC, NWC, and DWG delivered with a model information sheet covering element counts, LOD achieved, and any noted discrepancies between drawings and model for EOR review.</div>
+    </div>
+  </div>
+  <div class="reveal" style="text-align:center;margin-top:44px">
+    <a href="mailto:info@eaglebim.com" class="btn-gold">Share Your Structural Drawings <span class="btn-arrow">→</span></a>
+  </div>
+</section>
+
+
+<!-- ══ DELIVERABLES ══ -->
+<section class="del-bg">
+  <div class="reveal">
+    <div class="section-tag">Deliverables</div>
+    <h2>What You Receive from Our <em>Structural BIM Services</em></h2>
+  </div>
+  <div class="del-layout">
+    <div>
+      <div class="del-list reveal">
+        <div class="del-row">
+          <div class="del-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 3v18"/></svg></div>
+          <div><div class="del-title">Revit Structural Model (RVT)</div><div class="del-text">Fully structured Revit structural model — correct section profiles, material properties, analytical parameters, and element organisation, ready for coordination and documentation use</div></div>
+        </div>
+        <div class="del-row">
+          <div class="del-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+          <div><div class="del-title">IFC and Coordination Exports</div><div class="del-text">IFC file for open BIM workflows, NWC for Navisworks coordination, and DWG exports — all with correct shared coordinates and element classification for immediate use in your coordination environment</div></div>
+        </div>
+        <div class="del-row">
+          <div class="del-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+          <div><div class="del-title">Structural Drawing Set (PDF / DWG)</div><div class="del-text">Framing plans, foundation plans, and structural sections extracted from the Revit model and annotated — accurate structural drawings ready for permit submission or contractor coordination</div></div>
+        </div>
+        <div class="del-row">
+          <div class="del-icon"><svg viewBox="0 0 24 24"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm9 0V9a2 2 0 00-2-2h-2a2 2 0 00-2 2v10"/></svg></div>
+          <div><div class="del-title">Structural Schedules (XLSX)</div><div class="del-text">Beam, column, slab, footing, and opening schedules extracted from the model — element counts, sizes, materials, and quantities formatted for procurement, coordination, and QS use</div></div>
+        </div>
+      </div>
+      <div class="fmt-row reveal">
+        <span class="fmt-chip">RVT</span><span class="fmt-chip">IFC</span><span class="fmt-chip">NWC</span>
+        <span class="fmt-chip">DWG</span><span class="fmt-chip">PDF</span><span class="fmt-chip">XLSX</span>
+      </div>
+    </div>
+    <div class="del-cta-box reveal">
+      <h3>Ready to Outsource Your Structural BIM?</h3>
+      <p>Share your structural engineer's drawings and BIM requirements. We will review your scope and return a clear plan and quote within 24 to 48 hours.</p>
+      <a href="mailto:info@eaglebim.com" class="del-cta-gold">Share Your Structural Drawings →</a>
+      <a href="mailto:info@eaglebim.com" class="del-cta-ghost">Discuss Ongoing Structural BIM</a>
+      <div class="del-trust">
+        <div class="del-trust-item"><div class="del-trust-check"><svg viewBox="0 0 9 9"><polyline points="1.5,4.5 3.5,7 7.5,2"/></svg></div>All structural systems — steel, concrete, hybrid</div>
+        <div class="del-trust-item"><div class="del-trust-check"><svg viewBox="0 0 9 9"><polyline points="1.5,4.5 3.5,7 7.5,2"/></svg></div>Model QA checked against source drawings</div>
+        <div class="del-trust-item"><div class="del-trust-check"><svg viewBox="0 0 9 9"><polyline points="1.5,4.5 3.5,7 7.5,2"/></svg></div>Coordination-ready on delivery</div>
+        <div class="del-trust-item"><div class="del-trust-check"><svg viewBox="0 0 9 9"><polyline points="1.5,4.5 3.5,7 7.5,2"/></svg></div>Sample model returned in 48 hours</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ WHY EAGLE BIM ══ -->
+<section class="ben-bg">
+  <div class="reveal">
+    <div class="section-tag">Why Eagle BIM</div>
+    <h2>What Sets Our <em>Structural BIM Services</em> Apart</h2>
+    <p class="sec-desc">Structural BIM done right means a model your coordination team can open, federate, and clash-check without spending days fixing element categories, missing sections, or misaligned grids.</p>
+  </div>
+  <div class="ben-2col reveal">
+
+    <div class="ben-card" style="border-bottom:1px solid var(--bdr)">
+      <div class="ben-card-head">
+        <div class="ben-icon" style="background:var(--gold-pale);border:1.5px solid var(--bdr-gold)">
+          <svg viewBox="0 0 24 24" stroke="var(--gold-dk)"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"/></svg>
+        </div>
+        <div>
+          <div class="ben-label">Every Model</div>
+          <div class="ben-title">QA Checked Before Delivery</div>
+        </div>
+      </div>
+      <p class="ben-text">Every structural BIM model is checked against the source drawings before delivery — element dimensions verified, section sizes confirmed against the schedule, opening positions checked, and shared coordinates validated. No structural model leaves Eagle BIM without passing a full quality check against the engineer's issued drawings.</p>
+    </div>
+
+    <div class="ben-card" style="border-bottom:1px solid var(--bdr)">
+      <div class="ben-card-head">
+        <div class="ben-icon" style="background:var(--blue-pale);border:1.5px solid rgba(104,125,156,.25)">
+          <svg viewBox="0 0 24 24" stroke="var(--blue)"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <div>
+          <div class="ben-label">Coordination Ready</div>
+          <div class="ben-title">Works in Navisworks First Time</div>
+        </div>
+      </div>
+      <p class="ben-text">Our structural BIM models are built with coordination as the primary use case — correct shared coordinates, appropriate element categories, clash-checking geometry on every structural member, and clean IFC export. When you federate our structural model with the architectural and MEP models, it works. No element misalignment, no missing sections, no coordinate system corrections required.</p>
+    </div>
+
+    <div class="ben-card">
+      <div class="ben-card-head">
+        <div class="ben-icon" style="background:var(--gold-pale);border:1.5px solid var(--bdr-gold)">
+          <svg viewBox="0 0 24 24" stroke="var(--gold-dk)"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 3v18"/></svg>
+        </div>
+        <div>
+          <div class="ben-label">All Systems</div>
+          <div class="ben-title">Steel, Concrete, and Hybrid</div>
+        </div>
+      </div>
+      <p class="ben-text">Steel frames, concrete cores, post-tension slabs, precast elements, transfer structures, and hybrid systems — all covered under one structural BIM services engagement. Our structural Revit modeling team has modeled every structural system type used in US commercial and industrial construction. One team, consistent standards, across the full structural scope.</p>
+    </div>
+
+    <div class="ben-card">
+      <div class="ben-card-head">
+        <div class="ben-icon" style="background:var(--blue-pale);border:1.5px solid rgba(104,125,156,.25)">
+          <svg viewBox="0 0 24 24" stroke="var(--blue)"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div>
+          <div class="ben-label">48 Hours</div>
+          <div class="ben-title">Sample Model Returned</div>
+        </div>
+      </div>
+      <p class="ben-text">Share a floor level from your structural drawings and we will return a structural Revit modeling sample within 48 hours — so you can assess model quality, section accuracy, element organisation, and LOD compliance before committing to the full structural BIM modeling scope. No long commitments before you have seen the quality of our work.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══ TOOLS ══ -->
+<section class="tools-bg">
+  <div class="reveal">
+    <div class="section-tag">Tools We Use</div>
+    <h2>The <em>Structural BIM Modeling</em> Platform</h2>
+    <p class="sec-desc">We work natively in Revit and the coordination platforms your project already uses — no format translation required on delivery.</p>
+  </div>
+  <div class="tools-grid reveal">
+    <div class="tool-card">
+      <div class="tool-icon"><svg viewBox="0 0 24 24"><path d="M2 20h20M4 20V10l8-8 8 8v10"/></svg></div>
+      <div class="tool-name">Autodesk Revit</div>
+      <div class="tool-role">Primary structural BIM modeling platform — all structural systems and LOD levels</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="9" r="5"/><circle cx="15" cy="15" r="5"/></svg></div>
+      <div class="tool-name">Autodesk Navisworks</div>
+      <div class="tool-role">Model federation, structural clash detection, and NWC coordination export</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 3v18"/></svg></div>
+      <div class="tool-name">AutoCAD</div>
+      <div class="tool-role">2D drawing reference and DWG structural drawing production</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+      <div class="tool-name">BIM 360 / ACC</div>
+      <div class="tool-role">Cloud model delivery, coordination, and structural drawing issue management</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon"><svg viewBox="0 0 24 24"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm9 0V9a2 2 0 00-2-2h-2a2 2 0 00-2 2v10"/></svg></div>
+      <div class="tool-name">MS Excel / XLSX</div>
+      <div class="tool-role">Structural schedules, element lists, and model quality reports</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ INDUSTRIES ══ -->
+<section class="ind-bg">
+  <div class="reveal">
+    <div class="section-tag">Who We Serve</div>
+    <h2><em>Structural BIM Services</em> for Every Project Type</h2>
+    <p class="sec-desc">Our structural BIM modeling services work for any firm that needs accurate, coordination-ready structural Revit models produced from engineer's drawings quickly and to standard.</p>
+  </div>
+  <div class="ind-grid reveal">
+    <div class="ind-card">
+      <div class="ind-name">Structural Engineering Firms</div>
+      <div class="ind-desc">Outsource structural BIM to Eagle BIM when in-house Revit capacity is limited — outsource structural BIM work of any scale — structural Revit modeling produced to your office standards and delivered ready for your engineer's review and stamp.</div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-name">Architecture Practices</div>
+      <div class="ind-desc">Structural BIM models built from the structural engineer's issued drawings and integrated with the architectural model — enabling full BIM coordination without the architect needing to build the structural model themselves.</div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-name">General Contractors</div>
+      <div class="ind-desc">Structural BIM modeling for GCs managing BIM coordination — accurate structural models built from the EOR's drawings and ready for federated coordination with MEP, architectural, and specialist subcontractor models.</div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-name">MEP Engineering Firms</div>
+      <div class="ind-desc">Structural BIM models built to support MEP coordination through accurate Revit structural modeling — correct element geometry, accurate slab thicknesses, structural openings, and beam profiles that give the MEP coordination team a reliable structural reference model.</div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-name">Steel Fabricators</div>
+      <div class="ind-desc">Steel structure BIM models built from fabrication drawings or engineering sketches — accurate member profiles, connection geometry, and erection marks for use in coordination and as the basis for steel shop drawing production.</div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-name">Developers and Owners</div>
+      <div class="ind-desc">Structural BIM modeling to support BIM execution plan requirements — LOD-compliant structural models delivered for design review, coordination, and handover in line with the project BEP and owner's information requirements.</div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-name">BIM Managers</div>
+      <div class="ind-desc">Structural BIM outsourcing for BIM managers responsible for model delivery across multiple disciplines — a reliable <strong>structural modeling services</strong> partner who works to your BEP, your families, and your model quality standards.</div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-name">Design-Build Teams</div>
+      <div class="ind-desc">Fast-track structural BIM modeling for design-build delivery — structural models built from preliminary and issued-for-construction drawings, updated through the design evolution, and coordinated as the design develops.</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ GEO ══ -->
+<section class="geo-bg">
+  <div class="reveal">
+    <div class="section-tag" style="color:var(--gold-lt)"><span style="display:inline-block;width:22px;height:2px;background:var(--gold);border-radius:2px;margin-right:8px;vertical-align:middle"></span>Service Area</div>
+    <h2 style="color:white"><em style="color:var(--gold-lt)">Structural BIM Services</em> Across the United States</h2>
+    <p class="geo-intro">Eagle BIM delivers structural BIM services and structural BIM modeling to engineering firms, architects, and contractors nationwide. All structural Revit modeling work is performed remotely — share your drawings and we will deliver a coordination-ready structural model, wherever your project is located.</p>
+  </div>
+  <div class="geo-primary reveal">
+    <div class="geo-primary-lbl">Primary Region · Featured Service Area</div>
+    <div class="geo-primary-title">Structural BIM Services in Texas</div>
+    <div class="geo-primary-desc">Based in Pflugerville, TX, Eagle BIM provides structural BIM services — steel structure BIM, concrete structural BIM modeling, and outsource structural BIM support — to engineers, architects, and contractors across Houston, Dallas, Austin, San Antonio, Fort Worth, and statewide. We understand Texas building codes, AISC and ACI standards, and the commercial and industrial construction market that defines the state's structural engineering practice.</div>
+  </div>
+  <div class="geo-grid reveal">
+    <div class="geo-state"><div class="geo-state-name">California</div><div class="geo-cities">Los Angeles · San Francisco · San Diego · Sacramento</div></div>
+    <div class="geo-state"><div class="geo-state-name">New York</div><div class="geo-cities">New York City · Buffalo · Albany · Rochester</div></div>
+    <div class="geo-state"><div class="geo-state-name">Florida</div><div class="geo-cities">Miami · Orlando · Tampa · Jacksonville</div></div>
+    <div class="geo-state"><div class="geo-state-name">Illinois</div><div class="geo-cities">Chicago · Springfield · Aurora · Naperville</div></div>
+    <div class="geo-state"><div class="geo-state-name">Washington</div><div class="geo-cities">Seattle · Tacoma · Bellevue · Spokane</div></div>
+    <div class="geo-state"><div class="geo-state-name">Massachusetts</div><div class="geo-cities">Boston · Cambridge · Worcester</div></div>
+    <div class="geo-state"><div class="geo-state-name">Colorado</div><div class="geo-cities">Denver · Colorado Springs · Boulder</div></div>
+    <div class="geo-state"><div class="geo-state-name">Georgia &amp; More</div><div class="geo-cities">Atlanta · Charlotte · Nashville · Phoenix</div></div>
+  </div>
+</section>
+
+
+<!-- ══ RELATED SERVICES ══ -->
+<section class="related-bg">
+  <div class="reveal">
+    <div class="section-tag">Related Services</div>
+    <h2>BIM Services That Work Alongside <em>Structural BIM</em></h2>
+  </div>
+  <div class="related-grid">
+    <a href="bim-coordination-services.html" class="rel-card reveal">
+      <div class="rel-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+      <div class="rel-title">BIM Coordination Services</div>
+      <div class="rel-desc">Multi-discipline coordination and clash detection — federating structural BIM models with architectural and MEP models to eliminate conflicts before construction.</div>
+    </a>
+    <a href="shop-drawing-services.html" class="rel-card reveal">
+      <div class="rel-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+      <div class="rel-title">Shop Drawing Services</div>
+      <div class="rel-desc">Structural steel and rebar shop drawings extracted from or produced alongside the structural BIM model — fabrication-ready drawings from the same source data.</div>
+    </a>
+    <a href="architectural-bim-services.html" class="rel-card reveal">
+      <div class="rel-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 3v18"/></svg></div>
+      <div class="rel-title">Architectural BIM Services</div>
+      <div class="rel-desc">Revit architectural modeling — the discipline model coordinated against the structural BIM model during clash detection and multi-discipline coordination.</div>
+    </a>
+    <a href="mep-bim-services.html" class="rel-card reveal">
+      <div class="rel-icon"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+      <div class="rel-title">MEP BIM Services</div>
+      <div class="rel-desc">MEP BIM modeling coordinated against the structural model — ductwork, pipework, and conduit routed through the structural frame with clash detection against every structural element.</div>
+    </a>
+  </div>
+</section>
+
+
+<!-- ══ FINAL CTA ══ -->
+<section class="cta-final">
+  <div class="cta-inner reveal">
+    <div class="section-tag" style="justify-content:center;margin-bottom:20px;color:var(--gold-lt)"><span style="display:inline-block;width:22px;height:2px;background:var(--gold);border-radius:2px;margin-right:8px;vertical-align:middle"></span>Get Started</div>
+    <h2>Share Your Structural Drawings. Get a Sample Model in 48 Hours.</h2>
+    <p>Send us your structural engineer's drawings and BIM requirements. We will review your scope and return a sample structural BIM model within 48 hours — so you can assess quality before committing to the full modeling scope.</p>
+    <div class="cta-acts">
+      <a href="mailto:info@eaglebim.com" class="cta-btn-primary">Share Your Structural Drawings →</a>
+      <div class="cta-secondary-row">
+        <a href="tel:+13465882960" class="cta-btn-ghost">📞 Call Us</a>
+        <a href="mailto:info@bim-services.us" class="cta-btn-ghost">✉️ Email Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="foot-top">
+    <div class="foot-brand">
+      <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 8500 8000" style="height:52px;width:auto;display:block">
+        <defs><style>.ffl0{fill:#687D9C}.ffl1{fill:#687D9C;fill-rule:nonzero}.ffl2{fill:#DEAA57;fill-rule:nonzero}</style></defs>
+        <g>
+          <path class="ffl0" d="M1812.4 4727.09c409.83,9.8 887.26,173.39 1195.7,439.26 28.72,24.76 44.02,30.15 58.55,57.24 -52.14,-14.57 -171.2,-85.78 -230.79,-112.6 -573.62,-258.2 -1233.3,-349.38 -1831.71,-106.15 -40.93,16.63 -87.49,44.55 -124.91,55.7 20.68,-59.06 109.44,-127.92 160.93,-158.02 80.06,-46.81 141.34,-58.65 228.48,-90.06 -274.29,-14.17 -541.87,141.17 -633.11,424.54l-23.67 -31.72c-53.08,-122.61 -57.66,-196.85 -65.87,-329.88l-13.99 32.3c-3.39,12 -4.68,20.78 -6.59,35.01 -11.91,88.58 -15.08,172.5 5.98,256.07 21.54,85.47 78.14,202.53 145.85,231.4 50.02,-49.84 120.88,-289.19 534.4,-286.16 514.62,3.76 936.61,447.07 1147.02,891.67 48.99,103.51 78.24,193.2 116.58,292.69 204.29,1.91 365.65,-22.11 551.58,-61.3 -4.56,-73.17 -96.36,-288.22 -127.03,-355.35 -102.95,-225.38 -241.3,-405.89 -399.13,-574.71 -60.2,-64.39 -184.4,-177.9 -254.16,-231.52 88.93,6.2 297.3,104.48 378.5,150.87 220.07,125.7 420.56,298.33 567.63,501.22 58.21,80.31 158.45,237.07 191,342.72 62.81,-15.08 171.35,-153.6 213.87,-236.18 55.17,-107.14 79.26,-236.42 72.54,-380.41 -46.7,-1000.4 -1793.1,-818.22 -1857.66,-756.62z"/>
+          <path class="ffl0" d="M908.33 5330.28l-1.41 999.35 1449.64 0.28c-2,-76.96 -166.68,-386.07 -201.72,-441.69 -91.01,-144.46 -187.49,-261 -295.82,-356.08 -109.45,-96.06 -252.17,-188.71 -413.11,-240.03 -174.03,-55.49 -400.81,-61.85 -537.57,38.17z"/>
+          <path class="ffl0" d="M908.65 3424.73l-2.99 908.85c20.1,-3.89 21.74,-11.21 40.59,-30 89.89,-89.6 210.33,-177.93 315.83,-240.48 274.56,-162.77 638.43,-274.24 960.06,-309.57 166.8,-18.33 422.8,-54.2 590.23,-38.31 -24.89,13.29 -111.58,28.2 -152.81,40.07 -48.39,13.94 -105.58,33.65 -152.35,52.08 -72.65,28.64 -226.01,98.68 -263.84,140.95l282.22 -56.28c100.35,-17.6 195,-28.31 296.59,-38.74 148.31,-15.24 329.26,-9.66 481.55,6.76 47.54,5.13 105.39,18.24 154.19,20.06 -16.76,-73.51 -132.1,-181.83 -167.19,-211.69 -76.12,-64.77 -146.3,-100.57 -245.26,-134.7 -468.76,-161.6 -1251.39,-126.41 -1767.93,-118.66 -111.8,1.68 -260.91,-1.35 -368.89,9.66z"/>
+          <path class="ffl0" d="M2103.02 4423.22c104.56,1.75 233.32,-18.11 345.8,-21.11 253.78,-6.76 601.91,10.18 846.47,75.82 41.2,11.06 108.16,35.39 149.12,41.7 50.39,-58.35 99.35,-237.52 80.56,-322.74 -349.11,-20.6 -764.31,38.62 -1103.59,124.24 -55.44,13.99 -109.4,28.7 -160.46,43.9 -40.44,12.04 -129.33,33.19 -157.89,58.2z"/>
+          <path class="ffl0" d="M998.36 4717.1c128.1,59.57 343.38,32.49 435.46,-153.69 120.03,-242.71 179.03,-215.94 348.65,-242.96 29.17,-4.65 25.79,-8.44 31.52,-15.04 -269.51,-102.19 -476.91,163.85 -619.63,290.24 -130.76,115.81 -163.14,96.48 -196,121.45z"/>
+          <polygon class="ffl1" points="4816.05,6282.34 4011.23,6282.34 4011.23,3410.51 4816.05,3410.51"/>
+          <polygon class="ffl1" points="5156.12,6282.34 5156.12,3410.51 5908.89,3410.51 6554.65,4959.31 7196.74,3410.51 7983.97,3410.51 7983.97,6282.34 7183.55,6282.34 7183.55,4394.18 6408.79,6282.34 6331.83,6282.34 5573.92,4477.74 5573.92,6282.34"/>
+          <path class="ffl2" d="M908.18 6642.7l534.93 0 0 123.23 -380.89 0 0 267.47 298.28 0 0 124.63 -298.28 0 0 292.67 386.5 0 0 126.03 -540.54 0 0 -934.04zm1041.97 0l175.51 0 249.26 934.04 -156.37 0 -58.58 -233.86 -273.07 0 -57.88 233.86 -147.27 0 268.4 -934.04zm179.48 578.35l-106.89 -427.81 -105.73 427.81 212.62 0zm864.82 -123.23l312.28 0 0 485.92 -82.85 0 -20.77 -119.03c-47.38,85.89 -122.3,128.83 -224.76,128.83 -104.09,0 -185.78,-42.24 -244.36,-126.96 -58.81,-84.49 -88.22,-199.31 -88.22,-344.25 0,-152.64 29.17,-273.54 87.29,-362.69 58.35,-89.15 147.5,-133.73 268.17,-133.73 168.04,0 268.4,94.76 301.31,284.5l-140.04 34.78c-16.57,-80.98 -38.74,-133.5 -66.52,-157.3 -28.01,-24.04 -60.92,-35.94 -98.96,-35.94 -125.8,0 -188.81,119.03 -188.81,356.86 0,239.22 64.18,358.72 192.78,358.72 106.66,0 160.11,-82.15 160.11,-246.46l-166.64 0 0 -123.23zm694.45 -455.11l154.04 0 0 803.8 330.48 0 0 130.23 -484.52 0 0 -934.04zm796.91 0l534.93 0 0 123.23 -380.89 0 0 267.47 298.28 0 0 124.63 -298.28 0 0 292.67 386.5 0 0 126.03 -540.54 0 0 -934.04zm1129.96 0l282.64 0c71.19,0 125.33,5.6 162.21,17.04 36.87,11.44 68.15,36.87 93.82,76.32 25.44,39.68 38.28,87.52 38.28,144.24 0,103.63 -46.21,171.78 -138.87,204.69 111.33,35.24 166.88,113.43 166.88,234.56 0,68.85 -21.94,129.06 -66.05,180.18 -43.88,51.35 -128.13,77.02 -252.53,77.02l-286.37 0 0 -934.04zm151.24 387.9l98.02 0c69.08,0 114.59,-12.83 136.53,-38.28 21.94,-25.44 32.91,-58.11 32.91,-98.49 0,-47.38 -12.6,-80.98 -37.81,-101.52 -24.98,-20.31 -63.95,-30.57 -116.46,-30.57l-113.19 0 0 268.87zm0 422.91l124.4 0c114.13,0 171.07,-50.65 171.07,-151.7 0,-39.21 -12.14,-74.45 -36.18,-105.49 -24.27,-31.04 -73.52,-46.68 -147.74,-46.68l-111.56 0 0 303.87zm836.58 -810.8l154.04 0 0 934.04 -154.04 0 0 -934.04zm555.58 0l228.49 0 185.78 673.34 190.45 -673.34 220.09 0 0 934.04 -145.64 0 0 -797.27 -221.26 797.27 -112.03 0 -217.06 -797.96 0 797.96 -128.83 0 0 -934.04z"/>
+        </g>
+      </svg>
+      <p>Eagle BIM, in association with BIMPRO LLC, provides expert BIM modeling, coordination, and consulting services to AEC firms across Texas and the USA.</p>
+    </div>
+    <div class="foot-col">
+      <h4>BIM Services</h4>
+      <ul>
+        <li><a href="architectural-bim-services.html">Architectural BIM Services</a></li>
+        <li><a href="mep-bim-services.html">MEP BIM Services</a></li>
+        <li><a href="#">Structural BIM Services</a></li>
+        <li><a href="bim-coordination-services.html">BIM Coordination Services</a></li>
+        <li><a href="clash-detection-services.html">Clash Detection Services</a></li>
+        <li><a href="cad-to-bim-services.html">CAD to BIM Services</a></li>
+        <li><a href="scan-to-bim-services.html">Scan to BIM Services</a></li>
+        <li><a href="bim-consulting-services.html">BIM Consulting Services</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Our BIM Projects</a></li>
+        <li><a href="#">BIM Resources / Blog</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>Contact</h4>
+      <div class="foot-ci"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.72 11.5 19.79 19.79 0 011.65 2.82 2 2 0 013.62 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 8.6a16 16 0 006.29 6.29l.96-.96a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>+1 (346) 588-2960</div>
+      <div class="foot-ci"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>info@bim-services.us</div>
+      <div class="foot-ci"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>16805 Guido Cv, Pflugerville, TX 78660</div>
+      <div style="margin-top:18px">
+        <div style="font-size:11px;color:rgba(255,255,255,.28);letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px">Serving USA Cities</div>
+        <div style="font-size:12px;color:rgba(255,255,255,.38);line-height:1.85">Houston · Dallas · Austin · NYC<br>Los Angeles · Chicago · Miami<br>Seattle · Denver · Boston</div>
+      </div>
+    </div>
+  </div>
+  <div class="foot-btm">
+    <span>© 2026 Eagle BIM · BIMPRO LLC · BIM Services USA · BIM Company in Texas · All rights reserved.</span>
+    <div class="soc-links">
+      <a href="https://www.facebook.com/EagleBIMservices/" class="soc-link" target="_blank">f</a>
+      <a href="https://www.linkedin.com/company/eagle-bim-services/" class="soc-link" target="_blank">in</a>
+      <a href="https://x.com/eaglebim" class="soc-link" target="_blank">𝕏</a>
+      <a href="https://www.instagram.com/eaglebim/" class="soc-link" target="_blank">ig</a>
+      <a href="https://www.youtube.com/@EagleBIM-USA" class="soc-link" target="_blank">▶</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach((e,i) => {
+      if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),i*70);obs.unobserve(e.target);}
+    });
+  },{threshold:0.07});
+  reveals.forEach(el=>obs.observe(el));
+  window.addEventListener('scroll',()=>{
+    document.getElementById('main-nav').style.boxShadow=window.scrollY>40?'0 4px 24px rgba(104,125,156,.14)':'none';
+  });
+</script>
+</body>
+</html>
