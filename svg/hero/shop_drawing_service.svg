@@ -1,0 +1,251 @@
+<svg width="420" height="480" viewBox="0 0 420 480" xmlns="http://www.w3.org/2000/svg">
+      <style>
+        @keyframes sdA{from{opacity:0}to{opacity:1}}
+        @keyframes sdD{from{stroke-dashoffset:600}to{stroke-dashoffset:0}}
+        @keyframes sdP{from{opacity:0;transform:scale(.8)}to{opacity:1;transform:scale(1)}}
+        @keyframes sdF{from{opacity:0}to{opacity:1}}
+        @keyframes sdSc{0%{transform:translateY(0);opacity:0}4%{opacity:.12}92%{opacity:.06}100%{transform:translateY(460px);opacity:0}}
+        @keyframes sdBl{0%,100%{opacity:1}50%{opacity:0}}
+        .c0{animation:sdA .4s .2s ease both;opacity:0}
+        .c1{animation:sdA .4s .6s ease both;opacity:0}
+        .w1{stroke-dasharray:600;stroke-dashoffset:600;animation:sdD .8s 1.0s ease forwards}
+        .w2{stroke-dasharray:600;stroke-dashoffset:600;animation:sdD .7s 1.5s ease forwards}
+        .w3{stroke-dasharray:600;stroke-dashoffset:600;animation:sdD .6s 2.0s ease forwards}
+        .w4{stroke-dasharray:600;stroke-dashoffset:600;animation:sdD .5s 2.4s ease forwards}
+        .w5{stroke-dasharray:600;stroke-dashoffset:600;animation:sdD .4s 2.7s ease forwards}
+        .d1{animation:sdF .4s 2.9s ease both;opacity:0}
+        .d2{animation:sdF .4s 3.1s ease both;opacity:0}
+        .d3{animation:sdF .4s 3.3s ease both;opacity:0}
+        .t1{animation:sdP .35s 3.0s ease both;opacity:0}
+        .t2{animation:sdP .35s 3.2s ease both;opacity:0}
+        .t3{animation:sdP .35s 3.4s ease both;opacity:0}
+        .t4{animation:sdP .35s 3.5s ease both;opacity:0}
+        .st{animation:sdP .5s 3.8s ease both;opacity:0}
+        .bl{animation:sdBl .9s .4s step-end infinite}
+        .sc{animation:sdSc 6s 1s linear infinite}
+      </style>
+      <defs>
+        <pattern id="gr" width="18" height="18" patternUnits="userSpaceOnUse">
+          <path d="M18 0L0 0 0 18" fill="none" stroke="rgba(104,125,156,.05)" stroke-width=".5"/>
+        </pattern>
+        <pattern id="ht" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+          <line x1="0" y1="0" x2="0" y2="5" stroke="rgba(26,34,51,.2)" stroke-width=".8"/>
+        </pattern>
+      </defs>
+      <rect width="420" height="480" fill="url(#gr)"/>
+
+      <!-- ── SHEET ── -->
+      <g class="c0">
+        <rect x="14" y="14" width="392" height="452" rx="2"
+              fill="rgba(250,249,248,.97)" stroke="rgba(74,96,128,.4)" stroke-width="1.2"/>
+        <!-- Inner drawing border — top 14, left 14, width 392, height 452
+             drawing area: x=26 y=26  width=368  height=360  (bottom at y=386) -->
+        <rect x="26" y="26" width="368" height="360" rx="1"
+              fill="none" stroke="rgba(74,96,128,.22)" stroke-width=".7"/>
+        <!-- View title centred in top margin — y midpoint between 26 and geometry start (y=80) -->
+        <text x="210" y="44" fill="rgba(74,96,128,.48)" font-family="monospace" font-size="8"
+              text-anchor="middle" font-weight="bold" letter-spacing=".09em">BASE PLATE — PLAN VIEW</text>
+        <line x1="26" y1="47" x2="155" y2="47" stroke="rgba(74,96,128,.2)" stroke-width=".6"/>
+        <line x1="265" y1="47" x2="394" y2="47" stroke="rgba(74,96,128,.2)" stroke-width=".6"/>
+        <rect class="bl" x="370" y="28" width="1.5" height="10" fill="rgba(74,96,128,.55)"/>
+      </g>
+
+      <!-- ── TITLE BLOCK (y=386 to y=466) ── -->
+      <g class="c1">
+        <rect x="14" y="386" width="392" height="80"
+              fill="rgba(74,96,128,.065)" stroke="rgba(74,96,128,.25)" stroke-width=".8"/>
+        <!-- col dividers -->
+        <line x1="190" y1="386" x2="190" y2="466" stroke="rgba(74,96,128,.18)" stroke-width=".6"/>
+        <line x1="308" y1="386" x2="308" y2="466" stroke="rgba(74,96,128,.18)" stroke-width=".6"/>
+        <line x1="366" y1="386" x2="366" y2="466" stroke="rgba(74,96,128,.18)" stroke-width=".6"/>
+        <!-- row divider in col 1 -->
+        <line x1="14" y1="410" x2="190" y2="410" stroke="rgba(74,96,128,.13)" stroke-width=".5"/>
+        <!-- Col 1: project + title -->
+        <text x="22" y="399" fill="rgba(74,96,128,.42)" font-family="monospace" font-size="6.5"
+              font-weight="bold" letter-spacing=".05em">PROJECT</text>
+        <text x="22" y="424" fill="rgba(26,34,51,.68)" font-family="monospace" font-size="8.5"
+              font-weight="bold">OFFICE TOWER · HOUSTON TX</text>
+        <text x="22" y="437" fill="rgba(74,96,128,.4)" font-family="monospace" font-size="6.5">Structural Steel Package</text>
+        <text x="22" y="455" fill="rgba(74,96,128,.38)" font-family="monospace" font-size="6.5"
+              font-weight="bold">BASE PLATE — COLUMN BP-01</text>
+        <text x="22" y="464" fill="rgba(74,96,128,.32)" font-family="monospace" font-size="6">Scale 1:10  |  S-BP-01</text>
+        <!-- Col 2: sheet -->
+        <text x="198" y="400" fill="rgba(74,96,128,.4)" font-family="monospace" font-size="6.5">SHEET NO.</text>
+        <text x="198" y="425" fill="rgba(26,34,51,.7)" font-family="monospace" font-size="18"
+              font-weight="bold">S-03</text>
+        <text x="198" y="440" fill="rgba(104,125,156,.35)" font-family="monospace" font-size="6.5">REV B</text>
+        <text x="198" y="458" fill="rgba(74,96,128,.35)" font-family="monospace" font-size="6">Status: For Fabrication</text>
+        <!-- Col 3: Eagle BIM -->
+        <text x="316" y="400" fill="rgba(74,96,128,.38)" font-family="monospace" font-size="6">PREPARED BY</text>
+        <text x="337" y="420" fill="rgba(74,96,128,.6)" font-family="monospace" font-size="8.5"
+              text-anchor="middle" font-weight="bold">EAGLE BIM</text>
+        <text x="337" y="432" fill="rgba(104,125,156,.32)" font-family="monospace" font-size="6"
+              text-anchor="middle">Shop Drawing</text>
+        <text x="337" y="441" fill="rgba(104,125,156,.3)" font-family="monospace" font-size="6"
+              text-anchor="middle">Services · USA</text>
+        <text x="337" y="454" fill="rgba(222,170,87,.5)" font-family="monospace" font-size="6"
+              text-anchor="middle" font-weight="bold">eaglebim.com</text>
+      </g>
+
+      <!-- ── GEOMETRY — drawing area x:26-394, y:26-386, centre 210,206 ──
+           Plate 220×220 → x=100 y=96  w=220 h=220  (bottom y=316)
+           Column 90×90  → x=165 y=161  w=90  h=90   (centre 210,206)
+           Bolts at corners of 176 BCD square → (122,118) (298,118) (122,294) (298,294)
+      -->
+
+      <!-- Plate outline -->
+      <rect class="w1" x="100" y="96" width="220" height="220"
+            fill="rgba(104,125,156,.04)" stroke="rgba(26,34,51,.68)" stroke-width="2.5"
+            stroke-dasharray="600"/>
+
+      <!-- Column section (W-shape simplified) -->
+      <rect class="w2" x="165" y="161" width="90" height="90"
+            fill="rgba(104,125,156,.08)" stroke="rgba(26,34,51,.6)" stroke-width="2"
+            stroke-dasharray="600"/>
+      <!-- Web -->
+      <line class="w2" x1="210" y1="161" x2="210" y2="251"
+            stroke="rgba(26,34,51,.45)" stroke-width="1.4" stroke-dasharray="600"/>
+      <!-- Flange -->
+      <line class="w2" x1="165" y1="206" x2="255" y2="206"
+            stroke="rgba(26,34,51,.45)" stroke-width="1.4" stroke-dasharray="600"/>
+      <!-- Hatch fill -->
+      <rect class="w5" x="165" y="161" width="90" height="90"
+            fill="url(#ht)" stroke="none" stroke-dasharray="600"/>
+
+      <!-- Anchor bolt holes -->
+      <circle class="w3" cx="122" cy="118" r="12"
+              fill="rgba(222,170,87,.07)" stroke="rgba(26,34,51,.55)" stroke-width="1.5"
+              stroke-dasharray="600"/>
+      <circle class="w3" cx="298" cy="118" r="12"
+              fill="rgba(222,170,87,.07)" stroke="rgba(26,34,51,.55)" stroke-width="1.5"
+              stroke-dasharray="600"/>
+      <circle class="w3" cx="122" cy="294" r="12"
+              fill="rgba(222,170,87,.07)" stroke="rgba(26,34,51,.55)" stroke-width="1.5"
+              stroke-dasharray="600"/>
+      <circle class="w3" cx="298" cy="294" r="12"
+              fill="rgba(222,170,87,.07)" stroke="rgba(26,34,51,.55)" stroke-width="1.5"
+              stroke-dasharray="600"/>
+      <!-- Centre marks (only top-right for clarity) -->
+      <line class="w3" x1="115" y1="118" x2="129" y2="118" stroke="rgba(26,34,51,.35)" stroke-width=".7" stroke-dasharray="600"/>
+      <line class="w3" x1="122" y1="111" x2="122" y2="125" stroke="rgba(26,34,51,.35)" stroke-width=".7" stroke-dasharray="600"/>
+      <line class="w3" x1="291" y1="118" x2="305" y2="118" stroke="rgba(26,34,51,.35)" stroke-width=".7" stroke-dasharray="600"/>
+      <line class="w3" x1="298" y1="111" x2="298" y2="125" stroke="rgba(26,34,51,.35)" stroke-width=".7" stroke-dasharray="600"/>
+      <line class="w3" x1="115" y1="294" x2="129" y2="294" stroke="rgba(26,34,51,.35)" stroke-width=".7" stroke-dasharray="600"/>
+      <line class="w3" x1="122" y1="287" x2="122" y2="301" stroke="rgba(26,34,51,.35)" stroke-width=".7" stroke-dasharray="600"/>
+      <line class="w3" x1="291" y1="294" x2="305" y2="294" stroke="rgba(26,34,51,.35)" stroke-width=".7" stroke-dasharray="600"/>
+      <line class="w3" x1="298" y1="287" x2="298" y2="301" stroke="rgba(26,34,51,.35)" stroke-width=".7" stroke-dasharray="600"/>
+
+      <!-- Weld lines — gold dashed, only around column footprint -->
+      <line class="w4" x1="165" y1="161" x2="255" y2="161" stroke="rgba(222,170,87,.65)" stroke-width="1.8" stroke-dasharray="4 3"/>
+      <line class="w4" x1="165" y1="251" x2="255" y2="251" stroke="rgba(222,170,87,.65)" stroke-width="1.8" stroke-dasharray="4 3"/>
+      <line class="w4" x1="165" y1="161" x2="165" y2="251" stroke="rgba(222,170,87,.65)" stroke-width="1.8" stroke-dasharray="4 3"/>
+      <line class="w4" x1="255" y1="161" x2="255" y2="251" stroke="rgba(222,170,87,.65)" stroke-width="1.8" stroke-dasharray="4 3"/>
+
+      <!-- ── DIMENSIONS — outside plate, clear zone ── -->
+
+      <!-- Width dim: below plate (y=330), plate x=100 to x=320 -->
+      <g class="d1">
+        <line x1="100" y1="334" x2="320" y2="334" stroke="rgba(74,96,128,.6)" stroke-width=".9"/>
+        <line x1="100" y1="328" x2="100" y2="340" stroke="rgba(74,96,128,.6)" stroke-width=".9"/>
+        <line x1="320" y1="328" x2="320" y2="340" stroke="rgba(74,96,128,.6)" stroke-width=".9"/>
+        <!-- extension lines -->
+        <line x1="100" y1="316" x2="100" y2="334" stroke="rgba(74,96,128,.2)" stroke-width=".6" stroke-dasharray="3 2"/>
+        <line x1="320" y1="316" x2="320" y2="334" stroke="rgba(74,96,128,.2)" stroke-width=".6" stroke-dasharray="3 2"/>
+        <rect x="172" y="337" width="76" height="14" rx="1"
+              fill="rgba(250,249,248,.97)" stroke="rgba(74,96,128,.15)" stroke-width=".5"/>
+        <text x="210" y="348" fill="rgba(74,96,128,.85)" font-family="monospace" font-size="9"
+              text-anchor="middle" font-weight="bold">220 × 220 PL</text>
+      </g>
+
+      <!-- Bolt spacing dim: below dim 1 (y=360) -->
+      <g class="d2">
+        <line x1="122" y1="360" x2="298" y2="360" stroke="rgba(74,96,128,.5)" stroke-width=".8"/>
+        <line x1="122" y1="354" x2="122" y2="366" stroke="rgba(74,96,128,.5)" stroke-width=".8"/>
+        <line x1="298" y1="354" x2="298" y2="366" stroke="rgba(74,96,128,.5)" stroke-width=".8"/>
+        <line x1="122" y1="306" x2="122" y2="360" stroke="rgba(74,96,128,.18)" stroke-width=".6" stroke-dasharray="3 2"/>
+        <line x1="298" y1="306" x2="298" y2="360" stroke="rgba(74,96,128,.18)" stroke-width=".6" stroke-dasharray="3 2"/>
+        <rect x="179" y="363" width="62" height="13" rx="1"
+              fill="rgba(250,249,248,.97)" stroke="rgba(74,96,128,.12)" stroke-width=".5"/>
+        <text x="210" y="373" fill="rgba(74,96,128,.75)" font-family="monospace" font-size="8.5"
+              text-anchor="middle">176 BCD</text>
+      </g>
+
+      <!-- Height dim: left of plate (x=72), plate y=96 to y=316 -->
+      <g class="d3">
+        <line x1="72" y1="96" x2="72" y2="316" stroke="rgba(74,96,128,.6)" stroke-width=".9"/>
+        <line x1="66" y1="96" x2="78" y2="96" stroke="rgba(74,96,128,.6)" stroke-width=".9"/>
+        <line x1="66" y1="316" x2="78" y2="316" stroke="rgba(74,96,128,.6)" stroke-width=".9"/>
+        <line x1="72" y1="96" x2="100" y2="96" stroke="rgba(74,96,128,.18)" stroke-width=".6" stroke-dasharray="3 2"/>
+        <line x1="72" y1="316" x2="100" y2="316" stroke="rgba(74,96,128,.18)" stroke-width=".6" stroke-dasharray="3 2"/>
+        <rect x="55" y="196" width="34" height="14" rx="1"
+              fill="rgba(250,249,248,.97)" stroke="rgba(74,96,128,.15)" stroke-width=".5"/>
+        <text x="72" y="207" fill="rgba(74,96,128,.85)" font-family="monospace" font-size="9"
+              text-anchor="middle" font-weight="bold" transform="rotate(-90,72,207)">220</text>
+      </g>
+
+      <!-- ── ANNOTATION TAGS — each in its own clear zone, no overlapping ── -->
+
+      <!-- Tag 1: WELD — right side of drawing, pointing left to weld line -->
+      <!-- Leader from right edge of weld line (x=255,y=206) going right to tag at x=340 -->
+      <g class="t1">
+        <line x1="255" y1="206" x2="330" y2="206" stroke="rgba(74,96,128,.35)" stroke-width=".8"/>
+        <circle cx="256" cy="206" r="2" fill="rgba(222,170,87,.7)"/>
+        <rect x="330" y="193" width="52" height="26" rx="2"
+              fill="rgba(222,170,87,.09)" stroke="rgba(222,170,87,.52)" stroke-width=".9"/>
+        <text x="356" y="205" fill="rgba(155,100,25,.85)" font-family="monospace" font-size="7"
+              text-anchor="middle" font-weight="bold">8mm</text>
+        <text x="356" y="215" fill="rgba(155,100,25,.7)" font-family="monospace" font-size="7"
+              text-anchor="middle">FILLET WLD</text>
+      </g>
+
+      <!-- Tag 2: PLATE SPEC — right side, below weld tag -->
+      <g class="t2">
+        <line x1="320" y1="260" x2="330" y2="260" stroke="rgba(74,96,128,.32)" stroke-width=".8"/>
+        <circle cx="320" cy="260" r="2" fill="rgba(74,96,128,.45)"/>
+        <rect x="330" y="248" width="52" height="26" rx="2"
+              fill="none" stroke="rgba(74,96,128,.38)" stroke-width=".8"/>
+        <text x="356" y="260" fill="rgba(74,96,128,.7)" font-family="monospace" font-size="7"
+              text-anchor="middle" font-weight="bold">PL 25 THK</text>
+        <text x="356" y="270" fill="rgba(74,96,128,.55)" font-family="monospace" font-size="7"
+              text-anchor="middle">GRADE 250</text>
+      </g>
+
+      <!-- Tag 3: BOLT — left side, pointing right to TL bolt hole -->
+      <g class="t3">
+        <line x1="110" y1="118" x2="86" y2="118" stroke="rgba(74,96,128,.32)" stroke-width=".8"/>
+        <circle cx="110" cy="118" r="2" fill="rgba(74,96,128,.45)"/>
+        <rect x="30" y="106" width="55" height="26" rx="2"
+              fill="none" stroke="rgba(74,96,128,.35)" stroke-width=".8"/>
+        <text x="57" y="118" fill="rgba(74,96,128,.68)" font-family="monospace" font-size="7"
+              text-anchor="middle" font-weight="bold">M24 HDG</text>
+        <text x="57" y="128" fill="rgba(74,96,128,.52)" font-family="monospace" font-size="7"
+              text-anchor="middle">ANCHOR BOLT</text>
+      </g>
+
+      <!-- Tag 4: Section ref circle — top right, inside drawing border, not overlapping anything -->
+      <g class="t4">
+        <circle cx="370" cy="64" r="13" fill="none" stroke="rgba(74,96,128,.45)" stroke-width="1.2"/>
+        <line x1="357" y1="64" x2="383" y2="64" stroke="rgba(74,96,128,.25)" stroke-width=".6"/>
+        <text x="370" y="61" fill="rgba(74,96,128,.72)" font-family="monospace" font-size="7.5"
+              text-anchor="middle" font-weight="bold">A</text>
+        <text x="370" y="72" fill="rgba(74,96,128,.52)" font-family="monospace" font-size="7"
+              text-anchor="middle">S-04</text>
+      </g>
+
+      <!-- ── SUBMITTAL STAMP — bottom right of drawing area, clear of dims ── -->
+      <g class="st">
+        <rect x="300" y="316" width="88" height="60" rx="3"
+              fill="rgba(0,110,52,.07)" stroke="rgba(0,110,52,.45)" stroke-width="1.2"/>
+        <text x="344" y="333" fill="rgba(0,95,45,.75)" font-family="monospace" font-size="8"
+              text-anchor="middle" font-weight="bold">APPROVED</text>
+        <text x="344" y="344" fill="rgba(0,95,45,.6)" font-family="monospace" font-size="7"
+              text-anchor="middle">FOR FABRICATION</text>
+        <line x1="305" y1="350" x2="383" y2="350" stroke="rgba(0,95,45,.22)" stroke-width=".7"/>
+        <text x="344" y="360" fill="rgba(0,95,45,.48)" font-family="monospace" font-size="6.5"
+              text-anchor="middle">Rev B — 2026-04</text>
+        <text x="344" y="370" fill="rgba(0,95,45,.4)" font-family="monospace" font-size="6.5"
+              text-anchor="middle">EOR Reviewed ✓</text>
+      </g>
+
+      <rect x="14" y="14" width="392" height="1.5" fill="rgba(104,125,156,.12)" class="sc"/>
+    </svg>

@@ -1,0 +1,143 @@
+<svg width="420" height="480" viewBox="0 0 420 480" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="glow"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        <filter id="glow-sm"><feGaussianBlur stdDeviation="1.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <style>
+        /* 3 discipline layers — architectural blue, structural grey, MEP gold */
+        @keyframes slideInLeft{from{opacity:0;transform:translateX(-30px)}to{opacity:1;transform:translateX(0)}}
+        @keyframes slideInRight{from{opacity:0;transform:translateX(30px)}to{opacity:1;transform:translateX(0)}}
+        @keyframes slideInTop{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
+        @keyframes clashPulse{0%,100%{opacity:.9;r:5}50%{opacity:.3;r:8}}
+        @keyframes clashPulse2{0%,100%{opacity:.8;r:4}50%{opacity:.2;r:7}}
+        @keyframes resolvedFade{0%{opacity:0;transform:scale(0)}70%{transform:scale(1.2)}100%{opacity:1;transform:scale(1)}}
+        @keyframes dashFlow{to{stroke-dashoffset:-24}}
+        @keyframes labelAppear{from{opacity:0}to{opacity:1}}
+        @keyframes reportSlide{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+
+        .arch-layer{animation:slideInLeft .9s .2s ease both}
+        .str-layer{animation:slideInRight .9s .4s ease both}
+        .mep-layer{animation:slideInTop .9s .6s ease both}
+        .clash-dot{animation:clashPulse 1.8s 1.4s ease-in-out infinite}
+        .clash-dot2{animation:clashPulse2 1.8s 1.7s ease-in-out infinite}
+        .clash-dot3{animation:clashPulse 1.8s 2.0s ease-in-out infinite}
+        .resolved{animation:resolvedFade .5s 2.2s ease both;opacity:0}
+        .flow-dash{stroke-dasharray:6 4;animation:dashFlow .8s linear infinite}
+        .lbl{animation:labelAppear .4s 1.5s ease both;opacity:0}
+        .report-row{animation:reportSlide .4s ease both;opacity:0}
+        .r1{animation-delay:1.8s}
+        .r2{animation-delay:2.0s}
+        .r3{animation-delay:2.2s}
+        .r4{animation-delay:2.4s}
+      </style>
+
+      <!-- bg grid -->
+      <defs><pattern id="g2" width="22" height="22" patternUnits="userSpaceOnUse"><path d="M22 0L0 0 0 22" fill="none" stroke="rgba(104,125,156,.07)" stroke-width=".5"/></pattern></defs>
+      <rect width="420" height="480" fill="url(#g2)"/>
+
+      <!-- ── ARCHITECTURAL LAYER (blue) ── -->
+      <g class="arch-layer">
+        <!-- Floor plan outline -->
+        <rect x="58" y="120" width="140" height="100" fill="rgba(104,125,156,.06)" stroke="#687d9c" stroke-width="1.5" rx="1"/>
+        <line x1="58" y1="170" x2="198" y2="170" stroke="#687d9c" stroke-width=".8" stroke-dasharray="3 2"/>
+        <line x1="128" y1="120" x2="128" y2="220" stroke="#687d9c" stroke-width=".8" stroke-dasharray="3 2"/>
+        <!-- walls thick -->
+        <rect x="58" y="120" width="140" height="6" fill="rgba(104,125,156,.25)"/>
+        <rect x="58" y="214" width="140" height="6" fill="rgba(104,125,156,.25)"/>
+        <rect x="58" y="120" width="5" height="100" fill="rgba(104,125,156,.25)"/>
+        <rect x="193" y="120" width="5" height="100" fill="rgba(104,125,156,.25)"/>
+        <!-- Label -->
+        <text x="128" y="108" fill="#687d9c" font-family="monospace" font-size="8" font-weight="bold" text-anchor="middle" letter-spacing=".08em" class="lbl">ARCHITECTURAL</text>
+        <circle cx="128" cy="170" r="3" fill="rgba(104,125,156,.3)"/>
+      </g>
+
+      <!-- ── STRUCTURAL LAYER (dark blue, offset) ── -->
+      <g class="str-layer">
+        <!-- Beams -->
+        <rect x="75" y="148" width="160" height="8" fill="rgba(74,96,128,.15)" stroke="#4a6080" stroke-width="1.2"/>
+        <rect x="75" y="195" width="160" height="8" fill="rgba(74,96,128,.15)" stroke="#4a6080" stroke-width="1.2"/>
+        <!-- Columns -->
+        <rect x="75" y="128" width="12" height="90" fill="rgba(74,96,128,.12)" stroke="#4a6080" stroke-width="1"/>
+        <rect x="222" y="128" width="12" height="90" fill="rgba(74,96,128,.12)" stroke="#4a6080" stroke-width="1"/>
+        <!-- Label -->
+        <text x="156" y="238" fill="#4a6080" font-family="monospace" font-size="8" font-weight="bold" text-anchor="middle" letter-spacing=".08em" class="lbl">STRUCTURAL</text>
+      </g>
+
+      <!-- ── MEP LAYER (gold) ── -->
+      <g class="mep-layer">
+        <!-- Duct runs -->
+        <rect x="62" y="155" width="185" height="14" fill="rgba(222,170,87,.12)" stroke="#deaa57" stroke-width="1.3" rx="1"/>
+        <!-- Pipe -->
+        <line x1="62" y1="185" x2="247" y2="185" stroke="#deaa57" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+        <line x1="62" y1="185" x2="247" y2="185" stroke="rgba(222,170,87,.2)" stroke-width="7"/>
+        <!-- Flow arrows in duct -->
+        <line x1="90" y1="162" x2="100" y2="162" stroke="rgba(222,170,87,.6)" stroke-width=".8" class="flow-dash"/>
+        <line x1="140" y1="162" x2="150" y2="162" stroke="rgba(222,170,87,.6)" stroke-width=".8" class="flow-dash"/>
+        <line x1="190" y1="162" x2="200" y2="162" stroke="rgba(222,170,87,.6)" stroke-width=".8" class="flow-dash"/>
+        <!-- Label -->
+        <text x="155" y="86" fill="#c8943d" font-family="monospace" font-size="8" font-weight="bold" text-anchor="middle" letter-spacing=".08em" class="lbl">MEP / HVAC</text>
+      </g>
+
+      <!-- ── CLASH DETECTION ZONE ── -->
+      <!-- Hard clash markers — duct vs beam -->
+      <circle class="clash-dot" cx="87" cy="156" r="5" fill="rgba(220,50,50,.8)" filter="url(#glow)" stroke="white" stroke-width=".8"/>
+      <circle class="clash-dot2" cx="128" cy="156" r="4" fill="rgba(220,80,50,.7)" filter="url(#glow-sm)" stroke="white" stroke-width=".8"/>
+      <circle class="clash-dot3" cx="196" cy="156" r="5" fill="rgba(220,50,50,.8)" filter="url(#glow)" stroke="white" stroke-width=".8"/>
+
+      <!-- Clash labels -->
+      <g class="lbl">
+        <rect x="62" y="264" width="60" height="16" rx="2" fill="rgba(220,50,50,.12)" stroke="rgba(220,50,50,.4)" stroke-width=".8"/>
+        <text x="92" y="275" fill="rgba(220,50,50,.8)" font-family="monospace" font-size="7.5" font-weight="bold" text-anchor="middle">HARD CLASH</text>
+        <rect x="130" y="264" width="68" height="16" rx="2" fill="rgba(222,170,87,.12)" stroke="rgba(222,170,87,.4)" stroke-width=".8"/>
+        <text x="164" y="275" fill="#c8943d" font-family="monospace" font-size="7.5" font-weight="bold" text-anchor="middle">SOFT CLASH</text>
+      </g>
+
+      <!-- ── COORDINATION REPORT PANEL ── -->
+      <rect x="44" y="296" width="200" height="118" rx="4" fill="white" stroke="#e2e6ed" stroke-width="1" class="lbl"/>
+      <!-- Report header -->
+      <rect x="44" y="296" width="200" height="22" rx="4" fill="#687d9c"/>
+      <rect x="44" y="308" width="200" height="10" fill="#687d9c"/>
+      <text x="56" y="311" fill="white" font-family="monospace" font-size="8" font-weight="bold" letter-spacing=".06em">CLASH REPORT — COORDINATION LOG</text>
+
+      <!-- Report rows -->
+      <g class="report-row r1">
+        <rect x="52" y="324" width="6" height="6" rx="1" fill="rgba(220,50,50,.7)"/>
+        <text x="62" y="331" fill="#4a5568" font-family="monospace" font-size="7.5">HARD  Duct vs Beam @ Grid A3</text>
+        <text x="214" y="331" fill="#c8943d" font-family="monospace" font-size="7" text-anchor="end">OPEN</text>
+      </g>
+      <g class="report-row r2">
+        <rect x="52" y="337" width="6" height="6" rx="1" fill="rgba(220,50,50,.7)"/>
+        <text x="62" y="344" fill="#4a5568" font-family="monospace" font-size="7.5">HARD  Pipe vs Column @ L2</text>
+        <text x="214" y="344" fill="#687d9c" font-family="monospace" font-size="7" text-anchor="end">RESOLVED</text>
+      </g>
+      <g class="report-row r3">
+        <rect x="52" y="350" width="6" height="6" rx="1" fill="rgba(222,170,87,.7)"/>
+        <text x="62" y="357" fill="#4a5568" font-family="monospace" font-size="7.5">SOFT  MEP clearance RCP Zone 2</text>
+        <text x="214" y="357" fill="#c8943d" font-family="monospace" font-size="7" text-anchor="end">IN REVIEW</text>
+      </g>
+      <g class="report-row r4">
+        <rect x="52" y="363" width="6" height="6" rx="1" fill="rgba(104,125,156,.5)"/>
+        <text x="62" y="370" fill="#4a5568" font-family="monospace" font-size="7.5">SOFT  Access route clearance B2</text>
+        <text x="214" y="370" fill="#687d9c" font-family="monospace" font-size="7" text-anchor="end">RESOLVED</text>
+      </g>
+
+      <!-- Divider -->
+      <line x1="52" y1="379" x2="236" y2="379" stroke="#e2e6ed" stroke-width=".8" class="lbl"/>
+      <g class="lbl">
+        <text x="56" y="392" fill="#8a94a6" font-family="monospace" font-size="7">Total: 47 clashes  |  Resolved: 44  |  Open: 3</text>
+        <text x="56" y="403" fill="#8a94a6" font-family="monospace" font-size="7">Navisworks NWD · Revizto · PDF Report</text>
+      </g>
+
+      <!-- Resolved checkmark badge -->
+      <g class="resolved">
+        <circle cx="310" cy="170" r="28" fill="rgba(104,125,156,.1)" stroke="#687d9c" stroke-width="1.2"/>
+        <circle cx="310" cy="170" r="22" fill="rgba(104,125,156,.12)" stroke="#687d9c" stroke-width="1"/>
+        <polyline points="298,170 307,179 323,160" fill="none" stroke="#687d9c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="310" y="212" fill="#687d9c" font-family="monospace" font-size="8" font-weight="bold" text-anchor="middle" letter-spacing=".06em">CLASH-FREE</text>
+      </g>
+
+      <!-- Scan line -->
+      <rect x="0" y="0" width="420" height="1.5" fill="rgba(104,125,156,.15)">
+        <animateTransform attributeName="transform" type="translate" from="0,80" to="0,440" dur="5s" repeatCount="indefinite"/>
+      </rect>
+    </svg>
