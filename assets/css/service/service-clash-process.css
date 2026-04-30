@@ -1,0 +1,152 @@
+.eb-clash-process-section {
+    background-color: var(--eb-blue);
+    padding: 88px 52px;
+    position: relative;
+    overflow: hidden;
+}
+
+.eb-clash-process-section::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(222, 170, 87, .1) 0%, transparent 65%);
+    pointer-events: none;
+}
+
+.eb-clash-process-section .section-tag {
+    color: var(--eb-gold-lt);
+}
+
+.eb-clash-process-section .section-tag::before {
+    background: var(--eb-gold);
+}
+
+.eb-clash-process-section h2 {
+    color: var(--eb-white);
+}
+
+.eb-clash-process-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+    margin-top: 52px;
+}
+
+.eb-clash-stages {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.eb-clash-stage {
+    display: flex;
+    gap: 20px;
+    padding: 24px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    align-items: flex-start;
+    transition: padding-left .3s;
+}
+
+.eb-clash-stage:first-child {
+    border-top: 1px solid rgba(255, 255, 255, .1);
+}
+
+.eb-clash-stage:hover {
+    padding-left: 8px;
+}
+
+.eb-clash-stage-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--eb-gold);
+    min-width: 40px;
+    line-height: 1;
+    padding-top: 3px;
+}
+
+.eb-clash-stage-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--eb-white);
+    margin-bottom: 5px;
+}
+
+.eb-clash-stage-text {
+    font-size: 13.5px;
+    color: rgba(255, 255, 255, .55);
+    line-height: 1.72;
+    font-weight: 300;
+}
+
+.eb-clash-types {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.eb-clash-types-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--eb-white);
+    margin-bottom: 16px;
+}
+
+.eb-clash-type {
+    background: rgba(255, 255, 255, .07);
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 6px;
+    padding: 22px 20px;
+    transition: background .25s;
+}
+
+.eb-clash-type:hover {
+    background: rgba(255, 255, 255, .12);
+}
+
+.eb-clash-type-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--eb-gold);
+    margin-bottom: 6px;
+}
+
+.eb-clash-type-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--eb-white);
+    margin-bottom: 6px;
+}
+
+.eb-clash-type-text {
+    font-size: 13px;
+    color: rgba(255, 255, 255, .52);
+    line-height: 1.68;
+    font-weight: 300;
+}
+
+.eb-clash-cta-wrapper {
+    margin-top: 24px;
+}
+
+@media (max-width: 1100px) {
+    .eb-clash-process-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    .eb-clash-process-section {
+        padding: 64px 20px;
+    }
+}

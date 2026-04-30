@@ -1,0 +1,176 @@
+.eb-fmt-lod-section {
+    background-color: var(--eb-white);
+    padding: 88px 52px;
+}
+
+.eb-fmt-lod-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.eb-fmt-lod-section .section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--eb-gold-dk);
+    margin-bottom: 14px;
+}
+
+.eb-fmt-lod-section .section-tag::before {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--eb-gold);
+    border-radius: 2px;
+}
+
+.eb-fmt-lod-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(24px, 2.4vw, 38px);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -.01em;
+    margin-bottom: 14px;
+    color: var(--eb-txt);
+}
+
+.eb-fmt-lod-heading em {
+    font-style: normal;
+    color: var(--eb-blue);
+}
+
+.eb-fmt-lod-desc {
+    color: var(--eb-txt-mid);
+    font-size: 16px;
+    line-height: 1.78;
+    max-width: 580px;
+    font-weight: 300;
+}
+
+/* Formats List */
+.eb-fmt-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 28px;
+}
+
+.eb-fmt-row {
+    display: grid;
+    grid-template-columns: 64px 24px 70px 1fr;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 16px;
+    border: 1px solid var(--eb-bdr);
+    border-radius: 5px;
+    background: var(--eb-off);
+    transition: border-color .2s, background .2s;
+}
+
+.eb-fmt-row:hover {
+    border-color: var(--eb-blue-lt);
+    background: var(--eb-blue-pale);
+}
+
+.eb-fmt-chip {
+    padding: 6px 0;
+    background: var(--eb-blue);
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    border-radius: 3px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.eb-fmt-arrow {
+    color: var(--eb-txt-muted);
+    font-size: 16px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.eb-fmt-chip-out {
+    padding: 6px 0;
+    background: var(--eb-gold);
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    border-radius: 3px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.eb-fmt-desc {
+    font-size: 12.5px;
+    color: var(--eb-txt-muted);
+    line-height: 1.45;
+}
+
+/* LOD Grid */
+.eb-lod-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 28px;
+}
+
+.eb-lod-card {
+    background: var(--eb-white);
+    border: 1px solid var(--eb-bdr);
+    border-radius: 5px;
+    padding: 20px 18px;
+    border-top: 3px solid var(--eb-blue-lt);
+    transition: border-top-color .2s, box-shadow .2s;
+}
+
+.eb-lod-card:hover {
+    border-top-color: var(--eb-blue);
+    box-shadow: var(--eb-sh);
+}
+
+.eb-lod-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--eb-blue);
+    margin-bottom: 3px;
+}
+
+.eb-lod-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--eb-txt);
+    margin-bottom: 5px;
+}
+
+.eb-lod-text {
+    font-size: 12px;
+    color: var(--eb-txt-muted);
+    line-height: 1.6;
+}
+
+@media (max-width: 1100px) {
+    .eb-fmt-lod-layout {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    .eb-fmt-lod-section {
+        padding: 64px 20px;
+    }
+    .eb-lod-grid {
+        grid-template-columns: 1fr;
+    }
+}
