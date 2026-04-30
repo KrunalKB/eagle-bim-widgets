@@ -1,11 +1,11 @@
 .eb-clash-process-section {
     background-color: var(--eb-blue);
-    padding: 88px 52px;
+    /* padding: 88px 52px; */
     position: relative;
     overflow: hidden;
 }
 
-.eb-clash-process-section::before {
+/* .eb-clash-process-section::before {
     content: '';
     position: absolute;
     top: -200px;
@@ -14,18 +14,56 @@
     height: 600px;
     background: radial-gradient(circle, rgba(222, 170, 87, .1) 0%, transparent 65%);
     pointer-events: none;
+} */
+
+.eb-clash-process-header {
+    text-align: left;
+    margin-bottom: 0;
 }
 
 .eb-clash-process-section .section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
     color: var(--eb-gold-lt);
+    margin-bottom: 14px;
 }
 
 .eb-clash-process-section .section-tag::before {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 2px;
     background: var(--eb-gold);
+    border-radius: 2px;
 }
 
-.eb-clash-process-section h2 {
+.eb-clash-process-heading {
+    /* font-family: 'Playfair Display', serif; */
+    font-size: clamp(24px, 2.4vw, 38px);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -.01em;
+    margin-bottom: 14px;
     color: var(--eb-white);
+}
+
+.eb-clash-process-heading em {
+    font-style: normal;
+    color: var(--eb-gold-lt);
+}
+
+.eb-clash-sec-desc p {
+    /* color: rgba(255, 255, 255, .62); */
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    margin-top: 8px;
 }
 
 .eb-clash-process-grid {
@@ -147,6 +185,6 @@
 
 @media (max-width: 768px) {
     .eb-clash-process-section {
-        padding: 64px 20px;
+        /* padding: 64px 20px; */
     }
 }

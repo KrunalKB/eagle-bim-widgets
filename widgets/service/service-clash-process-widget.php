@@ -199,7 +199,7 @@ class Service_Clash_Process_Widget extends \Elementor\Widget_Base {
 				<div class="eb-clash-process-header reveal">
 					<div class="section-tag"><?php echo esc_html( $settings['section_tag'] ); ?></div>
 					<h2 class="eb-clash-process-heading"><?php echo wp_kses_post( $settings['heading'] ); ?></h2>
-					<p class="sec-desc" style="margin: 0 auto;"><?php echo wp_kses_post( $settings['description'] ); ?></p>
+					<div class="eb-clash-sec-desc"><?php echo wp_kses_post( $settings['description'] ); ?></div>
 				</div>
 				<div class="eb-clash-process-grid reveal">
 					<div class="eb-clash-stages">
