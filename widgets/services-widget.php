@@ -208,7 +208,7 @@ class Eagle_BIM_Services_Widget extends \Elementor\Widget_Base {
 				<div>
 					<div class="eb-section-tag"><?php echo esc_html( $settings['section_tag'] ); ?></div>
 					<h2 class="eb-svc-title"><?php echo $section_title; ?></h2>
-					<p class="eb-sec-desc"><?php echo esc_html( $settings['section_desc'] ); ?></p>
+					<p class="eb-svc-desc"><?php echo esc_html( $settings['section_desc'] ); ?></p>
 				</div>
 				<?php if ( $settings['cta_link']['url'] ) : ?>
 					<a href="<?php echo esc_url( $settings['cta_link']['url'] ); ?>" class="eb-btn-blue">

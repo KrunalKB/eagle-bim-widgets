@@ -39,11 +39,11 @@
     color: var(--eb-txt);
 }
 
-.eb-sec-desc {
+.eb-testi-desc {
     color: var(--eb-txt-mid);
     font-size: 16px;
     line-height: 1.78;
-    max-width: 560px;
+    /* max-width: 560px; */
     font-weight: 300;
 }
 

@@ -20,7 +20,7 @@
 .eb-why-header {
     position: relative;
     z-index: 2;
-    max-width: 680px;
+    /* max-width: 680px; */
     margin-bottom: 8px;
 }
 
