@@ -180,7 +180,7 @@ class Eagle_BIM_Tools_Widget extends \Elementor\Widget_Base {
 				<div class="eb-tools-text">
 					<div class="eb-section-tag"><?php echo esc_html( $settings['section_tag'] ); ?></div>
 					<h2 class="eb-tools-title"><?php echo $section_title; ?></h2>
-					<p class="eb-sec-desc"><?php echo esc_html( $settings['section_desc'] ); ?></p>
+					<p class="eb-tool-desc"><?php echo esc_html( $settings['section_desc'] ); ?></p>
 				</div>
 				<?php if ( count( $settings['certs'] ) > 2 ) : ?>
 					<div class="eb-tools-certs">

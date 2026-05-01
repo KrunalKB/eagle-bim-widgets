@@ -47,11 +47,11 @@
     color: var(--eb-blue);
 }
 
-.eb-sec-desc {
+.eb-svc-desc {
     color: var(--eb-txt-mid);
     font-size: 16px;
     line-height: 1.78;
-    max-width: 560px;
+    max-width: 1200px;
     font-weight: 300;
 }
 

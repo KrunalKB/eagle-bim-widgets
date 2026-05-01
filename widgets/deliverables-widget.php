@@ -174,7 +174,7 @@ class Eagle_BIM_Deliverables_Widget extends \Elementor\Widget_Base {
 			<div class="eb-del-header">
 				<div class="eb-section-tag"><?php echo esc_html( $settings['section_tag'] ); ?></div>
 				<h2 class="eb-del-section-title"><?php echo $section_title; ?></h2>
-				<p class="eb-sec-desc"><?php echo esc_html( $settings['section_desc'] ); ?></p>
+				<p class="eb-del-section-desc"><?php echo esc_html( $settings['section_desc'] ); ?></p>
 			</div>
 
 			<div class="eb-del-grid">

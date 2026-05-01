@@ -116,7 +116,7 @@ class Eagle_BIM_Projects_Widget extends \Elementor\Widget_Base {
 			<div class="eb-proj-header">
 				<div class="eb-section-tag"><?php echo esc_html( $settings['section_tag'] ); ?></div>
 				<h2 class="eb-proj-sec-title"><?php echo $section_title; ?></h2>
-				<p class="eb-sec-desc"><?php echo esc_html( $settings['section_desc'] ); ?></p>
+				<p class="eb-proj-desc"><?php echo esc_html( $settings['section_desc'] ); ?></p>
 			</div>
 
 			<div class="eb-proj-grid">

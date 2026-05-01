@@ -126,7 +126,7 @@ class Eagle_BIM_Testimonials_Widget extends \Elementor\Widget_Base {
 			<div class="eb-testi-header">
 				<div class="eb-section-tag"><?php echo esc_html( $settings['section_tag'] ); ?></div>
 				<h2 class="eb-testi-title"><?php echo $section_title; ?></h2>
-				<p class="eb-sec-desc"><?php echo esc_html( $settings['section_desc'] ); ?></p>
+				<p class="eb-testi-desc"><?php echo esc_html( $settings['section_desc'] ); ?></p>
 			</div>
 
 			<div class="eb-testi-grid">
