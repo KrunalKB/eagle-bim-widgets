@@ -101,17 +101,17 @@ function eagle_bim_widgets_init() {
 			require_once __DIR__ . '/widgets/service/service-clash-process-widget.php';
 			$widgets_manager->register( new \Service_Clash_Process_Widget() );      // bim coordination.
 
+			require_once __DIR__ . '/widgets/service/service-transformation-widget.php';
+			$widgets_manager->register( new \Service_Transformation_Widget() );  // cad to bim.
+
+			require_once __DIR__ . '/widgets/service/service-formats-lod-widget.php';
+			$widgets_manager->register( new \Service_Formats_LOD_Widget() );
+
 			require_once __DIR__ . '/widgets/service/service-discipline-detail-widget.php';
 			$widgets_manager->register( new \Service_Discipline_Detail_Widget() );  // mep bim.
 
 			require_once __DIR__ . '/widgets/service/service-model-process-widget.php';
 			$widgets_manager->register( new \Service_Model_Process_Widget() );
-
-			require_once __DIR__ . '/widgets/service/service-transformation-widget.php';
-			$widgets_manager->register( new \Service_Transformation_Widget() );
-
-			require_once __DIR__ . '/widgets/service/service-formats-lod-widget.php';
-			$widgets_manager->register( new \Service_Formats_LOD_Widget() );
 
 			require_once __DIR__ . '/widgets/service/service-produce-widget.php';
 			$widgets_manager->register( new \Service_Produce_Widget() );

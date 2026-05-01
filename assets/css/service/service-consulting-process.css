@@ -17,6 +17,21 @@
     margin-bottom: 14px;
 }
 
+.eb-consult-process-heading {
+    /* font-family: 'Playfair Display', serif; */
+    font-size: clamp(24px, 2.4vw, 38px);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -.01em;
+    margin-bottom: 14px;
+    color: var(--eb-txt);
+}
+
+.eb-consult-process-heading em {
+    color: var(--eb-gold-lt);
+    font-style: normal;
+}
+
 .eb-consult-process-section .section-tag::before {
     content: '';
     display: block;
@@ -28,11 +43,6 @@
 
 .eb-consult-process-section h2 {
     color: var(--eb-white);
-}
-
-.eb-consult-process-heading em {
-    color: var(--eb-gold-lt);
-    font-style: normal;
 }
 
 .eb-consult-process-desc {

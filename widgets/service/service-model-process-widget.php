@@ -142,13 +142,13 @@ class Service_Model_Process_Widget extends \Elementor\Widget_Base {
 	protected function render() {
 		$settings = $this->get_settings_for_display();
 		?>
-		<section class="eb-model-bg">
+		<section class="eb-model-section">
 			<div class="eb-model-layout">
 				<div class="eb-model-content reveal">
 					<div class="section-tag"><?php echo esc_html( $settings['section_tag'] ); ?></div>
 					<h2 class="eb-model-heading"><?php echo wp_kses_post( $settings['heading'] ); ?></h2>
 					<div class="eb-model-desc"><?php echo wp_kses_post( $settings['description'] ); ?></div>
-					<div style="margin-top:28px">
+					<div class="eb-btn-blue" style="margin-top:28px">
 						<a href="<?php echo esc_url( $settings['cta_url']['url'] ); ?>" class="btn-blue" target="<?php echo esc_attr( $settings['cta_url']['is_external'] ? '_blank' : '_self' ); ?>">
 							<?php echo esc_html( $settings['cta_text'] ); ?>
 						</a>

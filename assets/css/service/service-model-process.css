@@ -1,6 +1,6 @@
-.eb-model-bg {
+.eb-model-section {
     background-color: var(--eb-white);
-    padding: 88px 52px;
+    /* padding: 88px 52px; */
 }
 
 .eb-model-layout {
@@ -8,6 +8,51 @@
     grid-template-columns: 1fr 1fr;
     gap: 80px;
     align-items: center;
+}
+
+.eb-model-section .section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--eb-gold-dk);
+    margin-bottom: 14px;
+    justify-content: center;
+}
+
+.eb-model-section .section-tag::before {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--eb-gold);
+    border-radius: 2px;
+}
+
+.eb-model-heading {
+    /* font-family: 'Playfair Display', serif; */
+    font-size: clamp(24px, 2.4vw, 38px);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -.01em;
+    margin-bottom: 14px;
+    color: var(--eb-txt);
+}
+
+.eb-model-heading em {
+    font-style: normal;
+    color: var(--eb-blue);
+}
+
+.eb-model-desc {
+    color: var(--eb-txt-mid);
+    font-size: 16px;
+    line-height: 1.78;
+    max-width: 580px;
+    font-weight: 300;
 }
 
 .eb-model-content {
@@ -37,8 +82,8 @@
 }
 
 .eb-model-num {
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
+    /* font-family: 'Playfair Display', serif; */
+    font-size: 18px;
     font-weight: 800;
     color: var(--eb-blue);
     min-width: 36px;
@@ -47,14 +92,14 @@
 }
 
 .eb-model-title {
-    font-size: 13.5px;
+    font-size: 14px;
     font-weight: 600;
     color: var(--eb-txt);
     margin-bottom: 3px;
 }
 
 .eb-model-text {
-    font-size: 12.5px;
+    font-size: 14px;
     color: var(--eb-txt-muted);
     line-height: 1.6;
 }
@@ -67,7 +112,7 @@
 }
 
 @media (max-width: 768px) {
-    .eb-model-bg {
-        padding: 64px 20px;
+    .eb-model-section {
+        /* padding: 64px 20px; */
     }
 }

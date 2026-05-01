@@ -222,7 +222,7 @@ class Service_Engagement_Models_Widget extends \Elementor\Widget_Base {
 				<div class="eb-engage-header reveal">
 					<div class="section-tag"><?php echo esc_html( $settings['section_tag'] ); ?></div>
 					<h2 class="eb-engage-heading"><?php echo wp_kses_post( $settings['heading'] ); ?></h2>
-					<p class="sec-desc"><?php echo wp_kses_post( $settings['description'] ); ?></p>
+					<div class="eb-engage-sec-desc"><?php echo wp_kses_post( $settings['description'] ); ?></div>
 				</div>
 				<div class="eb-engage-grid reveal">
 					<?php foreach ( $settings['engagement_cards'] as $card ) : ?>

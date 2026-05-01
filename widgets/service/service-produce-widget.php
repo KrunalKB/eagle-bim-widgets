@@ -130,12 +130,15 @@ class Service_Produce_Widget extends \Elementor\Widget_Base {
 						<?php
 						$cta_url_attributes = [];
 						if ( ! empty( $settings['cta_link']['url'] ) ) {
-							$cta_url_attributes = \Elementor\Utils::get_link_attributes( $settings['cta_link'] );
+							$target = $settings['cta_link']['is_external'] ? ' target="_blank"' : '';
+							$nofollow = $settings['cta_link']['nofollow'] ? ' rel="nofollow"' : '';
+							?>
+								<a href="<?php echo esc_url( $settings['cta_link']['url'] ); ?>"<?php echo $target . $nofollow; ?> class="eb-btn-blue">
+									<?php echo esc_html( $settings['cta_text'] ); ?> <span class="btn-arrow">→</span>
+								</a>
+							<?php
 						}
 						?>
-						<a href="<?php echo esc_url( $settings['cta_link']['url'] ); ?>" <?php echo $cta_url_attributes['attributes']; ?> class="btn-blue">
-							<?php echo esc_html( $settings['cta_text'] ); ?> <span class="btn-arrow">→</span>
-						</a>
 					</div>
 				</div>
 

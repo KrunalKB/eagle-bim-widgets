@@ -153,7 +153,7 @@ class Eagle_BIM_Industries_Widget extends \Elementor\Widget_Base {
 				<div>
 					<div class="eb-section-tag"><?php echo esc_html( $settings['section_tag'] ); ?></div>
 					<h2 class="eb-ind-title"><?php echo $section_title; ?></h2>
-					<p class="eb-sec-desc"><?php echo esc_html( $settings['section_desc'] ); ?></p>
+					<p class="eb-ind-sec-desc"><?php echo esc_html( $settings['section_desc'] ); ?></p>
 				</div>
 			</div>
 
@@ -161,9 +161,11 @@ class Eagle_BIM_Industries_Widget extends \Elementor\Widget_Base {
 				<?php if ( ! empty( $settings['industries'] ) ) : ?>
 					<?php foreach ( $settings['industries'] as $industry ) : ?>
 						<div class="eb-ind-card">
-							<div class="eb-ind-icon">
-								<?php echo $industry['ind_icon_svg']; ?>
-							</div>
+							<?php if ( ! empty( $industry['ind_icon_svg'] ) ) : ?>
+								<div class="eb-ind-icon">
+									<?php echo $industry['ind_icon_svg']; ?>
+								</div>
+							<?php endif; ?>
 							<div>
 								<div class="eb-ind-name"><?php echo esc_html( $industry['ind_name'] ); ?></div>
 								<div class="eb-ind-desc"><?php echo esc_html( $industry['ind_desc'] ); ?></div>

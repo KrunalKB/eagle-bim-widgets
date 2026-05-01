@@ -234,9 +234,9 @@ class Service_Deliverables_Widget extends \Elementor\Widget_Base {
 								</div>
 							<?php endforeach; ?>
 						</div>
-						<div class="eb-fmt-row reveal">
+						<div class="eb-del-fmt-row reveal">
 							<?php foreach ( $settings['format_chips'] as $chip ) : ?>
-								<span class="eb-fmt-chip"><?php echo esc_html( $chip['chip_text'] ); ?></span>
+								<span class="eb-sdel-fmt-chip"><?php echo esc_html( $chip['chip_text'] ); ?></span>
 							<?php endforeach; ?>
 						</div>
 					</div>
