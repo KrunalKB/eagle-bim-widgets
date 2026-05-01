@@ -160,13 +160,13 @@ class Service_Transformation_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'cta_link',
 			[
-				'label'   => __( 'CTA Link', 'eagle-bim-widgets' ),
-				'type'    => \Elementor\Controls_Manager::URL,
+				'label'       => __( 'CTA Link', 'eagle-bim-widgets' ),
+				'type'        => \Elementor\Controls_Manager::URL,
 				'placeholder' => __( 'https://your-link.com', 'eagle-bim-widgets' ),
-				'default' => [
-					'url' => 'mailto:info@eaglebim.com',
+				'default'     => [
+					'url'         => 'mailto:info@eaglebim.com',
 					'is_external' => true,
-					'nofollow' => true,
+					'nofollow'    => true,
 				],
 			]
 		);
@@ -217,12 +217,15 @@ class Service_Transformation_Widget extends \Elementor\Widget_Base {
 				<?php
 				$cta_url_attributes = [];
 				if ( ! empty( $settings['cta_link']['url'] ) ) {
-					$cta_url_attributes = \Elementor\Utils::get_link_attributes( $settings['cta_link'] );
+					$target   = $settings['cta_link']['is_external'] ? ' target="_blank"' : '';
+					$nofollow = $settings['cta_link']['nofollow'] ? ' rel="nofollow"' : '';
+					?>
+						<a href="<?php echo esc_url( $settings['cta_link']['url'] ); ?>"<?php echo $target . $nofollow; ?> class="eb-btn-gold">
+							<?php echo esc_html( $settings['cta_text'] ); ?> <span class="btn-arrow">→</span>
+						</a>
+					<?php
 				}
 				?>
-				<a href="<?php echo esc_url( $settings['cta_link']['url'] ); ?>" <?php echo $cta_url_attributes['attributes']; ?> class="btn-gold">
-					<?php echo esc_html( $settings['cta_text'] ); ?> <span class="btn-arrow">→</span>
-				</a>
 			</div>
 		</section>
 		<?php

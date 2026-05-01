@@ -1,6 +1,6 @@
 .eb-produce-section {
     background-color: var(--eb-white);
-    padding: 88px 52px;
+    /* padding: 88px 52px; */
 }
 
 .eb-produce-layout {
@@ -32,7 +32,7 @@
 }
 
 .eb-produce-heading {
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
     font-size: clamp(24px, 2.4vw, 38px);
     font-weight: 800;
     line-height: 1.12;
@@ -47,7 +47,7 @@
 }
 
 .eb-produce-body {
-    font-size: 15.5px;
+    font-size: 16px;
     color: var(--eb-txt-mid);
     line-height: 1.85;
     font-weight: 300;
@@ -83,7 +83,7 @@
 }
 
 .eb-produce-hdr-text {
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 700;
     letter-spacing: .1em;
     text-transform: uppercase;
@@ -109,7 +109,7 @@
 }
 
 .eb-produce-name {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
     color: var(--eb-txt);
 }
@@ -135,6 +135,6 @@
 
 @media (max-width: 768px) {
     .eb-produce-section {
-        padding: 64px 20px;
+        /* padding: 64px 20px; */
     }
 }

@@ -1,6 +1,6 @@
 .eb-fmt-lod-section {
     background-color: var(--eb-white);
-    padding: 88px 52px;
+    /* padding: 88px 52px; */
 }
 
 .eb-fmt-lod-layout {
@@ -32,7 +32,7 @@
 }
 
 .eb-fmt-lod-heading {
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
     font-size: clamp(24px, 2.4vw, 38px);
     font-weight: 800;
     line-height: 1.12;
@@ -111,7 +111,7 @@
 }
 
 .eb-fmt-desc {
-    font-size: 12.5px;
+    font-size: 14px;
     color: var(--eb-txt-muted);
     line-height: 1.45;
 }
@@ -139,7 +139,7 @@
 }
 
 .eb-lod-num {
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
     font-size: 20px;
     font-weight: 800;
     color: var(--eb-blue);
@@ -147,14 +147,14 @@
 }
 
 .eb-lod-title {
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 700;
     color: var(--eb-txt);
     margin-bottom: 5px;
 }
 
 .eb-lod-text {
-    font-size: 12px;
+    font-size: 16px;
     color: var(--eb-txt-muted);
     line-height: 1.6;
 }
@@ -168,7 +168,7 @@
 
 @media (max-width: 768px) {
     .eb-fmt-lod-section {
-        padding: 64px 20px;
+        /* padding: 64px 20px; */
     }
     .eb-lod-grid {
         grid-template-columns: 1fr;

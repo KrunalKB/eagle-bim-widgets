@@ -174,14 +174,13 @@ class Service_Discipline_Detail_Widget extends \Elementor\Widget_Base {
 	protected function render() {
 		$settings = $this->get_settings_for_display();
 		?>
-		<section class="eb-disc-bg">
-			<div class="reveal" style="max-width:700px">
+		<section class="eb-disc-section">
+			<div class="eb-disc-header reveal">
 				<div class="section-tag">
-					<span style="display:inline-block;width:22px;height:2px;background:var(--eb-gold);border-radius:2px;margin-right:8px;vertical-align:middle"></span>
 					<?php echo esc_html( $settings['section_tag'] ); ?>
 				</div>
 				<h2 class="eb-disc-heading"><?php echo wp_kses_post( $settings['heading'] ); ?></h2>
-				<p class="eb-disc-desc"><?php echo wp_kses_post( $settings['description'] ); ?></p>
+				<div class="eb-disc-desc"><?php echo wp_kses_post( $settings['description'] ); ?></div>
 			</div>
 			<div class="eb-disc-cols reveal">
 				<?php

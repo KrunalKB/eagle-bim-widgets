@@ -34,6 +34,29 @@
     border-radius: 2px;
 }
 
+.eb-engage-heading {
+    /* font-family: 'Playfair Display', serif; */
+    font-size: clamp(24px, 2.4vw, 38px);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -.01em;
+    margin-bottom: 14px;
+    color: var(--eb-txt);
+}
+
+.eb-engage-heading em {
+    font-style: normal;
+    color: var(--eb-blue);
+}
+
+.eb-engage-sec-desc {
+    color: var(--eb-txt-mid);
+    font-size: 16px;
+    line-height: 1.78;
+    max-width: 560px;
+    font-weight: 300;
+}
+
 .eb-engage-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

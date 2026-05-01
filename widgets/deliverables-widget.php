@@ -193,7 +193,7 @@ class Eagle_BIM_Deliverables_Widget extends \Elementor\Widget_Base {
 				<div class="eb-formats-list">
 					<?php if ( ! empty( $settings['formats'] ) ) : ?>
 						<?php foreach ( $settings['formats'] as $format ) : ?>
-							<span class="eb-fmt-chip"><?php echo esc_html( $format['format_text'] ); ?></span>
+							<span class="eb-del-fmt-chip"><?php echo esc_html( $format['format_text'] ); ?></span>
 						<?php endforeach; ?>
 					<?php endif; ?>
 				</div>

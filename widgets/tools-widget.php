@@ -182,13 +182,15 @@ class Eagle_BIM_Tools_Widget extends \Elementor\Widget_Base {
 					<h2 class="eb-tools-title"><?php echo $section_title; ?></h2>
 					<p class="eb-sec-desc"><?php echo esc_html( $settings['section_desc'] ); ?></p>
 				</div>
-				<div class="eb-tools-certs">
-					<?php if ( ! empty( $settings['certs'] ) ) : ?>
-						<?php foreach ( $settings['certs'] as $cert ) : ?>
-							<span class="eb-cert-badge"><?php echo esc_html( $cert['cert_text'] ); ?></span>
-						<?php endforeach; ?>
-					<?php endif; ?>
-				</div>
+				<?php if ( count( $settings['certs'] ) > 2 ) : ?>
+					<div class="eb-tools-certs">
+						<?php if ( ! empty( $settings['certs'] ) ) : ?>
+							<?php foreach ( $settings['certs'] as $cert ) : ?>
+								<span class="eb-cert-badge"><?php echo esc_html( $cert['cert_text'] ); ?></span>
+							<?php endforeach; ?>
+						<?php endif; ?>
+					</div>
+				<?php endif; ?>
 			</div>
 
 			<div class="eb-tools-grid">
