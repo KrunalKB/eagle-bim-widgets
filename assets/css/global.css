@@ -53,3 +53,7 @@ h2 em {
     padding-left: clamp(20px, 5vw, 80px) !important;
     padding-right: clamp(20px, 5vw, 80px) !important;
 }
+
+.grecaptcha-badge{
+    z-index: 99;
+}
