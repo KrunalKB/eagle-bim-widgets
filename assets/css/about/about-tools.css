@@ -1,5 +1,5 @@
 .eb-about-tools-section {
-    max-width: 1100px;
+    max-width: 1400px;
     margin: 0 auto;
     /* padding: 96px 52px 0; */
 }
@@ -82,10 +82,10 @@
 }
 
 .eb-about-tool-logo-wrap img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 50px;
+    height: 50px;
     object-fit: contain;
-    border-radius: 8px;
+    border-radius: 4px;
     display: block;
 }
 

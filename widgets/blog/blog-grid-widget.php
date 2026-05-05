@@ -72,7 +72,7 @@ class Eagle_BIM_Blog_Grid_Widget extends \Elementor\Widget_Base {
 						$date      = get_the_date( 'd M Y' );
 						$cat       = get_the_category();
 						$cat_name  = ! empty( $cat ) ? $cat[0]->name : __( 'Blog', 'eagle-bim-widgets' );
-						$img_url   = get_the_post_thumbnail_url( get_the_ID(), 'medium' );
+						$img_url   = get_the_post_thumbnail_url( get_the_ID(), 'full' );
 						?>
 						<a href="<?php echo esc_url( $permalink ); ?>" class="post-card reveal">
 							<div class="post-num"><?php echo sprintf( '%02d', $count ); ?></div>
