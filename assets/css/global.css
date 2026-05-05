@@ -35,6 +35,13 @@
     padding-bottom: clamp(40px, 8vw, 60px) !important;
 }
 
+.bim-blog-container {
+    padding-left: clamp(20px, 5vw, 80px) !important;
+    padding-right: clamp(20px, 5vw, 80px) !important;
+    padding-top: clamp(20px, 8vw, 40px) !important;
+    padding-bottom: clamp(20px, 8vw, 40px) !important;
+}
+
 .bim-container-full {
     padding: 0 !important;
 }
@@ -64,4 +71,13 @@ h2 em {
 
 .grecaptcha-badge {
     z-index: 99;
+}
+
+@media (max-width: 1360px) {
+    /* p {
+        margin-block-end: inherit !important;
+    } */
+    p {
+        margin-bottom: 15px !important;
+    }
 }

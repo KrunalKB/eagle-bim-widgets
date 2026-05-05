@@ -36,6 +36,10 @@
     background: var(--eb-gold-lt);
 }
 
+.eb-final-cta-dark .eb-cta-title em{
+    color: var(--eb-gold-lt);
+}
+
 .eb-final-cta-widget::before {
     content: '';
     position: absolute;
@@ -76,7 +80,7 @@
 
 .eb-cta-title {
     /* font-family: 'Playfair Display', serif; */
-    font-size: clamp(28px, 2.8vw, 44px);
+    font-size: clamp(24px, 2.8vw, 38px);
     font-weight: 800;
     line-height: 1.12;
     letter-spacing: -.01em;

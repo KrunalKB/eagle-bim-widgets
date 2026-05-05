@@ -23,7 +23,7 @@
     color: var(--eb-blue);
 }
 
-.eb-intro-desc {
+.eb-intro-desc p{
     font-size: 16px;
     color: var(--eb-txt-mid);
     line-height: 1.85;
