@@ -4,6 +4,71 @@
     /* font-family: 'DM Sans', sans-serif; */
 }
 
+.eb-process-dark 
+.eb-process-widget {
+    background: var(--eb-dark);
+    position: relative;
+    overflow: hidden;
+}
+
+.eb-process-dark 
+.eb-process-widget::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+    background-size: 44px 44px;
+    pointer-events: none;
+}
+
+.eb-process-dark 
+.eb-process-widget .eb-section-tag {
+    color: var(--eb-gold-lt);
+}
+
+.eb-process-dark 
+.eb-process-widget .eb-section-tag::before {
+    background: var(--eb-gold-lt);
+}
+
+.eb-process-dark 
+.eb-process-widget .eb-process-title {
+    color: white;
+}
+
+.eb-process-dark 
+.eb-process-widget .eb-process-title em {
+    color: var(--eb-gold-lt);
+}
+
+.eb-process-dark 
+.eb-process-widget .eb-process-desc {
+    color: rgba(255, 255, 255, .4);
+}
+
+.eb-process-dark 
+.eb-process-widget .eb-ps-circle {
+    background: transparent;
+    border-color: var(--eb-gold);
+    background: rgba(222,170,87,.1);
+}
+
+.eb-process-dark 
+.eb-process-widget .eb-ps-num {
+    color: var(--eb-gold);
+}
+
+.eb-process-dark 
+.eb-process-widget .eb-ps-title {
+    color: rgba(255, 255, 255, .8);
+}
+
+.eb-process-dark 
+.eb-process-widget .eb-ps-text {
+    color: rgba(255, 255, 255, .38);
+}
+
 .eb-process-header {
     text-align: left;
     margin-bottom: 64px;
@@ -50,7 +115,7 @@
     font-size: 16px;
     line-height: 1.78;
     /* max-width: 560px; */
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .eb-process-steps {
@@ -118,6 +183,7 @@
     font-size: 14px;
     color: var(--eb-txt-muted);
     line-height: 1.65;
+    font-weight: 400;
 }
 
 .eb-process-cta {

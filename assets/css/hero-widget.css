@@ -12,6 +12,52 @@
     /* font-family: 'DM Sans', sans-serif; */
 }
 
+.eb-hero-dark .eb-hero-widget {
+    background: var(--eb-dark, #1a2233);
+}
+
+.eb-hero-dark .eb-hero-widget::before {
+    background-image: linear-gradient(rgba(255, 255, 255, .02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, .02) 1px, transparent 1px);
+}
+
+.eb-hero-dark .eb-hero-widget .eb-breadcrumb {
+    color: rgba(255, 255, 255, .3);
+}
+
+.eb-hero-dark .eb-hero-widget .eb-breadcrumb a {
+    /* color: rgba(255, 255, 255, .5); */
+    color: white;
+}
+
+.eb-hero-dark .eb-hero-widget .eb-breadcrumb span {
+    /* color: rgba(255, 255, 255, .5); */
+    color: white;
+}
+
+.eb-hero-dark .eb-hero-widget .eb-hero-title {
+    color: white;
+}
+
+.eb-hero-dark .eb-hero-widget .eb-hero-title em {
+    color: var(--eb-gold-lt);
+}
+
+.eb-hero-dark .eb-hero-widget .eb-hero-sub {
+    color: rgba(255, 255, 255, .45);
+}
+
+.eb-hero-dark .eb-hero-widget .eb-btn-blue {
+    border-color: rgba(255, 255, 255, .2);
+    color: rgba(255, 255, 255, .65) !important;
+}
+
+.eb-hero-dark .eb-hero-widget .eb-btn-blue:hover {
+    border-color: rgba(222, 170, 87, .5);
+    color: var(--eb-gold-lt) !important;
+    background: transparent;
+}
+
 .eb-hero-widget::before {
     content: '';
     position: absolute;
@@ -46,6 +92,7 @@
 .eb-breadcrumb span {
     opacity: .5;
     color: var(--eb-txt);
+    font-weight: 500;
 }
 
 .eb-hero-content {
@@ -120,7 +167,7 @@
     line-height: 1.78;
     max-width: 490px;
     margin-bottom: 38px;
-    font-weight: 300;
+    font-weight: 400;
     animation: ebFadeUp .7s .2s ease both;
 }
 

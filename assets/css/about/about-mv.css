@@ -1,0 +1,81 @@
+.eb-mv-section {
+    background: var(--eb-dark, #1a2233);
+    /* margin-top: 96px; */
+    /* padding: 80px 52px; */
+    position: relative;
+    overflow: hidden;
+}
+
+.eb-mv-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(rgba(255, 255, 255, .02) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255, 255, 255, .02) 1px, transparent 1px);
+    background-size: 44px 44px;
+}
+
+.eb-mv-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
+    background: rgba(255, 255, 255, .06);
+}
+
+.eb-mv-card {
+    background: rgba(26, 34, 51, .95);
+    padding: 44px 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.eb-mv-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--card-accent, var(--eb-gold));
+}
+
+.eb-mv-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: var(--eb-gold);
+    margin-bottom: 14px;
+}
+
+.eb-mv-card h3 {
+    /* font-family: 'Playfair Display', serif; */
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 14px;
+    line-height: 1.2;
+}
+
+.eb-mv-card p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, .42);
+    line-height: 1.78;
+    font-weight: 400;
+}
+
+@media (max-width: 1100px) {
+    .eb-mv-inner {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 680px) {
+    .eb-mv-section {
+        /* padding: 60px 20px; */
+    }
+}

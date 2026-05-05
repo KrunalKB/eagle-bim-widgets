@@ -115,6 +115,32 @@ function eagle_bim_widgets_init() {
 
 			require_once __DIR__ . '/widgets/service/service-produce-widget.php';
 			$widgets_manager->register( new \Service_Produce_Widget() );
+
+			// about page.
+			require_once __DIR__ . '/widgets/about/about-who-we-are-widget.php';
+			$widgets_manager->register( new \About_Who_We_Are_Widget() );
+
+			require_once __DIR__ . '/widgets/about/about-mv-widget.php';
+			$widgets_manager->register( new \About_MV_Widget() );
+
+			require_once __DIR__ . '/widgets/about/about-why-widget.php';
+			$widgets_manager->register( new \About_Why_Widget() );
+
+			require_once __DIR__ . '/widgets/about/about-tools-widget.php';
+			$widgets_manager->register( new \About_Tools_Widget() );
+
+			// contact page.
+			require_once __DIR__ . '/widgets/contact/contact-hero-widget.php';
+			$widgets_manager->register( new \Contact_Hero_Widget() );
+
+			require_once __DIR__ . '/widgets/contact/contact-form-widget.php';
+			$widgets_manager->register( new \Contact_Form_Widget() );
+
+			require_once __DIR__ . '/widgets/contact/contact-info-strip-widget.php';
+			$widgets_manager->register( new \Contact_Info_Strip_Widget() );
+
+			require_once __DIR__ . '/widgets/contact/contact-bottom-row-widget.php';
+			$widgets_manager->register( new \Contact_Bottom_Row_Widget() );
 		}
 	);
 
@@ -158,11 +184,24 @@ function eagle_bim_widgets_init() {
 			wp_enqueue_style( 'eagle-bim-service-transformation-style', plugins_url( '/assets/css/service/service-transformation-widget.css', __FILE__ ) );
 			wp_enqueue_style( 'eagle-bim-service-formats-lod-style', plugins_url( '/assets/css/service/service-formats-lod-widget.css', __FILE__ ) );
 			wp_enqueue_style( 'eagle-bim-service-produce-style', plugins_url( '/assets/css/service/service-produce-widget.css', __FILE__ ) );
+
+			// about page styles.
+			wp_enqueue_style( 'eagle-bim-about-who-we-are-style', plugins_url( '/assets/css/about/about-who-we-are.css', __FILE__ ) );
+			wp_enqueue_style( 'eagle-bim-about-mv-style', plugins_url( '/assets/css/about/about-mv.css', __FILE__ ) );
+			wp_enqueue_style( 'eagle-bim-about-why-style', plugins_url( '/assets/css/about/about-why.css', __FILE__ ) );
+			wp_enqueue_style( 'eagle-bim-about-tools-style', plugins_url( '/assets/css/about/about-tools.css', __FILE__ ) );
+
+			// contact page styles.
+			wp_enqueue_style( 'eagle-bim-contact-hero-style', plugins_url( '/assets/css/contact/contact-hero.css', __FILE__ ) );
+			wp_enqueue_style( 'eagle-bim-contact-form-style', plugins_url( '/assets/css/contact/contact-form.css', __FILE__ ) );
+			wp_enqueue_style( 'eagle-bim-contact-info-style', plugins_url( '/assets/css/contact/contact-info-strip.css', __FILE__ ) );
+			wp_enqueue_style( 'eagle-bim-contact-bottom-style', plugins_url( '/assets/css/contact/contact-bottom-row.css', __FILE__ ) );
 		}
 	);
 
 	// scripts.
 	wp_enqueue_script( 'eagle-bim-stats-script', plugins_url( '/assets/js/stats-widget.js', __FILE__ ), [], '1.0.0', true );
 	wp_enqueue_script( 'eagle-bim-faq-script', plugins_url( '/assets/js/faqs-widget.js', __FILE__ ), [], '1.0.0', true );
+	wp_enqueue_script( 'eagle-bim-contact-form-script', plugins_url( '/assets/js/contact-form.js', __FILE__ ), [], '1.0.0', true );
 }
 add_action( 'plugins_loaded', 'eagle_bim_widgets_init' );

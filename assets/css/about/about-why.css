@@ -1,0 +1,144 @@
+.eb-about-why-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    /* padding: 96px 52px 0; */
+}
+
+.eb-about-why-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.eb-about-why-section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--eb-gold-dk);
+    margin-bottom: 14px;
+}
+
+.eb-about-why-section-tag::before {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--eb-gold);
+    border-radius: 2px;
+}
+
+.eb-about-why-header h2 {
+    /* font-family: 'Playfair Display', serif; */
+    font-size: clamp(24px, 2.4vw, 38px);
+    font-weight: 800;
+    color: var(--eb-txt);
+    letter-spacing: -.02em;
+    margin-bottom: 14px;
+}
+
+.eb-about-why-header h2 em {
+    font-style: normal;
+    color: var(--eb-blue);
+}
+
+.eb-about-why-header p {
+    font-size: 16px;
+    color: var(--eb-txt-mid);
+    max-width: 560px;
+    margin: 0 auto;
+    line-height: 1.75;
+    font-weight: 300;
+}
+
+.eb-about-why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--eb-bdr);
+}
+
+.eb-about-why-card {
+    background: var(--eb-white);
+    padding: 32px 28px;
+    position: relative;
+    transition: background .2s;
+    border-top: 3px solid transparent;
+}
+
+.eb-about-why-card:hover {
+    background: var(--eb-off);
+    border-top-color: var(--eb-gold);
+}
+
+.eb-about-why-card-num {
+    /* font-family: 'Playfair Display', serif; */
+    font-size: 44px;
+    font-weight: 800;
+    color: var(--eb-bdr);
+    line-height: 1;
+    margin-bottom: 14px;
+    transition: color .2s;
+}
+
+.eb-about-why-card:hover .eb-why-card-num {
+    /* color: var(--eb-gold-pale); */
+}
+
+.eb-about-why-card-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    background: var(--eb-gold-pale);
+    border: 1px solid var(--eb-bdr-gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+}
+
+.eb-about-why-card-icon svg {
+    width: 20px;
+    height: 20px;
+    stroke: var(--eb-gold-dk);
+    fill: none;
+    stroke-width: 1.8;
+}
+
+.eb-about-why-card h4 {
+    /* font-family: 'Playfair Display', serif; */
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--eb-txt);
+    margin-bottom: 10px;
+    line-height: 1.25;
+    transition: color .2s;
+}
+
+.eb-about-why-card:hover h4 {
+    color: var(--eb-blue-dk);
+}
+
+.eb-about-why-card-desc {
+    font-size: 16px;
+    color: var(--eb-txt-mid);
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+@media (max-width: 1100px) {
+    .eb-about-why-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 680px) {
+    .eb-about-why-grid {
+        grid-template-columns: 1fr;
+    }
+    .eb-about-why-section {
+        /* padding: 64px 32px 0; */
+    }
+}

@@ -172,13 +172,13 @@ class Eagle_BIM_Hero_Widget extends \Elementor\Widget_Base {
 		?>
 		<div class="eb-hero-widget">
 			<div class="eb-hero-content">
-				<?php echo do_shortcode('[eb_breadcrumb]'); ?>
+				<?php echo do_shortcode( '[eb_breadcrumb]' ); ?>
 
 				<?php if ( ! empty( $settings['hero_tag'] ) ) : ?>
 					<div class="eb-hero-tag"><?php echo esc_html( $settings['hero_tag'] ); ?></div>
 				<?php endif; ?>
 
-				<h1 class="eb-hero-title"><?php echo $title; ?></h1>
+				<h1 class="eb-hero-title"><?php echo wp_kses_post( $title ); ?></h1>
 
 				<?php if ( ! empty( $settings['hero_sub'] ) ) : ?>
 					<p class="eb-hero-sub"><?php echo esc_html( $settings['hero_sub'] ); ?></p>
@@ -204,13 +204,15 @@ class Eagle_BIM_Hero_Widget extends \Elementor\Widget_Base {
 					<?php endif; ?>
 				</div>
 
-				<div class="eb-hero-badges">
-					<?php if ( ! empty( $settings['badges'] ) ) : ?>
-						<?php foreach ( $settings['badges'] as $badge ) : ?>
-							<span class="eb-badge"><?php echo esc_html( $badge['badge_text'] ); ?></span>
-						<?php endforeach; ?>
-					<?php endif; ?>
-				</div>
+				<?php if ( ! count( $settings['badges'] ) > 2 ) : ?>
+					<div class="eb-hero-badges">
+						<?php if ( ! empty( $settings['badges'] ) ) : ?>
+							<?php foreach ( $settings['badges'] as $badge ) : ?>
+								<span class="eb-badge"><?php echo esc_html( $badge['badge_text'] ); ?></span>
+							<?php endforeach; ?>
+						<?php endif; ?>
+					</div>
+				<?php endif; ?>
 			</div>
 
 			<div class="eb-hero-visual">

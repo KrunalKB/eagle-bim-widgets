@@ -18,6 +18,7 @@
     --eb-bdr-gold: rgba(222, 170, 87, .28);
     --eb-sh: 0 2px 20px rgba(104, 125, 156, .09);
     --eb-sh-md: 0 8px 40px rgba(104, 125, 156, .14);
+    --eb-dark: #1A2233;
 }
 
 .bim-container {
@@ -27,14 +28,14 @@
     padding-bottom: clamp(60px, 8vw, 100px) !important;
 }
 
-.bim-contact-container{
+.bim-contact-container {
     padding-left: clamp(20px, 5vw, 80px) !important;
     padding-right: clamp(20px, 5vw, 80px) !important;
     padding-top: clamp(40px, 8vw, 60px) !important;
     padding-bottom: clamp(40px, 8vw, 60px) !important;
 }
 
-.bim-container-full{
+.bim-container-full {
     padding: 0 !important;
 }
 
@@ -44,23 +45,23 @@ h2 em {
     color: var(--eb-blue);
 }
 
-.container{
+.container {
     width: 100% !important;
     padding: 0 !important;
 }
 
-.container-fullwide{
+.container-fullwide {
     max-width: 100% !important;
     width: 100% !important;
     padding-left: clamp(20px, 5vw, 80px) !important;
     padding-right: clamp(20px, 5vw, 80px) !important;
 }
 
-.tm-container-for-footer{
+.tm-container-for-footer {
     padding-left: clamp(20px, 5vw, 80px) !important;
     padding-right: clamp(20px, 5vw, 80px) !important;
 }
 
-.grecaptcha-badge{
+.grecaptcha-badge {
     z-index: 99;
 }
