@@ -27,6 +27,13 @@
     padding-bottom: clamp(60px, 8vw, 100px) !important;
 }
 
+.bim-contact-container{
+    padding-left: clamp(20px, 5vw, 80px) !important;
+    padding-right: clamp(20px, 5vw, 80px) !important;
+    padding-top: clamp(40px, 8vw, 60px) !important;
+    padding-bottom: clamp(40px, 8vw, 60px) !important;
+}
+
 .bim-container-full{
     padding: 0 !important;
 }

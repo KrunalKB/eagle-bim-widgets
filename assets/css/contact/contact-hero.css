@@ -1,0 +1,110 @@
+.eb-contact-hero {
+    /* padding: 0px 52px 48px; */
+    background-color: var(--eb-dark, #1a2233);
+    position: relative;
+    overflow: hidden;
+}
+
+.eb-contact-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(rgba(255, 255, 255, .018) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, .018) 1px, transparent 1px);
+    background-size: 48px 48px;
+    pointer-events: none;
+}
+
+/* .eb-contact-hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--eb-gold) 0%, var(--eb-gold-lt) 50%, transparent 100%);
+} */
+
+.eb-contact-hero-inner {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.eb-contact-breadcrumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, .3);
+    font-weight: 600;
+}
+
+.eb-contact-breadcrumb a {
+    color: rgba(255, 255, 255, .5);
+    text-decoration: none;
+}
+
+.eb-contact-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--eb-gold-dk);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.eb-contact-eyebrow::before,
+.eb-contact-eyebrow::after {
+    content: '';
+    display: block;
+    width: 28px;
+    height: 2px;
+    background: var(--eb-gold);
+}
+
+.eb-contact-hero-title {
+    /* font-family: 'Playfair Display', serif; */
+    font-size: clamp(32px, 3.5vw, 54px);
+    font-weight: 800;
+    line-height: 1.08 !important;
+    letter-spacing: -.03em;
+    color: var(--eb-white);
+    margin-bottom: 12px;
+}
+
+.eb-contact-hero-title em {
+    font-style: italic;
+    color: var(--eb-gold-lt);
+}
+
+.eb-contact-hero-sub {
+    font-size: 16px;
+    color: rgba(255, 255, 255, .4);
+    /* max-width: 540px; */
+    margin: 0 auto;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+@media (max-width: 1100px) {
+    .eb-contact-hero {
+        /* padding-left: 32px;
+        padding-right: 32px; */
+    }
+}
+
+@media (max-width: 680px) {
+    .eb-contact-hero {
+        /* padding-left: 20px;
+        padding-right: 20px; */
+    }
+}

@@ -1,0 +1,61 @@
+<!-- Row 1: Name & Company -->
+<div class="eb-contact-form-grid">
+    <div class="eb-contact-form-group">
+        <label>First Name <span class="req">*</span></label>
+        [text* first-name placeholder "John"]
+    </div>
+    <div class="eb-contact-form-group">
+        <label>Last Name <span class="req">*</span></label>
+        [text* last-name placeholder "Smith"]
+    </div>
+    <div class="eb-contact-form-group">
+        <label>Company / Firm</label>
+        [text company placeholder "Smith Engineering LLC"]
+    </div>
+</div>
+<!-- Row 2: Contact & Service -->
+<div class="eb-contact-form-grid">
+    <div class="eb-contact-form-group">
+        <label>Work Email <span class="req">*</span></label>
+        [email* email placeholder "john@yourfirm.com"]
+    </div>
+    <div class="eb-contact-form-group">
+        <label>Phone Number <span class="req">*</span></label> 
+        [tel* phone placeholder "+1 (000) 000-0000"]
+    </div>
+    <div class="eb-contact-form-group">
+        <label>Service Needed <span class="req">*</span></label>
+        [select* service-needed include_blank "Structural BIM" "MEP BIM Services" "BIM Coordination" "Clash Detection" "Scan to BIM" "Shop Drawings" "Architectural BIM" "BIM Consulting" "CAD to BIM" "Revit
+Family Creation" "Revit Drafting" "3D Rendering" "Multiple Services" "Other"]
+    </div>
+</div>
+<!-- Row 3: Details & File -->
+<div class="eb-contact-form-grid-2">
+    <div class="eb-contact-form-group">
+        <label>Project Details <span class="req">*</span></label>
+        [textarea* project-details placeholder "Building type, location, scope, LOD required, deadline..."]
+    </div>
+    <div class="eb-contact-form-group">
+        <label>Attach Drawings <span class="eb-contact-file-hint">(optional)</span></label>
+        <div class="eb-contact-file-zone">
+            [file file-attachment limit:25mb filetypes:pdf|dwg|rvt|zip|dxf|docx]
+            <svg class="eb-contact-file-zone-icon" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            <div class="eb-contact-file-zone-text"><em>Click to upload</em> or drag & drop</div>
+            <div class="eb-contact-file-zone-sub">PDF, DWG, RVT, ZIP — up to 25MB</div>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<!-- <div class="eb-contact-form-footer">
+    [submit class:eb-btn-submit "Send Scope — Get 48-Hour Sample"]
+    <p class="eb-contact-form-note">🔒 <strong>No commitment required.</strong> We respond within 1 business day with a project review or a working sample model offer.</p>
+</div> -->
+<!-- Footer -->
+<div class="eb-contact-form-footer eb-contact-form-grid-2">
+    <div class="eb-contact-form-group">
+        [submit class:eb-btn-submit "Send Scope — Get 48-Hour Sample"]
+    </div>
+    <div class="eb-contact-form-group">
+        <p class="eb-contact-form-note">🔒 <strong>No commitment required.</strong> We respond within 1 business day with a project review or a working sample model offer.</p>
+    </div>
+</div>

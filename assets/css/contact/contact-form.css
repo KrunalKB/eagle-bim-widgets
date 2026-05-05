@@ -1,0 +1,378 @@
+.eb-contact-form-section {
+    /* margin-bottom: 40px; */
+}
+
+.eb-contact-form-card {
+    background-color: var(--eb-white);
+    border: 1px solid var(--eb-bdr);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 48px rgba(26, 34, 51, .09);
+}
+
+.eb-contact-form-header {
+    background-color: var(--eb-dark, #1a2233);
+    padding: 32px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.eb-contact-form-header-left h2 {
+    /* font-family: 'Playfair Display', serif; */
+    font-size: clamp(24px, 2.4vw, 38px);
+    font-weight: 800;
+    color: white;
+    margin-bottom: 4px;
+}
+
+.eb-contact-form-header-left p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, .38);
+    font-weight: 400;
+}
+
+.eb-contact-form-badges {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.eb-contact-form-badge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    border: 1px solid rgba(222, 170, 87, .25);
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.eb-contact-badge-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    background: rgba(222, 170, 87, .12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.eb-contact-badge-icon svg {
+    stroke: var(--eb-gold);
+    fill: none;
+    stroke-width: 1.8;
+    width: 18px;
+    height: 18px;
+}
+
+.eb-contact-badge-text strong {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+
+.eb-contact-badge-text span {
+    font-size: 14px;
+    color: rgba(255, 255, 255, .38);
+    font-weight: 400;
+}
+
+.eb-contact-form-body {
+    padding: 36px 40px;
+}
+
+/* CF7 Overrides to match design */
+.eb-contact-form-body .wpcf7-form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Neutralize CF7 auto-p tags, break tags and wrapper spans */
+.eb-contact-form-group p,
+.eb-contact-file-zone p,
+.eb-contact-form-footer p,
+.eb-contact-form-body .wpcf7-form-control-wrap {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: contents !important;
+}
+
+.eb-contact-form-group br,
+.eb-contact-file-zone br {
+    display: none !important;
+}
+
+.eb-contact-form-grid,
+.eb-contact-form-grid-2 {
+    display: grid;
+    gap: 16px 20px;
+    margin-bottom: 16px;
+    align-items: stretch;
+}
+
+.eb-contact-form-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.eb-contact-form-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.eb-contact-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    height: 100%;
+}
+
+.eb-contact-form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--eb-txt);
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-bottom: 8px;
+}
+
+.eb-contact-form-group label .req {
+    color: var(--eb-gold);
+    font-size: 14px;
+    line-height: 1;
+}
+
+/* Target CF7 inputs specifically */
+.eb-contact-form-body .wpcf7-form-control,
+.eb-contact-form-body .wpcf7-text,
+.eb-contact-form-body .wpcf7-select,
+.eb-contact-form-body .wpcf7-textarea,
+.select2-container--default .select2-selection--single {
+    width: 100% !important;
+    padding: 12px 14px !important;
+    border: 1.5px solid var(--eb-bdr) !important;
+    border-radius: 7px !important;
+    font-size: 14px !important;
+    color: var(--eb-txt) !important;
+    background: var(--eb-white) !important;
+    transition: border-color .2s, box-shadow .2s !important;
+    outline: none !important;
+    line-height: 1.4 !important;
+    height: auto !important;
+    box-sizing: border-box !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 1.4 !important;
+    padding-left: 0 !important;
+    color: var(--eb-txt) !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 42px !important;
+}
+
+.select2-container--default .select2-dropdown {
+    border: 1.5px solid var(--eb-bdr) !important;
+    border-radius: 7px !important;
+    box-shadow: 0 8px 24px rgba(26, 34, 51, .1) !important;
+    z-index: 99 !important;
+}
+
+.eb-contact-form-body .wpcf7-form-control:focus {
+    border-color: var(--eb-gold);
+    box-shadow: 0 0 0 3px rgba(222, 170, 87, .1);
+}
+
+.eb-contact-form-body .wpcf7-form-control::placeholder {
+    color: #c0c8d4;
+    font-weight: 300;
+}
+
+.eb-contact-form-body select.wpcf7-select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238a94a6' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 36px;
+}
+
+.eb-contact-form-body textarea.wpcf7-textarea {
+    resize: vertical;
+    min-height: 100px;
+    line-height: 1.6;
+}
+
+.eb-contact-file-zone {
+    border: 1.5px dashed var(--eb-bdr);
+    border-radius: 7px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color .2s, background .2s;
+    position: relative;
+    background: var(--eb-off);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 108px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.eb-contact-file-zone:hover {
+    border-color: var(--eb-gold);
+    background: var(--eb-gold-pale);
+}
+
+.eb-contact-file-zone input {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.eb-contact-file-zone-icon {
+    margin: 0 auto 8px;
+    display: block;
+    stroke: var(--eb-txt-muted);
+    fill: none;
+    stroke-width: 1.6;
+    width: 26px;
+    height: 26px;
+    position: relative;
+    z-index: 1;
+}
+
+.eb-contact-file-zone-text {
+    font-size: 14px;
+    color: var(--eb-txt-mid);
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+}
+
+.eb-contact-file-zone-text em {
+    color: var(--eb-gold-dk);
+    font-style: normal;
+    text-decoration: underline;
+}
+
+.eb-contact-file-zone-sub {
+    font-size: 11px;
+    color: var(--eb-txt-muted);
+    margin-top: 3px;
+    position: relative;
+    z-index: 1;
+}
+
+.eb-contact-file-names {
+    font-size: 11px;
+    color: var(--eb-gold-dk);
+    margin-top: 8px;
+    font-weight: 600;
+    display: none;
+    position: relative;
+    z-index: 1;
+}
+
+.eb-contact-form-footer {
+    /* display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-top: 4px; */
+}
+
+.eb-contact-form-section .eb-contact-form-footer .eb-btn-submit {
+    flex: 1 !important;
+    padding: 15px 28px !important;
+    background: var(--eb-gold) !important;
+    color: #fff !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    letter-spacing: .06em !important;
+    border: none !important;
+    border-radius: 7px !important;
+    cursor: pointer !important;
+    transition: background .2s, transform .15s !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    text-transform: none !important;
+}
+
+.eb-btn-submit:hover {
+    background: var(--eb-gold-dk);
+    transform: translateY(-1px);
+}
+
+.eb-contact-form-group .eb-contact-form-note {
+    display: unset !important;
+    /* flex: 0 0 auto; */
+    font-size: 11px;
+    color: var(--eb-txt-muted);
+    line-height: 1.55;
+    /* max-width: 450px; */
+}
+
+.eb-contact-form-note strong {
+    color: var(--eb-txt-mid);
+    font-weight: 600;
+}
+
+/* CF7 Validation and Response Messages */
+.eb-contact-form-body .wpcf7-not-valid-tip {
+    font-size: 11px;
+    color: var(--eb-red, #e05555);
+    font-weight: 500;
+    margin-top: 4px;
+}
+
+.eb-contact-form-body .wpcf7-response-output {
+    margin: 20px 0 0;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid var(--eb-bdr);
+}
+
+@media (max-width: 1100px) {
+    .eb-contact-form-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 680px) {
+    .eb-contact-form-body {
+        padding: 24px 15px;
+    }
+
+    .eb-contact-form-grid,
+    .eb-contact-form-grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .eb-contact-form-footer {
+        /* flex-direction: column;
+        align-items: stretch;
+        gap: 16px; */
+    }
+
+    .eb-btn-submit {
+        width: 100%;
+        justify-content: center;
+    }
+}
