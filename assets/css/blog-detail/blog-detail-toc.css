@@ -1,0 +1,101 @@
+.eb-toc-box {
+    border: 1px solid var(--eb-bdr);
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--eb-white);
+}
+
+.eb-toc-header {
+    background: var(--eb-dark);
+    padding: 16px 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.eb-toc-header-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: var(--eb-gold-lt);
+}
+
+.eb-toc-header-line {
+    flex: 1;
+    height: 1px;
+    background: rgba(255, 255, 255, .08);
+}
+
+.eb-toc-body {
+    padding: 12px 0;
+}
+
+.eb-toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.eb-toc-list li {
+    display: block;
+}
+
+.eb-toc-list a {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 7px 18px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--eb-txt-mid);
+    text-decoration: none;
+    border-left: 2px solid transparent;
+    transition: color .15s, background .15s, border-color .15s;
+    line-height: 1.45;
+}
+
+.eb-toc-list a:hover {
+    color: var(--eb-blue);
+    background: var(--eb-blue-pale);
+    border-left-color: var(--eb-blue-lt);
+}
+
+.eb-toc-list a.active {
+    color: var(--eb-gold-dk);
+    background: var(--eb-gold-pale);
+    border-left-color: var(--eb-gold);
+    font-weight: 600;
+}
+
+.eb-toc-list .toc-h3 a {
+    padding-left: 30px;
+    font-size: 12px;
+    color: var(--eb-txt-muted);
+    font-weight: 400;
+}
+
+.eb-toc-list .toc-h3 a:hover {
+    color: var(--eb-blue);
+}
+
+.eb-toc-list .toc-h3 a.active {
+    color: var(--eb-gold-dk);
+    background: var(--eb-gold-pale);
+}
+
+.eb-toc-num {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--eb-bdr);
+    flex-shrink: 0;
+    margin-top: 1px;
+    transition: color .15s;
+}
+
+.eb-toc-list a.active .eb-toc-num,
+.eb-toc-list a:hover .eb-toc-num {
+    color: var(--eb-gold);
+}
+
+/* Reading Progress Bar removed */

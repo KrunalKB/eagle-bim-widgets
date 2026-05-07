@@ -1,0 +1,74 @@
+.eb-related-posts {
+    margin-top: 64px;
+    padding-top: 48px;
+    border-top: 1px solid var(--eb-bdr);
+}
+
+.eb-related-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: var(--eb-txt-muted);
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.eb-related-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--eb-bdr);
+}
+
+.eb-related-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.eb-related-card {
+    border: 1px solid var(--eb-bdr);
+    border-radius: 6px;
+    padding: 22px 20px;
+    text-decoration: none;
+    display: block;
+    transition: border-color .2s, background .2s;
+    border-left: 3px solid transparent;
+}
+
+.eb-related-card:hover {
+    border-left-color: var(--eb-gold);
+    background: var(--eb-off);
+    border-color: var(--eb-bdr-gold);
+}
+
+.eb-related-date {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--eb-txt-muted);
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.eb-related-title {
+    /* font-family: 'Playfair Display', serif; */
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--eb-txt);
+    line-height: 1.35;
+    transition: color .2s;
+}
+
+.eb-related-card:hover .eb-related-title {
+    color: var(--eb-blue-dk);
+}
+
+@media (max-width: 1100px) {
+    .eb-related-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,100 @@
+.eb-mobile-toc-container {
+    position: sticky;
+    top: 100px; /* Adjusted for header height */
+    z-index: 100;
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.eb-mobile-toc-trigger {
+    background: var(--eb-dark);
+    color: white;
+    padding: 12px 16px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: background .2s;
+    border-left: 3px solid var(--eb-gold);
+}
+
+.eb-mobile-toc-trigger:hover {
+    background: var(--eb-blue-dk);
+}
+
+.eb-mobile-toc-label {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+.eb-mobile-toc-icon {
+    transition: transform .3s ease;
+}
+
+.eb-mobile-toc-container.is-open .eb-mobile-toc-icon {
+    transform: rotate(180deg);
+}
+
+.eb-mobile-toc-dropdown {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease-out;
+    background: var(--eb-white);
+    border: 1px solid var(--eb-bdr);
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+}
+
+.eb-mobile-toc-container.is-open .eb-mobile-toc-dropdown {
+    max-height: 400px; /* Adjust based on content length */
+    overflow-y: auto;
+}
+
+.eb-mobile-toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.eb-mobile-toc-list li {
+    display: block;
+}
+
+.eb-mobile-toc-list a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    font-size: 14px;
+    color: var(--eb-txt-mid);
+    text-decoration: none;
+    border-bottom: 1px solid var(--eb-bdr);
+    transition: background .2s, color .2s;
+}
+
+.eb-mobile-toc-list a:hover,
+.eb-mobile-toc-list a.active {
+    background: var(--eb-off);
+    color: var(--eb-gold-dk);
+}
+
+.eb-mobile-toc-list .toc-h3 a {
+    padding-left: 30px;
+    font-size: 13px;
+}
+
+.eb-mobile-toc-num {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--eb-bdr);
+}
+
+/* Hide on Desktop */
+@media (min-width: 1100px) {
+    .eb-mobile-toc-container {
+        display: none;
+    }
+}
