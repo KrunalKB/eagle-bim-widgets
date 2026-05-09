@@ -204,7 +204,7 @@ class Eagle_BIM_Hero_Widget extends \Elementor\Widget_Base {
 					<?php endif; ?>
 				</div>
 
-				<?php if ( ! count( $settings['badges'] ) > 2 ) : ?>
+				<?php if ( count( $settings['badges'] ) > 2 ) : ?>
 					<div class="eb-hero-badges">
 						<?php if ( ! empty( $settings['badges'] ) ) : ?>
 							<?php foreach ( $settings['badges'] as $badge ) : ?>

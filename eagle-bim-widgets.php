@@ -92,6 +92,9 @@ function eagle_bim_widgets_init() {
 			require_once __DIR__ . '/widgets/service/service-deliverables-widget.php';
 			$widgets_manager->register( new \Service_Deliverables_Widget() );   // end arch.
 
+			require_once __DIR__ . '/widgets/service/service-deliverables-software-widget.php';
+			$widgets_manager->register( new Service_Deliverables_Software_Widget() );
+
 			require_once __DIR__ . '/widgets/service/service-consulting-process-widget.php';
 			$widgets_manager->register( new \Service_Consulting_Process_Widget() );     // bim cons.
 
@@ -202,6 +205,7 @@ function eagle_bim_widgets_init() {
 			wp_enqueue_style( 'eagle-bim-service-asbuilt-style', plugins_url( '/assets/css/service/service-asbuilt-widget.css', __FILE__ ) );
 			wp_enqueue_style( 'eagle-bim-service-benefits-style', plugins_url( '/assets/css/service/service-benefits-widget.css', __FILE__ ) );
 			wp_enqueue_style( 'eagle-bim-service-deliverables-style', plugins_url( '/assets/css/service/service-deliverables-widget.css', __FILE__ ) );
+			wp_enqueue_style( 'eagle-bim-service-deliverables-software-style', plugins_url( '/assets/css/service/service-deliverables-software.css', __FILE__ ) );
 			// bim cons.
 			wp_enqueue_style( 'eagle-bim-service-consulting-process-style', plugins_url( '/assets/css/service/service-consulting-process.css', __FILE__ ) );
 			wp_enqueue_style( 'eagle-bim-service-engagement-style', plugins_url( '/assets/css/service/service-engagement-models.css', __FILE__ ) );
