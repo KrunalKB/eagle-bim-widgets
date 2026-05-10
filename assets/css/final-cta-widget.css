@@ -80,7 +80,7 @@
 
 .eb-cta-title {
     /* font-family: 'Playfair Display', serif; */
-    font-size: clamp(24px, 2.8vw, 38px);
+    font-size: clamp(24px, 2.4vw, 38px);
     font-weight: 800;
     line-height: 1.12;
     letter-spacing: -.01em;
@@ -92,7 +92,7 @@
     color: var(--eb-white);
     font-size: 16px;
     margin-bottom: 40px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.8;
 }
 
@@ -140,7 +140,7 @@
     border: 1.5px solid rgba(255, 255, 255, 0.25);
     color: rgba(255, 255, 255, 0.7);
     font-weight: 500;
-    font-size: 13px;
+    font-size: 14px;
     letter-spacing: .04em;
     text-decoration: none;
     border-radius: 3px;

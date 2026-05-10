@@ -98,7 +98,7 @@
     font-weight: 700;
     letter-spacing: .2em;
     text-transform: uppercase;
-    color: rgba(222, 170, 87, .6);
+    color: var(--eb-gold-lt);
     margin-bottom: 10px;
 }
 
@@ -111,7 +111,7 @@
     line-height: 1.2;
 }
 
-.eb-contact-process-panel-desc {
+.eb-contact-process-panel-desc p{
     font-size: 14px;
     color: rgba(255, 255, 255, .38);
     line-height: 1.6;

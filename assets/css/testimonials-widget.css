@@ -44,7 +44,7 @@
     font-size: 16px;
     line-height: 1.78;
     /* max-width: 560px; */
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .eb-testi-grid {
@@ -70,9 +70,9 @@
 .eb-testi-card::before {
     content: '\201C';
     position: absolute;
-    top: 20px;
+    top: -5px;
     right: 24px;
-    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Playfair Display', serif;
     font-size: 64px;
     color: var(--eb-gold);
     opacity: .25;
@@ -80,8 +80,8 @@
 }
 
 .eb-testi-quote {
-    /* font-family: 'Playfair Display', serif; */
-    font-size: 15px;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
     font-style: normal;
     color: var(--eb-txt-mid);
     line-height: 1.8;
@@ -100,7 +100,7 @@
 }
 
 .eb-testi-name {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
     color: var(--eb-txt);
     margin-bottom: 3px;
@@ -109,6 +109,7 @@
 .eb-testi-role {
     font-size: 12px;
     color: var(--eb-txt-muted);
+    font-weight: 400;
 }
 
 @media (max-width: 1100px) {

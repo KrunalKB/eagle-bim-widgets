@@ -117,7 +117,7 @@ function eagle_bim_widgets_init() {
 			$widgets_manager->register( new \Service_Model_Process_Widget() );
 
 			require_once __DIR__ . '/widgets/service/service-produce-widget.php';
-			$widgets_manager->register( new \Service_Produce_Widget() );
+			$widgets_manager->register( new \Service_Produce_Widget() );  // revit drafting.
 
 			// about page.
 			require_once __DIR__ . '/widgets/about/about-who-we-are-widget.php';
@@ -180,6 +180,9 @@ function eagle_bim_widgets_init() {
 	add_action(
 		'wp_enqueue_scripts',
 		function () {
+			// Load Google Fonts
+			wp_enqueue_style( 'eagle-bim-fonts', 'https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=Playfair+Display:wght@600;700;800&display=swap', [], null );
+
 			wp_enqueue_style( 'eagle-bim-global-style', plugins_url( '/assets/css/global.css', __FILE__ ) );
 			wp_enqueue_style( 'eagle-bim-hero-style', plugins_url( '/assets/css/hero-widget.css', __FILE__ ) );
 			wp_enqueue_style( 'eagle-bim-stats-style', plugins_url( '/assets/css/stats-widget.css', __FILE__ ) );
@@ -214,8 +217,10 @@ function eagle_bim_widgets_init() {
 			// mep bim.
 			wp_enqueue_style( 'eagle-bim-service-discipline-detail-style', plugins_url( '/assets/css/service/service-discipline-detail.css', __FILE__ ) );
 			wp_enqueue_style( 'eagle-bim-service-model-process-style', plugins_url( '/assets/css/service/service-model-process.css', __FILE__ ) );
+			// cad to bim.
 			wp_enqueue_style( 'eagle-bim-service-transformation-style', plugins_url( '/assets/css/service/service-transformation-widget.css', __FILE__ ) );
 			wp_enqueue_style( 'eagle-bim-service-formats-lod-style', plugins_url( '/assets/css/service/service-formats-lod-widget.css', __FILE__ ) );
+			// revit drafting.
 			wp_enqueue_style( 'eagle-bim-service-produce-style', plugins_url( '/assets/css/service/service-produce-widget.css', __FILE__ ) );
 			// about page styles.
 			wp_enqueue_style( 'eagle-bim-about-who-we-are-style', plugins_url( '/assets/css/about/about-who-we-are.css', __FILE__ ) );

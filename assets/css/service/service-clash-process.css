@@ -57,7 +57,7 @@
     color: var(--eb-gold-lt);
 }
 
-.eb-clash-sec-desc {
+.eb-clash-sec-desc p{
     /* color: rgba(255, 255, 255, .62); */
     color: rgba(255, 255, 255, 0.65);
     font-size: 16px;
@@ -116,10 +116,10 @@
 }
 
 .eb-clash-stage-text {
-    font-size: 13.5px;
+    font-size: 16px;
     color: rgba(255, 255, 255, .55);
     line-height: 1.72;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .eb-clash-types {
@@ -149,7 +149,7 @@
 }
 
 .eb-clash-type-label {
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 700;
     letter-spacing: .14em;
     text-transform: uppercase;
@@ -159,14 +159,14 @@
 
 .eb-clash-type-title {
     font-family: 'Playfair Display', serif;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 700;
     color: var(--eb-white);
     margin-bottom: 6px;
 }
 
 .eb-clash-type-text {
-    font-size: 13px;
+    font-size: 16px;
     color: rgba(255, 255, 255, .52);
     line-height: 1.68;
     font-weight: 300;

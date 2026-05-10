@@ -106,14 +106,14 @@
 }
 
 .eb-value-title {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     color: var(--eb-txt);
     margin-bottom: 3px;
 }
 
 .eb-value-desc {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--eb-txt-muted);
     line-height: 1.58;
     font-weight: 400;
@@ -138,7 +138,7 @@
 }
 
 .eb-intro-mini-num {
-    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Playfair Display', serif;
     font-size: 28px;
     font-weight: 800;
     color: var(--eb-txt);
@@ -152,7 +152,7 @@
 }
 
 .eb-intro-mini-label {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--eb-txt-muted);
     margin-top: 4px;
     font-weight: 400;

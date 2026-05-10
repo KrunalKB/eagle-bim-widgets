@@ -44,7 +44,7 @@
 }
 
 .eb-del-soft-col-title {
-    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Playfair Display', serif;
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 18px;
@@ -100,7 +100,7 @@
 }
 
 .eb-del-soft-row-text {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--eb-txt-muted);
     line-height: 1.6;
     font-weight: 400;
@@ -125,7 +125,7 @@
 }
 
 .eb-del-soft-right-box h3 {
-    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Playfair Display', serif;
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 18px;
@@ -155,7 +155,7 @@
 }
 
 .eb-sw-badge {
-    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Playfair Display', serif;
     width: 50px;
     height: 50px;
     background: var(--eb-blue);
@@ -177,7 +177,7 @@
 }
 
 .eb-sw-desc {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--eb-txt-muted);
     margin-top: 2px;
 }

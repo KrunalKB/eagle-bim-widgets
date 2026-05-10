@@ -50,7 +50,7 @@
     font-size: 16px;
     line-height: 1.78;
     /* max-width: 560px; */
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .eb-del-grid {
@@ -71,7 +71,7 @@
 }
 
 .eb-del-title {
-    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Playfair Display', serif;
     font-size: 17px;
     font-weight: 700;
     color: var(--eb-txt);
@@ -79,9 +79,10 @@
 }
 
 .eb-del-desc {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--eb-txt-muted);
     line-height: 1.75;
+    font-weight: 400;
 }
 
 .eb-del-formats {
@@ -117,7 +118,7 @@
 }
 
 .eb-del-footer {
-    font-size: 13px;
+    font-size: 14px;
     color: var(--eb-txt-muted);
     font-style: italic;
     margin-left: auto;

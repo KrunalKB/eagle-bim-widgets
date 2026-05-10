@@ -60,11 +60,11 @@
     color: var(--eb-gold-lt);
 }
 
-.eb-transform-desc {
+.eb-transform-desc p {
     color: rgba(255, 255, 255, .62);
     font-size: 16px;
     line-height: 1.8;
-    font-weight: 300;
+    font-weight: 400;
     margin-top: 8px;
 }
 
@@ -102,7 +102,7 @@
 }
 
 .eb-transform-col-title {
-    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Playfair Display', serif;
     font-size: 18px;
     font-weight: 700;
     color: white;
@@ -181,10 +181,12 @@
         grid-template-columns: 1fr;
         gap: 20px;
     }
+
     .eb-transform-arrow {
         flex-direction: row;
         gap: 15px;
     }
+
     .eb-arrow-label {
         text-align: left;
     }

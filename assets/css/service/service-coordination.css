@@ -60,7 +60,7 @@
     font-size: 16px;
     color: rgba(255, 255, 255, 0.65);
     line-height: 1.85;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 18px;
 }
 
@@ -121,7 +121,7 @@
 }
 
 .service-coordination .service-coord-pt-title {
-    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Playfair Display', serif;
     font-size: 16px;
     font-weight: 700;
     color: var(--eb-white);
@@ -132,7 +132,7 @@
     font-size: 16px;
     color: rgba(255, 255, 255, 0.55);
     line-height: 1.7;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 /* Responsive */

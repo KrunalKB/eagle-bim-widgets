@@ -69,13 +69,13 @@ class Service_Produce_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'cta_link',
 			[
-				'label'   => __( 'CTA Link', 'eagle-bim-widgets' ),
-				'type'    => \Elementor\Controls_Manager::URL,
+				'label'       => __( 'CTA Link', 'eagle-bim-widgets' ),
+				'type'        => \Elementor\Controls_Manager::URL,
 				'placeholder' => __( 'https://your-link.com', 'eagle-bim-widgets' ),
-				'default' => [
-					'url' => 'mailto:info@eaglebim.com',
+				'default'     => [
+					'url'         => 'mailto:info@eaglebim.com',
 					'is_external' => true,
-					'nofollow' => true,
+					'nofollow'    => true,
 				],
 			]
 		);
@@ -87,29 +87,59 @@ class Service_Produce_Widget extends \Elementor\Widget_Base {
 				'type'    => \Elementor\Controls_Manager::REPEATER,
 				'fields'  => [
 					[
-						'name'  => 'name',
-						'label' => __( 'Drawing Name', 'eagle-bim-widgets' ),
-						'type'  => \Elementor\Controls_Manager::TEXT,
+						'name'    => 'name',
+						'label'   => __( 'Drawing Name', 'eagle-bim-widgets' ),
+						'type'    => \Elementor\Controls_Manager::TEXT,
 						'default' => 'Floor Plans — All Levels',
 					],
 					[
-						'name'  => 'format',
-						'label' => __( 'Format', 'eagle-bim-widgets' ),
-						'type'  => \Elementor\Controls_Manager::TEXT,
+						'name'    => 'format',
+						'label'   => __( 'Format', 'eagle-bim-widgets' ),
+						'type'    => \Elementor\Controls_Manager::TEXT,
 						'default' => 'RVT / PDF',
 					],
 				],
 				'default' => [
-					[ 'name' => 'Floor Plans — All Levels', 'format' => 'RVT / PDF' ],
-					[ 'name' => 'Reflected Ceiling Plans', 'format' => 'RVT / PDF' ],
-					[ 'name' => 'Building Elevations', 'format' => 'RVT / PDF' ],
-					[ 'name' => 'Wall Sections and Details', 'format' => 'RVT / PDF' ],
-					[ 'name' => 'Stair and Lift Sections', 'format' => 'RVT / PDF' ],
-					[ 'name' => 'Structural Framing Plans', 'format' => 'RVT / PDF' ],
-					[ 'name' => 'MEP Plan Sets', 'format' => 'RVT / PDF' ],
-					[ 'name' => 'Room and Finish Schedules', 'format' => 'RVT / XLSX' ],
-					[ 'name' => 'Door and Window Schedules', 'format' => 'RVT / XLSX' ],
-					[ 'name' => 'Full Issued Sheet Sets', 'format' => 'PDF / DWG' ],
+					[
+						'name'   => 'Floor Plans — All Levels',
+						'format' => 'RVT / PDF',
+					],
+					[
+						'name'   => 'Reflected Ceiling Plans',
+						'format' => 'RVT / PDF',
+					],
+					[
+						'name'   => 'Building Elevations',
+						'format' => 'RVT / PDF',
+					],
+					[
+						'name'   => 'Wall Sections and Details',
+						'format' => 'RVT / PDF',
+					],
+					[
+						'name'   => 'Stair and Lift Sections',
+						'format' => 'RVT / PDF',
+					],
+					[
+						'name'   => 'Structural Framing Plans',
+						'format' => 'RVT / PDF',
+					],
+					[
+						'name'   => 'MEP Plan Sets',
+						'format' => 'RVT / PDF',
+					],
+					[
+						'name'   => 'Room and Finish Schedules',
+						'format' => 'RVT / XLSX',
+					],
+					[
+						'name'   => 'Door and Window Schedules',
+						'format' => 'RVT / XLSX',
+					],
+					[
+						'name'   => 'Full Issued Sheet Sets',
+						'format' => 'PDF / DWG',
+					],
 				],
 			]
 		);
@@ -130,7 +160,7 @@ class Service_Produce_Widget extends \Elementor\Widget_Base {
 						<?php
 						$cta_url_attributes = [];
 						if ( ! empty( $settings['cta_link']['url'] ) ) {
-							$target = $settings['cta_link']['is_external'] ? ' target="_blank"' : '';
+							$target   = $settings['cta_link']['is_external'] ? ' target="_blank"' : '';
 							$nofollow = $settings['cta_link']['nofollow'] ? ' rel="nofollow"' : '';
 							?>
 								<a href="<?php echo esc_url( $settings['cta_link']['url'] ); ?>"<?php echo $target . $nofollow; ?> class="eb-btn-blue">

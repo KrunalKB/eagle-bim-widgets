@@ -54,7 +54,7 @@
     font-size: 16px;
     color: var(--eb-txt-mid);
     line-height: 1.85;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 18px;
 }
 
@@ -98,7 +98,7 @@
 }
 
 .service-consulting-intro .service-who-title {
-    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Playfair Display', serif;
     font-size: 16px;
     font-weight: 700;
     color: var(--eb-txt);

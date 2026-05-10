@@ -150,7 +150,7 @@ class Eagle_BIM_FAQs_Widget extends \Elementor\Widget_Base {
 				<div class="eb-faq-intro">
 					<div class="eb-section-tag"><?php echo esc_html( $settings['section_tag'] ); ?></div>
 					<h2 class="eb-faq-title"><?php echo $section_title; ?></h2>
-					<p class="eb-sec-desc"><?php echo wp_kses_post( $settings['section_desc'] ); ?></p>
+					<div class="eb-sec-desc"><?php echo wp_kses_post( $settings['section_desc'] ); ?></div>
 					<div class="eb-faq-cta">
 						<a href="<?php echo esc_url( $settings['cta_link']['url'] ); ?>" class="eb-btn-gold">
 							<?php echo esc_html( $settings['cta_text'] ); ?>

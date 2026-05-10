@@ -74,7 +74,7 @@
 }
 
 .eb-ben-num {
-    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Playfair Display', serif;
     font-size: 36px;
     font-weight: 800;
     color: var(--eb-gold);
@@ -84,15 +84,15 @@
 }
 
 .eb-ben-title {
-    /* font-family: 'Playfair Display', serif; */
-    font-size: 15px;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
     font-weight: 700;
     color: var(--eb-txt);
     margin-bottom: 8px;
 }
 
 .eb-ben-text {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--eb-txt-muted);
     line-height: 1.65;
 }

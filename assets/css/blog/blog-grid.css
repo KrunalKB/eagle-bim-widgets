@@ -27,10 +27,10 @@
 }
 
 .post-num {
-    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Playfair Display', serif;
     font-size: 12px;
     font-weight: 700;
-    color: var(--eb-bdr);
+    color: var(--eb-txt-muted);
     letter-spacing: .05em;
     margin-bottom: 16px;
     transition: color .2s;
@@ -48,7 +48,7 @@
 }
 
 .post-cat {
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 700;
     letter-spacing: .16em;
     text-transform: uppercase;
@@ -62,14 +62,14 @@
 }
 
 .post-date {
-    font-size: 11px;
+    font-size: 12px;
     color: var(--eb-txt-muted);
     font-weight: 500;
     letter-spacing: .04em;
 }
 
 .post-title {
-    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Playfair Display', serif;
     font-size: 18px;
     font-weight: 700;
     color: var(--eb-txt);
@@ -84,7 +84,7 @@
 }
 
 .post-lnk {
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 700;
     color: var(--eb-txt-muted);
     letter-spacing: .08em;
@@ -134,6 +134,7 @@
     .posts-grid {
         grid-template-columns: 1fr 1fr;
     }
+
     .posts-wrap {
         /* padding-left: 32px;
         padding-right: 32px; */
@@ -143,5 +144,10 @@
 @media (max-width: 680px) {
     .posts-grid {
         grid-template-columns: 1fr;
+    }
+
+    .post-card {
+        padding-left: 0;
+        padding-right: 0;
     }
 }

@@ -46,11 +46,11 @@
     color: var(--eb-blue);
 }
 
-.eb-produce-body {
+.eb-produce-body p{
     font-size: 16px;
     color: var(--eb-txt-mid);
     line-height: 1.85;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 18px;
 }
 

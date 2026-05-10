@@ -52,7 +52,7 @@
     font-size: 16px;
     line-height: 1.78;
     max-width: 560px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .eb-faq-cta {
@@ -98,8 +98,8 @@
     justify-content: space-between;
     padding: 20px 0;
     cursor: pointer;
-    /* font-family: 'Playfair Display', serif; */
-    font-size: 15px;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
     font-weight: 600;
     color: var(--eb-txt);
     transition: color .2s;
@@ -121,7 +121,7 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    font-size: 15px;
+    font-size: 16px;
     color: var(--eb-gold-dk);
     transition: transform .3s;
     background: var(--eb-gold-pale);
@@ -135,7 +135,7 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height .35s ease, padding .3s;
-    font-size: 15px;
+    font-size: 16px;
     color: var(--eb-txt-mid);
     line-height: 1.78;
     font-weight: 300;

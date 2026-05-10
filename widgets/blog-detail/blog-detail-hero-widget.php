@@ -55,7 +55,6 @@ class Eagle_BIM_Blog_Detail_Hero_Widget extends \Elementor\Widget_Base {
 		$date     = get_the_date( 'F j, Y', $post_id );
 		$category = get_the_category( $post_id );
 		$cat_name = ! empty( $category ) ? $category[0]->name : __( 'Blog', 'eagle-bim-widgets' );
-		$excerpt  = get_the_excerpt( $post_id );
 		$img_url  = get_the_post_thumbnail_url( $post_id, 'full' );
 
 		?>
@@ -77,18 +76,20 @@ class Eagle_BIM_Blog_Detail_Hero_Widget extends \Elementor\Widget_Base {
 
 				<div class="eb-art-eyebrow">
 					<span class="eb-art-cat-pill"><?php echo esc_html( $cat_name ); ?></span>
-					<span class="eb-art-date"><?php echo esc_html( $date ); ?></span>
-					<span class="eb-art-readtime">
-						<?php
-						$content    = get_post_field( 'post_content', $post_id );
-						$word_count = str_word_count( strip_tags( $content ) );
-						$read_time  = ceil( $word_count / 200 );
-						echo '· ' . $read_time . ' min read';
-						?>
-					</span>
 				</div>
 				<h1><?php echo esc_html( $title ); ?></h1>
-				<p class="eb-art-header-intro"><?php echo esc_html( wp_strip_all_tags( $excerpt ) ); ?></p>
+					<div class="eb-art-meta">
+						<span class="eb-art-date"><?php echo esc_html( $date ); ?></span>
+						<span class="eb-art-readtime">
+							<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+							<?php
+							$content    = get_post_field( "post_content", $post_id );
+							$word_count = str_word_count( strip_tags( $content ) );
+							$read_time  = ceil( $word_count / 200 );
+							echo $read_time . " min read";
+							?>
+						</span>
+					</div>
 			</div>
 			<div class="eb-art-hero-illus">
 				<?php if ( $img_url ) : ?>

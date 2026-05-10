@@ -102,18 +102,32 @@
     border-radius: 2px;
 }
 
-.eb-art-date {
+.eb-art-meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+    color: rgba(255, 255, 255, .4);
     font-size: 14px;
-    color: rgba(255, 255, 255, .35);
+    font-weight: 500;
+}
+
+.eb-art-date {
+    color: rgba(255, 255, 255, .6);
     font-weight: 600;
-    letter-spacing: .05em;
+    letter-spacing: .02em;
 }
 
 .eb-art-readtime {
-    font-size: 14px;
-    color: rgba(255, 255, 255, .25);
-    font-weight: 600;
-    letter-spacing: .03em;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: rgba(255, 255, 255, .35);
+    font-weight: 500;
+}
+
+.eb-art-readtime svg {
+    opacity: .7;
 }
 
 .eb-art-header h1 {

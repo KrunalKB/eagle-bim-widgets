@@ -52,7 +52,7 @@
     font-size: 16px;
     color: var(--eb-txt-mid);
     line-height: 1.85;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 18px;
 }
 
@@ -105,13 +105,14 @@
 }
 
 .eb-asbuilt-label {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     color: var(--eb-txt);
 }
 
 .eb-asbuilt-sub {
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 400;
     color: var(--eb-txt-muted);
 }
 

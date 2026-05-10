@@ -54,7 +54,7 @@
     font-size: 16px;
     line-height: 1.78;
     /* max-width: 560px; */
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .eb-engage-grid {
@@ -80,7 +80,7 @@
 }
 
 .eb-engage-num {
-    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Playfair Display', serif;
     font-size: 32px;
     font-weight: 800;
     line-height: 1;
@@ -89,7 +89,7 @@
 }
 
 .eb-engage-title {
-    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Playfair Display', serif;
     font-size: 16px;
     font-weight: 700;
     color: var(--eb-txt);
@@ -116,7 +116,7 @@
 }
 
 .eb-engage-cta-box h3 {
-    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Playfair Display', serif;
     font-size: 18px;
     font-weight: 700;
     color: var(--eb-white);
@@ -125,7 +125,7 @@
 }
 
 .eb-engage-cta-box p {
-    font-size: 14px;
+    font-size: 16px;
     color: rgba(255, 255, 255, .62);
     line-height: 1.78;
     font-weight: 300;
@@ -186,7 +186,7 @@
 }
 
 .eb-engage-trust-title {
-    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Playfair Display', serif;
     font-size: 16px;
     font-weight: 700;
     color: var(--eb-txt);
@@ -203,7 +203,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 14px;
+    font-size: 16px;
     color: var(--eb-txt-mid);
 }
 

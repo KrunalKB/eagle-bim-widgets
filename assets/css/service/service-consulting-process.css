@@ -45,11 +45,11 @@
     color: var(--eb-white);
 }
 
-.eb-consult-process-desc {
+.eb-consult-process-desc p{
     color: rgba(255, 255, 255, .62);
     font-size: 16px;
     line-height: 1.8;
-    font-weight: 300;
+    font-weight: 400;
     margin-top: 8px
 }
 
@@ -85,7 +85,7 @@
 }
 
 .eb-consult-process-num {
-    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Playfair Display', serif;
     font-size: 34px;
     font-weight: 800;
     color: var(--eb-gold);
@@ -95,7 +95,7 @@
 }
 
 .eb-consult-process-title {
-    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Playfair Display', serif;
     font-size: 16px;
     font-weight: 700;
     color: var(--eb-white);

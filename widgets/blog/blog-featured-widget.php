@@ -83,11 +83,11 @@ class Eagle_BIM_Blog_Featured_Widget extends \Elementor\Widget_Base {
 							<div class="feat-gold-bar"></div>
 						</div>
 						<div class="featured-body">
-							<div class="feat-label">Latest Article · <?php echo esc_html( $date ); ?></div>
+							<div class="feat-label">Latest Article</div>
 							<div class="feat-title"><?php echo esc_html( $title ); ?></div>
 							<p class="feat-excerpt"><?php echo esc_html( $trimmed ); ?></p>
 							<div class="feat-footer">
-								<span class="feat-date"><?php echo esc_html( $cat_name ); ?></span>
+								<span class="feat-date"><?php echo esc_html( $date ); ?></span>
 								<span class="feat-cta">Read Article →</span>
 							</div>
 						</div>

@@ -47,12 +47,12 @@
     color: var(--eb-blue);
 }
 
-.eb-model-desc {
+.eb-model-desc p{
     color: var(--eb-txt-mid);
     font-size: 16px;
     line-height: 1.78;
-    max-width: 580px;
-    font-weight: 300;
+    /* max-width: 580px; */
+    font-weight: 400;
 }
 
 .eb-model-content {
@@ -82,7 +82,7 @@
 }
 
 .eb-model-num {
-    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Playfair Display', serif;
     font-size: 18px;
     font-weight: 800;
     color: var(--eb-blue);
@@ -92,14 +92,14 @@
 }
 
 .eb-model-title {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     color: var(--eb-txt);
     margin-bottom: 3px;
 }
 
 .eb-model-text {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--eb-txt-muted);
     line-height: 1.6;
 }

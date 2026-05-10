@@ -48,7 +48,7 @@
     font-size: 16px;
     line-height: 1.78;
     /* max-width: 580px; */
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .service-core-areas .service-core-grid {
@@ -100,11 +100,11 @@
     margin-bottom: 12px;
 }
 
-.service-core-areas .service-core-text {
+.service-core-areas .service-core-text p{
     font-size: 16px;
     color: var(--eb-txt-mid);
     line-height: 1.78;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 /* Responsive */
