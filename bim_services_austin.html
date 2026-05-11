@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BIM Services Austin TX | Revit Modeling & BIM Coordination | Eagle BIM</title>
+<meta name="description" content="Eagle BIM is based in Pflugerville, TX — in the Austin metro. Delivering BIM services Austin firms depend on: structural BIM, MEP BIM, BIM coordination, and Revit modeling across Austin, Round Rock, Cedar Park, and the wider metro.">
+<meta name="keywords" content="BIM Services Austin, BIM Modeling Services Austin, Revit Services Austin, BIM Company Austin TX, BIM Coordination Austin, Structural BIM Austin, MEP BIM Austin">
+<link rel="canonical" href="https://www.eaglebim.com/bim-services-austin/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blue:#687d9c;--blue-dk:#4a6080;--blue-lt:#8a9db8;
+    --blue-pale:#e8edf4;--blue-xpale:#f3f6fa;
+    --gold:#deaa57;--gold-dk:#c8943d;--gold-lt:#ecc278;--gold-pale:#fdf6e8;
+    --white:#ffffff;--off:#f8f7f5;--cream:#f3f1ec;
+    --txt:#1a2233;--txt-mid:#4a5568;--txt-muted:#8a94a6;
+    --bdr:#e2e6ed;--bdr-gold:rgba(222,170,87,.28);
+    --dark:#1a2233;
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--white);color:var(--txt);font-family:'DM Sans',sans-serif;font-size:16px;line-height:1.6;overflow-x:hidden}
+  nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 52px;height:72px;background:rgba(255,255,255,.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--bdr);transition:box-shadow .3s}
+  .nav-links{display:flex;align-items:center;gap:2px;list-style:none;position:absolute;left:50%;transform:translateX(-50%)}
+  .nav-links a{text-decoration:none;color:var(--txt-mid);font-size:13px;font-weight:500;letter-spacing:.03em;padding:6px 13px;border-radius:4px;transition:color .2s,background .2s;white-space:nowrap}
+  .nav-links a:hover{color:var(--blue);background:var(--blue-pale)}
+  .nav-links a.active{color:var(--gold-dk);font-weight:600}
+  .nav-links .drop>a::after{content:' ↓';font-size:9px;opacity:.55}
+  .nav-cta{display:inline-flex;align-items:center;padding:11px 22px;background:var(--gold);color:#fff!important;font-weight:700!important;font-size:12px!important;letter-spacing:.1em!important;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:background .2s,transform .15s;flex-shrink:0}
+  .nav-cta:hover{background:var(--gold-dk)!important;transform:translateY(-1px)}
+  .hero{min-height:100vh;display:grid;grid-template-columns:55fr 45fr;align-items:center;padding:120px 52px 80px;position:relative;overflow:hidden;gap:40px;background:var(--white)}
+  .breadcrumb{display:flex;align-items:center;gap:8px;margin-bottom:20px;font-size:12px;color:var(--txt-muted)}
+  .breadcrumb a{color:var(--blue);text-decoration:none;font-weight:500}
+  .breadcrumb span{opacity:.5}
+  .hero-tag{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border:1px solid var(--bdr-gold);border-radius:100px;font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-dk);margin-bottom:22px;background:var(--gold-pale);animation:fadeUp .7s ease both}
+  .hero-tag::before{content:'';width:6px;height:6px;background:var(--gold);border-radius:50%;animation:pulse 2s ease infinite}
+  h1{font-family:'Playfair Display',serif;font-size:clamp(30px,3.2vw,50px);font-weight:800;line-height:1.1;letter-spacing:-.01em;margin-bottom:22px;color:var(--txt);animation:fadeUp .7s .1s ease both}
+  h1 em{font-style:normal;color:var(--blue)}
+  .hero-sub{font-size:17px;color:var(--txt-mid);line-height:1.78;max-width:490px;margin-bottom:36px;font-weight:300;animation:fadeUp .7s .2s ease both}
+  .hero-actions{display:flex;flex-direction:column;gap:12px;margin-bottom:32px;animation:fadeUp .7s .3s ease both}
+  .btn-gold{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;background:var(--gold);color:#fff;font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:background .2s,transform .15s,box-shadow .2s;align-self:flex-start}
+  .btn-gold:hover{background:var(--gold-dk);transform:translateY(-2px);box-shadow:0 8px 26px rgba(222,170,87,.35)}
+  .btn-blue{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border:1.5px solid var(--blue);color:var(--blue);font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:background .2s,color .2s,transform .15s;align-self:flex-start}
+  .btn-blue:hover{background:var(--blue);color:#fff;transform:translateY(-2px)}
+  .btn-arrow{transition:transform .2s}
+  .btn-gold:hover .btn-arrow,.btn-blue:hover .btn-arrow{transform:translateX(4px)}
+  .hero-badges{display:flex;flex-wrap:wrap;gap:8px;animation:fadeUp .7s .4s ease both}
+  .badge{padding:5px 12px;border:1px solid var(--bdr);border-radius:100px;font-size:11px;font-weight:500;letter-spacing:.05em;color:var(--blue);background:var(--blue-pale)}
+  .badge-hq{border-color:var(--bdr-gold);color:var(--gold-dk);background:var(--gold-pale)}
+  .hero-visual{display:flex;align-items:center;justify-content:center;animation:fadeUp .7s .2s ease both}
+  .stats-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--bdr);border-top:1px solid var(--bdr);border-bottom:1px solid var(--bdr)}
+  .stat-item{background:var(--white);padding:28px 32px;text-align:center}
+  .stat-num{font-family:'Playfair Display',serif;font-size:36px;font-weight:800;color:var(--blue);line-height:1;display:block;margin-bottom:6px}
+  .stat-sfx{font-size:22px;color:var(--gold)}
+  .stat-lbl{font-size:12px;color:var(--txt-muted);letter-spacing:.08em;text-transform:uppercase;font-weight:600}
+  section{padding:88px 52px}
+  .section-tag{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-dk);margin-bottom:14px}
+  .section-tag::before{content:'';display:block;width:22px;height:2px;background:var(--gold);border-radius:2px}
+  h2{font-family:'Playfair Display',serif;font-size:clamp(24px,2.4vw,38px);font-weight:800;line-height:1.12;letter-spacing:-.01em;margin-bottom:14px;color:var(--txt)}
+  h2 em{font-style:normal;color:var(--blue)}
+  .sec-desc{color:var(--txt-mid);font-size:16px;line-height:1.78;max-width:600px;font-weight:300}
+  .body-text{font-size:15.5px;color:var(--txt-mid);line-height:1.85;font-weight:300;margin-bottom:18px}
+  .body-text:last-child{margin-bottom:0}
+  .body-text strong{color:var(--txt);font-weight:600}
+
+  /* HQ CALLOUT — unique to Austin page */
+  .hq-callout{background:var(--gold-pale);border:1.5px solid var(--bdr-gold);border-radius:8px;padding:20px 24px;margin-top:28px;display:flex;align-items:flex-start;gap:14px}
+  .hq-callout-icon{width:36px;height:36px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:16px}
+  .hq-callout-text{font-size:13.5px;color:var(--txt-mid);line-height:1.7;font-weight:300}
+  .hq-callout-text strong{color:var(--gold-dk);font-weight:700}
+
+  .intro-2col{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+  .disc-list{display:flex;flex-direction:column;border:1px solid var(--bdr);border-radius:6px;overflow:hidden}
+  .disc-item{padding:20px 24px;border-bottom:1px solid var(--bdr);transition:background .2s}
+  .disc-item:last-child{border-bottom:none}
+  .disc-item:hover{background:var(--blue-xpale)}
+  .disc-dot{width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px}
+  .disc-head{display:flex;align-items:flex-start;gap:12px;margin-bottom:6px}
+  .disc-title{font-size:14px;font-weight:700;color:var(--txt)}
+  .disc-text{font-size:13px;color:var(--txt-mid);line-height:1.65;padding-left:20px}
+  .svc-3grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
+  .svc-card{background:var(--white);border:1px solid var(--bdr);border-radius:8px;padding:28px 24px;display:flex;flex-direction:column;text-decoration:none;position:relative;overflow:hidden;transition:border-color .2s,box-shadow .2s,transform .2s}
+  .svc-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .25s}
+  .svc-card:hover{border-color:var(--bdr-gold);box-shadow:0 8px 28px rgba(104,125,156,.1);transform:translateY(-3px)}
+  .svc-card:hover::after{transform:scaleX(1)}
+  .svc-ico{width:42px;height:42px;background:var(--gold-pale);border:1px solid var(--bdr-gold);border-radius:6px;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+  .svc-ico svg{width:19px;height:19px;stroke:var(--gold-dk);fill:none;stroke-width:1.5}
+  .svc-title{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--txt);margin-bottom:8px;line-height:1.3}
+  .svc-text{font-size:13px;color:var(--txt-mid);line-height:1.68;font-weight:300;flex:1}
+  .svc-lnk{margin-top:14px;font-size:11px;font-weight:700;color:var(--gold-dk);letter-spacing:.06em;text-transform:uppercase}
+  .proj-bg{background:var(--dark);padding:88px 52px}
+  .proj-head{text-align:center;margin-bottom:52px}
+  .proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.07);border-radius:8px;overflow:hidden}
+  .pcard{background:rgba(255,255,255,.03);padding:36px 30px;transition:background .2s;position:relative}
+  .pcard:hover{background:rgba(255,255,255,.07)}
+  .pcard-icon{width:48px;height:48px;background:rgba(222,170,87,.1);border:1px solid rgba(222,170,87,.2);border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+  .pcard-icon svg{width:22px;height:22px;stroke:var(--gold-lt);fill:none;stroke-width:1.5}
+  .pcard-label{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+  .pcard-title{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:white;margin-bottom:12px;line-height:1.25}
+  .pcard-desc{font-size:13px;color:rgba(255,255,255,.45);line-height:1.72}
+  .pcard-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:18px}
+  .ptag{font-size:10px;font-weight:600;letter-spacing:.05em;padding:3px 9px;border-radius:100px;border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.4)}
+  .metro-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px}
+  .mc{background:var(--white);border:1px solid var(--bdr);border-radius:8px;padding:20px 18px;transition:border-color .2s,box-shadow .2s,transform .2s}
+  .mc:hover{border-color:var(--gold);box-shadow:0 4px 18px rgba(104,125,156,.1);transform:translateY(-2px)}
+  .mc.mc-hq{border-color:rgba(222,170,87,.4);background:var(--gold-pale)}
+  .mc-county{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-dk);margin-bottom:4px}
+  .mc-city{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--txt);margin-bottom:6px}
+  .mc-areas{font-size:12px;color:var(--txt-muted);line-height:1.6}
+  .mc-hq-badge{display:inline-block;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-dk);background:white;border:1px solid var(--bdr-gold);padding:2px 7px;border-radius:100px;margin-bottom:6px}
+  .ben-2col{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--bdr);border:1px solid var(--bdr);border-radius:6px;overflow:hidden;margin-top:52px}
+  .ben-card{background:var(--white);padding:40px 36px;transition:background .2s}
+  .ben-card:hover{background:var(--gold-pale)}
+  .bt-gold{border-top:3px solid var(--gold)}
+  .bt-blue{border-top:3px solid var(--blue)}
+  .bb{border-bottom:1px solid var(--bdr)}
+  .ben-icon{width:48px;height:48px;border-radius:6px;display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+  .ben-icon svg{width:22px;height:22px;fill:none;stroke-width:1.5}
+  .ben-title{font-family:'Playfair Display',serif;font-size:19px;font-weight:800;color:var(--txt);margin-bottom:10px}
+  .ben-text{font-size:14px;color:var(--txt-mid);line-height:1.82;font-weight:300}
+  .ben-text strong{color:var(--txt);font-weight:600}
+  .ind-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px}
+  .ind-card{background:var(--white);border:1px solid var(--bdr);border-radius:8px;padding:22px 18px;transition:border-color .2s,box-shadow .2s,transform .2s}
+  .ind-card:hover{border-color:var(--blue-lt);box-shadow:0 4px 18px rgba(104,125,156,.09);transform:translateY(-2px)}
+  .ind-name{font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--txt);margin-bottom:6px}
+  .ind-desc{font-size:12.5px;color:var(--txt-muted);line-height:1.65}
+  .faq-list{margin-top:44px;border:1px solid var(--bdr);border-radius:8px;overflow:hidden}
+  .faq-item{border-bottom:1px solid var(--bdr)}
+  .faq-item:last-child{border-bottom:none}
+  .faq-btn{width:100%;background:none;border:none;padding:22px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px;cursor:pointer;text-align:left;transition:background .18s}
+  .faq-btn:hover,.faq-btn.open{background:var(--blue-xpale)}
+  .faq-question{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--txt);line-height:1.35}
+  .faq-icon{width:28px;height:28px;border:1.5px solid var(--bdr);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .18s,border-color .18s,transform .25s;color:var(--txt-muted);font-size:16px}
+  .faq-btn.open .faq-icon{background:var(--gold);border-color:var(--gold);color:white;transform:rotate(45deg)}
+  .faq-body{max-height:0;overflow:hidden;transition:max-height .35s ease}
+  .faq-body.open{max-height:300px}
+  .faq-answer{padding:0 28px 22px;font-size:14px;color:var(--txt-mid);line-height:1.82;font-weight:300}
+  .faq-answer strong{color:var(--txt);font-weight:600}
+  .related-bg{background:var(--off);padding:88px 52px}
+  .related-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px}
+  .rel-card{background:var(--white);border:1px solid var(--bdr);border-radius:8px;padding:24px 20px;text-decoration:none;display:block;transition:border-color .2s,box-shadow .2s,transform .2s}
+  .rel-card:hover{border-color:var(--blue-lt);box-shadow:0 4px 18px rgba(104,125,156,.1);transform:translateY(-2px)}
+  .rel-icon{width:38px;height:38px;background:var(--blue-pale);border-radius:6px;display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+  .rel-icon svg{width:18px;height:18px;stroke:var(--blue);fill:none;stroke-width:1.5}
+  .rel-title{font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--txt);margin-bottom:8px}
+  .rel-desc{font-size:12.5px;color:var(--txt-mid);line-height:1.65;font-weight:300}
+  .cta-final{background:#243044;padding:88px 52px;text-align:center;position:relative;overflow:hidden;border-bottom:1px solid rgba(255,255,255,.06)}
+  .cta-final::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.02) 1px,transparent 1px);background-size:52px 52px}
+  .cta-final::after{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:300px;background:radial-gradient(ellipse,rgba(222,170,87,.07) 0%,transparent 65%);pointer-events:none}
+  .cta-inner{position:relative;z-index:2;max-width:640px;margin:0 auto}
+  .cta-inner .section-tag{justify-content:center;color:var(--gold-lt)}
+  .cta-inner .section-tag::before{background:var(--gold)}
+  .cta-inner h2{color:white}
+  .cta-inner h2 em{color:var(--gold-lt)}
+  .cta-inner p{font-size:16px;color:rgba(255,255,255,.52);line-height:1.8;margin-bottom:36px;font-weight:300}
+  .cta-acts{display:flex;flex-direction:column;align-items:center;gap:14px}
+  .cta-btn-primary{display:inline-flex;align-items:center;padding:16px 36px;background:var(--gold);color:#fff;font-weight:700;font-size:13px;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:background .2s,transform .15s}
+  .cta-btn-primary:hover{background:var(--gold-dk);transform:translateY(-2px)}
+  .cta-secondary-row{display:flex;gap:12px}
+  .cta-btn-ghost{display:inline-flex;align-items:center;padding:12px 24px;border:1.5px solid rgba(255,255,255,.2);color:rgba(255,255,255,.65);font-weight:500;font-size:13px;text-decoration:none;border-radius:3px;transition:border-color .2s,color .2s,background .2s}
+  .cta-btn-ghost:hover{border-color:rgba(255,255,255,.55);color:white;background:rgba(255,255,255,.06)}
+  footer{background:var(--dark);border-top:3px solid var(--gold);padding:64px 52px 36px}
+  .foot-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:52px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:28px}
+  .foot-brand p{font-size:13px;color:rgba(255,255,255,.38);line-height:1.78;margin-top:14px;font-weight:300;max-width:260px}
+  .foot-col h4{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+  .foot-col ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+  .foot-col a{text-decoration:none;font-size:13px;color:rgba(255,255,255,.38);transition:color .2s}
+  .foot-col a:hover{color:var(--gold-lt)}
+  .foot-ci{display:flex;align-items:flex-start;gap:9px;font-size:13px;color:rgba(255,255,255,.42);margin-bottom:11px;font-weight:300}
+  .foot-ci svg{flex-shrink:0;stroke:var(--gold);margin-top:2px}
+  .foot-btm{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,.25)}
+  .soc-links{display:flex;gap:10px}
+  .soc-link{width:30px;height:30px;border:1px solid rgba(222,170,87,.2);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.35);text-decoration:none;font-size:12px;font-weight:700;transition:all .2s;border-radius:3px}
+  .soc-link:hover{border-color:var(--gold);color:var(--gold);background:rgba(222,170,87,.1)}
+  .bg-off{background:var(--off)}
+  .bg-cream{background:var(--cream)}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+  @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.3;transform:scale(.6)}}
+  .reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.visible{opacity:1;transform:translateY(0)}
+  @media(max-width:1100px){
+    nav{padding:0 24px}.nav-links{display:none}
+    .hero{grid-template-columns:1fr;padding:100px 32px 60px}.hero-visual{display:none}
+    .stats-strip{grid-template-columns:1fr 1fr}
+    .intro-2col{grid-template-columns:1fr;gap:48px}
+    .svc-3grid,.proj-grid{grid-template-columns:1fr 1fr}
+    .metro-grid,.ind-grid,.related-grid{grid-template-columns:1fr 1fr}
+    .ben-2col{grid-template-columns:1fr 1fr}
+    .foot-top{grid-template-columns:1fr 1fr}
+    section,.proj-bg,.related-bg,.cta-final{padding:64px 32px}
+  }
+  @media(max-width:680px){
+    .svc-3grid,.proj-grid,.ben-2col,.metro-grid,.ind-grid,.related-grid,.stats-strip{grid-template-columns:1fr}
+    section,.proj-bg,.related-bg,.cta-final{padding:56px 20px}
+    footer{padding:48px 20px 28px}
+    .foot-top{grid-template-columns:1fr;gap:36px}
+    .cta-secondary-row{flex-direction:column}
+  }
+  ::-webkit-scrollbar{width:5px}
+  ::-webkit-scrollbar-track{background:var(--off)}
+  ::-webkit-scrollbar-thumb{background:var(--blue-lt);border-radius:3px}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="main-nav">
+  <a href="index.html" style="text-decoration:none;display:flex;align-items:center">
+    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 8500 8000" style="height:44px;width:auto;display:block"><defs><style>.nl0{fill:#687D9C}.nl1{fill:#687D9C;fill-rule:nonzero}.nl2{fill:#DEAA57;fill-rule:nonzero}</style></defs><g><path class="nl0" d="M1812.4 4727.09c409.83,9.8 887.26,173.39 1195.7,439.26 28.72,24.76 44.02,30.15 58.55,57.24 -52.14,-14.57 -171.2,-85.78 -230.79,-112.6 -573.62,-258.2 -1233.3,-349.38 -1831.71,-106.15 -40.93,16.63 -87.49,44.55 -124.91,55.7 20.68,-59.06 109.44,-127.92 160.93,-158.02 80.06,-46.81 141.34,-58.65 228.48,-90.06 -274.29,-14.17 -541.87,141.17 -633.11,424.54l-23.67 -31.72c-53.08,-122.61 -57.66,-196.85 -65.87,-329.88l-13.99 32.3c-3.39,12 -4.68,20.78 -6.59,35.01 -11.91,88.58 -15.08,172.5 5.98,256.07 21.54,85.47 78.14,202.53 145.85,231.4 50.02,-49.84 120.88,-289.19 534.4,-286.16 514.62,3.76 936.61,447.07 1147.02,891.67 48.99,103.51 78.24,193.2 116.58,292.69 204.29,1.91 365.65,-22.11 551.58,-61.3 -4.56,-73.17 -96.36,-288.22 -127.03,-355.35 -102.95,-225.38 -241.3,-405.89 -399.13,-574.71 -60.2,-64.39 -184.4,-177.9 -254.16,-231.52 88.93,6.2 297.3,104.48 378.5,150.87 220.07,125.7 420.56,298.33 567.63,501.22 58.21,80.31 158.45,237.07 191,342.72 62.81,-15.08 171.35,-153.6 213.87,-236.18 55.17,-107.14 79.26,-236.42 72.54,-380.41 -46.7,-1000.4 -1793.1,-818.22 -1857.66,-756.62z"/><path class="nl0" d="M908.33 5330.28l-1.41 999.35 1449.64 0.28c-2,-76.96 -166.68,-386.07 -201.72,-441.69 -91.01,-144.46 -187.49,-261 -295.82,-356.08 -109.45,-96.06 -252.17,-188.71 -413.11,-240.03 -174.03,-55.49 -400.81,-61.85 -537.57,38.17z"/><path class="nl0" d="M908.65 3424.73l-2.99 908.85c20.1,-3.89 21.74,-11.21 40.59,-30 89.89,-89.6 210.33,-177.93 315.83,-240.48 274.56,-162.77 638.43,-274.24 960.06,-309.57 166.8,-18.33 422.8,-54.2 590.23,-38.31 -24.89,13.29 -111.58,28.2 -152.81,40.07 -48.39,13.94 -105.58,33.65 -152.35,52.08 -72.65,28.64 -226.01,98.68 -263.84,140.95l282.22 -56.28c100.35,-17.6 195,-28.31 296.59,-38.74 148.31,-15.24 329.26,-9.66 481.55,6.76 47.54,5.13 105.39,18.24 154.19,20.06 -16.76,-73.51 -132.1,-181.83 -167.19,-211.69 -76.12,-64.77 -146.3,-100.57 -245.26,-134.7 -468.76,-161.6 -1251.39,-126.41 -1767.93,-118.66 -111.8,1.68 -260.91,-1.35 -368.89,9.66z"/><path class="nl0" d="M2103.02 4423.22c104.56,1.75 233.32,-18.11 345.8,-21.11 253.78,-6.76 601.91,10.18 846.47,75.82 41.2,11.06 108.16,35.39 149.12,41.7 50.39,-58.35 99.35,-237.52 80.56,-322.74 -349.11,-20.6 -764.31,38.62 -1103.59,124.24 -55.44,13.99 -109.4,28.7 -160.46,43.9 -40.44,12.04 -129.33,33.19 -157.89,58.2z"/><path class="nl0" d="M998.36 4717.1c128.1,59.57 343.38,32.49 435.46,-153.69 120.03,-242.71 179.03,-215.94 348.65,-242.96 29.17,-4.65 25.79,-8.44 31.52,-15.04 -269.51,-102.19 -476.91,163.85 -619.63,290.24 -130.76,115.81 -163.14,96.48 -196,121.45z"/><polygon class="nl1" points="4816.05,6282.34 4011.23,6282.34 4011.23,3410.51 4816.05,3410.51"/><polygon class="nl1" points="5156.12,6282.34 5156.12,3410.51 5908.89,3410.51 6554.65,4959.31 7196.74,3410.51 7983.97,3410.51 7983.97,6282.34 7183.55,6282.34 7183.55,4394.18 6408.79,6282.34 6331.83,6282.34 5573.92,4477.74 5573.92,6282.34"/><path class="nl2" d="M908.18 6642.7l534.93 0 0 123.23 -380.89 0 0 267.47 298.28 0 0 124.63 -298.28 0 0 292.67 386.5 0 0 126.03 -540.54 0 0 -934.04zm1041.97 0l175.51 0 249.26 934.04 -156.37 0 -58.58 -233.86 -273.07 0 -57.88 233.86 -147.27 0 268.4 -934.04zm179.48 578.35l-106.89 -427.81 -105.73 427.81 212.62 0zm864.82 -123.23l312.28 0 0 485.92 -82.85 0 -20.77 -119.03c-47.38,85.89 -122.3,128.83 -224.76,128.83 -104.09,0 -185.78,-42.24 -244.36,-126.96 -58.81,-84.49 -88.22,-199.31 -88.22,-344.25 0,-152.64 29.17,-273.54 87.29,-362.69 58.35,-89.15 147.5,-133.73 268.17,-133.73 168.04,0 268.4,94.76 301.31,284.5l-140.04 34.78c-16.57,-80.98 -38.74,-133.5 -66.52,-157.3 -28.01,-24.04 -60.92,-35.94 -98.96,-35.94 -125.8,0 -188.81,119.03 -188.81,356.86 0,239.22 64.18,358.72 192.78,358.72 106.66,0 160.11,-82.15 160.11,-246.46l-166.64 0 0 -123.23zm694.45 -455.11l154.04 0 0 803.8 330.48 0 0 130.23 -484.52 0 0 -934.04zm796.91 0l534.93 0 0 123.23 -380.89 0 0 267.47 298.28 0 0 124.63 -298.28 0 0 292.67 386.5 0 0 126.03 -540.54 0 0 -934.04zm1129.96 0l282.64 0c71.19,0 125.33,5.6 162.21,17.04 36.87,11.44 68.15,36.87 93.82,76.32 25.44,39.68 38.28,87.52 38.28,144.24 0,103.63 -46.21,171.78 -138.87,204.69 111.33,35.24 166.88,113.43 166.88,234.56 0,68.85 -21.94,129.06 -66.05,180.18 -43.88,51.35 -128.13,77.02 -252.53,77.02l-286.37 0 0 -934.04zm151.24 387.9l98.02 0c69.08,0 114.59,-12.83 136.53,-38.28 21.94,-25.44 32.91,-58.11 32.91,-98.49 0,-47.38 -12.6,-80.98 -37.81,-101.52 -24.98,-20.31 -63.95,-30.57 -116.46,-30.57l-113.19 0 0 268.87zm0 422.91l124.4 0c114.13,0 171.07,-50.65 171.07,-151.7 0,-39.21 -12.14,-74.45 -36.18,-105.49 -24.27,-31.04 -73.52,-46.68 -147.74,-46.68l-111.56 0 0 303.87zm836.58 -810.8l154.04 0 0 934.04 -154.04 0 0 -934.04zm555.58 0l228.49 0 185.78 673.34 190.45 -673.34 220.09 0 0 934.04 -145.64 0 0 -797.27 -221.26 797.27 -112.03 0 -217.06 -797.96 0 797.96 -128.83 0 0 -934.04z"/></g></svg>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li class="drop"><a href="#">Services</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Our Projects</a></li>
+    <li><a href="#">Resources</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+  <a href="mailto:info@eaglebim.com" class="nav-cta">Share Your Scope</a>
+</nav>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a><span>/</span>
+      <a href="bim-services-texas.html">Texas</a><span>/</span>
+      <span>Austin</span>
+    </div>
+    <div class="hero-tag">BIM Services · Austin, TX</div>
+    <h1><em>BIM Services Austin TX</em> — Revit, Coordination &amp; Consulting</h1>
+    <p class="hero-sub">Eagle BIM is headquartered in Pflugerville — in the Austin metro. Delivering BIM modeling services Austin firms depend on across structural BIM, MEP BIM, coordination, and every discipline Austin's fast-growing construction market demands.</p>
+    <div class="hero-actions">
+      <a href="mailto:info@eaglebim.com" class="btn-gold">Start Your Austin Project <span class="btn-arrow">→</span></a>
+      <a href="#services" class="btn-blue">See All BIM Services <span class="btn-arrow">↓</span></a>
+    </div>
+    <div class="hero-badges">
+      <span class="badge">Structural BIM Austin</span>
+      <span class="badge">MEP BIM Austin</span>
+      <span class="badge">BIM Coordination Austin</span>
+      <span class="badge">Revit Services Austin</span>
+      <span class="badge">48hr Sample</span>
+      <span class="badge badge-hq">📍 HQ in Pflugerville</span>
+    </div>
+  </div>
+
+  <!-- Austin Skyline SVG — Capitol dome, Frost Tower, Austonian, modern towers -->
+  <div class="hero-visual">
+    <svg width="480" height="400" viewBox="0 0 480 400" xmlns="http://www.w3.org/2000/svg">
+      <style>
+        @keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+        @keyframes wglow{0%,100%{opacity:.25}50%{opacity:.65}}
+        @keyframes domeglow{0%,100%{opacity:.6}50%{opacity:1}}
+        @keyframes scanline{0%{transform:translateY(0);opacity:0}5%{opacity:.12}90%{opacity:.07}100%{transform:translateY(400px);opacity:0}}
+        .sk1{animation:rise .55s .08s ease both;opacity:0}.sk2{animation:rise .55s .18s ease both;opacity:0}
+        .sk3{animation:rise .55s .28s ease both;opacity:0}.sk4{animation:rise .55s .38s ease both;opacity:0}
+        .sk5{animation:rise .55s .48s ease both;opacity:0}.sk6{animation:rise .55s .22s ease both;opacity:0}
+        .sk7{animation:rise .55s .12s ease both;opacity:0}.sk8{animation:rise .55s .42s ease both;opacity:0}
+        .w1{animation:wglow 3s ease infinite}.w2{animation:wglow 3s 1.2s ease infinite}.w3{animation:wglow 3s 2.1s ease infinite}
+        .dome{animation:domeglow 4s ease infinite}
+        .scan{animation:scanline 8s 1s linear infinite}
+      </style>
+      <defs>
+        <pattern id="agrid" width="24" height="24" patternUnits="userSpaceOnUse">
+          <path d="M24 0L0 0 0 24" fill="none" stroke="rgba(104,125,156,.06)" stroke-width=".5"/>
+        </pattern>
+      </defs>
+      <rect width="480" height="400" fill="url(#agrid)"/>
+      <rect x="20" y="365" width="440" height="3" fill="rgba(104,125,156,.2)"/>
+      <line x1="20" y1="365" x2="460" y2="365" stroke="rgba(222,170,87,.2)" stroke-width="1"/>
+
+      <!-- Far left low-rise -->
+      <g class="sk7" opacity=".45">
+        <rect x="20" y="310" width="36" height="55" fill="rgba(104,125,156,.14)"/>
+        <rect x="60" y="295" width="26" height="70" fill="rgba(104,125,156,.16)"/>
+      </g>
+
+      <!-- Texas State Capitol — iconic dome, left-centre -->
+      <g class="sk1">
+        <!-- Main building body -->
+        <rect x="88" y="210" width="72" height="155" fill="rgba(104,125,156,.22)" stroke="rgba(104,125,156,.32)" stroke-width=".7"/>
+        <!-- Wing extensions -->
+        <rect x="78" y="240" width="12" height="125" fill="rgba(104,125,156,.18)"/>
+        <rect x="160" y="240" width="12" height="125" fill="rgba(104,125,156,.18)"/>
+        <!-- Drum / rotunda base -->
+        <rect x="104" y="178" width="40" height="34" fill="rgba(104,125,156,.32)"/>
+        <!-- Dome -->
+        <path d="M104 178 Q124 148 144 178Z" fill="rgba(104,125,156,.38)" stroke="rgba(104,125,156,.5)" stroke-width=".8"/>
+        <!-- Lantern on dome -->
+        <rect x="120" y="140" width="8" height="10" fill="rgba(104,125,156,.45)"/>
+        <!-- Star finial -->
+        <circle cx="124" cy="136" r="5" fill="rgba(222,170,87,.85)" class="dome"/>
+        <text x="124" y="139.5" text-anchor="middle" font-size="7" fill="white" font-family="Arial" font-weight="bold">★</text>
+        <!-- Steps -->
+        <rect x="92" y="358" width="64" height="7" fill="rgba(104,125,156,.28)"/>
+        <rect x="96" y="352" width="56" height="7" fill="rgba(104,125,156,.24)"/>
+        <!-- Capitol windows -->
+        <rect x="96" y="224" width="8" height="10" fill="rgba(222,170,87,.2)" class="w1"/>
+        <rect x="110" y="224" width="8" height="10" fill="rgba(222,170,87,.15)"/>
+        <rect x="130" y="224" width="8" height="10" fill="rgba(222,170,87,.22)" class="w2"/>
+        <rect x="144" y="224" width="8" height="10" fill="rgba(222,170,87,.16)"/>
+        <rect x="96" y="244" width="8" height="10" fill="rgba(222,170,87,.16)"/>
+        <rect x="110" y="244" width="8" height="10" fill="rgba(222,170,87,.24)" class="w3"/>
+        <rect x="130" y="244" width="8" height="10" fill="rgba(222,170,87,.18)"/>
+        <rect x="144" y="244" width="8" height="10" fill="rgba(222,170,87,.15)"/>
+      </g>
+
+      <!-- Frost Tower — tall slender, left of centre -->
+      <g class="sk2">
+        <rect x="182" y="72" width="48" height="293" fill="rgba(104,125,156,.22)" stroke="rgba(104,125,156,.33)" stroke-width=".7"/>
+        <rect x="190" y="60" width="32" height="14" fill="rgba(104,125,156,.32)"/>
+        <rect x="198" y="46" width="16" height="16" fill="rgba(104,125,156,.4)"/>
+        <!-- Pointed top -->
+        <polygon points="198,46 206,28 214,46" fill="rgba(104,125,156,.48)"/>
+        <line x1="206" y1="28" x2="206" y2="10" stroke="rgba(222,170,87,.6)" stroke-width="2"/>
+        <circle cx="206" cy="8" r="3.5" fill="rgba(222,170,87,.85)" class="w1"/>
+        <line x1="196" y1="72" x2="196" y2="365" stroke="rgba(104,125,156,.07)" stroke-width=".5"/>
+        <line x1="206" y1="72" x2="206" y2="365" stroke="rgba(104,125,156,.07)" stroke-width=".5"/>
+        <line x1="222" y1="72" x2="222" y2="365" stroke="rgba(104,125,156,.07)" stroke-width=".5"/>
+        <rect x="187" y="86" width="9" height="7" fill="rgba(222,170,87,.24)" class="w2"/>
+        <rect x="203" y="86" width="9" height="7" fill="rgba(222,170,87,.16)"/>
+        <rect x="187" y="102" width="9" height="7" fill="rgba(222,170,87,.16)"/>
+        <rect x="203" y="102" width="9" height="7" fill="rgba(222,170,87,.25)" class="w3"/>
+        <rect x="187" y="118" width="9" height="7" fill="rgba(222,170,87,.21)"/>
+        <rect x="203" y="118" width="9" height="7" fill="rgba(222,170,87,.14)"/>
+        <rect x="187" y="134" width="9" height="7" fill="rgba(222,170,87,.18)" class="w1"/>
+        <rect x="203" y="134" width="9" height="7" fill="rgba(222,170,87,.22)"/>
+      </g>
+
+      <!-- Austonian — tallest residential, centre showpiece -->
+      <g class="sk3">
+        <rect x="248" y="42" width="88" height="323" fill="rgba(104,125,156,.29)" stroke="rgba(104,125,156,.44)" stroke-width=".7"/>
+        <!-- Stepped crown -->
+        <rect x="260" y="28" width="64" height="16" fill="rgba(104,125,156,.38)"/>
+        <rect x="272" y="14" width="40" height="16" fill="rgba(104,125,156,.46)"/>
+        <rect x="284" y="0" width="16" height="16" fill="rgba(104,125,156,.54)"/>
+        <line x1="292" y1="-8" x2="292" y2="0" stroke="rgba(222,170,87,.72)" stroke-width="2.8"/>
+        <circle cx="292" cy="-10" r="4" fill="rgba(222,170,87,.9)" class="w1"/>
+        <line x1="268" y1="42" x2="268" y2="365" stroke="rgba(104,125,156,.08)" stroke-width=".5"/>
+        <line x1="292" y1="42" x2="292" y2="365" stroke="rgba(104,125,156,.08)" stroke-width=".5"/>
+        <line x1="316" y1="42" x2="316" y2="365" stroke="rgba(104,125,156,.08)" stroke-width=".5"/>
+        <rect x="254" y="56" width="11" height="8" fill="rgba(222,170,87,.28)" class="w2"/>
+        <rect x="272" y="56" width="11" height="8" fill="rgba(222,170,87,.19)"/>
+        <rect x="290" y="56" width="11" height="8" fill="rgba(222,170,87,.25)"/>
+        <rect x="308" y="56" width="11" height="8" fill="rgba(222,170,87,.31)" class="w3"/>
+        <rect x="254" y="73" width="11" height="8" fill="rgba(222,170,87,.16)"/>
+        <rect x="272" y="73" width="11" height="8" fill="rgba(222,170,87,.26)" class="w1"/>
+        <rect x="290" y="73" width="11" height="8" fill="rgba(222,170,87,.18)"/>
+        <rect x="308" y="73" width="11" height="8" fill="rgba(222,170,87,.23)"/>
+        <rect x="254" y="90" width="11" height="8" fill="rgba(222,170,87,.23)" class="w2"/>
+        <rect x="272" y="90" width="11" height="8" fill="rgba(222,170,87,.14)"/>
+        <rect x="290" y="90" width="11" height="8" fill="rgba(222,170,87,.21)"/>
+        <rect x="308" y="90" width="11" height="8" fill="rgba(222,170,87,.17)"/>
+        <rect x="254" y="107" width="11" height="8" fill="rgba(222,170,87,.17)"/>
+        <rect x="272" y="107" width="11" height="8" fill="rgba(222,170,87,.24)" class="w3"/>
+        <rect x="290" y="107" width="11" height="8" fill="rgba(222,170,87,.18)"/>
+        <rect x="308" y="107" width="11" height="8" fill="rgba(222,170,87,.27)" class="w1"/>
+      </g>
+
+      <!-- 360 Condominiums style — glass tower right -->
+      <g class="sk4">
+        <rect x="354" y="78" width="64" height="287" fill="rgba(104,125,156,.23)" stroke="rgba(104,125,156,.34)" stroke-width=".7"/>
+        <rect x="362" y="64" width="48" height="16" fill="rgba(104,125,156,.32)"/>
+        <rect x="370" y="50" width="32" height="16" fill="rgba(104,125,156,.4)"/>
+        <line x1="386" y1="32" x2="386" y2="50" stroke="rgba(222,170,87,.52)" stroke-width="2"/>
+        <line x1="366" y1="78" x2="366" y2="365" stroke="rgba(104,125,156,.07)" stroke-width=".5"/>
+        <line x1="386" y1="78" x2="386" y2="365" stroke="rgba(104,125,156,.07)" stroke-width=".5"/>
+        <line x1="406" y1="78" x2="406" y2="365" stroke="rgba(104,125,156,.07)" stroke-width=".5"/>
+        <rect x="360" y="92" width="9" height="7" fill="rgba(222,170,87,.22)" class="w1"/>
+        <rect x="376" y="92" width="9" height="7" fill="rgba(222,170,87,.15)"/>
+        <rect x="392" y="92" width="9" height="7" fill="rgba(222,170,87,.25)" class="w2"/>
+        <rect x="408" y="92" width="9" height="7" fill="rgba(222,170,87,.17)"/>
+        <rect x="360" y="108" width="9" height="7" fill="rgba(222,170,87,.15)"/>
+        <rect x="376" y="108" width="9" height="7" fill="rgba(222,170,87,.24)" class="w3"/>
+        <rect x="392" y="108" width="9" height="7" fill="rgba(222,170,87,.18)"/>
+        <rect x="408" y="108" width="9" height="7" fill="rgba(222,170,87,.21)"/>
+      </g>
+
+      <!-- Right anchor filler -->
+      <g class="sk8" opacity=".5">
+        <rect x="432" y="155" width="48" height="210" fill="rgba(104,125,156,.18)" stroke="rgba(104,125,156,.24)" stroke-width=".6"/>
+        <rect x="438" y="167" width="8" height="5" fill="rgba(222,170,87,.17)" class="w1"/>
+        <rect x="452" y="167" width="8" height="5" fill="rgba(222,170,87,.13)" class="w2"/>
+      </g>
+
+      <!-- Scan line -->
+      <rect class="scan" x="20" y="0" width="440" height="2" fill="rgba(222,170,87,.1)"/>
+
+      <!-- City label -->
+      <g style="animation:rise .6s .9s ease both;opacity:0">
+        <rect x="192" y="340" width="116" height="20" rx="3" fill="rgba(17,24,39,.75)"/>
+        <text x="250" y="354" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="rgba(222,170,87,.9)" font-weight="700" letter-spacing="1">AUSTIN, TEXAS</text>
+      </g>
+    </svg>
+  </div>
+</section>
+
+
+<!-- STATS STRIP -->
+<div class="stats-strip">
+  <div class="stat-item reveal">
+    <span class="stat-num">2.4<span class="stat-sfx">M+</span></span>
+    <div class="stat-lbl">Austin Metro Population</div>
+  </div>
+  <div class="stat-item reveal">
+    <span class="stat-num">9</span>
+    <div class="stat-lbl">BIM Services Available</div>
+  </div>
+  <div class="stat-item reveal">
+    <span class="stat-num">48<span class="stat-sfx">hr</span></span>
+    <div class="stat-lbl">Sample Model Turnaround</div>
+  </div>
+  <div class="stat-item reveal">
+    <span class="stat-num" style="font-size:22px;padding-top:6px">Pflugerville</span>
+    <div class="stat-lbl">Eagle BIM HQ — In Your Metro</div>
+  </div>
+</div>
+
+
+<!-- INTRO -->
+<section id="about">
+  <div class="intro-2col reveal">
+    <div>
+      <div class="section-tag">BIM Services Austin</div>
+      <h2>Your Local <em>BIM Company Austin TX</em> — HQ in the Metro</h2>
+      <p class="body-text" style="margin-top:16px"><strong>BIM services Austin</strong> architecture firms, structural engineers, MEP consultants, and contractors depend on — full-scope Revit modeling, structural BIM, MEP BIM coordination, clash detection, and every discipline Austin's fast-growing construction market demands. Eagle BIM is headquartered in Pflugerville, TX — inside the Austin metro — making us the <strong>BIM company Austin TX</strong> AEC professionals across Travis, Williamson, and Hays Counties can genuinely call local.</p>
+      <p class="body-text">Austin is one of the fastest-growing construction markets in the United States — semiconductor manufacturing facilities, tech corporate campuses, a multifamily residential explosion, University of Texas expansions, and state government facilities all driving a project pipeline unlike any other Texas market. Our <strong>BIM modeling services Austin</strong> teams rely on are purpose-built for that pace.</p>
+      <p class="body-text">Whether you need BIM coordination across trades, structural BIM from engineer's drawings, MEP BIM for a commercial or institutional project, or the <strong>Revit services Austin</strong> firms rely on for drafting and family creation — Eagle BIM is right here in your metro, delivering on your timeline with a 48-hour sample before any commitment.</p>
+      <div class="hq-callout">
+        <div class="hq-callout-icon">📍</div>
+        <div class="hq-callout-text"><strong>Eagle BIM is based in Pflugerville, TX</strong> — inside the Austin metro area. We're your local BIM partner, not a remote outsourcing vendor. Same time zone, same market, same standards — and available to meet in person when your project requires it.</div>
+      </div>
+    </div>
+    <div>
+      <div class="disc-list">
+        <div class="disc-item">
+          <div class="disc-head"><div class="disc-dot"></div><div class="disc-title">Structural BIM Austin</div></div>
+          <div class="disc-text">Steel, concrete, and hybrid structural Revit models — built to your engineer's drawings for coordination, clash detection, and shop drawing extraction across Travis County and Austin metro projects.</div>
+        </div>
+        <div class="disc-item">
+          <div class="disc-head"><div class="disc-dot"></div><div class="disc-title">MEP BIM Austin</div></div>
+          <div class="disc-text">Mechanical, electrical, plumbing, and fire protection Revit coordination models — tech campuses, multifamily residential, institutional, and semiconductor-adjacent facility projects across the metro.</div>
+        </div>
+        <div class="disc-item">
+          <div class="disc-head"><div class="disc-dot"></div><div class="disc-title">BIM Coordination Austin</div></div>
+          <div class="disc-text">Federated multi-discipline BIM coordination across structural, MEP, and architectural models — clash detection before construction begins on Austin commercial, mixed-use, and institutional projects.</div>
+        </div>
+        <div class="disc-item">
+          <div class="disc-head"><div class="disc-dot"></div><div class="disc-title">Scan to BIM Austin</div></div>
+          <div class="disc-text">Point cloud to Revit BIM for existing building renovation and adaptive reuse — as-built documentation for Austin's active building stock across Travis and Williamson Counties.</div>
+        </div>
+        <div class="disc-item">
+          <div class="disc-head"><div class="disc-dot"></div><div class="disc-title">Revit Services Austin</div></div>
+          <div class="disc-text">Revit drafting, family creation, and documentation — BIM modeling services Austin architecture and engineering firms use as an extension of their own team, built to your standards.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- SERVICES -->
+<section class="bg-off" id="services">
+  <div class="reveal">
+    <div class="section-tag">Our Services</div>
+    <h2>Complete <em>BIM Services in Austin TX</em></h2>
+    <p class="sec-desc">Every BIM service Eagle BIM offers — available to Austin metro AEC firms, all delivered locally from our Pflugerville HQ, with a 48-hour sample before any commitment.</p>
+  </div>
+  <div class="svc-3grid reveal">
+    <a href="architectural-bim-services.html" class="svc-card">
+      <div class="svc-ico"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 3v18"/></svg></div>
+      <div class="svc-title">Architectural BIM Austin</div>
+      <div class="svc-text">Revit architectural modeling for Austin architecture firms — floor plans, elevations, sections, and full construction document sets for commercial, tech campus, and residential projects.</div>
+      <div class="svc-lnk">Learn More →</div>
+    </a>
+    <a href="structural-bim-services.html" class="svc-card">
+      <div class="svc-ico"><svg viewBox="0 0 24 24"><path d="M2 20h20M4 20V10l8-8 8 8v10"/></svg></div>
+      <div class="svc-title">Structural BIM Austin</div>
+      <div class="svc-text">Structural BIM Austin engineering firms rely on — steel, concrete, and hybrid Revit models built to your engineer's drawings at any LOD, ready for Austin metro project coordination.</div>
+      <div class="svc-lnk">Learn More →</div>
+    </a>
+    <a href="mep-bim-services.html" class="svc-card">
+      <div class="svc-ico"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+      <div class="svc-title">MEP BIM Austin</div>
+      <div class="svc-text">MEP BIM Austin MEP firms depend on — mechanical, electrical, plumbing, and fire protection Revit models for commercial, tech, institutional, and multifamily projects across the metro.</div>
+      <div class="svc-lnk">Learn More →</div>
+    </a>
+    <a href="bim-coordination-services.html" class="svc-card">
+      <div class="svc-ico"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+      <div class="svc-title">BIM Coordination Austin</div>
+      <div class="svc-text">BIM coordination Austin GCs depend on — federated model coordination across structural, MEP, and architectural disciplines to eliminate conflicts before construction begins on Austin projects.</div>
+      <div class="svc-lnk">Learn More →</div>
+    </a>
+    <a href="clash-detection-services.html" class="svc-card">
+      <div class="svc-ico"><svg viewBox="0 0 24 24"><circle cx="9" cy="9" r="5"/><circle cx="15" cy="15" r="5"/></svg></div>
+      <div class="svc-title">Clash Detection Austin</div>
+      <div class="svc-text">Navisworks clash detection for Austin projects — identifying structural, MEP, and architectural conflicts in federated BIM models before they become costly site issues.</div>
+      <div class="svc-lnk">Learn More →</div>
+    </a>
+    <a href="scan-to-bim-services.html" class="svc-card">
+      <div class="svc-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4"/></svg></div>
+      <div class="svc-title">Scan to BIM Austin</div>
+      <div class="svc-text">Point cloud to Revit for Austin renovation and adaptive reuse — as-built documentation for commercial, residential, and institutional buildings across Travis and Williamson Counties.</div>
+      <div class="svc-lnk">Learn More →</div>
+    </a>
+    <a href="shop-drawing-services.html" class="svc-card">
+      <div class="svc-ico"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+      <div class="svc-title">Shop Drawings Austin</div>
+      <div class="svc-text">Steel shop drawings, rebar detailing, and MEP shop drawings for Austin fabricators — AISC and ACI compliant, submittal-ready for Travis County commercial and institutional projects.</div>
+      <div class="svc-lnk">Learn More →</div>
+    </a>
+    <a href="revit-drafting-services.html" class="svc-card">
+      <div class="svc-ico"><svg viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></div>
+      <div class="svc-title">Revit Services Austin</div>
+      <div class="svc-text">Revit services Austin AEC firms rely on — drafting, family creation, and documentation built to your office standards, templates, and project requirements from our Pflugerville studio.</div>
+      <div class="svc-lnk">Learn More →</div>
+    </a>
+    <a href="bim-consulting-services.html" class="svc-card">
+      <div class="svc-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg></div>
+      <div class="svc-title">BIM Consulting Austin</div>
+      <div class="svc-text">BIM consulting and BEP development for Austin project teams — BIM execution plans, Revit standards, and BIM implementation for Austin developers, owners, and public sector clients.</div>
+      <div class="svc-lnk">Learn More →</div>
+    </a>
+  </div>
+</section>
+
+
+<!-- PROJECT TYPES -->
+<section class="proj-bg">
+  <div class="proj-head reveal">
+    <div class="section-tag" style="justify-content:center;color:var(--gold-lt)"><span style="display:inline-block;width:22px;height:2px;background:var(--gold);border-radius:2px;margin-right:8px;vertical-align:middle"></span>Project Types</div>
+    <h2 style="color:white">The Projects We <em style="color:var(--gold-lt)">Work On</em> in Austin</h2>
+    <p style="font-size:15.5px;color:rgba(255,255,255,.48);line-height:1.78;font-weight:300;margin-top:12px;max-width:520px;margin-left:auto;margin-right:auto">From UT expansion buildings to tech corporate campuses and the multifamily boom along the 183 and 35 corridors — Eagle BIM delivers across every major Austin project type.</p>
+  </div>
+  <div class="proj-grid reveal">
+    <div class="pcard">
+      <div class="pcard-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 3v18"/></svg></div>
+      <div class="pcard-label">Technology</div>
+      <div class="pcard-title">Tech Campuses &amp; Corporate HQ</div>
+      <div class="pcard-desc">Corporate campuses, tech office buildings, and R&D facilities for the companies that relocated to Austin and Round Rock — complex MEP coordination and structural BIM for large campus projects.</div>
+      <div class="pcard-tags"><span class="ptag">Tech Campus</span><span class="ptag">Corporate HQ</span><span class="ptag">R&D</span><span class="ptag">Round Rock</span></div>
+    </div>
+    <div class="pcard">
+      <div class="pcard-icon"><svg viewBox="0 0 24 24"><path d="M2 20h20M4 20V10l8-8 8 8v10M10 20v-6h4v6"/></svg></div>
+      <div class="pcard-label">Residential</div>
+      <div class="pcard-title">Multifamily &amp; High-Rise Residential</div>
+      <div class="pcard-desc">Mid-rise and high-rise multifamily, BTR developments, and mixed-income housing across the Downtown Austin core, East Austin, and the North Austin suburban growth corridors of Cedar Park and Georgetown.</div>
+      <div class="pcard-tags"><span class="ptag">Multifamily</span><span class="ptag">High-Rise</span><span class="ptag">BTR</span><span class="ptag">Mixed-Income</span></div>
+    </div>
+    <div class="pcard">
+      <div class="pcard-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+      <div class="pcard-label">Education</div>
+      <div class="pcard-title">University &amp; K–12</div>
+      <div class="pcard-desc">University of Texas campus expansions, student housing, research facilities, and K–12 school district projects across Austin ISD, Round Rock ISD, and Pflugerville ISD — structural and MEP BIM.</div>
+      <div class="pcard-tags"><span class="ptag">University</span><span class="ptag">K-12</span><span class="ptag">Research</span><span class="ptag">Campus</span></div>
+    </div>
+    <div class="pcard">
+      <div class="pcard-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 3v18"/></svg></div>
+      <div class="pcard-label">Government</div>
+      <div class="pcard-title">State &amp; Civic Facilities</div>
+      <div class="pcard-desc">State government buildings, civic facilities, courthouses, and public infrastructure — Austin's role as the state capital generates a consistent pipeline of institutional construction requiring BIM coordination.</div>
+      <div class="pcard-tags"><span class="ptag">State Government</span><span class="ptag">Civic</span><span class="ptag">Courthouse</span></div>
+    </div>
+    <div class="pcard">
+      <div class="pcard-icon"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+      <div class="pcard-label">Commercial</div>
+      <div class="pcard-title">Office, Mixed-Use &amp; Retail</div>
+      <div class="pcard-desc">Downtown Austin office towers, mixed-use developments, and retail centres — BIM coordination for commercial projects across the urban core, 2nd Street District, and Domain mixed-use corridor.</div>
+      <div class="pcard-tags"><span class="ptag">Office Tower</span><span class="ptag">Mixed-Use</span><span class="ptag">Domain</span><span class="ptag">Retail</span></div>
+    </div>
+    <div class="pcard">
+      <div class="pcard-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4"/></svg></div>
+      <div class="pcard-label">Renovation</div>
+      <div class="pcard-title">Adaptive Reuse &amp; Retrofit</div>
+      <div class="pcard-desc">Austin's historic buildings and East Austin industrial conversions — scan to BIM for accurate as-built documentation, then full Revit modeling for adaptive reuse and renovation scopes.</div>
+      <div class="pcard-tags"><span class="ptag">Adaptive Reuse</span><span class="ptag">Historic</span><span class="ptag">East Austin</span><span class="ptag">Retrofit</span></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- METRO COVERAGE -->
+<section class="bg-cream">
+  <div class="reveal" style="text-align:center">
+    <div class="section-tag" style="justify-content:center">Austin Metro Area</div>
+    <h2>Covering the Full <em>Austin Metro</em></h2>
+    <p class="sec-desc" style="margin:0 auto">Eagle BIM is based inside the Austin metro in Pflugerville — we serve every corner of the Greater Austin area.</p>
+  </div>
+  <div class="metro-grid reveal">
+    <div class="mc"><div class="mc-county">Travis County</div><div class="mc-city">Austin</div><div class="mc-areas">Downtown · East Austin · South Congress · Domain · Mueller · Zilker · North Loop · 6th Street corridor</div></div>
+    <div class="mc mc-hq"><div class="mc-hq-badge">Eagle BIM HQ</div><div class="mc-county">Travis County</div><div class="mc-city">Pflugerville</div><div class="mc-areas">Pflugerville · Dessau · Wells Branch — Eagle BIM's home city, in the heart of the Austin metro</div></div>
+    <div class="mc"><div class="mc-county">Williamson County</div><div class="mc-city">Round Rock</div><div class="mc-areas">Round Rock · Hutto · Taylor — major tech employer corridor and fast-growing suburban market</div></div>
+    <div class="mc"><div class="mc-county">Williamson County</div><div class="mc-city">Cedar Park</div><div class="mc-areas">Cedar Park · Leander · Liberty Hill — Northwest Austin's fastest-growing residential and commercial corridor</div></div>
+    <div class="mc"><div class="mc-county">Williamson County</div><div class="mc-city">Georgetown</div><div class="mc-areas">Georgetown · Jarrell · Granger — North Austin growth corridor, one of Texas's fastest-growing cities</div></div>
+    <div class="mc"><div class="mc-county">Hays County</div><div class="mc-city">San Marcos</div><div class="mc-areas">San Marcos · Kyle · Buda · Wimberley — South Austin corridor connecting to San Antonio metro</div></div>
+    <div class="mc"><div class="mc-county">Travis County</div><div class="mc-city">Manor</div><div class="mc-areas">Manor · Elgin — East Travis County's expanding industrial and residential corridor</div></div>
+    <div class="mc"><div class="mc-county">Hays County</div><div class="mc-city">Dripping Springs</div><div class="mc-areas">Dripping Springs · Bee Cave · Lakeway · West Lake Hills — Upscale West Austin residential and commercial</div></div>
+  </div>
+</section>
+
+
+<!-- WHY EAGLE BIM -->
+<section>
+  <div class="reveal" style="text-align:center">
+    <div class="section-tag" style="justify-content:center">Why Eagle BIM</div>
+    <h2>Why Austin AEC Firms Choose <em>Eagle BIM</em></h2>
+    <p class="sec-desc" style="margin:0 auto">Based in Pflugerville, TX — inside the Austin metro.</p>
+  </div>
+  <div class="ben-2col reveal">
+    <div class="ben-card bt-gold bb">
+      <div class="ben-icon" style="background:var(--gold-pale);border:1.5px solid var(--bdr-gold)"><svg viewBox="0 0 24 24" stroke="var(--gold-dk)"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+      <div class="ben-title">In Your Metro — Not Remote</div>
+      <p class="ben-text">Eagle BIM is a <strong>BIM company Austin TX</strong> AEC professionals can genuinely call local — headquartered in Pflugerville, inside the Austin metro area. We operate in your time zone, understand Austin building codes and the construction pace that defines this market, and can be on-site for a project meeting when you need it. This is not offshore outsourcing. We're your neighbours.</p>
+    </div>
+    <div class="ben-card bt-blue bb">
+      <div class="ben-icon" style="background:var(--blue-pale);border:1.5px solid rgba(104,125,156,.25)"><svg viewBox="0 0 24 24" stroke="var(--blue)"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+      <div class="ben-title">Every Discipline, One Team</div>
+      <p class="ben-text">Architectural BIM, <strong>structural BIM Austin</strong>, <strong>MEP BIM Austin</strong>, BIM coordination, scan to BIM, shop drawings, and BIM consulting — all from one team. No discipline gaps, no vendor coordination overhead, no format translation issues across separate suppliers on your Austin project.</p>
+    </div>
+    <div class="ben-card bt-gold">
+      <div class="ben-icon" style="background:var(--gold-pale);border:1.5px solid var(--bdr-gold)"><svg viewBox="0 0 24 24" stroke="var(--gold-dk)"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+      <div class="ben-title">48-Hour Sample — No Commitment</div>
+      <p class="ben-text">Share your drawings — a floor level, a structural plan, or a scan file — and we return a working sample within 48 hours. You assess the quality of our <strong>BIM modeling services Austin</strong> firms rely on before committing to the full project scope. No proposals, no onboarding, no promises without proof of work.</p>
+    </div>
+    <div class="ben-card bt-blue">
+      <div class="ben-icon" style="background:var(--blue-pale);border:1.5px solid rgba(104,125,156,.25)"><svg viewBox="0 0 24 24" stroke="var(--blue)"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"/></svg></div>
+      <div class="ben-title">Scales with Austin's Pace</div>
+      <p class="ben-text">Austin construction moves fast — permit timelines are tight, project pipelines are deep. Our <strong>BIM services Austin</strong> teams scale with your workload from a single project to a full pipeline. We adopt your Revit templates, families, and standards, and operate as a permanent extension of your team across every active project.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- INDUSTRIES -->
+<section class="bg-off">
+  <div class="reveal">
+    <div class="section-tag">Austin Industries</div>
+    <h2><em>BIM Services Austin</em> — Every Construction Sector</h2>
+    <p class="sec-desc">Austin's construction market is driven by tech, education, government, and one of the fastest residential growth rates in the country — Eagle BIM delivers across all of them.</p>
+  </div>
+  <div class="ind-grid reveal">
+    <div class="ind-card"><div class="ind-name">Technology &amp; Corporate</div><div class="ind-desc">Tech corporate campuses, R&D facilities, and office buildings for companies that relocated to Austin and Round Rock — structural BIM and MEP coordination for large campus projects.</div></div>
+    <div class="ind-card"><div class="ind-name">Residential &amp; Multifamily</div><div class="ind-desc">Mid-rise and high-rise multifamily, BTR communities, and master-planned residential developments across the Austin metro's fast-growing suburban corridors — architectural and structural BIM.</div></div>
+    <div class="ind-card"><div class="ind-name">Education</div><div class="ind-desc">University campus expansions, student housing, research buildings, and K–12 school district projects across Austin ISD, Round Rock ISD, Pflugerville ISD, and the UT campus.</div></div>
+    <div class="ind-card"><div class="ind-name">Government &amp; Civic</div><div class="ind-desc">State government buildings, civic facilities, and public infrastructure — Austin's role as state capital drives a consistent pipeline of complex institutional construction requiring tight BIM coordination.</div></div>
+    <div class="ind-card"><div class="ind-name">Commercial &amp; Mixed-Use</div><div class="ind-desc">Downtown office towers, mixed-use developments, and retail centres — BIM coordination for commercial projects across the urban core, Domain corridor, and suburban activity centres.</div></div>
+    <div class="ind-card"><div class="ind-name">Healthcare</div><div class="ind-desc">Hospital facilities, outpatient clinics, and medical office buildings across the Austin metro — high-LOD MEP BIM coordination and structural BIM for healthcare environments.</div></div>
+    <div class="ind-card"><div class="ind-name">Hospitality &amp; Entertainment</div><div class="ind-desc">Hotels, music venues, and entertainment facilities across Downtown Austin and the Rainey Street corridor — MEP coordination for complex hospitality and mixed-use developments.</div></div>
+    <div class="ind-card"><div class="ind-name">Renovation &amp; Adaptive Reuse</div><div class="ind-desc">East Austin industrial conversions, historic building renovations, and adaptive reuse projects — scan to BIM for accurate as-built documentation before renovation works begin.</div></div>
+  </div>
+</section>
+
+
+<!-- FAQ -->
+<section>
+  <div class="reveal">
+    <div class="section-tag">FAQ</div>
+    <h2>Frequently Asked Questions About Our <em>BIM Services in Austin</em></h2>
+    <p class="sec-desc">Everything Austin AEC firms typically ask before getting started with Eagle BIM.</p>
+  </div>
+  <div class="faq-list reveal">
+    <div class="faq-item">
+      <button class="faq-btn" onclick="toggleFaq(this)">
+        <span class="faq-question">Are you actually based in Austin?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-body">
+        <div class="faq-answer">Yes — Eagle BIM is headquartered in <strong>Pflugerville, TX</strong>, which is inside the Austin metro area. We're not a remote outsourcing company with a local phone number. Our team works from the Austin metro, operates in your time zone, understands local building codes and market conditions, and is available to meet in person when your project requires it.</div>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-btn" onclick="toggleFaq(this)">
+        <span class="faq-question">What BIM services do Austin AEC firms use most?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-body">
+        <div class="faq-answer">Most requested are <strong>structural BIM Austin</strong> modeling, <strong>MEP BIM Austin</strong> coordination, and <strong>BIM coordination Austin</strong> across multiple trades. Multifamily residential BIM is very high demand given Austin's housing pipeline. Tech campus MEP coordination, university facility BIM, and Revit services Austin firms need for overflow drafting and family creation are also consistently in demand.</div>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-btn" onclick="toggleFaq(this)">
+        <span class="faq-question">How quickly can you start on an Austin project?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-body">
+        <div class="faq-answer">Within 24–48 hours of receiving your drawings. Austin projects move fast — we match that pace. We confirm requirements, then return a sample model within 48 hours so you can assess quality before committing. Being local means we can also arrange a quick in-person scope discussion if your project warrants it.</div>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-btn" onclick="toggleFaq(this)">
+        <span class="faq-question">Do you work on University of Texas and government projects?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-body">
+        <div class="faq-answer">Yes — university and government projects are a specific strength for the Austin market. We deliver structural BIM, MEP BIM coordination, and full BIM documentation for educational facilities and state government buildings. We're familiar with the BIM execution plan requirements, submittal standards, and coordination workflows that institutional clients typically require.</div>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-btn" onclick="toggleFaq(this)">
+        <span class="faq-question">Can you work as an ongoing extension of our Austin team?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-body">
+        <div class="faq-answer">Yes — and being local makes this work better. We adopt your Revit templates, families, naming conventions, and project standards, and operate as if we're sitting in your office. Many Austin AEC firms use Eagle BIM as their dedicated BIM overflow team across multiple active projects — consistent capacity without the commitment of a full-time hire.</div>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-btn" onclick="toggleFaq(this)">
+        <span class="faq-question">What does the 48-hour sample include?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-body">
+        <div class="faq-answer">A real working model section — not a rendered image. Depending on your project: a floor level of structural framing, an MEP coordination model for one zone, a Revit family to your spec, or a scan-derived as-built segment. Enough to assess accuracy, modelling approach, and output quality against your own standards before committing to the full scope.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- RELATED SERVICES -->
+<section class="related-bg">
+  <div class="reveal">
+    <div class="section-tag">Related Services</div>
+    <h2>BIM Services Across <em>Every Austin Discipline</em></h2>
+  </div>
+  <div class="related-grid">
+    <a href="structural-bim-services.html" class="rel-card reveal">
+      <div class="rel-icon"><svg viewBox="0 0 24 24"><path d="M2 20h20M4 20V10l8-8 8 8v10"/></svg></div>
+      <div class="rel-title">Structural BIM Services</div>
+      <div class="rel-desc">Structural BIM Austin — steel, concrete, and hybrid Revit models built to your engineer's drawings for coordination, clash detection, and shop drawing extraction across Austin metro projects.</div>
+    </a>
+    <a href="mep-bim-services.html" class="rel-card reveal">
+      <div class="rel-icon"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+      <div class="rel-title">MEP BIM Services</div>
+      <div class="rel-desc">MEP BIM Austin — mechanical, electrical, plumbing, and fire protection Revit coordination models for tech campuses, multifamily, institutional, and commercial projects across the metro.</div>
+    </a>
+    <a href="bim-coordination-services.html" class="rel-card reveal">
+      <div class="rel-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+      <div class="rel-title">BIM Coordination Services</div>
+      <div class="rel-desc">BIM coordination Austin — federated multi-discipline coordination across structural, MEP, and architectural models to eliminate conflicts before construction begins on Austin projects.</div>
+    </a>
+    <a href="scan-to-bim-services.html" class="rel-card reveal">
+      <div class="rel-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4"/></svg></div>
+      <div class="rel-title">Scan to BIM Services</div>
+      <div class="rel-desc">Point cloud to Revit for Austin renovation and adaptive reuse — as-built documentation for commercial, historic, and industrial buildings across Travis and Williamson Counties.</div>
+    </a>
+  </div>
+</section>
+
+
+<!-- CTA -->
+<section class="cta-final">
+  <div class="cta-inner">
+    <div class="section-tag" style="justify-content:center;margin-bottom:20px">Get Started</div>
+    <h2>Send Your Drawings. <em>Get a Sample in 48 Hours.</em></h2>
+    <p>Share your project scope — drawings, BIM requirements, or just a brief — and we'll return a sample model within 48 hours. Assess quality before you commit to anything. We're local — we can also meet in person.</p>
+    <div class="cta-acts">
+      <a href="mailto:info@eaglebim.com" class="cta-btn-primary">Share Your Project Scope →</a>
+      <div class="cta-secondary-row">
+        <a href="tel:+13465882960" class="cta-btn-ghost">📞 +1 (346) 588-2960</a>
+        <a href="mailto:info@bim-services.us" class="cta-btn-ghost">✉️ info@bim-services.us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-top">
+    <div class="foot-brand">
+      <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 8500 8000" style="height:52px;width:auto;display:block"><defs><style>.ffl0{fill:#687D9C}.ffl1{fill:#687D9C;fill-rule:nonzero}.ffl2{fill:#DEAA57;fill-rule:nonzero}</style></defs><g><path class="ffl0" d="M1812.4 4727.09c409.83,9.8 887.26,173.39 1195.7,439.26 28.72,24.76 44.02,30.15 58.55,57.24 -52.14,-14.57 -171.2,-85.78 -230.79,-112.6 -573.62,-258.2 -1233.3,-349.38 -1831.71,-106.15 -40.93,16.63 -87.49,44.55 -124.91,55.7 20.68,-59.06 109.44,-127.92 160.93,-158.02 80.06,-46.81 141.34,-58.65 228.48,-90.06 -274.29,-14.17 -541.87,141.17 -633.11,424.54l-23.67 -31.72c-53.08,-122.61 -57.66,-196.85 -65.87,-329.88l-13.99 32.3c-3.39,12 -4.68,20.78 -6.59,35.01 -11.91,88.58 -15.08,172.5 5.98,256.07 21.54,85.47 78.14,202.53 145.85,231.4 50.02,-49.84 120.88,-289.19 534.4,-286.16 514.62,3.76 936.61,447.07 1147.02,891.67 48.99,103.51 78.24,193.2 116.58,292.69 204.29,1.91 365.65,-22.11 551.58,-61.3 -4.56,-73.17 -96.36,-288.22 -127.03,-355.35 -102.95,-225.38 -241.3,-405.89 -399.13,-574.71 -60.2,-64.39 -184.4,-177.9 -254.16,-231.52 88.93,6.2 297.3,104.48 378.5,150.87 220.07,125.7 420.56,298.33 567.63,501.22 58.21,80.31 158.45,237.07 191,342.72 62.81,-15.08 171.35,-153.6 213.87,-236.18 55.17,-107.14 79.26,-236.42 72.54,-380.41 -46.7,-1000.4 -1793.1,-818.22 -1857.66,-756.62z"/><path class="ffl0" d="M908.33 5330.28l-1.41 999.35 1449.64 0.28c-2,-76.96 -166.68,-386.07 -201.72,-441.69 -91.01,-144.46 -187.49,-261 -295.82,-356.08 -109.45,-96.06 -252.17,-188.71 -413.11,-240.03 -174.03,-55.49 -400.81,-61.85 -537.57,38.17z"/><path class="ffl0" d="M908.65 3424.73l-2.99 908.85c20.1,-3.89 21.74,-11.21 40.59,-30 89.89,-89.6 210.33,-177.93 315.83,-240.48 274.56,-162.77 638.43,-274.24 960.06,-309.57 166.8,-18.33 422.8,-54.2 590.23,-38.31 -24.89,13.29 -111.58,28.2 -152.81,40.07 -48.39,13.94 -105.58,33.65 -152.35,52.08 -72.65,28.64 -226.01,98.68 -263.84,140.95l282.22 -56.28c100.35,-17.6 195,-28.31 296.59,-38.74 148.31,-15.24 329.26,-9.66 481.55,6.76 47.54,5.13 105.39,18.24 154.19,20.06 -16.76,-73.51 -132.1,-181.83 -167.19,-211.69 -76.12,-64.77 -146.3,-100.57 -245.26,-134.7 -468.76,-161.6 -1251.39,-126.41 -1767.93,-118.66 -111.8,1.68 -260.91,-1.35 -368.89,9.66z"/><path class="ffl0" d="M2103.02 4423.22c104.56,1.75 233.32,-18.11 345.8,-21.11 253.78,-6.76 601.91,10.18 846.47,75.82 41.2,11.06 108.16,35.39 149.12,41.7 50.39,-58.35 99.35,-237.52 80.56,-322.74 -349.11,-20.6 -764.31,38.62 -1103.59,124.24 -55.44,13.99 -109.4,28.7 -160.46,43.9 -40.44,12.04 -129.33,33.19 -157.89,58.2z"/><path class="ffl0" d="M998.36 4717.1c128.1,59.57 343.38,32.49 435.46,-153.69 120.03,-242.71 179.03,-215.94 348.65,-242.96 29.17,-4.65 25.79,-8.44 31.52,-15.04 -269.51,-102.19 -476.91,163.85 -619.63,290.24 -130.76,115.81 -163.14,96.48 -196,121.45z"/><polygon class="ffl1" points="4816.05,6282.34 4011.23,6282.34 4011.23,3410.51 4816.05,3410.51"/><polygon class="ffl1" points="5156.12,6282.34 5156.12,3410.51 5908.89,3410.51 6554.65,4959.31 7196.74,3410.51 7983.97,3410.51 7983.97,6282.34 7183.55,6282.34 7183.55,4394.18 6408.79,6282.34 6331.83,6282.34 5573.92,4477.74 5573.92,6282.34"/><path class="ffl2" d="M908.18 6642.7l534.93 0 0 123.23 -380.89 0 0 267.47 298.28 0 0 124.63 -298.28 0 0 292.67 386.5 0 0 126.03 -540.54 0 0 -934.04zm1041.97 0l175.51 0 249.26 934.04 -156.37 0 -58.58 -233.86 -273.07 0 -57.88 233.86 -147.27 0 268.4 -934.04zm179.48 578.35l-106.89 -427.81 -105.73 427.81 212.62 0zm864.82 -123.23l312.28 0 0 485.92 -82.85 0 -20.77 -119.03c-47.38,85.89 -122.3,128.83 -224.76,128.83 -104.09,0 -185.78,-42.24 -244.36,-126.96 -58.81,-84.49 -88.22,-199.31 -88.22,-344.25 0,-152.64 29.17,-273.54 87.29,-362.69 58.35,-89.15 147.5,-133.73 268.17,-133.73 168.04,0 268.4,94.76 301.31,284.5l-140.04 34.78c-16.57,-80.98 -38.74,-133.5 -66.52,-157.3 -28.01,-24.04 -60.92,-35.94 -98.96,-35.94 -125.8,0 -188.81,119.03 -188.81,356.86 0,239.22 64.18,358.72 192.78,358.72 106.66,0 160.11,-82.15 160.11,-246.46l-166.64 0 0 -123.23zm694.45 -455.11l154.04 0 0 803.8 330.48 0 0 130.23 -484.52 0 0 -934.04zm796.91 0l534.93 0 0 123.23 -380.89 0 0 267.47 298.28 0 0 124.63 -298.28 0 0 292.67 386.5 0 0 126.03 -540.54 0 0 -934.04zm1129.96 0l282.64 0c71.19,0 125.33,5.6 162.21,17.04 36.87,11.44 68.15,36.87 93.82,76.32 25.44,39.68 38.28,87.52 38.28,144.24 0,103.63 -46.21,171.78 -138.87,204.69 111.33,35.24 166.88,113.43 166.88,234.56 0,68.85 -21.94,129.06 -66.05,180.18 -43.88,51.35 -128.13,77.02 -252.53,77.02l-286.37 0 0 -934.04zm151.24 387.9l98.02 0c69.08,0 114.59,-12.83 136.53,-38.28 21.94,-25.44 32.91,-58.11 32.91,-98.49 0,-47.38 -12.6,-80.98 -37.81,-101.52 -24.98,-20.31 -63.95,-30.57 -116.46,-30.57l-113.19 0 0 268.87zm0 422.91l124.4 0c114.13,0 171.07,-50.65 171.07,-151.7 0,-39.21 -12.14,-74.45 -36.18,-105.49 -24.27,-31.04 -73.52,-46.68 -147.74,-46.68l-111.56 0 0 303.87zm836.58 -810.8l154.04 0 0 934.04 -154.04 0 0 -934.04zm555.58 0l228.49 0 185.78 673.34 190.45 -673.34 220.09 0 0 934.04 -145.64 0 0 -797.27 -221.26 797.27 -112.03 0 -217.06 -797.96 0 797.96 -128.83 0 0 -934.04z"/></g></svg>
+      <p>Eagle BIM (BIMPRO LLC) — headquartered in Pflugerville, TX, inside the Austin metro. Your local BIM company Austin TX, serving the full metro and all of Texas.</p>
+    </div>
+    <div class="foot-col">
+      <h4>BIM Services</h4>
+      <ul>
+        <li><a href="architectural-bim-services.html">Architectural BIM Services</a></li>
+        <li><a href="mep-bim-services.html">MEP BIM Services</a></li>
+        <li><a href="structural-bim-services.html">Structural BIM Services</a></li>
+        <li><a href="bim-coordination-services.html">BIM Coordination Services</a></li>
+        <li><a href="clash-detection-services.html">Clash Detection Services</a></li>
+        <li><a href="scan-to-bim-services.html">Scan to BIM Services</a></li>
+        <li><a href="shop-drawing-services.html">Shop Drawing Services</a></li>
+        <li><a href="bim-consulting-services.html">BIM Consulting Services</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>Texas Pages</h4>
+      <ul>
+        <li><a href="bim-services-texas.html">BIM Services Texas</a></li>
+        <li><a href="bim-services-houston.html">BIM Services Houston</a></li>
+        <li><a href="bim-services-dallas.html">BIM Services Dallas</a></li>
+        <li><a href="bim-services-austin.html">BIM Services Austin</a></li>
+        <li><a href="bim-services-san-antonio.html">BIM Services San Antonio</a></li>
+        <li><a href="bim-services-fort-worth.html">BIM Services Fort Worth</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>Austin Contact</h4>
+      <div class="foot-ci"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.72 11.5 19.79 19.79 0 011.65 2.82 2 2 0 013.62 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 8.6a16 16 0 006.29 6.29l.96-.96a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>+1 (346) 588-2960</div>
+      <div class="foot-ci"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>info@bim-services.us</div>
+      <div class="foot-ci"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Pflugerville, TX 78660</div>
+      <div style="margin-top:14px;font-size:10px;color:rgba(255,255,255,.22);letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px">Austin Metro Coverage</div>
+      <div style="font-size:12px;color:rgba(255,255,255,.32);line-height:1.85">Austin · Pflugerville · Round Rock<br>Cedar Park · Georgetown · Kyle<br>Buda · San Marcos · Leander</div>
+    </div>
+  </div>
+  <div class="foot-btm">
+    <span>© 2026 Eagle BIM · BIMPRO LLC · BIM Services Austin TX · BIM Company Texas · All rights reserved.</span>
+    <div class="soc-links">
+      <a href="https://www.facebook.com/EagleBIMservices/" class="soc-link" target="_blank">f</a>
+      <a href="https://www.linkedin.com/company/eagle-bim-services/" class="soc-link" target="_blank">in</a>
+      <a href="https://x.com/eaglebim" class="soc-link" target="_blank">𝕏</a>
+      <a href="https://www.instagram.com/eaglebim/" class="soc-link" target="_blank">ig</a>
+      <a href="https://www.youtube.com/@EagleBIM-USA" class="soc-link" target="_blank">▶</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(btn) {
+    const body = btn.nextElementSibling;
+    const isOpen = btn.classList.contains('open');
+    document.querySelectorAll('.faq-btn.open').forEach(b => {
+      b.classList.remove('open');
+      b.nextElementSibling.classList.remove('open');
+    });
+    if (!isOpen) { btn.classList.add('open'); body.classList.add('open'); }
+  }
+  const reveals = document.querySelectorAll('.reveal');
+  setTimeout(() => reveals.forEach(el => el.classList.add('visible')), 600);
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 55);
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.04 });
+  reveals.forEach(el => obs.observe(el));
+  requestAnimationFrame(() => {
+    reveals.forEach(el => {
+      if (el.getBoundingClientRect().top < window.innerHeight + 100) el.classList.add('visible');
+    });
+  });
+  window.addEventListener('scroll', () => {
+    document.getElementById('main-nav').style.boxShadow = window.scrollY > 40 ? '0 2px 20px rgba(0,0,0,.08)' : 'none';
+  });
+</script>
+</body>
+</html>
