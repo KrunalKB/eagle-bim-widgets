@@ -1,0 +1,168 @@
+.eb-geo-cities-section {
+    /* padding: 88px 52px;/ */
+    background: var(--eb-off);
+}
+
+.eb-geo-container {
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+}
+
+.eb-geo-cities-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+    margin-top: 48px;
+}
+
+.geo-cities-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--eb-gold-dk);
+    margin-bottom: 14px;
+}
+
+.geo-cities-tag::before {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--eb-gold);
+    border-radius: 2px;
+}
+
+.geo-cities-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(24px, 2.4vw, 38px);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -.01em;
+    margin-bottom: 14px;
+    color: var(--eb-txt);
+}
+
+.geo-cities-title em {
+    font-style: normal;
+    color: var(--eb-blue);
+}
+
+.geo-cities-desc p {
+    color: var(--eb-txt-mid);
+    font-size: 16px;
+    line-height: 1.78;
+    font-weight: 400;
+}
+
+.eb-geo-city-card {
+    background: var(--eb-white);
+    border: 1px solid var(--eb-bdr);
+    border-radius: 8px;
+    padding: 28px 22px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    transition: border-color .2s, box-shadow .2s, transform .2s;
+}
+
+.eb-geo-city-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--eb-gold);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .25s;
+}
+
+.eb-geo-city-card:hover {
+    border-color: var(--eb-bdr-gold);
+    box-shadow: 0 8px 28px rgba(104, 125, 156, .1);
+    transform: translateY(-3px);
+}
+
+.eb-geo-city-card:hover::after {
+    transform: scaleX(1);
+}
+
+.eb-geo-city-card.featured {
+    border-color: rgba(222, 170, 87, .35);
+    background: var(--eb-gold-pale);
+}
+
+.eb-geo-city-card.featured::after {
+    transform: scaleX(1);
+    background: var(--eb-gold-dk);
+}
+
+.eb-geo-city-tag {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--eb-gold-dk);
+    margin-bottom: 10px;
+}
+
+.eb-geo-city-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--eb-txt);
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+.eb-geo-city-desc {
+    font-size: 16px;
+    color: var(--eb-txt-mid);
+    line-height: 1.65;
+    font-weight: 400;
+    flex: 1;
+}
+
+.eb-geo-city-lnk {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 14px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--eb-gold-dk);
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    transition: gap .2s;
+}
+
+.eb-geo-city-card:hover .eb-geo-city-lnk {
+    gap: 9px;
+}
+
+@media (max-width: 1100px) {
+    .eb-geo-cities-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .eb-geo-cities-section {
+        /* padding: 64px 32px; */
+    }
+}
+
+@media (max-width: 680px) {
+    .eb-geo-cities-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .eb-geo-cities-section {
+        /* padding: 56px 20px; */
+    }
+}

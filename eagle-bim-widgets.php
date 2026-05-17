@@ -173,6 +173,19 @@ function eagle_bim_widgets_init() {
 
 			require_once __DIR__ . '/widgets/blog-detail/blog-detail-related-widget.php';
 			$widgets_manager->register( new \Eagle_BIM_Blog_Detail_Related_Widget() );
+
+			// geo pages.
+			require_once __DIR__ . '/widgets/geo/geo-stats-widget.php';
+			$widgets_manager->register( new \Eagle_BIM_Geo_Stats_Widget() );
+
+			require_once __DIR__ . '/widgets/geo/geo-cities-widget.php';
+			$widgets_manager->register( new \Eagle_BIM_Geo_Cities_Widget() );
+
+			require_once __DIR__ . '/widgets/geo/geo-project-types-widget.php';
+			$widgets_manager->register( new \Eagle_BIM_Geo_Project_Types_Widget() );
+
+			require_once __DIR__ . '/widgets/geo/geo-metro-coverage-widget.php';
+			$widgets_manager->register( new \Eagle_BIM_Geo_Metro_Coverage_Widget() );
 		}
 	);
 
@@ -244,6 +257,11 @@ function eagle_bim_widgets_init() {
 			wp_enqueue_style( 'eagle-bim-blog-detail-cta-style', plugins_url( '/assets/css/blog-detail/blog-detail-cta.css', __FILE__ ) );
 			wp_enqueue_style( 'eagle-bim-blog-detail-recent-style', plugins_url( '/assets/css/blog-detail/blog-detail-recent.css', __FILE__ ) );
 			wp_enqueue_style( 'eagle-bim-blog-detail-related-style', plugins_url( '/assets/css/blog-detail/blog-detail-related.css', __FILE__ ) );
+			// geo pages.
+			wp_enqueue_style( 'eagle-bim-geo-stats-style', plugins_url( '/assets/css/geo/geo-stats-widget.css', __FILE__ ) );
+			wp_enqueue_style( 'eagle-bim-geo-cities-style', plugins_url( '/assets/css/geo/geo-cities.css', __FILE__ ) );
+			wp_enqueue_style( 'eagle-bim-geo-project-types-style', plugins_url( '/assets/css/geo/geo-project-types.css', __FILE__ ) );
+			wp_enqueue_style( 'eagle-bim-geo-metro-coverage-style', plugins_url( '/assets/css/geo/geo-metro-coverage.css', __FILE__ ) );
 		}
 	);
 

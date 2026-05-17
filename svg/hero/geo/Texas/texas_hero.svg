@@ -1,0 +1,84 @@
+<svg width="460" height="400" viewBox="0 0 460 400" xmlns="http://www.w3.org/2000/svg">
+      <style>
+        @keyframes drawState{from{stroke-dashoffset:2200}to{stroke-dashoffset:0}}
+        @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+        @keyframes popIn{from{opacity:0;transform:scale(.5)}to{opacity:1;transform:scale(1)}}
+        @keyframes pulse{0%,100%{r:5;opacity:.9}50%{r:7;opacity:.5}}
+        .tx-border{stroke-dasharray:2200;stroke-dashoffset:2200;animation:drawState 2.2s .3s ease forwards}
+        .tx-fill{opacity:0;animation:fadeIn .8s 2s ease forwards}
+        .tx-grid{opacity:0;animation:fadeIn .6s 1.8s ease forwards}
+        .city-dot{opacity:0}
+        .c1{animation:popIn .4s 2.3s ease forwards}
+        .c2{animation:popIn .4s 2.5s ease forwards}
+        .c3{animation:popIn .4s 2.7s ease forwards}
+        .c4{animation:popIn .4s 2.9s ease forwards}
+        .c5{animation:popIn .4s 3.1s ease forwards}
+        .city-pulse{animation:pulse 2.5s ease infinite}
+      </style>
+      <defs>
+        <pattern id="txgrid" width="20" height="20" patternUnits="userSpaceOnUse">
+          <path d="M20 0L0 0 0 20" fill="none" stroke="rgba(104,125,156,.06)" stroke-width=".5"/>
+        </pattern>
+        <clipPath id="txclip">
+          <!-- Texas outline path - simplified -->
+          <path d="M340,30 L380,30 L390,45 L395,80 L395,110 L370,120 L365,145 L375,155 L375,175 L355,185 L350,210 L340,220 L330,245 L310,260 L295,280 L285,305 L270,320 L255,340 L235,355 L210,365 L185,360 L165,345 L140,330 L115,320 L95,305 L80,285 L65,265 L55,240 L50,215 L55,190 L65,170 L75,155 L80,135 L85,115 L90,95 L95,75 L105,60 L120,50 L140,42 L165,36 L195,32 L220,30 L260,28 L300,28 Z"/>
+        </clipPath>
+      </defs>
+
+      <rect width="460" height="400" fill="url(#txgrid)" class="tx-grid"/>
+
+      <!-- State fill -->
+      <path class="tx-fill" d="M340,30 L380,30 L390,45 L395,80 L395,110 L370,120 L365,145 L375,155 L375,175 L355,185 L350,210 L340,220 L330,245 L310,260 L295,280 L285,305 L270,320 L255,340 L235,355 L210,365 L185,360 L165,345 L140,330 L115,320 L95,305 L80,285 L65,265 L55,240 L50,215 L55,190 L65,170 L75,155 L80,135 L85,115 L90,95 L95,75 L105,60 L120,50 L140,42 L165,36 L195,32 L220,30 L260,28 L300,28 Z" fill="rgba(104,125,156,.08)"/>
+
+      <!-- State border -->
+      <path class="tx-border" d="M340,30 L380,30 L390,45 L395,80 L395,110 L370,120 L365,145 L375,155 L375,175 L355,185 L350,210 L340,220 L330,245 L310,260 L295,280 L285,305 L270,320 L255,340 L235,355 L210,365 L185,360 L165,345 L140,330 L115,320 L95,305 L80,285 L65,265 L55,240 L50,215 L55,190 L65,170 L75,155 L80,135 L85,115 L90,95 L95,75 L105,60 L120,50 L140,42 L165,36 L195,32 L220,30 L260,28 L300,28 Z" fill="none" stroke="rgba(104,125,156,.55)" stroke-width="2" stroke-linejoin="round"/>
+
+      <!-- Houston -->
+      <g class="city-dot c1">
+        <circle cx="190" cy="300" r="6" fill="#deaa57" class="city-pulse"/>
+        <circle cx="190" cy="300" r="3" fill="white"/>
+        <rect x="200" y="292" width="62" height="18" rx="3" fill="rgba(17,24,39,.7)"/>
+        <text x="231" y="305" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="white" font-weight="600">Houston</text>
+      </g>
+
+      <!-- Dallas -->
+      <g class="city-dot c2">
+        <circle cx="255" cy="160" r="5.5" fill="#deaa57" class="city-pulse"/>
+        <circle cx="255" cy="160" r="2.8" fill="white"/>
+        <rect x="264" y="153" width="52" height="17" rx="3" fill="rgba(17,24,39,.7)"/>
+        <text x="290" y="165" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="white" font-weight="600">Dallas</text>
+      </g>
+
+      <!-- Austin -->
+      <g class="city-dot c3">
+        <circle cx="205" cy="255" r="5" fill="#deaa57" class="city-pulse"/>
+        <circle cx="205" cy="255" r="2.5" fill="white"/>
+        <rect x="214" y="248" width="48" height="17" rx="3" fill="rgba(17,24,39,.7)"/>
+        <text x="238" y="260" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="white" font-weight="600">Austin</text>
+      </g>
+
+      <!-- San Antonio -->
+      <g class="city-dot c4">
+        <circle cx="185" cy="290" r="4.5" fill="rgba(222,170,87,.7)"/>
+        <circle cx="185" cy="290" r="2.2" fill="white"/>
+        <rect x="194" y="284" width="72" height="17" rx="3" fill="rgba(17,24,39,.65)"/>
+        <text x="230" y="296" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="rgba(255,255,255,.85)" font-weight="500">San Antonio</text>
+      </g>
+
+      <!-- Fort Worth -->
+      <g class="city-dot c5">
+        <circle cx="238" cy="162" r="4.5" fill="rgba(222,170,87,.7)"/>
+        <circle cx="238" cy="162" r="2.2" fill="white"/>
+        <rect x="164" y="155" width="68" height="17" rx="3" fill="rgba(17,24,39,.65)"/>
+        <text x="198" y="167" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="rgba(255,255,255,.85)" font-weight="500">Fort Worth</text>
+      </g>
+
+      <!-- Eagle BIM HQ marker -->
+      <g style="animation:popIn .5s 3.3s ease both;opacity:0">
+        <circle cx="230" cy="210" r="10" fill="rgba(222,170,87,.15)" stroke="rgba(222,170,87,.4)" stroke-width="1.5"/>
+        <path d="M230 203 C227 203 225 205 225 208 C225 212 230 217 230 217 C230 217 235 212 235 208 C235 205 233 203 230 203Z" fill="#deaa57" opacity=".9"/>
+        <circle cx="230" cy="208" r="2" fill="white"/>
+        <rect x="185" y="220" width="90" height="18" rx="3" fill="rgba(17,24,39,.8)"/>
+        <text x="230" y="233" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#ecc278" font-weight="700" letter-spacing=".5">HQ · PFLUGERVILLE</text>
+      </g>
+    </svg>

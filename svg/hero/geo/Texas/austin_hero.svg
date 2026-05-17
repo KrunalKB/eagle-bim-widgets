@@ -1,0 +1,146 @@
+<svg width="480" height="400" viewBox="0 0 480 400" xmlns="http://www.w3.org/2000/svg">
+      <style>
+        @keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+        @keyframes wglow{0%,100%{opacity:.25}50%{opacity:.65}}
+        @keyframes domeglow{0%,100%{opacity:.6}50%{opacity:1}}
+        @keyframes scanline{0%{transform:translateY(0);opacity:0}5%{opacity:.12}90%{opacity:.07}100%{transform:translateY(400px);opacity:0}}
+        .sk1{animation:rise .55s .08s ease both;opacity:0}.sk2{animation:rise .55s .18s ease both;opacity:0}
+        .sk3{animation:rise .55s .28s ease both;opacity:0}.sk4{animation:rise .55s .38s ease both;opacity:0}
+        .sk5{animation:rise .55s .48s ease both;opacity:0}.sk6{animation:rise .55s .22s ease both;opacity:0}
+        .sk7{animation:rise .55s .12s ease both;opacity:0}.sk8{animation:rise .55s .42s ease both;opacity:0}
+        .w1{animation:wglow 3s ease infinite}.w2{animation:wglow 3s 1.2s ease infinite}.w3{animation:wglow 3s 2.1s ease infinite}
+        .dome{animation:domeglow 4s ease infinite}
+        .scan{animation:scanline 8s 1s linear infinite}
+      </style>
+      <defs>
+        <pattern id="agrid" width="24" height="24" patternUnits="userSpaceOnUse">
+          <path d="M24 0L0 0 0 24" fill="none" stroke="rgba(104,125,156,.06)" stroke-width=".5"/>
+        </pattern>
+      </defs>
+      <rect width="480" height="400" fill="url(#agrid)"/>
+      <rect x="20" y="365" width="440" height="3" fill="rgba(104,125,156,.2)"/>
+      <line x1="20" y1="365" x2="460" y2="365" stroke="rgba(222,170,87,.2)" stroke-width="1"/>
+
+      <!-- Far left low-rise -->
+      <g class="sk7" opacity=".45">
+        <rect x="20" y="310" width="36" height="55" fill="rgba(104,125,156,.14)"/>
+        <rect x="60" y="295" width="26" height="70" fill="rgba(104,125,156,.16)"/>
+      </g>
+
+      <!-- Texas State Capitol — iconic dome, left-centre -->
+      <g class="sk1">
+        <!-- Main building body -->
+        <rect x="88" y="210" width="72" height="155" fill="rgba(104,125,156,.22)" stroke="rgba(104,125,156,.32)" stroke-width=".7"/>
+        <!-- Wing extensions -->
+        <rect x="78" y="240" width="12" height="125" fill="rgba(104,125,156,.18)"/>
+        <rect x="160" y="240" width="12" height="125" fill="rgba(104,125,156,.18)"/>
+        <!-- Drum / rotunda base -->
+        <rect x="104" y="178" width="40" height="34" fill="rgba(104,125,156,.32)"/>
+        <!-- Dome -->
+        <path d="M104 178 Q124 148 144 178Z" fill="rgba(104,125,156,.38)" stroke="rgba(104,125,156,.5)" stroke-width=".8"/>
+        <!-- Lantern on dome -->
+        <rect x="120" y="140" width="8" height="10" fill="rgba(104,125,156,.45)"/>
+        <!-- Star finial -->
+        <circle cx="124" cy="136" r="5" fill="rgba(222,170,87,.85)" class="dome"/>
+        <text x="124" y="139.5" text-anchor="middle" font-size="7" fill="white" font-family="Arial" font-weight="bold">★</text>
+        <!-- Steps -->
+        <rect x="92" y="358" width="64" height="7" fill="rgba(104,125,156,.28)"/>
+        <rect x="96" y="352" width="56" height="7" fill="rgba(104,125,156,.24)"/>
+        <!-- Capitol windows -->
+        <rect x="96" y="224" width="8" height="10" fill="rgba(222,170,87,.2)" class="w1"/>
+        <rect x="110" y="224" width="8" height="10" fill="rgba(222,170,87,.15)"/>
+        <rect x="130" y="224" width="8" height="10" fill="rgba(222,170,87,.22)" class="w2"/>
+        <rect x="144" y="224" width="8" height="10" fill="rgba(222,170,87,.16)"/>
+        <rect x="96" y="244" width="8" height="10" fill="rgba(222,170,87,.16)"/>
+        <rect x="110" y="244" width="8" height="10" fill="rgba(222,170,87,.24)" class="w3"/>
+        <rect x="130" y="244" width="8" height="10" fill="rgba(222,170,87,.18)"/>
+        <rect x="144" y="244" width="8" height="10" fill="rgba(222,170,87,.15)"/>
+      </g>
+
+      <!-- Frost Tower — tall slender, left of centre -->
+      <g class="sk2">
+        <rect x="182" y="72" width="48" height="293" fill="rgba(104,125,156,.22)" stroke="rgba(104,125,156,.33)" stroke-width=".7"/>
+        <rect x="190" y="60" width="32" height="14" fill="rgba(104,125,156,.32)"/>
+        <rect x="198" y="46" width="16" height="16" fill="rgba(104,125,156,.4)"/>
+        <!-- Pointed top -->
+        <polygon points="198,46 206,28 214,46" fill="rgba(104,125,156,.48)"/>
+        <line x1="206" y1="28" x2="206" y2="10" stroke="rgba(222,170,87,.6)" stroke-width="2"/>
+        <circle cx="206" cy="8" r="3.5" fill="rgba(222,170,87,.85)" class="w1"/>
+        <line x1="196" y1="72" x2="196" y2="365" stroke="rgba(104,125,156,.07)" stroke-width=".5"/>
+        <line x1="206" y1="72" x2="206" y2="365" stroke="rgba(104,125,156,.07)" stroke-width=".5"/>
+        <line x1="222" y1="72" x2="222" y2="365" stroke="rgba(104,125,156,.07)" stroke-width=".5"/>
+        <rect x="187" y="86" width="9" height="7" fill="rgba(222,170,87,.24)" class="w2"/>
+        <rect x="203" y="86" width="9" height="7" fill="rgba(222,170,87,.16)"/>
+        <rect x="187" y="102" width="9" height="7" fill="rgba(222,170,87,.16)"/>
+        <rect x="203" y="102" width="9" height="7" fill="rgba(222,170,87,.25)" class="w3"/>
+        <rect x="187" y="118" width="9" height="7" fill="rgba(222,170,87,.21)"/>
+        <rect x="203" y="118" width="9" height="7" fill="rgba(222,170,87,.14)"/>
+        <rect x="187" y="134" width="9" height="7" fill="rgba(222,170,87,.18)" class="w1"/>
+        <rect x="203" y="134" width="9" height="7" fill="rgba(222,170,87,.22)"/>
+      </g>
+
+      <!-- Austonian — tallest residential, centre showpiece -->
+      <g class="sk3">
+        <rect x="248" y="42" width="88" height="323" fill="rgba(104,125,156,.29)" stroke="rgba(104,125,156,.44)" stroke-width=".7"/>
+        <!-- Stepped crown -->
+        <rect x="260" y="28" width="64" height="16" fill="rgba(104,125,156,.38)"/>
+        <rect x="272" y="14" width="40" height="16" fill="rgba(104,125,156,.46)"/>
+        <rect x="284" y="0" width="16" height="16" fill="rgba(104,125,156,.54)"/>
+        <line x1="292" y1="-8" x2="292" y2="0" stroke="rgba(222,170,87,.72)" stroke-width="2.8"/>
+        <circle cx="292" cy="-10" r="4" fill="rgba(222,170,87,.9)" class="w1"/>
+        <line x1="268" y1="42" x2="268" y2="365" stroke="rgba(104,125,156,.08)" stroke-width=".5"/>
+        <line x1="292" y1="42" x2="292" y2="365" stroke="rgba(104,125,156,.08)" stroke-width=".5"/>
+        <line x1="316" y1="42" x2="316" y2="365" stroke="rgba(104,125,156,.08)" stroke-width=".5"/>
+        <rect x="254" y="56" width="11" height="8" fill="rgba(222,170,87,.28)" class="w2"/>
+        <rect x="272" y="56" width="11" height="8" fill="rgba(222,170,87,.19)"/>
+        <rect x="290" y="56" width="11" height="8" fill="rgba(222,170,87,.25)"/>
+        <rect x="308" y="56" width="11" height="8" fill="rgba(222,170,87,.31)" class="w3"/>
+        <rect x="254" y="73" width="11" height="8" fill="rgba(222,170,87,.16)"/>
+        <rect x="272" y="73" width="11" height="8" fill="rgba(222,170,87,.26)" class="w1"/>
+        <rect x="290" y="73" width="11" height="8" fill="rgba(222,170,87,.18)"/>
+        <rect x="308" y="73" width="11" height="8" fill="rgba(222,170,87,.23)"/>
+        <rect x="254" y="90" width="11" height="8" fill="rgba(222,170,87,.23)" class="w2"/>
+        <rect x="272" y="90" width="11" height="8" fill="rgba(222,170,87,.14)"/>
+        <rect x="290" y="90" width="11" height="8" fill="rgba(222,170,87,.21)"/>
+        <rect x="308" y="90" width="11" height="8" fill="rgba(222,170,87,.17)"/>
+        <rect x="254" y="107" width="11" height="8" fill="rgba(222,170,87,.17)"/>
+        <rect x="272" y="107" width="11" height="8" fill="rgba(222,170,87,.24)" class="w3"/>
+        <rect x="290" y="107" width="11" height="8" fill="rgba(222,170,87,.18)"/>
+        <rect x="308" y="107" width="11" height="8" fill="rgba(222,170,87,.27)" class="w1"/>
+      </g>
+
+      <!-- 360 Condominiums style — glass tower right -->
+      <g class="sk4">
+        <rect x="354" y="78" width="64" height="287" fill="rgba(104,125,156,.23)" stroke="rgba(104,125,156,.34)" stroke-width=".7"/>
+        <rect x="362" y="64" width="48" height="16" fill="rgba(104,125,156,.32)"/>
+        <rect x="370" y="50" width="32" height="16" fill="rgba(104,125,156,.4)"/>
+        <line x1="386" y1="32" x2="386" y2="50" stroke="rgba(222,170,87,.52)" stroke-width="2"/>
+        <line x1="366" y1="78" x2="366" y2="365" stroke="rgba(104,125,156,.07)" stroke-width=".5"/>
+        <line x1="386" y1="78" x2="386" y2="365" stroke="rgba(104,125,156,.07)" stroke-width=".5"/>
+        <line x1="406" y1="78" x2="406" y2="365" stroke="rgba(104,125,156,.07)" stroke-width=".5"/>
+        <rect x="360" y="92" width="9" height="7" fill="rgba(222,170,87,.22)" class="w1"/>
+        <rect x="376" y="92" width="9" height="7" fill="rgba(222,170,87,.15)"/>
+        <rect x="392" y="92" width="9" height="7" fill="rgba(222,170,87,.25)" class="w2"/>
+        <rect x="408" y="92" width="9" height="7" fill="rgba(222,170,87,.17)"/>
+        <rect x="360" y="108" width="9" height="7" fill="rgba(222,170,87,.15)"/>
+        <rect x="376" y="108" width="9" height="7" fill="rgba(222,170,87,.24)" class="w3"/>
+        <rect x="392" y="108" width="9" height="7" fill="rgba(222,170,87,.18)"/>
+        <rect x="408" y="108" width="9" height="7" fill="rgba(222,170,87,.21)"/>
+      </g>
+
+      <!-- Right anchor filler -->
+      <g class="sk8" opacity=".5">
+        <rect x="432" y="155" width="48" height="210" fill="rgba(104,125,156,.18)" stroke="rgba(104,125,156,.24)" stroke-width=".6"/>
+        <rect x="438" y="167" width="8" height="5" fill="rgba(222,170,87,.17)" class="w1"/>
+        <rect x="452" y="167" width="8" height="5" fill="rgba(222,170,87,.13)" class="w2"/>
+      </g>
+
+      <!-- Scan line -->
+      <rect class="scan" x="20" y="0" width="440" height="2" fill="rgba(222,170,87,.1)"/>
+
+      <!-- City label -->
+      <g style="animation:rise .6s .9s ease both;opacity:0">
+        <rect x="192" y="340" width="116" height="20" rx="3" fill="rgba(17,24,39,.75)"/>
+        <text x="250" y="354" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="rgba(222,170,87,.9)" font-weight="700" letter-spacing="1">AUSTIN, TEXAS</text>
+      </g>
+    </svg>

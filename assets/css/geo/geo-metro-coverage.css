@@ -1,0 +1,135 @@
+.eb-geo-metro-section {
+    background: var(--eb-cream);
+    /* padding: 88px 52px; */
+}
+
+.eb-geo-metro-head {
+    text-align: start;
+    margin-bottom: 44px;
+}
+
+.eb-geo-metro-head .section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--eb-gold-dk);
+    margin-bottom: 14px;
+}
+
+.eb-geo-metro-head .section-tag::before {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--eb-gold);
+    border-radius: 2px;
+}
+
+.eb-geo-metro-head h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(24px, 2.4vw, 38px);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -.01em;
+    margin-bottom: 14px;
+    color: var(--eb-txt);
+}
+
+.eb-geo-metro-head h2 em {
+    font-style: normal;
+    color: var(--eb-blue);
+}
+
+.eb-geo-metro-head .sec-desc p {
+    color: var(--eb-txt-mid);
+    font-size: 16px;
+    line-height: 1.78;
+    font-weight: 400;
+}
+
+.eb-geo-metro-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin-top: 44px;
+}
+
+.eb-geo-metro-card {
+    background: var(--eb-white);
+    border: 1px solid var(--eb-bdr);
+    border-radius: 8px;
+    padding: 20px 18px;
+    transition: border-color .2s, box-shadow .2s, transform .2s;
+}
+
+.eb-geo-metro-card:hover {
+    border-color: var(--eb-gold);
+    box-shadow: 0 4px 18px rgba(104, 125, 156, .1);
+    transform: translateY(-2px);
+}
+
+.eb-geo-metro-card.featured {
+    border-color: rgba(222, 170, 87, .4);
+    background: var(--eb-gold-pale);
+}
+
+.eb-geo-metro-hq-badge {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--eb-gold-dk);
+    background: white;
+    border: 1px solid var(--eb-bdr-gold);
+    padding: 2px 7px;
+    border-radius: 100px;
+    margin-bottom: 6px;
+}
+
+.eb-geo-metro-county {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--eb-gold-dk);
+    margin-bottom: 4px;
+}
+
+.eb-geo-metro-city {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--eb-txt);
+    margin-bottom: 6px;
+}
+
+.eb-geo-metro-areas {
+    font-size: 14px;
+    color: var(--eb-txt-muted);
+    line-height: 1.6;
+}
+
+@media (max-width: 1100px) {
+    .eb-geo-metro-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .eb-geo-metro-section {
+        /* padding: 64px 32px; */
+    }
+}
+
+@media (max-width: 680px) {
+    .eb-geo-metro-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .eb-geo-metro-section {
+        /* padding: 56px 20px; */
+    }
+}

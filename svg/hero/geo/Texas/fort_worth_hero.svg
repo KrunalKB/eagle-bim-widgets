@@ -1,0 +1,96 @@
+<svg width="420" height="380" viewBox="0 0 420 380" xmlns="http://www.w3.org/2000/svg">
+
+  <rect width="420" height="380" fill="#ffffff"/>
+
+  <!-- Grid -->
+  <g stroke="#d7dee8" stroke-width="0.8" fill="none">
+    <line x1="80" y1="50" x2="80" y2="320"/>
+    <line x1="160" y1="50" x2="160" y2="320"/>
+    <line x1="240" y1="50" x2="240" y2="320"/>
+    <line x1="320" y1="50" x2="320" y2="320"/>
+
+    <line x1="60" y1="100" x2="360" y2="100"/>
+    <line x1="60" y1="185" x2="360" y2="185"/>
+    <line x1="60" y1="270" x2="360" y2="270"/>
+  </g>
+
+  <!-- Columns -->
+  <g fill="#687d9c">
+    <rect x="76" y="96" width="8" height="8"/>
+    <rect x="156" y="96" width="8" height="8"/>
+    <rect x="236" y="96" width="8" height="8"/>
+    <rect x="316" y="96" width="8" height="8"/>
+
+    <rect x="76" y="181" width="8" height="8"/>
+    <rect x="156" y="181" width="8" height="8"/>
+    <rect x="236" y="181" width="8" height="8"/>
+    <rect x="316" y="181" width="8" height="8"/>
+
+    <rect x="76" y="266" width="8" height="8"/>
+    <rect x="156" y="266" width="8" height="8"/>
+    <rect x="236" y="266" width="8" height="8"/>
+    <rect x="316" y="266" width="8" height="8"/>
+  </g>
+
+  <!-- Beams -->
+  <g stroke="#687d9c" stroke-width="3" fill="none" stroke-linecap="round">
+    <line x1="80" y1="100" x2="320" y2="100"/>
+    <line x1="80" y1="185" x2="320" y2="185"/>
+    <line x1="80" y1="270" x2="320" y2="270"/>
+
+    <line x1="80" y1="100" x2="80" y2="270"/>
+    <line x1="160" y1="100" x2="160" y2="270"/>
+    <line x1="240" y1="100" x2="240" y2="270"/>
+    <line x1="320" y1="100" x2="320" y2="270"/>
+  </g>
+
+  <!-- MEP lines -->
+  <g stroke="#deaa57" stroke-width="2" fill="none">
+    <path d="M100 130 H340 V160"/>
+    <path d="M100 215 H200 V245 H340"/>
+    <path d="M180 130 V215"/>
+  </g>
+
+  <!-- LOD lines -->
+  <line x1="60" y1="100" x2="60" y2="270" stroke="#deaa57" stroke-width="1.5"/>
+  <line x1="60" y1="100" x2="360" y2="100" stroke="#deaa57" stroke-width="1.5"/>
+
+  <!-- Level Tags -->
+  <g font-family="Arial,sans-serif">
+    <rect x="24" y="94" width="30" height="16" fill="#eef2f7" stroke="#687d9c"/>
+    <text x="39" y="105" text-anchor="middle" font-size="8" fill="#687d9c">L3</text>
+
+    <rect x="24" y="179" width="30" height="16" fill="#eef2f7" stroke="#687d9c"/>
+    <text x="39" y="190" text-anchor="middle" font-size="8" fill="#687d9c">L2</text>
+
+    <rect x="24" y="264" width="30" height="16" fill="#eef2f7" stroke="#687d9c"/>
+    <text x="39" y="275" text-anchor="middle" font-size="8" fill="#687d9c">L1</text>
+  </g>
+
+  <!-- LOD Badge -->
+  <g font-family="Arial,sans-serif">
+    <rect x="148" y="55" width="64" height="20" fill="#fff4df" stroke="#deaa57"/>
+    <text x="180" y="68" text-anchor="middle" font-size="9" fill="#deaa57">LOD 350</text>
+  </g>
+
+  <!-- Check -->
+  <circle cx="330" cy="165" r="13" fill="#eef7ee" stroke="#69af69" stroke-width="1.2"/>
+  <polyline points="323,165 328,170 337,159"
+    stroke="#69af69"
+    stroke-width="2"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"/>
+
+  <!-- Bottom Label -->
+  <g font-family="Arial,sans-serif">
+    <rect x="100" y="340" width="220" height="22" fill="#f3f5f8" stroke="#687d9c"/>
+    <text x="210" y="355"
+      text-anchor="middle"
+      font-size="9"
+      fill="#687d9c">
+      STRUCTURAL BIM MODEL — LOD 350
+    </text>
+  </g>
+
+</svg>
