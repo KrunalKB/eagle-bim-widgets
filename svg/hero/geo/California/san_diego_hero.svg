@@ -1,0 +1,67 @@
+<svg width="420" height="380" viewBox="0 0 420 380" xmlns="http://www.w3.org/2000/svg">
+      <style>
+        @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+        @keyframes waveAnim{0%,100%{d:path("M30 260 Q90 240 150 260 Q210 280 270 260 Q330 240 390 260")}50%{d:path("M30 260 Q90 280 150 260 Q210 240 270 260 Q330 280 390 260")}}
+        @keyframes popUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+        @keyframes pulse{0%,100%{opacity:.5}50%{opacity:1}}
+        .fg1{animation:fadeIn .5s .2s ease both;opacity:0}
+        .fg2{animation:fadeIn .5s .6s ease both;opacity:0}
+        .fg3{animation:fadeIn .6s 1s ease both;opacity:0}
+        .fg4{animation:fadeIn .5s 1.4s ease both;opacity:0}
+        .fp1{animation:popUp .4s 1.8s ease both;opacity:0}
+        .fp2{animation:popUp .4s 2.1s ease both;opacity:0}
+        .fp3{animation:popUp .4s 2.4s ease both;opacity:0}
+      </style>
+      <defs>
+        <pattern id="sdgrid" width="22" height="22" patternUnits="userSpaceOnUse">
+          <path d="M22 0L0 0 0 22" fill="none" stroke="rgba(104,125,156,.055)" stroke-width=".5"/>
+        </pattern>
+        <clipPath id="sdclip"><rect width="420" height="380"/></clipPath>
+      </defs>
+      <rect width="420" height="380" fill="url(#sdgrid)"/>
+      <!-- Ocean waves -->
+      <g class="fg1" clip-path="url(#sdclip)">
+        <path d="M0 290 Q60 270 120 290 Q180 310 240 290 Q300 270 360 290 Q390 300 420 285 L420 380 L0 380Z" fill="rgba(104,125,156,.08)"/>
+        <path d="M0 310 Q70 295 140 310 Q210 325 280 310 Q350 295 420 305 L420 380 L0 380Z" fill="rgba(104,125,156,.06)"/>
+      </g>
+      <!-- Building footprints plan view -->
+      <g class="fg2" fill="rgba(104,125,156,.12)" stroke="rgba(104,125,156,.3)" stroke-width=".8">
+        <rect x="60" y="80" width="80" height="60" rx="2"/>
+        <rect x="160" y="60" width="60" height="100" rx="2"/>
+        <rect x="240" y="75" width="90" height="70" rx="2"/>
+        <rect x="80" y="160" width="50" height="80" rx="2"/>
+        <rect x="150" y="175" width="70" height="55" rx="2"/>
+        <rect x="240" y="160" width="55" height="65" rx="2"/>
+        <rect x="315" y="150" width="45" height="85" rx="2"/>
+      </g>
+      <!-- MEP/BIM routing -->
+      <g class="fg3" stroke="rgba(222,170,87,.25)" stroke-width="1.5" fill="none" stroke-dasharray="5 3">
+        <path d="M100 110 H200 V110"/>
+        <path d="M210 110 H280 V110"/>
+        <path d="M100 200 H220 V200"/>
+        <path d="M200 110 V200"/>
+      </g>
+      <!-- Discipline tags -->
+      <g class="fp1">
+        <rect x="68" y="97" width="36" height="14" rx="2" fill="rgba(104,125,156,.15)" stroke="rgba(104,125,156,.3)" stroke-width=".5"/>
+        <text x="86" y="107" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8" fill="rgba(104,125,156,.8)" font-weight="600">STRUCT</text>
+        <rect x="168" y="82" width="32" height="14" rx="2" fill="rgba(222,170,87,.12)" stroke="rgba(222,170,87,.3)" stroke-width=".5"/>
+        <text x="184" y="92" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8" fill="rgba(222,170,87,.9)" font-weight="600">MEP</text>
+      </g>
+      <!-- CBC badge -->
+      <g class="fp2">
+        <rect x="248" y="83" width="74" height="18" rx="3" fill="rgba(222,170,87,.15)" stroke="rgba(222,170,87,.4)" stroke-width=".8"/>
+        <text x="285" y="95" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="rgba(222,170,87,.9)" font-weight="700">CBC COMPLIANT</text>
+      </g>
+      <!-- Seismic indicator -->
+      <g class="fp3">
+        <circle cx="340" cy="250" r="14" fill="rgba(104,125,156,.1)" stroke="rgba(104,125,156,.35)" stroke-width="1.2" style="animation:pulse 2.5s ease infinite"/>
+        <text x="340" y="247" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8" fill="rgba(104,125,156,.8)" font-weight="700">SZ4</text>
+        <text x="340" y="257" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="7" fill="rgba(104,125,156,.6)">SEISMIC</text>
+      </g>
+      <!-- Label -->
+      <g class="fp3">
+        <rect x="100" y="340" width="220" height="22" rx="3" fill="rgba(104,125,156,.1)" stroke="rgba(104,125,156,.2)" stroke-width=".5"/>
+        <text x="210" y="355" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="rgba(104,125,156,.7)" font-weight="600" letter-spacing=".5">BIM SERVICES SAN DIEGO</text>
+      </g>
+    </svg>

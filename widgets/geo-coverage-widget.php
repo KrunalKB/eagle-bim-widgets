@@ -83,7 +83,7 @@ class Eagle_BIM_Geo_Coverage_Widget extends \Elementor\Widget_Base {
 			'primary_title',
 			[
 				'label'   => __( 'Region Title', 'eagle-bim-widgets' ),
-				'type'    => \Elementor\Controls_Manager::TEXT,
+				'type'    => \Elementor\Controls_Manager::WYSIWYG,
 				'default' => __( 'BIM Services in Texas', 'eagle-bim-widgets' ),
 			]
 		);
@@ -92,7 +92,7 @@ class Eagle_BIM_Geo_Coverage_Widget extends \Elementor\Widget_Base {
 			'primary_desc',
 			[
 				'label'   => __( 'Region Description', 'eagle-bim-widgets' ),
-				'type'    => \Elementor\Controls_Manager::TEXTAREA,
+				'type'    => \Elementor\Controls_Manager::WYSIWYG,
 				'default' => __( 'Based in Pflugerville, TX — Eagle BIM serves the Texas market with unmatched depth. Houston, Dallas, Austin, San Antonio, Fort Worth, El Paso, and across the state. We understand Texas building codes, permitting workflows, and the fast-paced commercial and industrial construction environment that drives the state\'s AEC market.', 'eagle-bim-widgets' ),
 			]
 		);
@@ -196,8 +196,8 @@ class Eagle_BIM_Geo_Coverage_Widget extends \Elementor\Widget_Base {
 			<div class="eb-geo-primary">
 				<div>
 					<div class="eb-geo-primary-label"><?php echo esc_html( $settings['primary_label'] ); ?></div>
-					<div class="eb-geo-primary-title"><?php echo esc_html( $settings['primary_title'] ); ?></div>
-					<div class="eb-geo-primary-desc"><?php echo esc_html( $settings['primary_desc'] ); ?></div>
+					<div class="eb-geo-primary-title"><?php echo wp_kses_post( $settings['primary_title'] ); ?></div>
+					<div class="eb-geo-primary-desc"><?php echo wp_kses_post( $settings['primary_desc'] ); ?></div>
 				</div>
 			</div>
 
