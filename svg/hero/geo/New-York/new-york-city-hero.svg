@@ -1,0 +1,102 @@
+<svg width="480" height="400" viewBox="0 0 480 400" xmlns="http://www.w3.org/2000/svg">
+      <style>
+        @keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+        @keyframes wglow{0%,100%{opacity:.25}50%{opacity:.65}}
+        @keyframes scan{0%{transform:translateY(0);opacity:0}5%{opacity:.12}90%{opacity:.07}100%{transform:translateY(400px);opacity:0}}
+        .sk1{animation:rise .55s .08s ease both;opacity:0}.sk2{animation:rise .55s .18s ease both;opacity:0}
+        .sk3{animation:rise .55s .28s ease both;opacity:0}.sk4{animation:rise .55s .38s ease both;opacity:0}
+        .sk5{animation:rise .55s .48s ease both;opacity:0}.sk6{animation:rise .55s .14s ease both;opacity:0}
+        .w1{animation:wglow 3s ease infinite}.w2{animation:wglow 3s 1.2s ease infinite}.w3{animation:wglow 3s 2.1s ease infinite}
+        .scl{animation:scan 8s 1s linear infinite}
+      </style>
+      <defs><pattern id="nycgrid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0L0 0 0 24" fill="none" stroke="rgba(104,125,156,.06)" stroke-width=".5"/></pattern></defs>
+      <rect width="480" height="400" fill="url(#nycgrid)"/>
+      <rect x="20" y="365" width="440" height="3" fill="rgba(104,125,156,.2)"/>
+      <line x1="20" y1="365" x2="460" y2="365" stroke="rgba(222,170,87,.2)" stroke-width="1"/>
+      <g class="sk6" opacity=".4"><rect x="20" y="295" width="30" height="70" fill="rgba(104,125,156,.14)"/><rect x="54" y="275" width="22" height="90" fill="rgba(104,125,156,.15)"/></g>
+      <!-- Chrysler Building — art deco crown with starburst eagles -->
+      <g class="sk1">
+        <rect x="82" y="130" width="44" height="235" fill="rgba(104,125,156,.22)" stroke="rgba(104,125,156,.32)" stroke-width=".7"/>
+        <rect x="88" y="112" width="32" height="20" fill="rgba(104,125,156,.28)"/>
+        <rect x="94" y="94" width="20" height="20" fill="rgba(104,125,156,.34)"/>
+        <rect x="98" y="76" width="12" height="20" fill="rgba(104,125,156,.42)"/>
+        <polygon points="104,76 116,56 120,70 112,68" fill="rgba(104,125,156,.52)"/>
+        <polygon points="104,76 92,56 88,70 96,68" fill="rgba(104,125,156,.48)"/>
+        <line x1="104" y1="42" x2="104" y2="56" stroke="rgba(222,170,87,.62)" stroke-width="2.2"/>
+        <circle cx="104" cy="40" r="3.2" fill="rgba(222,170,87,.85)" class="w1"/>
+        <rect x="88" y="148" width="8" height="6" fill="rgba(222,170,87,.22)" class="w2"/>
+        <rect x="102" y="148" width="8" height="6" fill="rgba(222,170,87,.15)"/>
+        <rect x="116" y="148" width="8" height="6" fill="rgba(222,170,87,.2)" class="w3"/>
+        <rect x="88" y="163" width="8" height="6" fill="rgba(222,170,87,.14)"/>
+        <rect x="102" y="163" width="8" height="6" fill="rgba(222,170,87,.24)" class="w1"/>
+      </g>
+      <!-- Empire State Building — iconic stepped setbacks, mooring mast spire -->
+      <g class="sk2">
+        <rect x="146" y="80" width="64" height="285" fill="rgba(104,125,156,.26)" stroke="rgba(104,125,156,.36)" stroke-width=".7"/>
+        <rect x="154" y="62" width="48" height="20" fill="rgba(104,125,156,.32)"/>
+        <rect x="162" y="44" width="32" height="20" fill="rgba(104,125,156,.38)"/>
+        <rect x="170" y="26" width="16" height="20" fill="rgba(104,125,156,.46)"/>
+        <rect x="176" y="8" width="4" height="18" fill="rgba(104,125,156,.55)"/>
+        <line x1="178" y1="-6" x2="178" y2="8" stroke="rgba(222,170,87,.7)" stroke-width="2.5"/>
+        <circle cx="178" cy="-8" r="3.8" fill="rgba(222,170,87,.92)" class="w2"/>
+        <line x1="154" y1="80" x2="154" y2="365" stroke="rgba(104,125,156,.08)" stroke-width=".5"/>
+        <line x1="178" y1="80" x2="178" y2="365" stroke="rgba(104,125,156,.08)" stroke-width=".5"/>
+        <line x1="202" y1="80" x2="202" y2="365" stroke="rgba(104,125,156,.08)" stroke-width=".5"/>
+        <rect x="152" y="94" width="10" height="7" fill="rgba(222,170,87,.28)" class="w1"/>
+        <rect x="169" y="94" width="10" height="7" fill="rgba(222,170,87,.19)"/>
+        <rect x="186" y="94" width="10" height="7" fill="rgba(222,170,87,.25)"/>
+        <rect x="152" y="110" width="10" height="7" fill="rgba(222,170,87,.16)"/>
+        <rect x="169" y="110" width="10" height="7" fill="rgba(222,170,87,.26)" class="w2"/>
+        <rect x="186" y="110" width="10" height="7" fill="rgba(222,170,87,.18)"/>
+        <rect x="152" y="126" width="10" height="7" fill="rgba(222,170,87,.23)"/>
+        <rect x="169" y="126" width="10" height="7" fill="rgba(222,170,87,.14)"/>
+        <rect x="186" y="126" width="10" height="7" fill="rgba(222,170,87,.22)" class="w3"/>
+      </g>
+      <!-- 432 Park Avenue — ultra-slender pure rectangular tower, square windows -->
+      <g class="sk3">
+        <rect x="234" y="18" width="32" height="347" fill="rgba(104,125,156,.28)" stroke="rgba(104,125,156,.4)" stroke-width=".7"/>
+        <rect x="234" y="14" width="32" height="5" fill="rgba(104,125,156,.42)"/>
+        <line x1="250" y1="-2" x2="250" y2="14" stroke="rgba(222,170,87,.6)" stroke-width="2"/>
+        <circle cx="250" cy="-4" r="3" fill="rgba(222,170,87,.82)" class="w3"/>
+        <line x1="242" y1="18" x2="242" y2="365" stroke="rgba(104,125,156,.09)" stroke-width=".5"/>
+        <line x1="258" y1="18" x2="258" y2="365" stroke="rgba(104,125,156,.09)" stroke-width=".5"/>
+        <rect x="237" y="28" width="8" height="8" fill="rgba(222,170,87,.25)" class="w1"/>
+        <rect x="250" y="28" width="8" height="8" fill="rgba(222,170,87,.18)"/>
+        <rect x="237" y="46" width="8" height="8" fill="rgba(222,170,87,.17)"/>
+        <rect x="250" y="46" width="8" height="8" fill="rgba(222,170,87,.27)" class="w2"/>
+        <rect x="237" y="64" width="8" height="8" fill="rgba(222,170,87,.22)"/>
+        <rect x="250" y="64" width="8" height="8" fill="rgba(222,170,87,.16)"/>
+        <rect x="237" y="82" width="8" height="8" fill="rgba(222,170,87,.28)" class="w3"/>
+        <rect x="250" y="82" width="8" height="8" fill="rgba(222,170,87,.19)"/>
+        <rect x="237" y="100" width="8" height="8" fill="rgba(222,170,87,.15)"/>
+        <rect x="250" y="100" width="8" height="8" fill="rgba(222,170,87,.24)" class="w1"/>
+      </g>
+      <!-- One World Trade Center — tapered glass with spire, symbolic and recognisable -->
+      <g class="sk4">
+        <rect x="286" y="48" width="80" height="317" fill="rgba(104,125,156,.25)" stroke="rgba(104,125,156,.37)" stroke-width=".7"/>
+        <polygon points="286,48 326,18 366,48" fill="rgba(104,125,156,.36)" stroke="rgba(104,125,156,.44)" stroke-width=".8"/>
+        <line x1="326" y1="18" x2="326" y2="-8" stroke="rgba(222,170,87,.68)" stroke-width="2.5"/>
+        <circle cx="326" cy="-10" r="3.5" fill="rgba(222,170,87,.88)" class="w2"/>
+        <line x1="298" y1="48" x2="298" y2="365" stroke="rgba(104,125,156,.08)" stroke-width=".5"/>
+        <line x1="326" y1="48" x2="326" y2="365" stroke="rgba(104,125,156,.08)" stroke-width=".5"/>
+        <line x1="354" y1="48" x2="354" y2="365" stroke="rgba(104,125,156,.08)" stroke-width=".5"/>
+        <rect x="292" y="62" width="11" height="8" fill="rgba(222,170,87,.26)" class="w1"/>
+        <rect x="310" y="62" width="11" height="8" fill="rgba(222,170,87,.18)"/>
+        <rect x="328" y="62" width="11" height="8" fill="rgba(222,170,87,.24)"/>
+        <rect x="346" y="62" width="11" height="8" fill="rgba(222,170,87,.3)" class="w3"/>
+        <rect x="292" y="78" width="11" height="8" fill="rgba(222,170,87,.15)"/>
+        <rect x="310" y="78" width="11" height="8" fill="rgba(222,170,87,.25)" class="w2"/>
+        <rect x="328" y="78" width="11" height="8" fill="rgba(222,170,87,.18)"/>
+        <rect x="346" y="78" width="11" height="8" fill="rgba(222,170,87,.22)"/>
+        <rect x="292" y="94" width="11" height="8" fill="rgba(222,170,87,.22)"/>
+        <rect x="310" y="94" width="11" height="8" fill="rgba(222,170,87,.14)"/>
+        <rect x="328" y="94" width="11" height="8" fill="rgba(222,170,87,.2)" class="w1"/>
+        <rect x="346" y="94" width="11" height="8" fill="rgba(222,170,87,.16)"/>
+      </g>
+      <g class="sk5" opacity=".45"><rect x="382" y="140" width="50" height="225" fill="rgba(104,125,156,.17)"/></g>
+      <rect class="scl" x="20" y="0" width="440" height="2" fill="rgba(222,170,87,.1)"/>
+      <g style="animation:rise .6s .85s ease both;opacity:0">
+        <rect x="148" y="340" width="184" height="20" rx="3" fill="rgba(17,24,39,.78)"/>
+        <text x="240" y="354" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="rgba(222,170,87,.92)" font-weight="700" letter-spacing="1">NEW YORK CITY, NY</text>
+      </g>
+    </svg>

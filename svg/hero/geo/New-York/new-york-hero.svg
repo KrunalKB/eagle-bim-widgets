@@ -1,0 +1,106 @@
+<svg width="420" height="380" viewBox="0 0 420 380" xmlns="http://www.w3.org/2000/svg">
+      <style>
+        @keyframes drawState{from{stroke-dashoffset:2000}to{stroke-dashoffset:0}}
+        @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+        @keyframes popIn{from{opacity:0;transform:scale(.5)}to{opacity:1;transform:scale(1)}}
+        @keyframes pls{0%,100%{r:5;opacity:.9}50%{r:7;opacity:.5}}
+        .ny-border{stroke-dasharray:2000;stroke-dashoffset:2000;animation:drawState 2.4s .3s ease forwards}
+        .ny-fill{opacity:0;animation:fadeIn .8s 2.2s ease forwards}
+        .ny-grid{opacity:0;animation:fadeIn .6s 1.8s ease forwards}
+        .c1{animation:popIn .4s 2.5s ease forwards;opacity:0}
+        .c2{animation:popIn .4s 2.7s ease forwards;opacity:0}
+        .c3{animation:popIn .4s 2.9s ease forwards;opacity:0}
+        .c4{animation:popIn .4s 3.1s ease forwards;opacity:0}
+        .c5{animation:popIn .4s 3.3s ease forwards;opacity:0}
+        .cp{animation:pls 2.5s ease infinite}
+      </style>
+      <defs>
+        <pattern id="nygrid" width="20" height="20" patternUnits="userSpaceOnUse">
+          <path d="M20 0L0 0 0 20" fill="none" stroke="rgba(104,125,156,.06)" stroke-width=".5"/>
+        </pattern>
+      </defs>
+      <rect width="420" height="380" fill="url(#nygrid)" class="ny-grid"/>
+      <!-- NY shape: western edge, south border, Hudson Valley, NYC at SE tip, LI pointing E, then north back up -->
+      <path class="ny-fill"
+        d="M32,60 L385,60 L390,75 L388,90 L382,105 L375,118
+           L370,132 L368,148 L366,162 L362,175 L355,186
+           L346,196 L335,204 L325,212 L318,222 L315,234
+           L316,248 L320,262 L322,274 L318,285 L308,293
+           L295,298 L282,300 L275,306 L272,316 L275,328
+           L278,340 L278,352 L272,360 L262,364 L250,362
+           L240,356 L235,345 L238,333 L244,323
+           L240,312 L230,302 L218,296 L205,295
+           L195,298 L188,306 L186,318 L190,330
+           L194,342 L190,350 L180,354 L168,350
+           L160,340 L158,328 L162,316
+           L158,304 L148,295 L135,290
+           L120,288 L105,290 L90,295 L78,305
+           L68,318 L60,332 L54,345 L50,358
+           L44,368 L36,372 L28,368 L24,354
+           L26,338 L30,320 L32,304 L32,285
+           L32,265 L32,245 L32,225 L32,205
+           L32,185 L32,165 L32,140 L32,120
+           L32,100 L32,80 L32,60 Z"
+        fill="rgba(104,125,156,.08)"/>
+      <path class="ny-border"
+        d="M32,60 L385,60 L390,75 L388,90 L382,105 L375,118
+           L370,132 L368,148 L366,162 L362,175 L355,186
+           L346,196 L335,204 L325,212 L318,222 L315,234
+           L316,248 L320,262 L322,274 L318,285 L308,293
+           L295,298 L282,300 L275,306 L272,316 L275,328
+           L278,340 L278,352 L272,360 L262,364 L250,362
+           L240,356 L235,345 L238,333 L244,323
+           L240,312 L230,302 L218,296 L205,295
+           L195,298 L188,306 L186,318 L190,330
+           L194,342 L190,350 L180,354 L168,350
+           L160,340 L158,328 L162,316
+           L158,304 L148,295 L135,290
+           L120,288 L105,290 L90,295 L78,305
+           L68,318 L60,332 L54,345 L50,358
+           L44,368 L36,372 L28,368 L24,354
+           L26,338 L30,320 L32,304 L32,285
+           L32,265 L32,245 L32,225 L32,205
+           L32,185 L32,165 L32,140 L32,120
+           L32,100 L32,80 L32,60 Z"
+        fill="none" stroke="rgba(104,125,156,.55)" stroke-width="2" stroke-linejoin="round"/>
+
+      <!-- NYC — SE corner -->
+      <g class="c1">
+        <circle cx="258" cy="340" r="7" fill="#deaa57" class="cp"/>
+        <circle cx="258" cy="340" r="3.5" fill="white"/>
+        <rect x="150" y="332" width="90" height="18" rx="3" fill="rgba(17,24,39,.78)"/>
+        <text x="195" y="345" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="white" font-weight="700">New York City</text>
+      </g>
+
+      <!-- Buffalo — W edge -->
+      <g class="c2">
+        <circle cx="48" cy="232" r="5.5" fill="rgba(222,170,87,.8)"/>
+        <circle cx="48" cy="232" r="2.8" fill="white"/>
+        <rect x="56" y="224" width="54" height="17" rx="3" fill="rgba(17,24,39,.72)"/>
+        <text x="83" y="236" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="rgba(255,255,255,.95)" font-weight="500">Buffalo</text>
+      </g>
+
+      <!-- Albany — E central -->
+      <g class="c3">
+        <circle cx="318" cy="210" r="5.5" fill="rgba(222,170,87,.75)"/>
+        <circle cx="318" cy="210" r="2.8" fill="white"/>
+        <rect x="326" y="202" width="50" height="17" rx="3" fill="rgba(17,24,39,.68)"/>
+        <text x="351" y="214" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="rgba(255,255,255,.9)" font-weight="500">Albany</text>
+      </g>
+
+      <!-- Rochester — W central -->
+      <g class="c4">
+        <circle cx="80" cy="165" r="5" fill="rgba(222,170,87,.7)"/>
+        <circle cx="80" cy="165" r="2.5" fill="white"/>
+        <rect x="88" y="157" width="65" height="17" rx="3" fill="rgba(17,24,39,.65)"/>
+        <text x="120" y="169" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="rgba(255,255,255,.88)" font-weight="500">Rochester</text>
+      </g>
+
+      <!-- Syracuse — centre -->
+      <g class="c5">
+        <circle cx="200" cy="175" r="5" fill="rgba(222,170,87,.65)"/>
+        <circle cx="200" cy="175" r="2.5" fill="white"/>
+        <rect x="208" y="167" width="60" height="17" rx="3" fill="rgba(17,24,39,.62)"/>
+        <text x="238" y="179" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="rgba(255,255,255,.85)" font-weight="500">Syracuse</text>
+      </g>
+    </svg>
