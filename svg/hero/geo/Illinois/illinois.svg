@@ -1,0 +1,89 @@
+<svg width="380" height="440" viewBox="0 0 380 440" xmlns="http://www.w3.org/2000/svg">
+      <style>
+        @keyframes drawState{from{stroke-dashoffset:2400}to{stroke-dashoffset:0}}
+        @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+        @keyframes popIn{from{opacity:0;transform:scale(.5)}to{opacity:1;transform:scale(1)}}
+        @keyframes pls{0%,100%{r:5;opacity:.9}50%{r:7;opacity:.5}}
+        .ca-border{stroke-dasharray:2400;stroke-dashoffset:2400;animation:drawState 2.4s .3s ease forwards}
+        .ca-fill{opacity:0;animation:fadeIn .8s 2.2s ease forwards}
+        .ca-grid{opacity:0;animation:fadeIn .6s 1.8s ease forwards}
+        .c1{animation:popIn .4s 2.5s ease forwards;opacity:0}
+        .c2{animation:popIn .4s 2.7s ease forwards;opacity:0}
+        .c3{animation:popIn .4s 2.9s ease forwards;opacity:0}
+        .c4{animation:popIn .4s 3.1s ease forwards;opacity:0}
+        .c5{animation:popIn .4s 3.3s ease forwards;opacity:0}
+        .cp{animation:pls 2.5s ease infinite}
+      </style>
+      <defs>
+        <pattern id="cagrid" width="20" height="20" patternUnits="userSpaceOnUse">
+          <path d="M20 0L0 0 0 20" fill="none" stroke="rgba(104,125,156,.06)" stroke-width=".5"/>
+        </pattern>
+      </defs>
+      <rect width="380" height="440" fill="url(#cagrid)" class="ca-grid"/>
+
+      <!-- Illinois outline — simplified but recognisable shape -->
+      <!-- Northern border goes east, Oregon border, then coast curves south, then back east for Nevada/Arizona, then Baja -->
+      <path class="ca-fill"
+        d="M290,28 L310,28 L315,45 L318,70 L310,95 L305,120 L308,145 L312,165
+           L308,185 L300,200 L290,215 L278,228 L268,242 L255,256 L242,268
+           L232,282 L228,300 L230,318 L234,335 L238,352 L240,368 L238,385
+           L232,400 L225,412 L215,420 L205,426 L192,428 L178,424 L165,418
+           L155,410 L148,400 L145,388 L148,375 L152,362 L150,348 L145,335
+           L140,322 L138,308 L140,294 L145,280 L148,266 L145,252 L138,240
+           L130,228 L122,215 L115,200 L110,185 L108,170 L112,155 L118,140
+           L122,125 L120,110 L115,96 L110,82 L108,68 L112,54 L118,42 L128,34
+           L140,28 L160,24 L185,22 L210,22 L235,24 L260,26 L285,28 Z"
+        fill="rgba(104,125,156,.08)"/>
+
+      <path class="ca-border"
+        d="M290,28 L310,28 L315,45 L318,70 L310,95 L305,120 L308,145 L312,165
+           L308,185 L300,200 L290,215 L278,228 L268,242 L255,256 L242,268
+           L232,282 L228,300 L230,318 L234,335 L238,352 L240,368 L238,385
+           L232,400 L225,412 L215,420 L205,426 L192,428 L178,424 L165,418
+           L155,410 L148,400 L145,388 L148,375 L152,362 L150,348 L145,335
+           L140,322 L138,308 L140,294 L145,280 L148,266 L145,252 L138,240
+           L130,228 L122,215 L115,200 L110,185 L108,170 L112,155 L118,140
+           L122,125 L120,110 L115,96 L110,82 L108,68 L112,54 L118,42 L128,34
+           L140,28 L160,24 L185,22 L210,22 L235,24 L260,26 L285,28 Z"
+        fill="none" stroke="rgba(104,125,156,.55)" stroke-width="2" stroke-linejoin="round"/>
+
+      <!-- Chicago -->
+      <g class="c1">
+        <circle cx="175" cy="360" r="7" fill="#deaa57" class="cp"/>
+        <circle cx="175" cy="360" r="3.5" fill="white"/>
+        <rect x="185" y="352" width="70" height="18" rx="3" fill="rgba(17,24,39,.75)"/>
+        <text x="220" y="365" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="white" font-weight="600">Chicago</text>
+      </g>
+
+      <!-- Aurora -->
+      <g class="c2">
+        <circle cx="128" cy="198" r="6" fill="#deaa57" class="cp"/>
+        <circle cx="128" cy="198" r="3" fill="white"/>
+        <rect x="138" y="190" width="82" height="18" rx="3" fill="rgba(17,24,39,.75)"/>
+        <text x="179" y="203" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="white" font-weight="600">Aurora</text>
+      </g>
+
+      <!-- Naperville -->
+      <g class="c3">
+        <circle cx="195" cy="408" r="5.5" fill="rgba(222,170,87,.75)"/>
+        <circle cx="195" cy="408" r="2.8" fill="white"/>
+        <rect x="205" y="401" width="60" height="17" rx="3" fill="rgba(17,24,39,.68)"/>
+        <text x="235" y="413" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="rgba(255,255,255,.9)" font-weight="500">Naperville</text>
+      </g>
+
+      <!-- Rockford -->
+      <g class="c4">
+        <circle cx="162" cy="162" r="5.5" fill="rgba(222,170,87,.75)"/>
+        <circle cx="162" cy="162" r="2.8" fill="white"/>
+        <rect x="172" y="155" width="72" height="17" rx="3" fill="rgba(17,24,39,.68)"/>
+        <text x="208" y="167" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="rgba(255,255,255,.9)" font-weight="500">Rockford</text>
+      </g>
+
+      <!-- Joliet -->
+      <g class="c5">
+        <circle cx="140" cy="222" r="5" fill="rgba(222,170,87,.65)"/>
+        <circle cx="140" cy="222" r="2.5" fill="white"/>
+        <rect x="62" y="215" width="58" height="17" rx="3" fill="rgba(17,24,39,.65)"/>
+        <text x="91" y="227" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="rgba(255,255,255,.85)" font-weight="500">Joliet</text>
+      </g>
+    </svg>
